@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/jquery.bxslider.min.css">
@@ -56,7 +57,16 @@
                     </div>
                 </div>
             </div>
-            <div><img src="images/Mask Group 35.png"></div>
+            <div>
+                <img src="images/Mask Group 35.png">
+                <div class="container slide--content">
+                    <div class="row">
+                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h2>Artificial intelligence turns your data into business</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -129,7 +139,72 @@
         </div>
     </section>
 
-    <!-- VENDORS PARTNER  CAROUSEL -->
+    <!-- EMPOWERING INDUSTRIES -->
+    <section class="industry-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="industry-heading">
+                        <h2>Empowering the Industries</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 ">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-number">
+                            <h1>01</h1>
+                        </div>
+                        <img src="images/slider1.png" alt="">
+                        <div class="carousel-content">
+                            <h2>Healthcare</h2>
+                            <p>Healthcare refers to the maintenance or improvement of health via the prevention, diagnosis, treatment, and management of illness, injury, and other physical and mental impairments in people. Healthcare is delivered by healthcare professionals in allied health fields.</p>
+                            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-number">
+                            <h1>02</h1>
+                        </div>
+                        <img src="images/slider1.png" alt="">
+                        <div class="carousel-content">
+                            <h2>Government</h2>
+                            <p>A government is the organization, machinery, or agency, through which a political unit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-number">
+                            <h1>03</h1>
+                        </div>
+                        <img src="images/slider1.png" alt="">
+                        <div class="carousel-content">
+                            <h2>Smart Cities</h2>
+                            <p>Smart cities use technology and data-driven solutions to improve the quality of life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- TOP SOLUTIONS -->
+    <section class="top-solutions-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="top-solutions-heading">
+                        <h2>Top Solutions</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- VENDORS PARTNER CAROUSEL -->
     <section class="our-vendor-partner">
         <div class="container-fluid">
             <div class="row">
@@ -289,20 +364,25 @@
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                    <div class="footer-social">
-                        <h2>Contact</h2>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-newsletter">
-                        <h2>Newsletter</h2>
-                        <form action="">
-                            <input type="email" placeholder="Enter your email">
-                            <button type="submit">Subscribe</button>
-                        </form>    
+                    <div class="footer-two-div">
+                        <div class="footer-social">
+                            <h2>Contact</h2>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-newsletter">
+                            <h2>Newsletter</h2>
+                            <div class="newsletter-form">
+                                <form action="">
+                                    <input type="text" placeholder="Enter Full Name">
+                                    <input type="text" placeholder="Enter Your Email">
+                                    <input type="submit" name="" id="" value="Submit">
+                                </form>    
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -331,12 +411,36 @@
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script>
         $(document).ready(function(){
           $('.slider').bxSlider({
             //auto: true,
             stopAutoOnClick: true
+          });
+          const swiper = new Swiper('.swiper', {
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 3,
+                spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 4,
+                spaceBetween: 40
+                }
+            }
           });
         });
       </script>

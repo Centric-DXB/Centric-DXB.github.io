@@ -12,6 +12,7 @@
     --slider-active-green: #81C357;
     --poppins: 'Poppins', sans-serif;
     --roboto: 'Roboto', sans-serif;
+    --dark-purple: #03004C;
 }
 
 
@@ -43,6 +44,7 @@ header{
         padding-left: 50px;
     }
     .top-main-navigation{
+        backdrop-filter: blur(80px);
         ul{
             display: flex;
             justify-content: flex-end;
@@ -105,6 +107,20 @@ header{
         border: none;
         margin-bottom: 0;
         height: 1070px;
+        .bx-controls-direction{
+            a{
+                border: 1px solid #81C357;
+                transform: rotate(45deg);
+            }
+        }
+        .bx-prev{
+            left: 100px;
+            background: #81C357;
+        }
+        .bx-next{
+            right: 100px;
+            background: #81C357;
+        }
         .slide--content{
             position: relative;
             top: -500px;
@@ -157,6 +173,7 @@ header{
     background: url(../images/homeaboutbackground.png) no-repeat center center;
     padding: 150px 0 0;
     min-height: 1130px;
+    background-size: cover ;
     .about-us{
         h2{
             font-size: 33px;
@@ -237,6 +254,133 @@ header{
 }
 
 
+// INDUSTRY
+.industry-wrapper{
+    display: block;
+    width: 100%;
+    background: var(--dark-purple);
+    padding: 50px 0;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 60px;
+        background: var(--light-green);
+        border:1px solid var(--light-green);
+        transform: rotate(45deg);
+        left: 50%;
+        top: -30px;
+    }
+    .industry-heading{
+        h2{
+            font-size: 33px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 110px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            margin-top: 50px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                background: var(--light-green);
+                left: 0;
+                top: 20px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: var(--white);
+                left: 60px;
+                top: 12px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .carousel-wrapper{
+        overflow: hidden;
+        width: 30%;
+        display: inline-block;
+        position: relative;
+        height: 650px;
+        transition: all .3s ease-in-out;
+        margin-right: 10px;
+        margin-top: 50px;
+        .carousel-number{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            text-align: right;
+            color: var(--white);
+            z-index: 99;
+            h1{
+                font-size: 50px;
+                font-weight: 500;
+                color: rgba($color: #015596, $alpha: .5);
+                padding: 20px 20px 0 0;
+            }
+        }
+        .carousel-content{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 20px 0 20px;
+            background: url(../images/dimfilterbackground.png) no-repeat center center;
+            overflow: hidden;
+            height: 220px;
+            h2{
+                font-size: 36px;
+                color: var(--white);
+                font-weight: 500;
+            }
+            p{
+                font-size: 22px;
+                color: var(--white);
+            }
+            a{
+                display: inline-block;
+                text-align: center;
+                padding: 0 20px;
+                background: var(--light-green);
+                color: var(--white);
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-top: 20px;
+                transition: all .3s ease-in-out;
+                font-family: var(--poppins);
+                line-height: 50px;
+                text-decoration: none;
+                svg{
+                    margin-left: 20px;
+                }
+                &:hover{
+                    background: var(--white);
+                    color: var(--light-green);
+                }
+            }
+        }
+        &:hover{
+            .carousel-content{
+                bottom: 0;
+                transition: all .3s ease-in-out;
+                height: 650px;
+                background: #03004C;
+                padding-top: 100px;
+            }    
+        }
+    }
+}
+
+
 
 // CLIENT 
 .our-clients, .our-vendor-partner{
@@ -300,12 +444,68 @@ header{
 }
 
 
+// TOP SOLUTIONS CSS
+.top-solutions-wrapper{
+    display: block;
+    width: 100%;
+    background: url(../images/solutionsbackground.png) no-repeat center center;
+    padding: 50px 0;
+    height: 1000px;
+    .top-solutions-heading{
+        display: block;
+        h2{
+            font-size: 30px;
+            color: var(--white);
+            padding-left: 240px;
+            position: relative;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            margin: 50px 0 50px 0;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 4px;
+                background: var(--light-green);
+                left: 140px;
+                top: 19px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: var(--white);
+                left: 200px;
+                top: 12px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+
+
+
+
 // TRANSPARENCY CSS
 .our-transparency{
     display: block;
     width: 100%;
     background: var(--dull-purple);
     padding: 50px 0;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 60px;
+        background: var(--light-green);
+        border: 1px solid var(--light-green);
+        transform: rotate(45deg);
+        left: 50%;
+        top: -30px;
+    }
     .transparency-heading{
         display: block;
         h2{
@@ -315,7 +515,7 @@ header{
             position: relative;
             letter-spacing: 10px;
             text-transform: uppercase;
-            margin-bottom: 50px;
+            margin: 50px 0 50px 0;
             &::after{
                 content: '';
                 position: absolute;
@@ -486,9 +686,57 @@ header{
             }
         }
     }
-    .footer-social{
-        display: block;
-        width: 30%;
+    .footer-two-div{
+        display:flex;
+        .footer-social{
+            display: inline-block;
+            width: 45%;
+            h2{
+                font-size: 18px;
+                color: var(--white);
+            }
+            ul{
+                display: block;
+                margin-top: 20px;
+                li{
+                    display: inline-block;
+                    font-size: 24px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .footer-newsletter{
+            display: inline-block;
+            width: 50%;
+            color: var(--white);
+            .newsletter-form{
+                display: block;
+                input[type=text]{
+                    background: var(--white);
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    &::placeholder{
+                        color: var(--light-green);
+                    }
+                }
+                input[type=submit]{
+                    background: var(--light-green);
+                    padding: 0;
+                    color: var(--white);
+                    border: none;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 500;
+                    width: 100%;
+                    line-height: 40px;
+                }
+            }
+            h2{
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        }
     }
     .footer-bottom{
         padding: 0 0 20px;
