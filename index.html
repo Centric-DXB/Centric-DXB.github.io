@@ -7,28 +7,34 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
     <title>MIS Home</title>
 </head>
 <body>
     <header class="head">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12"><img src="logo-white.svg" alt=""></div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="logo">
+                        <img src="images/logo-white.svg" alt="">
+                    </div>
+                </div>
                 <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
-                    <div class="">
+                    <div class="top-main-navigation">
                         <ul>
                             <li><a href="#">Careers</a></li>
-                            <li><a href="#">RESOURCES</a></li>
-                            <li><a href="#">SUPPORT</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Support</a></li>
                         </ul>
                     </div>
                     <div class="main-menu">
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">WHO WE ARE</a></li>
-                            <li><a href="#">WHAT WE DO</a></li>
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">What We Do</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#" class="search"><i class="fas fa-search"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -37,8 +43,21 @@
     </header>
 
     <!-- SLIDER HOME -->
-    <section>
-
+    <section class="home-slider">
+        <!-- Slider HTML (change this to your own!) -->
+        <div class="slider">
+            <div>
+                <img src="images/Mask Group 35.png">
+                <div class="container slide--content">
+                    <div class="row">
+                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h2>Artificial intelligence turns your data into business</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="images/Mask Group 35.png"></div>
+        </div>
     </section>
 
     <!-- ABOUT US SECTION -->
@@ -86,7 +105,7 @@
 
     <!-- CLIENT CAROUSEL -->
     <section class="our-clients">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-xxl-12">
                     <div class="our-clients-heading">
@@ -96,17 +115,114 @@
             </div>
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-xxl-12">
-                    <ul class="">
+                    <ul class="client-logos">
                         <li><img src="images/clientimg1.png" alt=""></li>
                         <li><img src="images/clientimg2.png" alt=""></li>
                         <li><img src="images/clientimg3.png" alt=""></li>
                         <li><img src="images/clientimg4.png" alt=""></li>
                         <li><img src="images/clientimg5.png" alt=""></li>
+                        <li><img src="images/clientimg6.png" alt=""></li>
+                        <li><img src="images/clientimg7.png" alt=""></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- VENDORS PARTNER  CAROUSEL -->
+    <section class="our-vendor-partner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-xxl-12">
+                    <div class="our-partner-heading">
+                        <h2>VENDORS THAT WE PARTNER WITH</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-xxl-12">
+                    <ul class="partners-logos">
+                        <li><img src="images/partnerlogo1.png" alt=""></li>
+                        <li><img src="images/partnerlogo2.png" alt=""></li>
+                        <li><img src="images/partnerlogo3.png" alt=""></li>
+                        <li><img src="images/partnerlogo4.png" alt=""></li>
+                        <li><img src="images/partnerlogo5.png" alt=""></li>
+                        <li><img src="images/partnerlogo6.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSPARENCY SECTION -->
+    <section class="our-transparency">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="transparency-heading">
+                        <h2>Trust Reflects In Our Transparency</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="transparency-wrapper">
+                        <div class="transparency-icon">
+                            <img src="images/graphicon.svg" alt="">
+                        </div>
+                        <div class="transparency-info">
+                            <span>Share Price</span>
+                            <h3>1120 - TDWL</h3>
+                            <h2>82.40 SAR</h2>
+                            <p>+2.01% +1.80</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="transparency-wrapper">
+                        <div class="transparency-icon">
+                            <img src="images/reporticon.svg" alt="">
+                        </div>
+                        <div class="transparency-info">
+                            <span>Reports</span>
+                            <h3>Annual Report</h3>
+                            <h2>2022</h2>
+                            <a href="#">Download PDF</a>
+                        </div>
+                        <div class="pdf-file">
+                            <img src="images/annualreport.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="transparency-wrapper no-border">
+                        <div class="transparency-icon">
+                            <img src="images/fileicon.svg" alt="">
+                        </div>
+                        <div class="transparency-info">
+                            <span>Reports</span>
+                            <h3>Prospectus</h3>
+                            <h2>2022</h2>
+                            <a href="#">Download PDF</a>
+                        </div>
+                        <div class="pdf-file">
+                            <img src="images/prospect.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="terms-data">
+                        <p>Terms: <br>The distribution of this Prospectus and the sale of the Offer Shares in any country other than Saudi Arabia are expressly prohibited except for the Foreign Institutional Investors subject to the applicable laws and instructions. Recipients of this Prospectus are required to inform themselves of any regulatory restrictions relevant to the Offer Shares and to observe all such restrictions.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- FOOTER -->
     <footer class="foot">
@@ -215,5 +331,14 @@
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            //auto: true,
+            stopAutoOnClick: true
+          });
+        });
+      </script>
 </body>
 </html>
