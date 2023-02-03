@@ -73,6 +73,7 @@ body{
         li{
             display: inline-block;
             width: 33.33%;
+            position: relative;
             p{
                 font-size: 16px;
                 color: var(--white);
@@ -85,15 +86,25 @@ body{
                 top: 30px;
                 position: relative;
             }
-            &:last-child{
+            &:nth-child(3){
                 width: 20%;
                 position: relative;
                 top: -70px;
+            }
+            &:last-child{
+                background-color: #253B73;
+                position: relative;
+                top: -100px;
+                right: 0;
+                width: 15%;
+                height: 100px;
             }
         }
     }
     .triangle-object{
         display: block;
+        text-align: center;
+        padding-top: 30px;
         img{
             width: 80%;
         }
