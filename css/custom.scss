@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --footer-bg: #000836;
+    --light-green: #73BC45;
+    --white: #fff;
+}
+
+
+html, body, a, p, header, footer, form, section, article, textarea, input, ul, li, ol, h1, h2, h3, h4, h5, h6, span, div, button, select, option, label, table, tr, td, th, thead, tbody, tfoot, caption, blockquote, pre, code, address, dl, dt, dd, fieldset, legend, object, iframe, img, small, strong, em, b, i, u, s, del, ins, sup, sub, abbr, acronym, q, cite, dfn, samp, kbd, var, tt, center, object, embed, param, video, audio, canvas, details, summary, menu, menuitem, command, keygen, mark, output, progress, meter, time, datalist{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+//  HOME ABOUT CSS
+.home-about-us{
+    display: block;
+    width: 100%;
+    background: url(../images/homeaboutbackground.png) no-repeat center center;
+    padding: 150px 0 0;
+    min-height: 1130px;
+    .about-us{
+        h2{
+            font-size: 33px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 110px;
+            word-spacing: 2px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                background: var(--light-green);
+                left: 0;
+                top: 20px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: var(--white);
+                left: 60px;
+                top: 12px;
+                transform: rotate(45deg);
+            }
+        }
+        p{
+            font-size: 14px;
+            color: var(--white);
+            padding-left: 110px;
+        }
+    }
+    .aboutus-three-img{
+        display: block;
+        margin-bottom: 100px;
+        li{
+            display: inline-block;
+            width: 33.33%;
+            p{
+                font-size: 16px;
+                color: var(--white);
+            }
+            &:first-child{
+                width: 33%;
+            }
+            &:nth-child(2){
+                width: 20%;
+                top: 30px;
+                position: relative;
+            }
+            &:last-child{
+                width: 20%;
+                position: relative;
+                top: -70px;
+            }
+        }
+    }
+    .triangle-object{
+        display: block;
+        img{
+            width: 80%;
+        }
+    }
+}
+
+
+
+
+// FOOTER CSS
+
+.foot{
+    display: block;
+    background: var(--footer-bg);
+    padding-top: 70px;
+    .footer-location{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 60px;
+        color: #fff;
+        border-bottom: 1px solid #ccc;
+        .location{
+            display: flex;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background: rgba($color: #fff, $alpha: .3);
+                right: -30px;
+                top: 0;
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            .location-info{
+                padding-left: 20px;
+                h3{
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+            }
+        } 
+    }
+    .footer-company-info{
+        display:block;
+        padding: 50px 0 0 50px;
+        p{
+            color: #fff;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    .footer-links{
+        display:block;
+        .links{
+            display:block;
+            li{
+                display: inline-block;
+                width: 45%;
+                line-height: 40px;
+                font-size: 18px;
+                &:nth-child(odd){
+                    border-right:1px solid #73BC45;
+                }
+                a{
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    .footer-social{
+        display: block;
+        width: 30%;
+    }
+    .footer-bottom{
+        padding: 0 0 20px;
+        p{
+            color: #fff;
+            font-size: 12px;
+        }
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            li{
+                display: inline-block;
+                padding: 0 10px;
+                border-right: 1px solid #fff;
+                &:last-child{
+                    border-right: none;
+                }
+                a{
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    hr{
+        background-color: #ccc;
+        margin: 50px 0;
+    }
+}
+
+.footer-logo{
+   display: block;
+   padding-top: 100px; 
+}
