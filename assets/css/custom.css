@@ -193,7 +193,7 @@ header .main-menu ul li a.search svg {
   color: var(--white);
   font-size: 60px;
   text-transform: uppercase;
-  width: 70%;
+  width: 100%;
   padding-left: 150px;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
@@ -206,21 +206,21 @@ header .main-menu ul li a.search svg {
   .home-slider .bx-wrapper .slide--content h2 {
     font-size: 45px;
     padding-left: 40px;
-    width: 60%;
+    width: 100%;
   }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .home-slider .bx-wrapper .slide--content h2 {
     font-size: 40px;
     padding-left: 40px;
-    width: 60%;
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   .home-slider .bx-wrapper .slide--content h2 {
     font-size: 30px;
     padding-left: 40px;
-    width: 60%;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -579,6 +579,48 @@ header .main-menu ul li a.search svg {
   display: block;
   margin-bottom: 100px;
   position: absolute;
+  top: 0;
+  width: 125%;
+  left: 20%;
+}
+@media (min-width: 1700px) and (max-width: 1900px) {
+  .home-about-us .about-content-wrapper .aboutus-three-img {
+    width: 110%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1700px) {
+  .home-about-us .about-content-wrapper .aboutus-three-img {
+    width: 90%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .home-about-us .about-content-wrapper .aboutus-three-img {
+    width: 80%;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .home-about-us .about-content-wrapper .aboutus-three-img {
+    width: 95%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .home-about-us .about-content-wrapper .aboutus-three-img {
+    width: 90%;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .home-about-us .about-content-wrapper .aboutus-three-img {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .home-about-us .about-content-wrapper .aboutus-three-img {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
 }
 .home-about-us .about-content-wrapper .aboutus-three-img li {
   display: inline-block;
@@ -607,8 +649,8 @@ header .main-menu ul li a.search svg {
   position: relative;
   top: -100px;
   right: 0;
-  width: 15%;
-  height: 100px;
+  width: 16%;
+  height: 150px;
 }
 .home-about-us .triangle-object {
   display: block;
@@ -991,6 +1033,7 @@ header .main-menu ul li a.search svg {
 }
 .our-clients .client-logos li img, .our-vendor-partner .client-logos li img {
   max-width: 100%;
+  display: inline-block;
 }
 .our-clients .partners-logos, .our-vendor-partner .partners-logos {
   display: block;
@@ -1039,6 +1082,7 @@ header .main-menu ul li a.search svg {
 }
 .our-clients .partners-logos li img, .our-vendor-partner .partners-logos li img {
   max-width: 100%;
+  display: inline-block;
 }
 
 .top-solutions-wrapper {
