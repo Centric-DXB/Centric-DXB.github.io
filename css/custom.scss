@@ -127,7 +127,7 @@ header{
         margin-bottom: 0;
         //height: 1070px;
         background: #000;
-        overflow-x: hidden;
+        overflow: hidden;
         // @media (min-width:1300px) and (max-width: 1400px){
         //     height: 700px;
         // }
@@ -155,6 +155,9 @@ header{
             @media (max-width:992px) {
                 left: 50px;
             }
+            &:hover, &:focus{
+                background: url(../images/sliderleftarrow.png) no-repeat -5px 0;
+            }
         }
         .bx-next{
             right: 100px;
@@ -163,6 +166,9 @@ header{
             transform: rotate(-135deg);
             @media (max-width:992px) {
                 right: 50px;
+            }
+            &:hover, &:focus{
+                background: url(../images/sliderrightarrow.png) no-repeat 0 0;
             }
         }
         .slide--content{
@@ -267,8 +273,8 @@ header{
             a{
                 background: var(--white);
                 border-radius: 0;
-                width: 30px;
-                height: 30px;
+                width: 20px;
+                height: 20px;
                 transform: rotate(45deg);
                 margin: 0 10px;
                 &:hover{
@@ -530,6 +536,7 @@ header{
             color: var(--white);
             padding-left: 110px;
             font-family: var(--poppins);
+            margin-bottom: 100px;
             @media (min-width:1300px) and (max-width: 1400px) {
                 padding-bottom: 40px;
             }
@@ -545,37 +552,41 @@ header{
             }
         }
     }
-    .aboutus-three-img{
-        display: block;
-        margin-bottom: 100px;
-        li{
-            display: inline-block;
-            width: 33.33%;
-            position: relative;
-            p{
-                font-size: 16px;
-                color: var(--white);
-            }
-            &:first-child{
-                width: 33%;
-            }
-            &:nth-child(2){
-                width: 20%;
-                top: 30px;
+    .about-content-wrapper{
+        position: relative;
+        .aboutus-three-img{
+            display: block;
+            margin-bottom: 100px;
+            position: absolute;
+            li{
+                display: inline-block;
+                width: 33.33%;
                 position: relative;
-            }
-            &:nth-child(3){
-                width: 20%;
-                position: relative;
-                top: -70px;
-            }
-            &:last-child{
-                background-color: #253B73;
-                position: relative;
-                top: -100px;
-                right: 0;
-                width: 15%;
-                height: 100px;
+                p{
+                    font-size: 16px;
+                    color: var(--white);
+                }
+                &:first-child{
+                    width: 33%;
+                }
+                &:nth-child(2){
+                    width: 20%;
+                    top: 30px;
+                    position: relative;
+                }
+                &:nth-child(3){
+                    width: 20%;
+                    position: relative;
+                    top: -70px;
+                }
+                &:last-child{
+                    background-color: #253B73;
+                    position: relative;
+                    top: -100px;
+                    right: 0;
+                    width: 15%;
+                    height: 100px;
+                }
             }
         }
     }

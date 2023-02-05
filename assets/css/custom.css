@@ -131,7 +131,7 @@ header .main-menu ul li a.search svg {
   border: none;
   margin-bottom: 0;
   background: #000;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .home-slider .bx-wrapper .bx-controls-direction a {
   border: 1px solid #81C357;
@@ -148,6 +148,9 @@ header .main-menu ul li a.search svg {
     left: 50px;
   }
 }
+.home-slider .bx-wrapper .bx-prev:hover, .home-slider .bx-wrapper .bx-prev:focus {
+  background: url(../images/sliderleftarrow.png) no-repeat -5px 0;
+}
 .home-slider .bx-wrapper .bx-next {
   right: 100px;
   background: url(../images/sliderrightarrow.png) no-repeat 0 0;
@@ -157,6 +160,9 @@ header .main-menu ul li a.search svg {
   .home-slider .bx-wrapper .bx-next {
     right: 50px;
   }
+}
+.home-slider .bx-wrapper .bx-next:hover, .home-slider .bx-wrapper .bx-next:focus {
+  background: url(../images/sliderrightarrow.png) no-repeat 0 0;
 }
 .home-slider .bx-wrapper .slide--content {
   position: absolute;
@@ -296,8 +302,8 @@ header .main-menu ul li a.search svg {
 .home-slider .bx-wrapper .bx-pager.bx-default-pager a {
   background: var(--white);
   border-radius: 0;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   transform: rotate(45deg);
   margin: 0 10px;
 }
@@ -543,6 +549,7 @@ header .main-menu ul li a.search svg {
   color: var(--white);
   padding-left: 110px;
   font-family: var(--poppins);
+  margin-bottom: 100px;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .home-about-us .about-us p {
@@ -565,33 +572,37 @@ header .main-menu ul li a.search svg {
     padding-bottom: 70px;
   }
 }
-.home-about-us .aboutus-three-img {
+.home-about-us .about-content-wrapper {
+  position: relative;
+}
+.home-about-us .about-content-wrapper .aboutus-three-img {
   display: block;
   margin-bottom: 100px;
+  position: absolute;
 }
-.home-about-us .aboutus-three-img li {
+.home-about-us .about-content-wrapper .aboutus-three-img li {
   display: inline-block;
   width: 33.33%;
   position: relative;
 }
-.home-about-us .aboutus-three-img li p {
+.home-about-us .about-content-wrapper .aboutus-three-img li p {
   font-size: 16px;
   color: var(--white);
 }
-.home-about-us .aboutus-three-img li:first-child {
+.home-about-us .about-content-wrapper .aboutus-three-img li:first-child {
   width: 33%;
 }
-.home-about-us .aboutus-three-img li:nth-child(2) {
+.home-about-us .about-content-wrapper .aboutus-three-img li:nth-child(2) {
   width: 20%;
   top: 30px;
   position: relative;
 }
-.home-about-us .aboutus-three-img li:nth-child(3) {
+.home-about-us .about-content-wrapper .aboutus-three-img li:nth-child(3) {
   width: 20%;
   position: relative;
   top: -70px;
 }
-.home-about-us .aboutus-three-img li:last-child {
+.home-about-us .about-content-wrapper .aboutus-three-img li:last-child {
   background-color: #253B73;
   position: relative;
   top: -100px;
