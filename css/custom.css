@@ -53,9 +53,6 @@ header .logo {
     text-align: center;
   }
 }
-header .top-main-navigation {
-  backdrop-filter: blur(80px);
-}
 @media (max-width: 768px) {
   header .top-main-navigation {
     background: transparent;
@@ -366,7 +363,7 @@ header .main-menu .mobile-menu {
 .home-slider .bx-wrapper .slide--content h2 {
   color: var(--white);
   font-size: 60px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   width: 100%;
   padding-left: 150px;
 }
@@ -845,13 +842,11 @@ header .main-menu .mobile-menu {
 .industry-wrapper::before {
   position: absolute;
   content: "";
-  width: 60px;
-  height: 60px;
-  background: var(--light-green);
-  border: 1px solid var(--light-green);
-  transform: rotate(45deg);
+  width: 110px;
+  height: 110px;
+  background: url(../images/greenwhitediamond.png) no-repeat 0 0;
   left: 50%;
-  top: -30px;
+  top: -53px;
 }
 .industry-wrapper .industry-heading h2 {
   font-size: 33px;
@@ -929,8 +924,8 @@ header .main-menu .mobile-menu {
   z-index: 99;
 }
 .industry-wrapper .carousel-wrapper .carousel-number h1 {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 110px;
+  font-weight: 900;
   color: rgba(1, 85, 150, 0.5);
   padding: 20px 20px 0 0;
 }
@@ -1348,13 +1343,12 @@ header .main-menu .mobile-menu {
   margin: auto;
   position: relative;
 }
-
-nav {
+.wrapper nav {
   width: 100%;
   border: 1px solid #fff;
 }
 @media (min-width: 1100px) {
-  nav {
+  .wrapper nav {
     float: right;
     width: 25%;
     height: calc(100% - 0rem);
@@ -1362,7 +1356,7 @@ nav {
   }
 }
 @media (min-width: 1200px) {
-  nav {
+  .wrapper nav {
     float: right;
     width: 26.5%;
     height: calc(100% - 0rem);
@@ -1370,7 +1364,7 @@ nav {
   }
 }
 @media (min-width: 1300px) {
-  nav {
+  .wrapper nav {
     float: right;
     width: 26.5%;
     height: calc(100% - 0rem);
@@ -1378,22 +1372,22 @@ nav {
   }
 }
 @media (min-width: 1400px) {
-  nav {
+  .wrapper nav {
     float: right;
     width: 25%;
     height: calc(100% - 0rem);
     border-radius: 0 0 0 0;
   }
 }
-nav ul {
+.wrapper nav ul {
   display: flex;
 }
 @media (min-width: 1100px) {
-  nav ul {
+  .wrapper nav ul {
     display: block;
   }
 }
-nav li {
+.wrapper nav li {
   line-height: 3;
   padding: 0 0rem;
   border-right: 1px solid #f0f0f0;
@@ -1404,76 +1398,80 @@ nav li {
   width: 20%;
 }
 @media (min-width: 1100px) {
-  nav li {
+  .wrapper nav li {
     border-bottom: 1px solid #f0f0f0;
     border-right: none;
     width: 100%;
   }
 }
-nav li h1 {
-  text-align: right;
-  font-size: 70px;
-  padding: 10px 20px 10px 0;
-  color: rgba(255, 255, 255, 0.2);
-}
-@media (min-width: 1300px) and (max-width: 1400px) {
-  nav li h1 {
-    font-size: 55px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-  nav li h1 {
-    font-size: 45px;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  nav li h1 {
-    font-size: 35px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1100px) {
-  nav li h1 {
-    font-size: 35px;
-  }
-}
-nav li div {
+.wrapper nav li div {
   line-height: 50px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-left: 20px;
+  display: block;
+}
+.wrapper nav li div:first-child {
+  margin-top: -30px;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  nav li div {
+  .wrapper nav li div {
     font-size: 18px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  nav li div {
+  .wrapper nav li div {
     font-size: 16px;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  nav li div {
+  .wrapper nav li div {
     font-size: 16px;
   }
 }
 @media (min-width: 992px) and (max-width: 1100px) {
-  nav li div {
+  .wrapper nav li div {
     font-size: 14px;
     line-height: normal;
     padding: 15px 10px;
   }
 }
-nav li.hover {
+.wrapper nav li h1 {
+  text-align: right;
+  font-size: 60px;
+  padding: 10px 20px 10px 0;
+  color: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .wrapper nav li h1 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .wrapper nav li h1 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .wrapper nav li h1 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .wrapper nav li h1 {
+    font-size: 35px;
+  }
+}
+.wrapper nav li.hover {
   background: #81c357;
 }
-nav li.pressed {
+.wrapper nav li.pressed {
   background: rgba(255, 255, 255, 0.7);
 }
-nav li.currentPage {
+.wrapper nav li.currentPage {
   background: #81c357;
 }
-
-#contents {
+.wrapper #contents {
   box-sizing: border-box;
   position: absolute;
   height: calc(100% + 90rem);
@@ -1486,7 +1484,7 @@ nav li.currentPage {
   overflow: hidden;
 }
 @media (min-width: 1100px) {
-  #contents {
+  .wrapper #contents {
     height: calc(100% - 0rem);
     width: calc(79% - 4.5rem);
     top: 0;
@@ -1495,8 +1493,7 @@ nav li.currentPage {
     border-right: none;
   }
 }
-
-article {
+.wrapper article {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1506,30 +1503,30 @@ article {
   top: 0;
   left: -100%;
 }
-article.hide {
+.wrapper article.hide {
   transition: left 0s 0.5s;
 }
-article:nth-of-type(1) {
+.wrapper article:nth-of-type(1) {
   z-index: 5;
 }
-article:nth-of-type(2) {
+.wrapper article:nth-of-type(2) {
   z-index: 4;
 }
-article:nth-of-type(3) {
+.wrapper article:nth-of-type(3) {
   z-index: 3;
 }
-article:nth-of-type(4) {
+.wrapper article:nth-of-type(4) {
   z-index: 2;
 }
-article:nth-of-type(5) {
+.wrapper article:nth-of-type(5) {
   z-index: 1;
 }
-article.show {
+.wrapper article.show {
   transition: left 0.5s;
   left: 0;
   z-index: 6;
 }
-article section {
+.wrapper article section {
   width: 100%;
   color: #fff;
   /*h1{
@@ -1538,42 +1535,42 @@ article section {
 
   }*/
 }
-article section .solutions--content {
+.wrapper article section .solutions--content {
   display: flex;
   font-family: var(--poppins);
 }
 @media (max-width: 1100px) {
-  article section .solutions--content {
+  .wrapper article section .solutions--content {
     flex-direction: column;
   }
 }
-article section .solutions--content div {
+.wrapper article section .solutions--content div {
   width: 33%;
   padding: 200px 50px 0;
   border-right: 1px solid #fff;
   min-height: 1110px;
 }
-article section .solutions--content div:last-child {
+.wrapper article section .solutions--content div:last-child {
   border-right: none;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  article section .solutions--content div {
+  .wrapper article section .solutions--content div {
     min-height: 1030px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  article section .solutions--content div {
+  .wrapper article section .solutions--content div {
     min-height: 1030px;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  article section .solutions--content div {
+  .wrapper article section .solutions--content div {
     min-height: 1030px;
     width: 100%;
   }
 }
 @media (min-width: 992px) and (max-width: 1100px) {
-  article section .solutions--content div {
+  .wrapper article section .solutions--content div {
     min-height: auto;
     width: 100%;
     padding: 50px 50px 50px;
@@ -1582,16 +1579,16 @@ article section .solutions--content div:last-child {
   }
 }
 @media (max-width: 767px) {
-  article section .solutions--content div {
+  .wrapper article section .solutions--content div {
     width: 100%;
   }
 }
-article section .solutions--content div h1 {
+.wrapper article section .solutions--content div h1 {
   font-size: 22px;
   margin: 0 0 2rem 0;
   position: relative;
 }
-article section .solutions--content div h1::before {
+.wrapper article section .solutions--content div h1::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1602,61 +1599,61 @@ article section .solutions--content div h1::before {
   transform: rotate(45deg);
 }
 @media (max-width: 1100px) {
-  article section .solutions--content div h1::before {
+  .wrapper article section .solutions--content div h1::before {
     display: none;
   }
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  article section .solutions--content div h1 {
+  .wrapper article section .solutions--content div h1 {
     font-size: 20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  article section .solutions--content div h1 {
+  .wrapper article section .solutions--content div h1 {
     font-size: 18px;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  article section .solutions--content div h1 {
+  .wrapper article section .solutions--content div h1 {
     font-size: 18px;
   }
 }
 @media (min-width: 992px) and (max-width: 1100px) {
-  article section .solutions--content div h1 {
+  .wrapper article section .solutions--content div h1 {
     font-size: 16px;
     margin-bottom: 1rem;
   }
 }
-article section .solutions--content div p {
+.wrapper article section .solutions--content div p {
   font-size: 22px;
   line-height: 30px;
   min-height: 300px;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
-  article section .solutions--content div p {
+  .wrapper article section .solutions--content div p {
     font-size: 18px;
     min-height: 300px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
-  article section .solutions--content div p {
+  .wrapper article section .solutions--content div p {
     font-size: 16px;
     min-height: 300px;
   }
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
-  article section .solutions--content div p {
+  .wrapper article section .solutions--content div p {
     font-size: 14px;
     min-height: 300px;
   }
 }
 @media (min-width: 992px) and (max-width: 1100px) {
-  article section .solutions--content div p {
+  .wrapper article section .solutions--content div p {
     font-size: 14px;
     min-height: 100px;
   }
 }
-article section .solutions--content div img {
+.wrapper article section .solutions--content div img {
   max-width: 100%;
 }
 
@@ -1670,13 +1667,11 @@ article section .solutions--content div img {
 .our-transparency::before {
   position: absolute;
   content: "";
-  width: 60px;
-  height: 60px;
-  background: var(--light-green);
-  border: 1px solid var(--light-green);
-  transform: rotate(45deg);
+  width: 110px;
+  height: 110px;
+  background: url(../images/greenwhitediamond.png) no-repeat 0 0;
   left: 50%;
-  top: -30px;
+  top: -53px;
 }
 .our-transparency .transparency-heading {
   display: block;
