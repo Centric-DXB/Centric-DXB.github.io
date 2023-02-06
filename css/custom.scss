@@ -910,6 +910,7 @@ header{
                 height: 130px;
                 overflow: hidden;
                 margin-bottom: 20px;
+                opacity: 0;
                 @media (min-width: 1200px) and (max-width: 1300px) {
                     font-size: 22px;
                 }
@@ -958,6 +959,7 @@ header{
                 p{
                     overflow: auto;
                     height: auto;
+                    opacity: 1;
                 }
             }    
         }
@@ -1233,6 +1235,25 @@ header{
         height:calc(100% - 0rem);
         border-radius:0 0 0 0;
       }
+      @media (min-width:1200px){
+        float:right;
+        width:26.5%;
+        height:calc(100% - 0rem);
+        border-radius:0 0 0 0;
+      }
+      @media (min-width:1300px){
+        float:right;
+        width:26.5%;
+        height:calc(100% - 0rem);
+        border-radius:0 0 0 0;
+      }
+      @media (min-width:1400px){
+        float:right;
+        width:25%;
+        height:calc(100% - 0rem);
+        border-radius:0 0 0 0;
+      }
+      
       
       ul{
         display:flex;

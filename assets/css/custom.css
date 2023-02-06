@@ -982,6 +982,7 @@ header .main-menu .mobile-menu {
   height: 130px;
   overflow: hidden;
   margin-bottom: 20px;
+  opacity: 0;
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .industry-wrapper .carousel-wrapper .carousel-content p {
@@ -1039,6 +1040,7 @@ header .main-menu .mobile-menu {
 .industry-wrapper .carousel-wrapper:hover .carousel-content p {
   overflow: auto;
   height: auto;
+  opacity: 1;
 }
 .industry-wrapper .slick-carousel .slick-slide {
   margin: 0 10px;
@@ -1352,6 +1354,30 @@ nav {
   border: 1px solid #fff;
 }
 @media (min-width: 1100px) {
+  nav {
+    float: right;
+    width: 25%;
+    height: calc(100% - 0rem);
+    border-radius: 0 0 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
+    float: right;
+    width: 26.5%;
+    height: calc(100% - 0rem);
+    border-radius: 0 0 0 0;
+  }
+}
+@media (min-width: 1300px) {
+  nav {
+    float: right;
+    width: 26.5%;
+    height: calc(100% - 0rem);
+    border-radius: 0 0 0 0;
+  }
+}
+@media (min-width: 1400px) {
   nav {
     float: right;
     width: 25%;
