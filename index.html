@@ -26,6 +26,12 @@
                 <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
                     <div class="top-main-navigation">
                         <ul>
+                            <li>
+                                <select name="" id="">
+                                    <option value="" selected>Share Price 1120 - TDWL  |  82.40 SAR  |  -2.01% -1.80</option>
+                                    <option value="">Share Price 1120 - TDWL  |  82.40 SAR  |  -2.01% -1.80</option>
+                                </select>
+                            </li>
                             <li><a href="#">Careers</a></li>
                             <li><a href="#">Resources</a></li>
                             <li><a href="#">Support</a></li>
@@ -40,7 +46,17 @@
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#" class="search"><i class="fas fa-search"></i></a></li>
                         </ul>
+                        <div class="lang-toggle1">
+                            Eng
+                            <label class="switch1">
+                                <input type="checkbox">
+                                <span class="slider1 round"></span>
+                            </label>
+                            عربي
+                        </div>
+                        <div class="mobile-menu"><i class="fas fa-bars"></i></div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -782,6 +798,10 @@
                     
                 ]
             });
+            $('.mobile-menu').click(function(){
+                $('.main-menu ul').toggleClass('active');
+            });
+
         });
       </script>
 </body>
