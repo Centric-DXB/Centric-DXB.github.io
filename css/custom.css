@@ -11,7 +11,7 @@
   --slider-active-green: #81C357;
   --poppins: "Poppins", sans-serif;
   --roboto: "Roboto", sans-serif;
-  --dark-purple: #03004C;
+  --dark-purple: #122D6E;
   --black-color: #000000;
   --carousel-hover-bg: #03004C;
 }
@@ -52,7 +52,7 @@ header {
 }
 header.fixed {
   position: fixed;
-  background: var(--white);
+  background: var(--blue-normal);
   transition: all 0.2s linear;
   top: 0;
   left: 0;
@@ -403,10 +403,10 @@ header .main-menu .mobile-menu {
 }
 .home-slider .bx-wrapper .slide--content h2 {
   color: var(--white);
-  font-size: 60px;
+  font-size: 45px;
   text-transform: capitalize;
   width: 100%;
-  padding-left: 150px;
+  padding-left: 70px;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .home-slider .bx-wrapper .slide--content h2 {
@@ -445,10 +445,10 @@ header .main-menu .mobile-menu {
   content: "";
   position: absolute;
   width: 5px;
-  height: 150px;
+  height: 100px;
   background: var(--light-green);
   left: 0;
-  top: 20px;
+  top: 10px;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .home-slider .bx-wrapper .slide--content h2::before {
@@ -749,12 +749,11 @@ header .main-menu .mobile-menu {
 .home-about-us .about-us h2::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: var(--white);
+  width: 30px;
+  height: 30px;
+  background: url(../images/logowhitecircle.svg) no-repeat 0 0;
   left: 60px;
-  top: 12px;
-  transform: rotate(45deg);
+  top: 6px;
 }
 .home-about-us .about-us p {
   font-size: 20px;
@@ -1046,12 +1045,11 @@ header .main-menu .mobile-menu {
 .industry-wrapper .industry-heading h2::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: var(--white);
+  width: 30px;
+  height: 30px;
+  background: url(../images/logowhitecircle.svg) no-repeat 0 0;
   left: 60px;
-  top: 12px;
-  transform: rotate(45deg);
+  top: 6px;
 }
 .industry-wrapper .carousel-wrapper {
   overflow: hidden;
@@ -1078,6 +1076,11 @@ header .main-menu .mobile-menu {
   font-weight: 900;
   color: rgba(1, 85, 150, 0.5);
   padding: 20px 20px 0 0;
+}
+@media (max-width: 992px) {
+  .industry-wrapper .carousel-wrapper .carousel-number h1 {
+    font-size: 80px;
+  }
 }
 .industry-wrapper .carousel-wrapper .carousel-content {
   position: absolute;
@@ -1296,12 +1299,11 @@ header .main-menu .mobile-menu {
 .our-clients .our-clients-heading h2::before, .our-clients .our-partner-heading h2::before, .our-vendor-partner .our-clients-heading h2::before, .our-vendor-partner .our-partner-heading h2::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  background: var(--blue-normal);
+  width: 30px;
+  height: 30px;
+  background: url(../images/logocolorcircle.svg) no-repeat 0 0;
   left: 200px;
-  top: 12px;
-  transform: rotate(45deg);
+  top: 6px;
 }
 @media (max-width: 767px) {
   .our-clients .our-clients-heading h2::before, .our-clients .our-partner-heading h2::before, .our-vendor-partner .our-clients-heading h2::before, .our-vendor-partner .our-partner-heading h2::before {
@@ -1386,12 +1388,11 @@ header .main-menu .mobile-menu {
 .top-solutions-wrapper .top-solutions-heading h2::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  background: var(--white);
+  width: 30px;
+  height: 30px;
+  background: url(../images/logowhitecircle.svg) no-repeat 0 0;
   left: 61px;
-  top: 13px;
-  transform: rotate(45deg);
+  top: 6px;
 }
 @media (max-width: 992px) {
   .top-solutions-wrapper .top-solutions-heading h2::before {
@@ -1875,12 +1876,11 @@ header .main-menu .mobile-menu {
 .our-transparency .transparency-heading h2::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  background: var(--white);
+  width: 30px;
+  height: 30px;
+  background: url(../images/logowhitecircle.svg) no-repeat 0 0;
   left: 200px;
-  top: 12px;
-  transform: rotate(45deg);
+  top: 6px;
 }
 @media screen and (max-width: 767px) {
   .our-transparency .transparency-heading h2::before {

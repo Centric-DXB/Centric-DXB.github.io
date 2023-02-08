@@ -12,7 +12,7 @@
     --slider-active-green: #81C357;
     --poppins: 'Poppins', sans-serif;
     --roboto: 'Roboto', sans-serif;
-    --dark-purple: #03004C;
+    --dark-purple: #122D6E;
     --black-color: #000000;
     --carousel-hover-bg: #03004C;
 }
@@ -52,7 +52,7 @@ header{
     }
     &.fixed{
         position: fixed;
-        background: var(--white);
+        background: var(--blue-normal);
         transition: all .2s linear;
         top: 0;
         left: 0;
@@ -395,10 +395,10 @@ header{
             }
             h2{
                 color: var(--white);
-                font-size: 60px;
+                font-size: 45px;
                 text-transform: capitalize;
                 width: 100%;
-                padding-left: 150px;
+                padding-left: 70px;
                 @media (min-width:1300px) and (max-width: 1400px){
                     font-size: 50px;
                     padding-left: 100px;
@@ -426,10 +426,10 @@ header{
                     content: '';
                     position: absolute;
                     width: 5px;
-                    height: 150px;
+                    height: 100px;
                     background: var(--light-green);
                     left: 0;
-                    top: 20px;
+                    top: 10px;
                     @media (min-width:1300px) and (max-width: 1400px){
                         top: 10px;
                         left: 10px;
@@ -729,12 +729,12 @@ header{
             &::before{
                 content: '';
                 position: absolute;
-                width: 20px;
-                height: 20px;
-                background: var(--white);
+                width: 30px;
+                height: 30px;
+                background: url(../images/logowhitecircle.svg) no-repeat 0 0;
                 left: 60px;
-                top: 12px;
-                transform: rotate(45deg);
+                top: 6px;
+                //transform: rotate(45deg);
             }
         }
         p{
@@ -974,12 +974,12 @@ header{
             &::before{
                 content: '';
                 position: absolute;
-                width: 20px;
-                height: 20px;
-                background: var(--white);
+                width: 30px;
+                height: 30px;
+                background: url(../images/logowhitecircle.svg) no-repeat 0 0;
                 left: 60px;
-                top: 12px;
-                transform: rotate(45deg);
+                top: 6px;
+                //transform: rotate(45deg);
             }
         }
     }
@@ -1006,6 +1006,9 @@ header{
                 font-weight: 900;
                 color: rgba($color: #015596, $alpha: .5);
                 padding: 20px 20px 0 0;
+                @media (max-width: 992px) {
+                    font-size: 80px;
+                }
             }
         }
         .carousel-content{
@@ -1194,12 +1197,12 @@ header{
             &::before{
                 content: '';
                 position: absolute;
-                width: 15px;
-                height: 15px;
-                background: var(--blue-normal);
+                width: 30px;
+                height: 30px;
+                background: url(../images/logocolorcircle.svg) no-repeat 0 0;
                 left: 200px;
-                top: 12px;
-                transform: rotate(45deg);
+                top: 6px;
+                //transform: rotate(45deg);
                 @media (max-width: 767px){
                     left: 160px;
                 }
@@ -1332,12 +1335,12 @@ header{
             &::before{
                 content: '';
                 position: absolute;
-                width: 15px;
-                height: 15px;
-                background: var(--white);
+                width: 30px;
+                height: 30px;
+                background: url(../images/logowhitecircle.svg) no-repeat 0 0;
                 left: 61px;
-                top: 13px;
-                transform: rotate(45deg);
+                top: 6px;
+                //transform: rotate(45deg);
                 @media (max-width: 992px){
                     left: 60px;
                     top: 6px;
@@ -1781,12 +1784,12 @@ header{
             &::before{
                 content: '';
                 position: absolute;
-                width: 15px;
-                height: 15px;
-                background: var(--white);
+                width: 30px;
+                height: 30px;
+                background: url(../images/logowhitecircle.svg) no-repeat 0 0;
                 left: 200px;
-                top: 12px;
-                transform: rotate(45deg);
+                top: 6px;
+                //transform: rotate(45deg);
                 @media screen and (max-width: 767px) {
                     left: 60px;
                 }
