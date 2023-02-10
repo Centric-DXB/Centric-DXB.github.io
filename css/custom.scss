@@ -1998,6 +1998,7 @@ header{
                 flex-direction: column;
                 font-size: 14px;
                 font-family: var(--poppins);
+                margin-top: -20px;
                 span{
                     border-bottom: 1px solid rgba($color: #fff, $alpha: .5);
                     padding: 5px 0 5px 20px;
@@ -2137,13 +2138,13 @@ header{
         .transparency-icon{
             img.mobile{
                 display: none;
-                @media (max-width: 600px) {
+                @media (max-width: 767px) {
                     display: block;
                 }
             }
             img.desktop{
                 display: block;
-                @media (max-width: 600px) {
+                @media (max-width: 767px) {
                     display: none;
                 }
             }
@@ -2219,6 +2220,9 @@ header{
                 font-size: 29px;
                 color: var(--blue-normal);
                 margin-bottom: 10px;
+                @media (max-width: 600px) {
+                    font-size: 21px;
+                }
             }
             a{
                 color: var(--white);
@@ -2230,6 +2234,9 @@ header{
                 position: relative;
                 left: -60px;
                 top: 30px;
+                @media (max-width: 600px) {
+                    left: -40px;
+                }
             }
         }
         .pdf-file{
@@ -2358,7 +2365,7 @@ header{
                 @media (max-width: 767px){
                     width: 60%;
                     height: 1px;
-                    left: 150px;
+                    left: 20%;
                     top: 120px;
                 }
             }
