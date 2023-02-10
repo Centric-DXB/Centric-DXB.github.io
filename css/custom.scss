@@ -1086,7 +1086,7 @@ header{
                     }
                     @media (max-width:1200px) {
                         width: 70%;
-                        top: 0;
+                        top: 40px;
                     }
                 }
                 &:last-child{
@@ -1166,8 +1166,24 @@ header{
         display: block;
         text-align: center;
         padding-top: 30px;
+        @media (max-width: 992px) {
+            text-align: center;
+        }
         img{
-            width: 80%;
+            //width: 80%;
+            &.mobile{
+                display: none;
+                @media (max-width: 992px) {
+                    display: inline-block;
+                    //max-width: 100%;
+                    //width: 100%;
+                }
+            }
+            &.desktop{
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -1968,7 +1984,7 @@ header{
             cursor: pointer;
             font-size: 20px;
             position: relative;
-            border: 1px solid var(--white);
+            border-top: 1px solid var(--white);
             //border-left:none;
             //border-right:none;
             h1{
@@ -2118,11 +2134,26 @@ header{
         display: flex;
         margin-top: 20px;
         position: relative;
+        .transparency-icon{
+            img.mobile{
+                display: none;
+                @media (max-width: 600px) {
+                    display: block;
+                }
+            }
+            img.desktop{
+                display: block;
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+        }
         @media (max-width: 992px){
             margin-bottom: 50px;
         }
         @media (max-width: 767px){
             margin-bottom: 50px;
+            padding: 0 40px;
         }
         &::after{
             position: absolute;
@@ -2145,13 +2176,13 @@ header{
                 right: -5px;
             }
             @media (min-width:768px) and (max-width: 992px){
-                left: 150px;
+                left: 20%;
                 top: 190px;
                 width: 300px;
                 height: 1px;
             }
             @media (max-width: 767px){
-                left: 150px;
+                left: 15%;
                 top: 190px;
                 width: 300px;
                 height: 1px;
@@ -2170,6 +2201,9 @@ header{
             h3{
                 font-size: 24px;
                 color: var(--white);
+                @media (max-width: 600px) {
+                    font-size: 18px;
+                }
             }
             h2{
                 font-size: 40px;
@@ -2220,6 +2254,9 @@ header{
         p{
             color: var(--white);
             font-size: 11px;
+            @media (max-width: 600px) {
+                padding: 0 30px;
+            }
         }
     }
     .transparency-wrapper.no-border{
@@ -2247,7 +2284,7 @@ header{
         }
     }
     .footer-location{
-        display: flex;
+        display: inline-flex;
         justify-content: space-between;
         align-items: center;
         padding: 30px 60px;
@@ -2278,6 +2315,7 @@ header{
         .location{
             display: flex;
             position: relative;
+            width: 30%;
             @media (min-width:768px) and (max-width: 992px){
                 width: 100%;
                 margin-bottom: 80px;
@@ -2345,6 +2383,18 @@ header{
                 }
                 @media (min-width:768px) and (max-width: 992px){
                     width: 100%;
+                }
+                &.jeddah{
+                    background: url(../images/jeddah.svg) no-repeat 0 0;
+                    padding-left: 90px;
+                }
+                &.riyadh{
+                    background: url(../images/riyadh.svg) no-repeat 0 0;
+                    padding-left: 120px;
+                }
+                &.alkhobar{
+                    background: url(../images/khobar.svg) no-repeat 0 0;
+                    padding-left: 130px;
                 }
                 h3{
                     font-size: 24px;
@@ -2492,7 +2542,7 @@ header{
             .newsletter-form{
                 display: block;
                 @media (max-width:991px) {
-                    width: 70%;
+                    width: 90%;
                 }
                 input[type=text]{
                     background: var(--white);
