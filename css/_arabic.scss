@@ -1,0 +1,46 @@
+.arabic {
+  header {
+    .logo {
+      padding: 15px 30px 15px 0px;
+    }
+  }
+  .bx-wrapper {
+    .bx-viewport {
+      direction: ltr;
+    }
+  }
+  .slick-list {
+    direction: initial;
+  }
+  
+  .home-about-us .about-us,
+  .top-solutions-wrapper .top-solutions-heading,
+  .our-transparency .transparency-heading,
+  .industry-wrapper .industry-heading,
+  .our-clients .our-clients-heading,
+  .our-clients .our-partner-heading,
+  .our-vendor-partner .our-clients-heading,
+  .our-vendor-partner .our-partner-heading {
+    h2 {
+      padding-left: 0px;
+      padding-right: 110px;
+      &::before {
+        left: auto;
+        right: 60px;
+      }
+      &::after {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+  .industry-wrapper .slick-carousel .slick-prev {
+    right: auto;
+    left: 170px;
+  }
+  .industry-wrapper .slick-carousel .slick-next {
+    right: auto;
+    top: -50px;
+    left: 240px;
+  }
+}
