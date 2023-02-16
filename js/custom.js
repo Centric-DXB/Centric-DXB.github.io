@@ -2,16 +2,20 @@
         auto: true,
         stopAutoOnClick: true
     });
+    $('body.arabic .sliderHome').bxSlider({
+        auto: true,
+        stopAutoOnClick: true,
+    });
     var item_num = $('nav li').length + 1;
     var btn_state = true;
     
-    $('nav li').hover(function(){
+    $('nav.topsolution li').hover(function(){
         $(this).addClass('hover');
     },function(){
         $(this).removeClass('hover');
     });
     
-    $('nav li').on('click',function(){
+    $('nav.topsolution li').on('click',function(){
         if(btn_state){
             btn_state = !btn_state;
             $('nav li').removeClass('currentPage');
@@ -27,6 +31,8 @@
             },500);
         }
     });
+
+    // DESKTOP CAROUSEL
     $('.slick-carousel').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -182,6 +188,7 @@
     return false;
     });
     
+    // ENGLISH CAROUSEL
     $('.seminar-carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -226,6 +233,8 @@
             },
         ]
     });
+
+    
     $('.lang-toggle1 input:checkbox').change(function(){
         if($(this).is(':checked')){
             $('body').addClass('arabic');
