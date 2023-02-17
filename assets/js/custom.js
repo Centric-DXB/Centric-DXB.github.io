@@ -1,10 +1,8 @@
+
     $('.sliderHome').bxSlider({
         auto: true,
-        stopAutoOnClick: true
-    });
-    $('body.arabic .sliderHome').bxSlider({
-        auto: true,
         stopAutoOnClick: true,
+
     });
     var item_num = $('nav li').length + 1;
     var btn_state = true;
@@ -41,6 +39,15 @@
         autoplaySpeed: 2000,
         responsive: [
             {
+            breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
             breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
@@ -52,7 +59,7 @@
             {
             breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     //infinite: true,
                     //dots: true
@@ -233,7 +240,7 @@
             },
         ]
     });
-
+    
     
     $('.lang-toggle1 input:checkbox').change(function(){
         if($(this).is(':checked')){
@@ -242,3 +249,6 @@
             $('body').removeClass('arabic');
         }
     });
+    
+    
+    
