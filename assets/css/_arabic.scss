@@ -33,9 +33,44 @@
         }
       }
     }
+    .mobile--header{
+      .menu-menu{
+        .navigation{
+          ul{
+            li{
+              display: none;
+              &.arabic-text{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .bx-wrapper {
     
+  }
+  .wrapper{
+    article{
+      section{
+        .solutions--content{
+          .three-two-column{
+            .solution-content-wrapper{
+              .solution--data{
+                display: none;
+                &.arabic-text{
+                  display: block;
+                  h1{
+                    font-family: var(--arabic-font);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .slick-list {
     direction: initial;

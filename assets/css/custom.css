@@ -20,6 +20,21 @@
 .arabic header .main-menu .lang-toggle1 .slider1::before {
   left: -20px;
 }
+.arabic header .mobile--header .menu-menu .navigation ul li {
+  display: none;
+}
+.arabic header .mobile--header .menu-menu .navigation ul li.arabic-text {
+  display: block;
+}
+.arabic .wrapper article section .solutions--content .three-two-column .solution-content-wrapper .solution--data {
+  display: none;
+}
+.arabic .wrapper article section .solutions--content .three-two-column .solution-content-wrapper .solution--data.arabic-text {
+  display: block;
+}
+.arabic .wrapper article section .solutions--content .three-two-column .solution-content-wrapper .solution--data.arabic-text h1 {
+  font-family: var(--arabic-font);
+}
 .arabic .slick-list {
   direction: initial;
 }
@@ -697,6 +712,9 @@ header .mobile--header .menu-menu .navigation ul li {
   font-size: 18px;
   padding: 0 0 0 20px;
   text-align: center;
+}
+header .mobile--header .menu-menu .navigation ul li.arabic-text {
+  display: none;
 }
 header .mobile--header .menu-menu .navigation ul li a {
   color: var(--white);
@@ -3157,6 +3175,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 0;
   padding: 400px 30px 0 30px;
   transition: all 0.2s linear;
+}
+.wrapper article section .solutions--content .three-two-column .solution-content-wrapper .solution--data.arabic-text {
+  display: none;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .wrapper article section .solutions--content .three-two-column .solution-content-wrapper .solution--data {
