@@ -19,6 +19,7 @@
     --seminar-green-color: #6CC24A;
     --poppins: 'Poppins', sans-serif;
     --roboto: 'Roboto', sans-serif;
+    --arabic-font: 'Droid Arabic Kufi';
     --font-weight-lighter: 100;
     --font-weight-light: 200;
     --font-weight-normal: 300;
@@ -67,7 +68,6 @@ body{
 
 body.arabic{
     direction: rtl;
-    font-family: 'Droid Arabic Kufi';
 }
 
 
@@ -165,6 +165,9 @@ header{
                 line-height: 40px;
                 text-transform: uppercase;
                 font-family: var(--poppins);
+                &.arabic-text{
+                    display: none;
+                }
                 @media (min-width:992px) and (max-width:1100px) {
                     padding: 0 10px;
                     font-size: 11px;
@@ -230,6 +233,9 @@ header{
                 line-height: 40px;
                 text-transform: uppercase;
                 font-family: var(--poppins);
+                &.arabic-text{
+                    display: none;
+                }
                 @media (min-width:992px) and (max-width:1100px) {
                     padding: 0 10px;
                     font-size: 11px;
@@ -419,6 +425,9 @@ header{
 
 
 // HOME PAGE SLIDER
+.home-slider--arabic{
+    display: none;
+}
 .home-slider{
     display:block;
     margin-top: -80px;
@@ -493,6 +502,11 @@ header{
             }
             &:hover, &:focus{
                 background: url(../images/sliderrightarrow.png) no-repeat 0 0;
+            }
+        }
+        .slide--content{
+            &.arabic-text{
+                display: none;
             }
         }
         .slide--content{
@@ -1000,6 +1014,9 @@ header{
         padding: 100px 0 100px;
     }
     .about-us{
+        &.arabic-text{
+            display: none;
+        }
         h2{
             font-size: 33px;
             font-weight: 500;
@@ -1254,6 +1271,9 @@ header{
             top: 60px;
             z-index: 99;
             font-size: 23px;
+            &.arabic-text{
+                display: none;
+            }
             @media (min-width: 1300px) and (max-width: 1400px) {
                 background-size: contain;
                 font-size: 18px;
@@ -1301,6 +1321,7 @@ header{
                 height: 160px;
                 top: 60px;
                 left: 70px;
+                display: none;
             }
         }
     }
@@ -1317,6 +1338,9 @@ header{
             top: 80px;
             z-index: 99;
             font-size: 23px;
+            &.arabic-text{
+                display: none;
+            }
             @media (min-width: 1300px) and (max-width: 1400px) {
                 left: -240px;
                 font-size: 18px;
@@ -1374,6 +1398,7 @@ header{
                 width: 130px;
                 height: 50px;
                 top: 130px;
+                display: none;
             }
         }
     }
@@ -1390,6 +1415,9 @@ header{
             top: 230px;
             z-index: 99;
             font-size: 23px;
+            &.arabic-text{
+                display: none;
+            }
             @media (min-width: 1300px) and (max-width: 1400px) {
                 background-size: contain;
                 width: 420px;
@@ -1447,6 +1475,7 @@ header{
                 padding: 20px 0 0 40px;
                 font-size: 10px;
                 top: 180px;
+                display: none;
             }
         }
     }
@@ -1459,6 +1488,9 @@ header{
             @media (max-width: 768px) {
                 background: url(../images/triangleshape.png) no-repeat 0 center;
                 background-size: contain;
+            }
+            @media (max-width: 550px) {
+                display: none;
             }
             .side {
                 position: absolute;
@@ -2004,6 +2036,9 @@ header{
         }
     }
     .industry-heading{
+        &.arabic-text{
+            display: none;
+        }
         h2{
             font-size: 33px;
             font-weight: 500;
@@ -2097,6 +2132,9 @@ header{
             overflow: hidden;
             height: 220px;
             transition: all .2s linear;
+            &.arabic-text{
+                display: none;
+            }
             h2{
                 font-size: 36px;
                 color: var(--white);
@@ -2253,6 +2291,9 @@ header{
     padding: 100px 0;
     .our-clients-heading, .our-partner-heading{
         display: block;
+        &.arabic-text{
+            display: none;
+        }
         h2{
             font-size: 30px;
             color: var(--blue-color);
@@ -2383,6 +2424,9 @@ header{
     }
     .top-solutions-heading{
         display: block;
+        &.arabic-text{
+            display: none;
+        }
         h2{
             font-size: 33px;
             color: var(--white);
@@ -2934,6 +2978,9 @@ header{
     }
     .transparency-heading{
         display: block;
+        &.arabic-text{
+            display: none;
+        }
         h2{
             font-size: 30px;
             color: var(--white);
@@ -2979,6 +3026,9 @@ header{
         display: flex;
         margin-top: 20px;
         position: relative;
+        &.arabic-text{
+            display: none;
+        }
         .transparency-icon{
             img.mobile{
                 display: none;
@@ -3136,6 +3186,9 @@ header{
     .terms-data{
         display:block;
         padding: 50px 100px 0;
+        &.arabic-text{
+            display: none;
+        }
         @media (max-width:992px){
             padding: 50px 0 0;
         }
@@ -3306,6 +3359,9 @@ header{
                         padding: 80px 0 0 0;
                     }
                 }
+                &.arabic-text{
+                    display: none;
+                }
                 h3{
                     font-size: 24px;
                     font-weight: 500;
@@ -3322,6 +3378,9 @@ header{
     .footer-company-info{
         display:block;
         padding: 10px 0 0 0;
+        &.arabic-text{
+            display: none;
+        }
         .contact-info{
             display: block;
 
@@ -3356,6 +3415,9 @@ header{
             width: 48%;
             flex-direction: column;
             border-right:1px solid #73BC45;
+            &.arabic-text{
+                display: none;
+            }
             @media (max-width: 991px) {
                 margin-bottom: 30px;
                 padding-bottom: 30px;
@@ -3415,6 +3477,9 @@ header{
         .footer-social{
             display: inline-block;
             width: 45%;
+            &.arabic-text{
+                display: none;
+            }
             @media screen and (max-width: 991px) {
                 //margin-bottom: 50px;
                 order: 2;
@@ -3452,6 +3517,9 @@ header{
             display: inline-block;
             width: 50%;
             color: var(--white);
+            &.arabic-text{
+                display: none;
+            }
             @media (max-width: 991px) {
                 margin-bottom: 50px;
                 width: 100%;
@@ -3496,6 +3564,9 @@ header{
     .footer-bottom{
         padding: 0 0 20px;
         font-family: var(--poppins);
+        &.arabic-text{
+            display: none;
+        }
         @media screen and (max-width: 991px) {
             //text-align: center;
         }
