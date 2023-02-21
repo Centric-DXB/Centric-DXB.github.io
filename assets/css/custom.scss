@@ -32,6 +32,18 @@ $color: #253B73;
 //$background: url(../images/triangleobject.png);
 $speed: 5;
 
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    src: url('../fonts/DroidArabicKufi.eot');
+    src: url('../fonts/DroidArabicKufi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidArabicKufi.woff2') format('woff2'),
+        url('../fonts/DroidArabicKufi.woff') format('woff'),
+        url('../fonts/DroidArabicKufi.ttf') format('truetype'),
+        url('../fonts/DroidArabicKufi.svg#DroidArabicKufi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 html, body, a, p, header, footer, form, section, article, textarea, input, ul, li, ol, h1, h2, h3, h4, h5, h6, span, div, button, select, option, label, table, tr, td, th, thead, tbody, tfoot, caption, blockquote, pre, code, address, dl, dt, dd, fieldset, legend, object, iframe, img, small, strong, em, b, i, u, s, del, ins, sup, sub, abbr, acronym, q, cite, dfn, samp, kbd, var, tt, center, object, embed, param, video, audio, canvas, details, summary, menu, menuitem, command, keygen, mark, output, progress, meter, time, datalist{
     padding: 0;
@@ -55,6 +67,7 @@ body{
 
 body.arabic{
     direction: rtl;
+    font-family: 'Droid Arabic Kufi';
 }
 
 
@@ -3634,3 +3647,14 @@ header{
       outline: 0;
     }
   }
+
+
+
+// PIMCORE CSS HANDLER
+.pimcore_block_plus{
+    a{
+        span.x-btn-wrap{
+            height:auto;
+        }
+    } 
+} 
