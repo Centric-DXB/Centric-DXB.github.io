@@ -2,7 +2,6 @@
     $('.sliderHome').bxSlider({
         auto: true,
         stopAutoOnClick: true,
-
     });
     // $('.sliderHome--arabic').bxSlider({
     //     auto: true,
@@ -81,6 +80,63 @@
             },
             {
             breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            
+        ]
+    });
+
+
+    $('.aboutus-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: false,
+        responsive: [
+            {
+            breakpoint: 1400,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
+            breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
+            breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
+            breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
+            breakpoint: 500,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -254,6 +310,8 @@
             $('body').removeClass('arabic');
         }
     });
+
+    
     
     
     
