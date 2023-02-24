@@ -861,7 +861,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .home-slider .bx-wrapper .slide--content {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 20%;
   width: 55%;
 }
@@ -912,6 +912,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 40px;
   width: 100%;
   padding-left: 70px;
+  padding-top: 10px;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .home-slider .bx-wrapper .slide--content h2 {
@@ -992,6 +993,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     left: 0;
     height: 70px;
   }
+}
+.home-slider .bx-wrapper .slide--content h2 span {
+  display: block;
+  font-size: 18px;
+  padding-top: 10px;
 }
 .home-slider .bx-wrapper .bx-pager {
   bottom: 100px;
@@ -4003,8 +4009,26 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-top: 30px;
   font-size: 14px;
 }
-.foot .footer-company-info .contact-info a {
+.foot .footer-company-info .contact-info .info-detail {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 36px;
+  background: var(--dark-purple);
+  border-radius: 50px;
+  margin-right: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.foot .footer-company-info .contact-info .info-detail svg {
+  margin-right: 10px;
+}
+.foot .footer-company-info .contact-info .info-detail a {
   color: var(--white);
+  text-decoration: none;
+}
+.foot .footer-company-info .contact-info .info-detail:hover {
+  background: var(--footer-bg);
+  transition: all 0.2s ease-in-out;
 }
 .foot .footer-links {
   display: block;
