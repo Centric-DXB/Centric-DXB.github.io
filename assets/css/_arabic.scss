@@ -139,6 +139,26 @@
         display: none;
         &.arabic-text{
           display: inline-block;
+          @media (min-width: 1300px) and (max-width: 1400px) {
+            right: -250px;
+            background-size: contain;
+            padding: 0 0 0 30px;
+          }
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            right: -250px;
+            background-size: contain;
+            padding: 0 0 0 30px;
+          }
+          @media (min-width: 1100px) and (max-width: 1200px) {
+            right: -200px;
+            background-size: contain;
+            padding: 0 0 0 30px;
+          }
+          @media (min-width: 992px) and (max-width: 1100px) {
+            right: -200px;
+            background-size: contain;
+            padding: 0 0 0 30px;
+          }
         }
         left: unset;
         right: -360px;
@@ -153,7 +173,16 @@
         &.arabic-text{
           display: inline-block;
           @media (min-width: 1300px) and (max-width: 1400px) {
-            
+            background-size: contain;
+          }
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            background-size: contain;
+          }
+          @media (min-width: 1100px) and (max-width: 1200px) {
+            background-size: contain;
+          }
+          @media (min-width: 992px) and (max-width: 1100px) {
+            background-size: contain;
           }
         }
         left: unset;
@@ -167,6 +196,21 @@
         display: none;
         &.arabic-text{
           display: inline-block;
+          @media (min-width: 1300px) and (max-width: 1400px) {
+            right: -190px;
+            background-size: contain;
+            padding: 20px 0 0 20px;
+          }
+          @media (min-width: 1200px) and (max-width: 1300px) {
+            right: -190px;
+            background-size: contain;
+            padding: 20px 0 0 20px;
+          }
+          @media (min-width: 1100px) and (max-width: 1200px) {
+            right: -190px;
+            background-size: contain;
+            padding: 20px 0 0 20px;
+          }
         }
         left: unset;
         right: -250px;
