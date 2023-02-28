@@ -386,7 +386,7 @@ header{
                         line-height: 45px;
                         font-size: 18px;
                         padding: 0 0 0 20px;
-                        text-align: center;
+                        text-align: left;
                         &.arabic-text{
                             display: none;
                         }
@@ -2975,7 +2975,7 @@ header{
         
         .faq_details {
             font-size: 18px;
-            padding: 15px;
+            //padding: 15px;
             //background: #142237;
             display: none;
             color:#fff;
@@ -2987,7 +2987,7 @@ header{
                     display: none;
                 }
                 div{
-                    padding: 0 0 50px;
+                    padding: 50px 30px;
                     border-bottom: 1px solid rgba($color: #ffffff, $alpha: .7);
                     margin-bottom: 50px;
                     h3{
