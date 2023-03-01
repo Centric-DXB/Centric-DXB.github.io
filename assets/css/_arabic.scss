@@ -43,6 +43,9 @@
                 display: block;
                 text-align: right;
                 padding: 0 20px 0 0;
+                a{
+                  display: block;
+                }
               }
             }
           }
@@ -175,6 +178,9 @@
             background-size: contain;
             padding: 0 0 0 30px;
           }
+          @media (max-width: 550px) {
+            display: none;
+          }
         }
         left: unset;
         right: -360px;
@@ -202,6 +208,9 @@
           }
           @media (max-width: 992px) {
             background-size: contain;
+          }
+          @media (max-width: 550px) {
+            display: none;
           }
         }
         left: unset;
@@ -240,6 +249,9 @@
             background-size: contain;
             padding: 20px 0 0 20px;
           }
+          @media (max-width: 550px) {
+            display: none;
+          }
         }
         left: unset;
         right: -250px;
@@ -276,7 +288,7 @@
         position: relative;
         z-index: 999;
         background: #122d6e;
-        width: 33%;
+        width: 29%;
       }
       li{
         .solutions--data{
@@ -294,7 +306,8 @@
         right: 0;
       }
     }
-  } 
+  }
+  
   .home-about-us .about-us,
   .top-solutions-wrapper .top-solutions-heading,
   .our-transparency .transparency-heading,
@@ -322,14 +335,30 @@
       }
     }
   }
+  .home-about-us .about-us.principal{
+    &.arabic-text{
+      display: none;
+    }
+  }
   .industry-wrapper .slick-carousel .slick-prev {
     right: auto;
-    left: 170px;
+    left: 40px;
+    @media (max-width: 767px) {
+      left: 30px;
+    }
   }
   .industry-wrapper .slick-carousel .slick-next {
     right: auto;
     top: -50px;
-    left: 240px;
+    left: 110px;
+    @media (max-width: 1000px) {
+      top: 0;
+      left: 110px;
+    }
+    @media (max-width: 767px) {
+      top: 0;
+      left: 110px;
+    }
   }
   // .home-slider{
   //   display: none;
@@ -363,7 +392,7 @@
       direction: rtl;
       background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat bottom left;
       .seminar--image-date{
-        width: 70%;
+        width: 90%;
         .seminar--date{
           padding: 30px 30px 0 0;
         }
@@ -417,12 +446,20 @@
       display: none;
       &.arabic-text{
         display: flex;
+        @media (max-width: 992px) {
+          margin-bottom: 50px;
+          padding-bottom: 50px;
+        }
       }
       &::after{
         right: unset;
         left: 20px;
         @media (max-width: 1200px) {
           left: 10px;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+          left: 30%;
+          top: 210px;
         }
       }
       .transparency-info{
@@ -476,6 +513,9 @@
         display: none;
         &.arabic-text{
           display: inline-flex;
+          @media (max-width: 992px) {
+            border-left: none;
+          }
           &:last-child{
             border: none;
           }
@@ -495,6 +535,9 @@
         &::after{
           left: -20px;
           right: unset;
+          @media (max-width: 992px) {
+            left: 70px;
+          }
         }
         .location-info{
           display: none;
@@ -502,16 +545,36 @@
             padding-right: 90px;
             padding-left: 0;
             background: url(../images/jeddah.svg) no-repeat right 0;
+            @media (max-width: 992px) {
+              background: url(../images/jeddah.svg) no-repeat 560px 0;
+              padding-right: 130px;
+            }
+            @media (max-width: 767px) {
+              background: url(../images/jeddah.svg) no-repeat 340px 0;
+              padding-right: 130px;
+            }
           }
           &.riyadh{
             padding-right: 120px;
             padding-left: 0;
             background: url(../images/riyadh.svg) no-repeat right 0;
+            @media (max-width: 992px) {
+              background: url(../images/riyadh.svg) no-repeat 560px 0;
+              padding-right: 130px;
+            }
+            @media (max-width: 767px) {
+              background: url(../images/riyadh.svg) no-repeat 340px 0;
+              padding-right: 130px;
+            }
           }
           &.alkhobar{
             padding-right: 130px;
             padding-left: 0;
             background: url(../images/khobar.svg) no-repeat right 0;
+            @media (max-width: 992px) {
+              background: url(../images/khobar.svg) no-repeat right 0;
+              padding-right: 130px;
+            }
           }
           &.arabic-text{
             display: inline-block;

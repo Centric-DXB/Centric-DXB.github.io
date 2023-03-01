@@ -82,7 +82,9 @@
             breakpoint: 550,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false
                 }
             },
             
@@ -310,6 +312,12 @@
             $('body').removeClass('arabic');
         }
     });
+    $('.navigation li .ar').click(function(){
+        $('body').addClass('arabic');
+    });
+    $('.navigation li .en').click(function(){
+        $('body').removeClass('arabic');
+    })
 
     
     
