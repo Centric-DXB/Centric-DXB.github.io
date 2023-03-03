@@ -1,13 +1,17 @@
 
-    $('.sliderHome').bxSlider({
-        auto: true,
-        stopAutoOnClick: true,
-    });
-    // $('.sliderHome--arabic').bxSlider({
+    // $('.sliderHome').bxSlider({
     //     auto: true,
     //     stopAutoOnClick: true,
-
     // });
+    $('.sliderHome').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        Infinit: false,
+        dots: true
+    });
     var item_num = $('nav li').length + 1;
     var btn_state = true;
     
