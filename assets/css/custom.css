@@ -1509,7 +1509,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   content: "";
   position: absolute;
   width: 5px;
-  height: 100px;
+  height: 180px;
   background: var(--light-green);
   left: 0;
   top: 10px;
@@ -1545,6 +1545,33 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     left: 0;
     height: 70px;
   }
+}
+.home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a {
+  display: inline-block;
+  padding: 0 70px 0 30px;
+  line-height: 60px;
+  background: #253b73;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a svg {
+  transition: all 0.3s linear;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a:hover {
+  background: var(--slider-active-green);
+  transition: all 0.3s linear;
+}
+.home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a:hover svg {
+  right: 15px;
+  transition: all 0.3s linear;
 }
 .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 span {
   display: block;
@@ -3465,7 +3492,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .wrapper nav.topsolution {
   width: 100%;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 1100px) {
   .wrapper nav.topsolution {
@@ -3510,7 +3537,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .wrapper nav.topsolution li {
   line-height: 3;
   padding: 0 0rem;
-  border-right: 1px solid #f0f0f0;
+  border-right: 1px solid rgba(240, 240, 240, 0.2);
   cursor: pointer;
   color: #fff;
   box-sizing: border-box;
@@ -3519,7 +3546,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (min-width: 1100px) {
   .wrapper nav.topsolution li {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid rgba(240, 240, 240, 0.2);
     border-right: none;
     width: 100%;
   }
@@ -3611,7 +3638,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   width: 100%;
   top: 14rem;
   left: 0;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-top: none;
   border-radius: 0 0 0 0;
   overflow: hidden;
@@ -3622,7 +3649,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     width: calc(79% - 4.5rem);
     top: 0;
     left: 0;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-right: none;
   }
 }
@@ -3678,12 +3705,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .wrapper article section .solutions--content .three-two-column {
   width: 30.5%;
-  border-right: 1px solid #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
   min-height: 1030px;
   overflow: hidden;
 }
 .wrapper article section .solutions--content .three-two-column:last-child {
-  border-right: 1px solid #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
   .wrapper article section .solutions--content .three-two-column {
