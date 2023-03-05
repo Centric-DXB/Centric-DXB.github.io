@@ -1129,10 +1129,15 @@ header{
         background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat bottom right;
         backdrop-filter: blur(50px) opacity(0);
         margin: 0 10px;
+        @media (max-width: 992px) {
+            flex-direction: column;
+            width: 90%;
+            background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat right 100%;
+        }
         @media (max-width: 767px) {
             flex-direction: column;
             width: 90%;
-            background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat right 160%;
+            background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat right 120%;
         }
         .seminar--image-date{
             display: block;
@@ -1142,7 +1147,8 @@ header{
                 
             }
             img{
-                max-width:100%
+                max-width:100%;
+                width: 100%;
             }
             .seminar--date{
                 position: absolute;
@@ -1190,8 +1196,11 @@ header{
             @media (max-width: 1200px) {
                 padding: 20px 50px 0 20px;
             }
+            @media (max-width: 992px) {
+                padding: 20px 20px 100px 20px;
+            }
             @media (max-width: 767px) {
-                padding: 20px 20px 50px 20px;
+                padding: 20px 20px 100px 20px;
             }
             h3{
                 background: url(../images/greenclock.png) no-repeat left center;
@@ -1201,11 +1210,14 @@ header{
                 line-height: 30px;
                 padding-left: 40px;
                 margin-bottom: 20px;
+                @media (max-width: 1400px) {
+                    font-size: 18px;
+                }
                 @media (max-width: 1200px) {
                     font-size: 16px;
                 }
                 @media (max-width: 992px) {
-                    font-size: 13px;
+                    font-size: 16px;
                     margin-bottom: 15px;
                 }
                 @media (max-width: 767px) {
@@ -1219,23 +1231,36 @@ header{
                 font-size: 30px;
                 margin-bottom: 10px;
                 padding-right: 50px;
+                @media (max-width: 1400px) {
+                    font-size: 24px;
+                }
                 @media (max-width: 1200px) {
                     font-size: 24px;
                 }
                 @media (max-width: 992px) {
-                    font-size: 21px;
+                    font-size: 24px;
                 }
             }
             p{
                 color: var(--white);
                 font-size: 18px;
                 font-weight: var(--font-weight-normal);
+                @media (max-width: 1400px) {
+                    font-size: 14px;
+                }
                 @media (max-width: 1200px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 992px) {
                     font-size: 16px;
                 }
             }
             img{
                 margin-top: 15px;
+                @media (max-width: 1400px) {
+                    max-width: 100%;
+                    width: 40%;
+                }
             }
         }
     }
