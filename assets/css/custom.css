@@ -4821,16 +4821,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     width: 90%;
   }
 }
-.foot .footer-two-div .footer-newsletter .newsletter-form input[type=text] {
+.foot .footer-two-div .footer-newsletter .newsletter-form input[type=text], .foot .footer-two-div .footer-newsletter .newsletter-form input.newsletter_field {
   background: var(--white);
   padding: 10px;
   margin-bottom: 10px;
   width: 100%;
 }
-.foot .footer-two-div .footer-newsletter .newsletter-form input[type=text]::placeholder {
+.foot .footer-two-div .footer-newsletter .newsletter-form input[type=text]::placeholder, .foot .footer-two-div .footer-newsletter .newsletter-form input.newsletter_field::placeholder {
   color: var(--medium-grey);
 }
-.foot .footer-two-div .footer-newsletter .newsletter-form input[type=submit] {
+.foot .footer-two-div .footer-newsletter .newsletter-form input[type=submit], .foot .footer-two-div .footer-newsletter .newsletter-form button {
   background: var(--blue-normal);
   padding: 0;
   color: var(--white);

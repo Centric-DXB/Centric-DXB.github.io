@@ -3926,7 +3926,7 @@ header{
                 @media (max-width:991px) {
                     width: 90%;
                 }
-                input[type=text]{
+                input[type=text], input.newsletter_field{
                     background: var(--white);
                     padding: 10px;
                     margin-bottom: 10px;
@@ -3935,7 +3935,7 @@ header{
                         color: var(--medium-grey);
                     }
                 }
-                input[type=submit]{
+                input[type=submit], button{
                     background: var(--blue-normal);
                     padding: 0;
                     color: var(--white);
