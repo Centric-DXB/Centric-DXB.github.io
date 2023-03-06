@@ -466,9 +466,6 @@
   text-align: left;
   padding: 20px 0 0 20px;
 }
-.arabic .our-transparency .transparency-wrapper {
-  display: none;
-}
 .arabic .our-transparency .transparency-wrapper.arabic-text {
   display: flex;
 }
@@ -531,9 +528,6 @@
   background: url(../images/downloadicon.svg) no-repeat right center;
   padding: 5px 40px 5px 0px;
 }
-.arabic .our-transparency .terms-data {
-  display: none;
-}
 .arabic .our-transparency .terms-data.arabic-text {
   display: block;
 }
@@ -541,7 +535,6 @@
   font-family: var(--arabic-font);
 }
 .arabic .foot .footer-links .links {
-  display: none;
   border-right: none;
   border-left: 1px solid #73BC45;
 }
@@ -623,23 +616,14 @@
 .arabic .foot .footer-location .location .location-info.arabic-text h3 {
   font-family: var(--arabic-font);
 }
-.arabic .foot .footer-company-info {
-  display: none;
-}
 .arabic .foot .footer-company-info.arabic-text {
   display: block;
-}
-.arabic .foot .footer-two-div .footer-social {
-  display: none;
 }
 .arabic .foot .footer-two-div .footer-social.arabic-text {
   display: block;
 }
 .arabic .foot .footer-two-div .footer-social.arabic-text h2 {
   font-family: var(--arabic-font);
-}
-.arabic .foot .footer-two-div .footer-newsletter {
-  display: none;
 }
 .arabic .foot .footer-two-div .footer-newsletter.arabic-text {
   display: block;
@@ -648,7 +632,6 @@
   font-family: var(--arabic-font);
 }
 .arabic .foot .footer-bottom {
-  display: none;
   font-family: var(--arabic-font);
 }
 .arabic .foot .footer-bottom.arabic-text {

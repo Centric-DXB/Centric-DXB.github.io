@@ -483,7 +483,7 @@
   }
   .our-transparency{
     .transparency-wrapper{
-      display: none;
+      //display: none;
       &.arabic-text{
         display: flex;
         @media (max-width: 992px) {
@@ -538,7 +538,7 @@
       }
     }
     .terms-data{
-      display: none;
+      //display: none;
       &.arabic-text{
         display: block;
         p{
@@ -550,7 +550,7 @@
   .foot{
     .footer-links{
       .links{
-        display: none;
+        //display: none;
         &.arabic-text{
           display: inline-flex;
           @media (max-width: 992px) {
@@ -626,14 +626,14 @@
       }
     }
     .footer-company-info{
-      display: none;
+      //display: none;
       &.arabic-text{
         display: block;
       }
     }
     .footer-two-div{
       .footer-social{
-        display: none;
+        //display: none;
         &.arabic-text{
           display: block;
           h2{
@@ -642,7 +642,7 @@
         }
       }
       .footer-newsletter{
-        display: none;
+        //display: none;
         &.arabic-text{
           display: block;
           h2{
@@ -652,7 +652,7 @@
       }
     }
     .footer-bottom{
-      display: none;
+      //display: none;
       font-family: var(--arabic-font);
       &.arabic-text{
         display: block;
