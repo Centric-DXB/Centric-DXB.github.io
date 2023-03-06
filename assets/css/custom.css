@@ -239,7 +239,13 @@
     display: none;
   }
 }
-@media (min-width: 1400px) {
+.arabic .wrapper nav.topsolution {
+  float: left;
+  z-index: 999;
+  position: relative;
+  background: #122d6e;
+}
+@media (max-width: 1400px) {
   .arabic .wrapper nav.topsolution {
     float: left;
     position: relative;
@@ -247,31 +253,28 @@
     background: #122d6e;
   }
 }
-@media (min-width: 1300px) {
+@media (max-width: 1300px) {
   .arabic .wrapper nav.topsolution {
     float: left;
     position: relative;
     z-index: 999;
     background: #122d6e;
-    width: 33%;
   }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .arabic .wrapper nav.topsolution {
     float: left;
     position: relative;
     z-index: 999;
     background: #122d6e;
-    width: 33%;
   }
 }
-@media (min-width: 1100px) {
+@media (max-width: 1100px) {
   .arabic .wrapper nav.topsolution {
     float: left;
     position: relative;
     z-index: 999;
     background: #122d6e;
-    width: 29%;
   }
 }
 .arabic .wrapper nav.topsolution li .solutions--data .solutions--points span {
@@ -387,12 +390,42 @@
   left: auto;
   right: 0;
 }
+.arabic .home-slider .slick-list .slick-slide .home-slider-content {
+  direction: rtl;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content {
+  display: none;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content.arabic-text {
+  display: block;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 {
+  padding-left: 0;
+  padding-right: 70px;
+  color: var(--white);
+  text-align: right;
+  font-family: var(--arabic-font);
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2::before {
+  left: auto;
+  right: 0;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a {
+  padding: 0 20px 0 70px;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a svg {
+  right: 90px;
+  transform: rotate(180deg);
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a:hover svg {
+  right: 105px;
+}
 .arabic .seminar--wrapper .seminar-wrapper {
   direction: rtl;
-  background: rgba(255, 255, 255, 0.2) url(../images/newstransparentlogo.png) no-repeat bottom left;
+  background: rgba(255, 255, 255, 0.2) url(../images/newstransparentlogoarabic.png) no-repeat bottom left;
 }
 .arabic .seminar--wrapper .seminar-wrapper .seminar--image-date {
-  width: 90%;
+  width: 100%;
 }
 .arabic .seminar--wrapper .seminar-wrapper .seminar--image-date .seminar--date {
   padding: 30px 30px 0 0;
@@ -1002,9 +1035,14 @@ header .mobile--header .menu-menu .navigation ul {
 header .mobile--header .menu-menu .navigation ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   line-height: 45px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0 0 0 20px;
   text-align: left;
+}
+@media (max-width: 450px) {
+  header .mobile--header .menu-menu .navigation ul li {
+    font-size: 12px;
+  }
 }
 header .mobile--header .menu-menu .navigation ul li.arabic-text {
   display: none;
@@ -3538,10 +3576,35 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .wrapper nav.topsolution {
-  width: 100%;
+  float: right;
+  width: 31.5%;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-@media (min-width: 1100px) {
+@media (max-width: 1800px) {
+  .wrapper nav.topsolution {
+    float: right;
+    width: 32%;
+    height: calc(100% + 0rem);
+    border-radius: 0 0 0 0;
+  }
+}
+@media (max-width: 1600px) {
+  .wrapper nav.topsolution {
+    float: right;
+    width: 32.5%;
+    height: calc(100% + 0rem);
+    border-radius: 0 0 0 0;
+  }
+}
+@media (max-width: 1400px) {
+  .wrapper nav.topsolution {
+    float: right;
+    width: 28%;
+    height: calc(100% + 0rem);
+    border-radius: 0 0 0 0;
+  }
+}
+@media (max-width: 1300px) {
   .wrapper nav.topsolution {
     float: right;
     width: 28%;
@@ -3549,27 +3612,19 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     border-radius: 0 0 0 0;
   }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .wrapper nav.topsolution {
     float: right;
-    width: 28.5%;
+    width: 28%;
     height: calc(100% - 0rem);
     border-radius: 0 0 0 0;
   }
 }
-@media (min-width: 1300px) {
+@media (max-width: 1100px) {
   .wrapper nav.topsolution {
     float: right;
-    width: 27.5%;
+    width: 28%;
     height: calc(100% - 0rem);
-    border-radius: 0 0 0 0;
-  }
-}
-@media (min-width: 1400px) {
-  .wrapper nav.topsolution {
-    float: right;
-    width: 32%;
-    height: calc(100% + 0rem);
     border-radius: 0 0 0 0;
   }
 }

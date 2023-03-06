@@ -263,32 +263,36 @@
   }
   .wrapper{
     nav.topsolution {
-      @media (min-width: 1400px) {
+      float: left;
+      z-index: 999;
+      position: relative;
+      background: #122d6e;
+      @media (max-width: 1400px) {
         float: left;
         position: relative;
         z-index: 999;
         background: #122d6e;
       }
-      @media (min-width: 1300px) {
+      @media (max-width: 1300px) {
         float: left;
         position: relative;
         z-index: 999;
         background: #122d6e;
-        width: 33%;
+        //width: 33%;
       }
-      @media (min-width: 1200px) {
+      @media (max-width: 1200px) {
         float: left;
         position: relative;
         z-index: 999;
         background: #122d6e;
-        width: 33%;
+        //width: 33%;
       }
-      @media (min-width: 1100px) {
+      @media (max-width: 1100px) {
         float: left;
         position: relative;
         z-index: 999;
         background: #122d6e;
-        width: 29%;
+        //width: 29%;
       }
       li{
         .solutions--data{
@@ -386,13 +390,49 @@
         }
       }
     }
+    .slick-list{
+      .slick-slide{
+          .home-slider-content{
+            direction: rtl;
+              .slide--content{
+                display: none;
+                  &.arabic-text{
+                      display: block;
+                  }
+                  h2{
+                    padding-left: 0;
+                    padding-right: 70px;
+                    color: var(--white);
+                    text-align: right;
+                    font-family: var(--arabic-font);
+                    &::before{
+                      left: auto;
+                      right: 0;
+                    }
+                    a{
+                      padding: 0 20px 0 70px;
+                      svg{
+                        right: 90px;
+                        transform: rotate(180deg);
+                      }
+                      &:hover{
+                        svg{
+                          right: 105px;
+                        }
+                      }
+                    }
+                  }  
+              }
+          }
+        }
+    }
   }
   .seminar--wrapper{
     .seminar-wrapper{
       direction: rtl;
-      background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat bottom left;
+      background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogoarabic.png) no-repeat bottom left;
       .seminar--image-date{
-        width: 90%;
+        width: 100%;
         .seminar--date{
           padding: 30px 30px 0 0;
         }

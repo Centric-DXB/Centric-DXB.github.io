@@ -384,9 +384,12 @@ header{
                     li{
                         border-bottom: 1px solid rgba($color: #ffffff, $alpha: .2);
                         line-height: 45px;
-                        font-size: 18px;
+                        font-size: 16px;
                         padding: 0 0 0 20px;
                         text-align: left;
+                        @media (max-width: 450px) {
+                            font-size: 12px;
+                        }
                         &.arabic-text{
                             display: none;
                         }
@@ -2810,33 +2813,49 @@ header{
         display: none;
     }
     nav.topsolution{
-        width: 100%;
+        float: right;
+        width: 31.5%;
         //background:linear-gradient(135deg, #fcc274 0%,#eb48a1 100%);
         border: 1px solid rgba($color: #fff, $alpha: .2);
-        @media (min-width:1100px){
+        @media (max-width:1800px){
+            float:right;
+            width:32%;
+            height:calc(100% + 0rem);
+            border-radius:0 0 0 0;
+        }
+        @media (max-width:1600px){
+            float:right;
+            width:32.5%;
+            height:calc(100% + 0rem);
+            border-radius:0 0 0 0;
+        }
+        @media (max-width:1400px){
+            float:right;
+            width:28%;
+            height:calc(100% + 0rem);
+            border-radius:0 0 0 0;
+        }
+        @media (max-width:1300px){
+            float:right;
+            width:28%;
+            height:calc(100% - 0rem);
+            border-radius:0 0 0 0;
+        }
+        @media (max-width:1200px){
+            float:right;
+            width:28%;
+            height:calc(100% - 0rem);
+            border-radius:0 0 0 0;
+        }
+        @media (max-width:1100px){
           float:right;
           width:28%;
           height:calc(100% - 0rem);
           border-radius:0 0 0 0;
         }
-        @media (min-width:1200px){
-          float:right;
-          width:28.5%;
-          height:calc(100% - 0rem);
-          border-radius:0 0 0 0;
-        }
-        @media (min-width:1300px){
-          float:right;
-          width:27.5%;
-          height:calc(100% - 0rem);
-          border-radius:0 0 0 0;
-        }
-        @media (min-width:1400px){
-          float:right;
-          width:32%;
-          height:calc(100% + 0rem);
-          border-radius:0 0 0 0;
-        }
+        
+        
+        
         ul{
           display:flex;
           @media (min-width:1100px){
