@@ -1461,7 +1461,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   width: 55%;
 }
 .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-one {
-  top: 20%;
+  top: 25%;
 }
 @media (max-width: 1400px) {
   .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-one {
@@ -1484,7 +1484,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-two {
-  top: 30%;
+  top: 35%;
 }
 @media (max-width: 1400px) {
   .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-two {
@@ -1507,7 +1507,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-three {
-  top: 40%;
+  top: 45%;
 }
 @media (max-width: 1400px) {
   .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-three {
@@ -1530,7 +1530,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-four {
-  top: 50%;
+  top: 55%;
 }
 @media (max-width: 1400px) {
   .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-four {
@@ -1553,7 +1553,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-five {
-  top: 60%;
+  top: 65%;
 }
 @media (max-width: 1400px) {
   .home-slider .slick-list .slick-slide .home-slider-content .slide--content.slide-five {
