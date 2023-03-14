@@ -7,6 +7,7 @@
     --light-green: #73BC45;
     --white: #fff;
     --blue-color: #1C6C96;
+    --dark-blue-color: #122D6E;
     --blue-normal: #1C75BC;
     --dull-purple: #253B73;
     --light-parrot-green: #61D281;
@@ -3242,10 +3243,11 @@ header{
     min-height: 1070px;
     .herobanner-topheading{
         display: block;
-        margin: 100px 0 0 0;
+        margin: 400px 0 0 0;
         color: var(--white);
         h2{
             font-size: 20px;
+            margin-bottom: 50px;
         }
         h1{
             font-size: 60px;
@@ -3254,7 +3256,109 @@ header{
 }
 .whatwedo-wrapper{
     display: block;
-    
+    width: 100%;
+    background: rgba($color: #122D6E, $alpha: 1.0) url(../images/misglobelarge.png) no-repeat top right;
+    padding: 50px 0 100px;
+    min-height: 1000px;
+    color: var(--white);
+    h2{
+        font-size: 33px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 50px;
+        position: relative;
+        padding-left: 110px;
+        text-transform: unset;
+        margin-top: 50px;
+        @media (min-width: 1300px) and (max-width: 1400px) {
+            font-size: 33px;
+        }
+        @media (min-width: 1200px) and (max-width: 1300px) {
+            font-size: 30px;
+        }
+        @media (min-width: 1100px) and (max-width: 1200px) {
+            font-size: 28px;
+        }
+        @media (min-width: 992px) and (max-width: 1100px) {
+            font-size: 24px;
+        }
+        @media (max-width: 991px) {
+            font-size: 22px;
+        }
+        @media (max-width: 600px) {
+            font-size: 18px;
+            letter-spacing: 3px;
+            line-height: 24px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: var(--light-green);
+            left: 0;
+            top: 20px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../images/logowhitecircle.svg) no-repeat 0 0;
+            left: 60px;
+            top: 6px;
+            //transform: rotate(45deg);
+        }
+    }
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 30px;
+        padding-left: 110px;
+    }
+}
+.ourindustry-wrapper{
+    width: 100%;
+    display: block;
+    padding: 100px 0 0;
+    h2{
+        font-size: 30px;
+        color: var(--dark-blue-color);
+        padding-left: 100px;
+        position: relative;
+        text-transform: unset;
+        @media (max-width: 767px){
+            padding-left: 120px;
+            font-size: 20px;
+            letter-spacing: 0;
+            padding-top: 10px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: var(--light-green);
+            left: 0;
+            top: 19px;
+            @media (max-width: 767px){
+                left: 20px;
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../images/logocolorcircle.svg) no-repeat 0 0;
+            left: 60px;
+            top: 6px;
+            //transform: rotate(45deg);
+            @media (max-width: 767px){
+                left: 80px;
+            }
+        }
+    }
 }
 
 
