@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="assets/css/solution.css">
     
     <!-- FONTAWESOME CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css"> -->
     
     <!-- ANIMATION CSS -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -215,67 +217,92 @@
                     <div class="content">
                         <h2 class="text-white">Top Solutions</h2>
                     </div>
+
+                   
                 </div>
             </div>
-        </div>
 
-            <div class="row">
-                <div class="col-md-5">
-                    <!-- Tabs nav -->
-                    <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                            <span class="font-weight-bold small text-uppercase">Personal</span></a>
-    
-                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                            <span class="font-weight-bold small text-uppercase">Bookings</span></a>
-    
-                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                            <span class="font-weight-bold small text-uppercase">Reviews</span></a>
-    
-                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                            <span class="font-weight-bold small text-uppercase">Confirm</span></a>
+         <!-- Demo header-->
+    <div class="">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Tabs nav -->
+                <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        <div class="card">
+                            <img src="assets/images/ai.png" class="img-fluid" alt=""/>
+                            <div class="card-footer">
+                                <p class="text-center text-white">Data Analytics</p>
+                            </div>
                         </div>
-                </div>
-    
-    
-                <div class="col-md-7">
-                    <!-- Tabs content -->
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <h4 class="font-italic mb-4">Personal information</h4>
-                            <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <h4 class="font-italic mb-4">Bookings</h4>
-                            <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <h4 class="font-italic mb-4">Reviews</h4>
-                            <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                            <h4 class="font-italic mb-4">Confirm booking</h4>
-                            <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                    </a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <div class="card">
+                            <img src="assets/images/ai.png" class="img-fluid" alt=""/>
+                            <div class="card-footer">
+                                <p class="text-center text-white">Custom Service</p>
+                            </div>
+                        </div>    
+                    </a>
+
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <div class="card">
+                            <img src="assets/images/ai.png" class="img-fluid" alt=""/>
+                            <div class="card-footer">
+                                <p class="text-center text-white">Social Platform</p>
+                            </div>
+                        </div>    
+                    </a>
+
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <div class="card">
+                            <img src="assets/images/ai.png" class="img-fluid" alt=""/>
+                            <div class="card-footer">
+                                <p class="text-center text-white">Security</p>
+                            </div>
+                        </div>   
+                    </a>
+                    </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <!-- Tabs content -->
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <span class="countered">01</span>
+                        <h4 class="font-italic mb-4">Data Analytics & AI</h4>
+                        <p class="font-italic text-muted mb-2">An enterprise solution is a software application or suite of applications designed to meet the complex needs of large organizations, such as corporations, government agencies, and educational institutions. 
+                            These solutions are typically highly scalable, customizable, and integrate with other systems and technologies.</p>
+                    </div>
+                    
+                    <div class="tab-pane fade p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <span class="countered">02</span>
+                        <h4 class="font-italic mb-4">Development Program</h4>
+                        <p class="font-italic text-muted mb-2">An enterprise solution is a software application or suite of applications designed to meet the complex needs of large organizations, such as corporations, government agencies, and educational institutions. 
+                            These solutions are typically highly scalable, customizable, and integrate with other systems and technologies.</p>
+                    </div>
+                    
+                    <div class="tab-pane fade p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <span class="countered">03</span>
+                        <h4 class="font-italic mb-4">Social Media</h4>
+                        <p class="font-italic text-muted mb-2">An enterprise solution is a software application or suite of applications designed to meet the complex needs of large organizations, such as corporations, government agencies, and educational institutions. 
+                            These solutions are typically highly scalable, customizable, and integrate with other systems and technologies.</p>
+                    </div>
+                    
+                    <div class="tab-pane fade p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <span class="countered">04</span>
+                        <h4 class="font-italic mb-4">Development Program</h4>
+                        <p class="font-italic text-muted mb-2">An enterprise solution is a software application or suite of applications designed to meet the complex needs of large organizations, such as corporations, government agencies, and educational institutions. 
+                            These solutions are typically highly scalable, customizable, and integrate with other systems and technologies.</p>
                     </div>
                 </div>
             </div>
-
+        </div>
+    </div>
+</section>
+        </div>
     </section>
-
-    <!-- VENDORS PARTNER CAROUSEL -->
-
-
-    <!-- EMPOWERING INDUSTRIES -->
-   
-
-
-    
-    <!-- TOP SOLUTIONS -->
-
 
 
     <!-- CLIENT CAROUSEL -->
@@ -313,6 +340,62 @@
                         <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000"><a href="https://sa.zain.com/en" target="_blank"><img src="assets/images/clientimg16.png" alt=""></a></div>
                         <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000"><a href="https://careers.ksmc.med.sa/" target="_blank"><img src="assets/images/clientimg17.png" alt=""></a></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="solution__form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h2 class="text-white">Contact Us</h2>
+                        <p>Our friendly team would love to hear from you!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="form-group">
+                    <form action="" id="form">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label>First Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label>E-mail Address</label>
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label>Phone</label>
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label>Message</label>
+                               <textarea rows="5" cols="6" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -507,6 +590,8 @@
     
     <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     
     <!-- FONTAWESOME JS -->
     <script src="assets/js/all.min.js"></script>
