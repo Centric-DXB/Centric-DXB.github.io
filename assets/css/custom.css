@@ -701,6 +701,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ul, li, ol {
   list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
