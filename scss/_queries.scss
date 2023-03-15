@@ -1,0 +1,36 @@
+$desktop:                       1699px;
+$laptop:                        1367px;
+$tablate:                       1025px;
+$mobile:                        576px;
+
+
+
+@mixin desktop {
+    @media (max-width: $desktop)
+    {
+         @content; 
+    }
+  }
+
+
+  @mixin laptop {
+    @media (max-width: $laptop)
+    {
+         @content; 
+    }
+  }
+
+
+  @mixin tablate {
+    @media (max-width: $tablate)
+    {
+         @content; 
+    }
+  }
+
+  @mixin mobile {
+    @media (max-width: $mobile)
+    {
+         @content; 
+    }
+  }
