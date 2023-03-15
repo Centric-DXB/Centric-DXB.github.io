@@ -321,7 +321,61 @@
     });
     $('.navigation li .en').click(function(){
         $('body').removeClass('arabic');
-    })
+    });
+
+    // (Optional) Active an item if it has the class "is-active"	
+	$(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
+	
+	$(".accordion > .accordion-item").click(function() {
+		// Cancel the siblings
+		$(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
+		// Toggle the item
+		$(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+	});
+
+    $('.ourindustry--carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        speed: 2000,
+        //autoplay: true,
+        arrows: false,
+        responsive: [
+            {
+            breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots:true
+                }
+            },
+            {
+            breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots:true
+                }
+            },
+            {
+            breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    dots: true
+                }
+            },
+            {
+            breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots:true
+                }
+            },
+        ]
+    });
 
     
     
