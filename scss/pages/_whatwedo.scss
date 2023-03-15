@@ -173,10 +173,11 @@
         position: relative;
         width: 100%;
         background: rgba($color: #122D6E, $alpha: 1.0);
+        padding: 30px 40px;
         .ourindustry--carousel{
             .our-industry-wrapper{
-                width: 95% !important;
-                border: 1px solid #fff;
+                width: 90% !important;
+                border: 0 solid #fff;
                 height: 200px;
                 overflow: hidden;
                 position: relative;
@@ -186,8 +187,15 @@
                     text-align: right;
                     width: 100%;
                     font-size: 56px;
+                    font-family: var(--poppins);
+                    padding-right: 20px;
                 }
                 .our-industry--content{
+                    position: absolute;
+                    top: 130px;
+                    width: 100%;
+                    z-index: 99;
+                    color: var(--white);
                     h3{
                         font-size: 40px;
                         text-align: center;

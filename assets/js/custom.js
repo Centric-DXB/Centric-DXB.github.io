@@ -339,7 +339,7 @@
         autoplaySpeed: 3000,
         speed: 2000,
         //autoplay: true,
-        arrows: false,
+        arrows: true,
         responsive: [
             {
             breakpoint: 1200,

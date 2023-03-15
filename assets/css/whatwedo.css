@@ -191,10 +191,11 @@
   position: relative;
   width: 100%;
   background: #122d6e;
+  padding: 30px 40px;
 }
 .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper {
-  width: 95% !important;
-  border: 1px solid #fff;
+  width: 80% !important;
+  border: 0 solid #fff;
   height: 200px;
   overflow: hidden;
   position: relative;
@@ -205,6 +206,15 @@
   text-align: right;
   width: 100%;
   font-size: 56px;
+  font-family: var(--poppins);
+  padding-right: 20px;
+}
+.ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper .our-industry--content {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  z-index: 99;
+  color: var(--white);
 }
 .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper .our-industry--content h3 {
   font-size: 40px;

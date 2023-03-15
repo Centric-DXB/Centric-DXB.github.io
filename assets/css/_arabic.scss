@@ -38,7 +38,7 @@
         .navigation{
           ul{
             li{
-              display: none;
+              //display: none;
               &.arabic-text{
                 display: block;
                 text-align: right;
@@ -61,7 +61,7 @@
       li{
         .solutions--data{
           .solutions--points{
-            display: none;
+            //display: none;
             &.arabic-text{
               display: block;
               span{
@@ -88,7 +88,7 @@
           .three-two-column{
             .solution-content-wrapper{
               .solution--data{
-                display: none;
+                //display: none;
                 &.arabic-text{
                   display: block;
                   h1{
@@ -107,7 +107,7 @@
       .faq_item{
         .faq_title{
           .solution-mobile-navigate{
-            display: none;
+            //display: none;
             &.arabic-text{
               display: flex;
               font-family: var(--arabic-font);
