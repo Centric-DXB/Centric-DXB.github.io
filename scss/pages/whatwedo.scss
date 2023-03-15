@@ -175,8 +175,18 @@
         background: rgba($color: #122D6E, $alpha: 1.0);
         .ourindustry--carousel{
             .our-industry-wrapper{
-                width: 95%;
+                width: 95% !important;
                 border: 1px solid #fff;
+                height: 200px;
+                overflow: hidden;
+                position: relative;
+                .our-industry--number{
+                    position: absolute;
+                    color: #fff;
+                    text-align: right;
+                    width: 100%;
+                    font-size: 56px;
+                }
                 .our-industry--content{
                     h3{
                         font-size: 40px;

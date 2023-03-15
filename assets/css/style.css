@@ -4202,8 +4202,18 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   background: #122d6e;
 }
 .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper {
-  width: 95%;
+  width: 95% !important;
   border: 1px solid #fff;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper .our-industry--number {
+  position: absolute;
+  color: #fff;
+  text-align: right;
+  width: 100%;
+  font-size: 56px;
 }
 .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper .our-industry--content h3 {
   font-size: 40px;
