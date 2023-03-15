@@ -5641,8 +5641,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 
 @font-face {
   font-family: "Droid Arabic Kufi";
-  src: url("../assets/fonts/DroidArabicKufi.eot");
-  src: url("../assets/fonts/DroidArabicKufi.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/DroidArabicKufi.woff2") format("woff2"), url("../assets/fonts/DroidArabicKufi.woff") format("woff"), url("../assets/fonts/DroidArabicKufi.ttf") format("truetype"), url("../assets/fonts/DroidArabicKufi.svg#DroidArabicKufi") format("svg");
+  src: url("../fonts/DroidArabicKufi.eot");
+  src: url("../fonts/DroidArabicKufi.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidArabicKufi.woff2") format("woff2"), url("../fonts/DroidArabicKufi.woff") format("woff"), url("../fonts/DroidArabicKufi.ttf") format("truetype"), url("../fonts/DroidArabicKufi.svg#DroidArabicKufi") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -5668,4 +5668,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+body.arabic {
+  direction: rtl;
+  font-family: var(--arabic-font);
 }/*# sourceMappingURL=style.css.map */
