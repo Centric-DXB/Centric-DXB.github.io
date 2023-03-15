@@ -438,12 +438,34 @@
         font-size: 26px;
     }
 
+    .our__solutionCLient{
+        padding-top: 0px !important;
+    }
+
+    .pagination__list {
+        ul {
+            li {
+                a {
+                    font-size: 16px !important;
+                }
+            } 
+        } 
+    } 
+
    
 
    .our__solutions {
     .content {
         h2 {
             font-size: 22px;
+
+            &::before {
+                top: -3px;
+            }
+
+            &::after {
+                top: 10px;
+            }
         }
 
         p {
@@ -451,18 +473,25 @@
             margin-bottom: 20px;
         }
 
-        .pagination__list {
-            
-            ul {
-                li {
-                    a {
-                        font-size: 14px;
-                    } 
-                } 
-             }
+       
+    }
 
-          
-        }
+    .pagination__list {
+            
+        ul {
+            padding-left: 0;
+            li {
+
+                &:before {
+                    height: 20px;
+                }
+                a {
+                    font-size: 14px;
+                } 
+            } 
+         }
+
+      
     }
 
     .content__img {
@@ -513,6 +542,10 @@
 }
 
 @media screen and (max-width: 480.99px) {
+
+    .our__solutionCLient {
+        padding: 80px 0 !important;
+    }
     .top__section {
 
         &::before {
