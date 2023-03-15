@@ -175,8 +175,28 @@
         background: rgba($color: #122D6E, $alpha: 1.0);
         padding: 30px 40px;
         .ourindustry--carousel{
+            .slick-prev{
+                left: unset;
+                right: -90px;
+                top: 40px;
+            }
+            .slick-next{
+                right: -90px;
+                top: 120px;
+            }
+            .slick-prev, .slick-next{
+                width: 70px;
+                height: 70px;
+                background: transparent;
+                border: 1px solid var(--white);
+            }
+            .slick-prev, .slick-next{
+                &:hover{
+                    background: rgba($color: #81C357, $alpha: 1.0);
+                }
+            }
             .our-industry-wrapper{
-                width: 90% !important;
+                width: 95% !important;
                 border: 0 solid #fff;
                 height: 200px;
                 overflow: hidden;

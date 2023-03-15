@@ -903,6 +903,605 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 
+.arabic .arabic-text {
+  font-family: var(--arabic-font);
+}
+.arabic header .logo {
+  padding: 15px 30px 15px 0px;
+}
+.arabic header .top-main-navigation ul li {
+  display: none;
+}
+.arabic header .top-main-navigation ul li.arabic-text {
+  display: block;
+}
+.arabic header .main-menu ul li {
+  display: none;
+}
+.arabic header .main-menu ul li.arabic-text {
+  display: block;
+}
+.arabic header .main-menu .lang-toggle1 .slider1::before {
+  left: -20px;
+}
+.arabic header .mobile--header .menu-menu .navigation ul li.arabic-text {
+  display: block;
+  text-align: right;
+  padding: 0 20px 0 0;
+}
+.arabic header .mobile--header .menu-menu .navigation ul li.arabic-text a {
+  display: block;
+}
+.arabic .wrapper nav.topsolution li .solutions--data .solutions--points.arabic-text {
+  display: block;
+}
+.arabic .wrapper nav.topsolution li .solutions--data .solutions--points.arabic-text span {
+  font-size: 20px;
+  padding: 8px 20px 8px 0;
+}
+@media (max-width: 1400px) {
+  .arabic .wrapper nav.topsolution li .solutions--data .solutions--points.arabic-text span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1300px) {
+  .arabic .wrapper nav.topsolution li .solutions--data .solutions--points.arabic-text span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1200px) {
+  .arabic .wrapper nav.topsolution li .solutions--data .solutions--points.arabic-text span {
+    font-size: 14px;
+  }
+}
+.arabic .wrapper article section .solutions--content .three-two-column .solution-content-wrapper .solution--data.arabic-text {
+  display: block;
+}
+.arabic .wrapper article section .solutions--content .three-two-column .solution-content-wrapper .solution--data.arabic-text h1 {
+  font-family: var(--arabic-font);
+}
+.arabic .top-solutions-wrapper .faq_wrapper .faq_item .faq_title .solution-mobile-navigate.arabic-text {
+  display: flex;
+  font-family: var(--arabic-font);
+}
+.arabic .top-solutions-wrapper .faq_wrapper .faq_item .faq_title .solution-mobile-navigate.arabic-text span {
+  padding: 5px 20px 5px 0;
+}
+.arabic .top-solutions-wrapper .faq_wrapper .faq_item .faq_details .solutions-mobile-content.arabic-text {
+  display: flex;
+  font-family: var(--arabic-font);
+}
+.arabic .top-solutions-wrapper .faq_wrapper .faq_item .faq_details .solutions-mobile-content.arabic-text h3 {
+  font-family: var(--arabic-font);
+}
+.arabic .slick-list {
+  direction: initial;
+}
+.arabic .home-about-us .about-us.arabic-text {
+  display: block;
+}
+.arabic .home-about-us .about-us.arabic-text h2, .arabic .home-about-us .about-us.arabic-text p {
+  font-family: var(--arabic-font);
+}
+.arabic .home-about-us .toptext-wrapper .toptext {
+  left: unset;
+  right: -360px;
+  text-align: left;
+  background: url(../images/yellowanglelinearabic.png) no-repeat bottom center;
+  padding: 0 0 0 50px;
+}
+.arabic .home-about-us .toptext-wrapper .toptext.arabic-text {
+  display: inline-block;
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .arabic .home-about-us .toptext-wrapper .toptext.arabic-text {
+    right: -250px;
+    background-size: contain;
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .arabic .home-about-us .toptext-wrapper .toptext.arabic-text {
+    right: -250px;
+    background-size: contain;
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .arabic .home-about-us .toptext-wrapper .toptext.arabic-text {
+    right: -200px;
+    background-size: contain;
+    padding: 0 0 0 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .arabic .home-about-us .toptext-wrapper .toptext.arabic-text {
+    right: -200px;
+    background-size: contain;
+    padding: 0 0 0 30px;
+  }
+}
+@media (max-width: 992px) {
+  .arabic .home-about-us .toptext-wrapper .toptext.arabic-text {
+    right: -150px;
+    background-size: contain;
+    padding: 0 0 0 30px;
+  }
+}
+@media (max-width: 550px) {
+  .arabic .home-about-us .toptext-wrapper .toptext.arabic-text {
+    display: none;
+  }
+}
+.arabic .home-about-us .lefttext-wrapper .lefttext {
+  left: unset;
+  right: 0;
+  text-align: right;
+  background: url(../images/greenanglelinearabic.png) no-repeat bottom center;
+}
+.arabic .home-about-us .lefttext-wrapper .lefttext.arabic-text {
+  display: inline-block;
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .arabic .home-about-us .lefttext-wrapper .lefttext.arabic-text {
+    background-size: contain;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .arabic .home-about-us .lefttext-wrapper .lefttext.arabic-text {
+    background-size: contain;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .arabic .home-about-us .lefttext-wrapper .lefttext.arabic-text {
+    background-size: contain;
+  }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .arabic .home-about-us .lefttext-wrapper .lefttext.arabic-text {
+    background-size: contain;
+  }
+}
+@media (max-width: 992px) {
+  .arabic .home-about-us .lefttext-wrapper .lefttext.arabic-text {
+    background-size: contain;
+  }
+}
+@media (max-width: 550px) {
+  .arabic .home-about-us .lefttext-wrapper .lefttext.arabic-text {
+    display: none;
+  }
+}
+.arabic .home-about-us .bottomtext-wrapper .bottomtext {
+  left: unset;
+  right: -250px;
+  text-align: left;
+  background: url(../images/blueanglelinearabic.png) no-repeat bottom center;
+  padding: 30px 0 0 0;
+}
+.arabic .home-about-us .bottomtext-wrapper .bottomtext.arabic-text {
+  display: inline-block;
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .arabic .home-about-us .bottomtext-wrapper .bottomtext.arabic-text {
+    right: -190px;
+    background-size: contain;
+    padding: 20px 0 0 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .arabic .home-about-us .bottomtext-wrapper .bottomtext.arabic-text {
+    right: -190px;
+    background-size: contain;
+    padding: 20px 0 0 20px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .arabic .home-about-us .bottomtext-wrapper .bottomtext.arabic-text {
+    right: -190px;
+    background-size: contain;
+    padding: 20px 0 0 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .arabic .home-about-us .bottomtext-wrapper .bottomtext.arabic-text {
+    right: -190px;
+    background-size: contain;
+    padding: 20px 0 0 20px;
+  }
+}
+@media (max-width: 992px) {
+  .arabic .home-about-us .bottomtext-wrapper .bottomtext.arabic-text {
+    right: -140px;
+    background-size: contain;
+    padding: 20px 0 0 20px;
+  }
+}
+@media (max-width: 550px) {
+  .arabic .home-about-us .bottomtext-wrapper .bottomtext.arabic-text {
+    display: none;
+  }
+}
+.arabic .wrapper nav.topsolution {
+  float: left;
+  z-index: 999;
+  position: relative;
+  background: #122d6e;
+}
+@media (max-width: 1400px) {
+  .arabic .wrapper nav.topsolution {
+    float: left;
+    position: relative;
+    z-index: 999;
+    background: #122d6e;
+  }
+}
+@media (max-width: 1300px) {
+  .arabic .wrapper nav.topsolution {
+    float: left;
+    position: relative;
+    z-index: 999;
+    background: #122d6e;
+  }
+}
+@media (max-width: 1200px) {
+  .arabic .wrapper nav.topsolution {
+    float: left;
+    position: relative;
+    z-index: 999;
+    background: #122d6e;
+  }
+}
+@media (max-width: 1100px) {
+  .arabic .wrapper nav.topsolution {
+    float: left;
+    position: relative;
+    z-index: 999;
+    background: #122d6e;
+  }
+}
+.arabic .wrapper nav.topsolution li .solutions--data .solutions--points span {
+  padding: 10px 20px 10px 0;
+}
+@media (min-width: 1100px) {
+  .arabic .wrapper #contents {
+    left: 0;
+    right: 0;
+  }
+}
+.arabic .home-about-us .about-us.arabic-text,
+.arabic .top-solutions-wrapper .top-solutions-heading.arabic-text,
+.arabic .our-transparency .transparency-heading.arabic-text,
+.arabic .industry-wrapper .industry-heading.arabic-text,
+.arabic .our-clients .our-clients-heading.arabic-text,
+.arabic .our-clients .our-partner-heading.arabic-text,
+.arabic .our-vendor-partner .our-clients-heading.arabic-text,
+.arabic .our-vendor-partner .our-partner-heading.arabic-text {
+  display: inline-block;
+}
+.arabic .home-about-us .about-us h2,
+.arabic .top-solutions-wrapper .top-solutions-heading h2,
+.arabic .our-transparency .transparency-heading h2,
+.arabic .industry-wrapper .industry-heading h2,
+.arabic .our-clients .our-clients-heading h2,
+.arabic .our-clients .our-partner-heading h2,
+.arabic .our-vendor-partner .our-clients-heading h2,
+.arabic .our-vendor-partner .our-partner-heading h2 {
+  padding-left: 0px;
+  padding-right: 110px;
+  font-family: var(--arabic-font);
+  letter-spacing: 0;
+}
+.arabic .home-about-us .about-us h2::before,
+.arabic .top-solutions-wrapper .top-solutions-heading h2::before,
+.arabic .our-transparency .transparency-heading h2::before,
+.arabic .industry-wrapper .industry-heading h2::before,
+.arabic .our-clients .our-clients-heading h2::before,
+.arabic .our-clients .our-partner-heading h2::before,
+.arabic .our-vendor-partner .our-clients-heading h2::before,
+.arabic .our-vendor-partner .our-partner-heading h2::before {
+  left: auto;
+  right: 60px;
+}
+.arabic .home-about-us .about-us h2::after,
+.arabic .top-solutions-wrapper .top-solutions-heading h2::after,
+.arabic .our-transparency .transparency-heading h2::after,
+.arabic .industry-wrapper .industry-heading h2::after,
+.arabic .our-clients .our-clients-heading h2::after,
+.arabic .our-clients .our-partner-heading h2::after,
+.arabic .our-vendor-partner .our-clients-heading h2::after,
+.arabic .our-vendor-partner .our-partner-heading h2::after {
+  left: auto;
+  right: 0;
+}
+.arabic .home-about-us .about-us.principal.arabic-text {
+  display: none;
+}
+.arabic .industry-wrapper .slick-carousel .slick-prev {
+  right: auto;
+  left: 40px;
+}
+@media (max-width: 767px) {
+  .arabic .industry-wrapper .slick-carousel .slick-prev {
+    left: 30px;
+  }
+}
+.arabic .industry-wrapper .slick-carousel .slick-next {
+  right: auto;
+  top: -50px;
+  left: 110px;
+}
+@media (max-width: 1000px) {
+  .arabic .industry-wrapper .slick-carousel .slick-next {
+    top: 0;
+    left: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .arabic .industry-wrapper .slick-carousel .slick-next {
+    top: 0;
+    left: 110px;
+  }
+}
+.arabic .home-slider .bx-wrapper .bx-viewport {
+  direction: ltr;
+}
+.arabic .home-slider .bx-wrapper .slide--content {
+  display: none;
+}
+.arabic .home-slider .bx-wrapper .slide--content.arabic-text {
+  display: inline-block;
+}
+.arabic .home-slider .bx-wrapper .slide--content h2 {
+  padding-left: 0;
+  padding-right: 70px;
+  color: var(--white);
+  text-align: right;
+  font-family: var(--arabic-font);
+}
+.arabic .home-slider .bx-wrapper .slide--content h2::before {
+  left: auto;
+  right: 0;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content {
+  direction: rtl;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content.arabic-text {
+  display: block;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 {
+  padding-left: 0;
+  padding-right: 70px;
+  color: var(--white);
+  text-align: right;
+  font-family: var(--arabic-font);
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2::before {
+  left: auto;
+  right: 0;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a {
+  padding: 0 20px 0 70px;
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a svg {
+  right: 90px;
+  transform: rotate(180deg);
+}
+.arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2 a:hover svg {
+  right: 105px;
+}
+.arabic .seminar--wrapper .seminar-wrapper {
+  direction: rtl;
+  background: rgba(255, 255, 255, 0.2) url(../images/newstransparentlogoarabic.png) no-repeat bottom left;
+}
+.arabic .seminar--wrapper .seminar-wrapper .seminar--image-date {
+  width: 100%;
+}
+.arabic .seminar--wrapper .seminar-wrapper .seminar--image-date .seminar--date {
+  padding: 30px 30px 0 0;
+}
+.arabic .seminar--wrapper .seminar-wrapper .seminar--info h3 {
+  background: url(../images/greenclock.png) no-repeat right center;
+  padding-left: 0;
+  padding-right: 50px;
+}
+.arabic .seminar--wrapper .seminar-wrapper .seminar--info h2 {
+  padding-right: 0;
+  padding-left: 50px;
+}
+.arabic .industry-wrapper .carousel-wrapper {
+  direction: rtl;
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text {
+  display: block;
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text h2 {
+  font-family: var(--arabic-font);
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text p {
+  line-height: normal;
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-content a {
+  font-family: var(--arabic-font);
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-content a svg {
+  margin-right: 20px;
+  margin-left: 0;
+  transform: rotate(-180deg);
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-number h1 {
+  text-align: left;
+  padding: 20px 0 0 20px;
+}
+.arabic .our-transparency .transparency-wrapper.arabic-text {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .arabic .our-transparency .transparency-wrapper.arabic-text {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+}
+.arabic .our-transparency .transparency-wrapper::after {
+  right: unset;
+  left: 20px;
+}
+@media (max-width: 1200px) {
+  .arabic .our-transparency .transparency-wrapper::after {
+    left: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .arabic .our-transparency .transparency-wrapper::after {
+    left: 30%;
+    top: 210px;
+  }
+}
+.arabic .our-transparency .transparency-wrapper .transparency-info {
+  padding-left: unset;
+  padding-right: 20px;
+}
+.arabic .our-transparency .transparency-wrapper .transparency-info h2 {
+  font-family: var(--arabic-font);
+  font-size: 33px;
+}
+@media (max-width: 1400px) {
+  .arabic .our-transparency .transparency-wrapper .transparency-info h2 {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .arabic .our-transparency .transparency-wrapper .transparency-info h2 {
+    font-size: 23px;
+    padding-top: 10px;
+  }
+}
+.arabic .our-transparency .transparency-wrapper .transparency-info h3 {
+  font-family: var(--arabic-font);
+}
+@media (max-width: 1100px) {
+  .arabic .our-transparency .transparency-wrapper .transparency-info h3 {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+}
+.arabic .our-transparency .transparency-wrapper .transparency-info p {
+  font-family: var(--arabic-font);
+}
+.arabic .our-transparency .transparency-wrapper .transparency-info a {
+  left: unset;
+  right: -60px;
+  background: url(../images/downloadicon.svg) no-repeat right center;
+  padding: 5px 40px 5px 0px;
+}
+.arabic .our-transparency .terms-data.arabic-text {
+  display: block;
+}
+.arabic .our-transparency .terms-data.arabic-text p {
+  font-family: var(--arabic-font);
+}
+.arabic .foot .footer-links .links {
+  border-right: none;
+  border-left: 1px solid #73BC45;
+}
+.arabic .foot .footer-links .links.arabic-text {
+  display: inline-flex;
+}
+@media (max-width: 992px) {
+  .arabic .foot .footer-links .links.arabic-text {
+    border-left: none;
+  }
+}
+.arabic .foot .footer-links .links.arabic-text:last-child {
+  border: none;
+}
+.arabic .foot .footer-links .links li a {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.arabic .foot .footer-location .location::after {
+  left: -20px;
+  right: unset;
+}
+@media (max-width: 992px) {
+  .arabic .foot .footer-location .location::after {
+    left: 70px;
+  }
+}
+.arabic .foot .footer-location .location .location-info.jeddah {
+  padding-right: 90px;
+  padding-left: 0;
+  background: url(../images/jeddah.svg) no-repeat right 0;
+}
+@media (max-width: 992px) {
+  .arabic .foot .footer-location .location .location-info.jeddah {
+    background: url(../images/jeddah.svg) no-repeat 560px 0;
+    padding-right: 130px;
+  }
+}
+@media (max-width: 767px) {
+  .arabic .foot .footer-location .location .location-info.jeddah {
+    background: url(../images/jeddah.svg) no-repeat 340px 0;
+    padding-right: 130px;
+  }
+}
+.arabic .foot .footer-location .location .location-info.riyadh {
+  padding-right: 120px;
+  padding-left: 0;
+  background: url(../images/riyadh.svg) no-repeat right 0;
+}
+@media (max-width: 992px) {
+  .arabic .foot .footer-location .location .location-info.riyadh {
+    background: url(../images/riyadh.svg) no-repeat 560px 0;
+    padding-right: 130px;
+  }
+}
+@media (max-width: 767px) {
+  .arabic .foot .footer-location .location .location-info.riyadh {
+    background: url(../images/riyadh.svg) no-repeat 340px 0;
+    padding-right: 130px;
+  }
+}
+.arabic .foot .footer-location .location .location-info.alkhobar {
+  padding-right: 130px;
+  padding-left: 0;
+  background: url(../images/khobar.svg) no-repeat right 0;
+}
+@media (max-width: 992px) {
+  .arabic .foot .footer-location .location .location-info.alkhobar {
+    background: url(../images/khobar.svg) no-repeat right 0;
+    padding-right: 130px;
+  }
+}
+.arabic .foot .footer-location .location .location-info.arabic-text {
+  display: inline-block;
+}
+.arabic .foot .footer-location .location .location-info.arabic-text h3 {
+  font-family: var(--arabic-font);
+}
+.arabic .foot .footer-company-info.arabic-text {
+  display: block;
+}
+.arabic .foot .footer-two-div .footer-social.arabic-text {
+  display: block;
+}
+.arabic .foot .footer-two-div .footer-social.arabic-text h2 {
+  font-family: var(--arabic-font);
+}
+.arabic .foot .footer-two-div .footer-newsletter.arabic-text {
+  display: block;
+}
+.arabic .foot .footer-two-div .footer-newsletter.arabic-text h2 {
+  font-family: var(--arabic-font);
+}
+.arabic .foot .footer-bottom {
+  font-family: var(--arabic-font);
+}
+.arabic .foot .footer-bottom.arabic-text {
+  display: block;
+}
+
 .home-slider--arabic {
   display: none;
 }
@@ -4626,8 +5225,26 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   background: #122d6e;
   padding: 30px 40px;
 }
+.ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .slick-prev {
+  left: unset;
+  right: -90px;
+  top: 40px;
+}
+.ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .slick-next {
+  right: -90px;
+  top: 120px;
+}
+.ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .slick-prev, .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .slick-next {
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border: 1px solid var(--white);
+}
+.ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .slick-prev:hover, .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .slick-next:hover {
+  background: #81c357;
+}
 .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper {
-  width: 90% !important;
+  width: 95% !important;
   border: 0 solid #fff;
   height: 200px;
   overflow: hidden;
