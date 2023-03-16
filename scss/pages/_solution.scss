@@ -1,13 +1,18 @@
 .soluton__banner {
-    background: url(../images/solution-banner.png) no-repeat;
-    background-size: cover;
-    height: 100vh;
+    // background: url(../images/solution-banner.png) no-repeat;
     position: relative;
     display: flex;
     align-items: center;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
     .content {
-        
         padding-left: 110px;
+        position: absolute;
+        z-index: 1;
+        left: 110px;
         h1 {
             span {
                 display: block;
@@ -361,11 +366,19 @@
 }
 }
 
-
+@media screen and (max-width: 1440.99px) {
+    .soluton__banner .content {
+        left: 80px;
+    }
+}
 
 @media screen and (max-width: 1366.99px) {
     .top__section .nav {
         width: 520px;
+    }
+
+    .soluton__banner .content {
+        left: 110px;
     }
 }
 
@@ -373,6 +386,15 @@
     .top__section .nav {
         width: 450px;
     }
+
+    
+
+    .soluton__banner {
+        height: 650px;
+        .content {
+            left: 40px;
+        }
+    } 
 }
 
 

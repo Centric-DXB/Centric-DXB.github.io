@@ -261,6 +261,66 @@
         $(this).addClass("active");
     return false;
     });
+
+    var $st = $('.pagination');
+    var $slickEl = $('.industries__cardSLider');
+
+    $slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $st.text(i + ' of ' + slick.slideCount);
+      });
+      
+      $slickEl.slick({
+        slidesToShow: 3,
+        focusOnSelect: true,
+        dots: false,
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+
+    // $('.industries__cardSLider').slick({
+    //     infinite: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     autoplaySpeed: 3000,
+    //     speed: 2000,
+    //     autoplay: false,
+    //     dots: false,
+    //     arrows: true,
+    //     responsive: [
+           
+    //         {
+    //         breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 //infinite: true,
+    //                 dots: true
+    //             }
+    //         },
+    //         {
+    //         breakpoint: 550,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 dots:true
+    //             }
+    //         },
+    //     ]
+    //   });
     
     // ENGLISH CAROUSEL
     $('.seminar-carousel').slick({
