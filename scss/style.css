@@ -4607,15 +4607,19 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 
 .soluton__banner {
-  background: url(../images/solution-banner.png) no-repeat;
-  background-size: cover;
-  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
 }
+.soluton__banner img {
+  height: 100%;
+  object-fit: cover;
+}
 .soluton__banner .content {
   padding-left: 110px;
+  position: absolute;
+  z-index: 1;
+  left: 110px;
 }
 .soluton__banner .content h1 span {
   display: block;
@@ -4910,14 +4914,28 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--light-green);
 }
 
+@media screen and (max-width: 1440.99px) {
+  .soluton__banner .content {
+    left: 80px;
+  }
+}
 @media screen and (max-width: 1366.99px) {
   .top__section .nav {
     width: 520px;
+  }
+  .soluton__banner .content {
+    left: 110px;
   }
 }
 @media screen and (max-width: 1024.99px) {
   .top__section .nav {
     width: 450px;
+  }
+  .soluton__banner {
+    height: 650px;
+  }
+  .soluton__banner .content {
+    left: 40px;
   }
 }
 @media screen and (max-width: 768.99px) {
@@ -4952,9 +4970,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
   .soluton__banner .content h1 .secondary-heading {
     font-size: 26px;
-  }
-  .our__solutionCLient {
-    padding-top: 0px !important;
   }
   .pagination__list ul li a {
     font-size: 16px !important;
@@ -5793,6 +5808,116 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 
+.our__solutions {
+  padding: 40px 0px 120px;
+}
+.our__solutions .content {
+  margin-bottom: 80px;
+}
+.our__solutions .industry__card {
+  background: transparent;
+  border-color: transparent !important;
+  border-radius: 0;
+  color: var(--white);
+}
+.our__solutions .industry__card .card-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  border-color: transparent;
+}
+.our__solutions .industry__card .card-body {
+  border-color: transparent;
+  padding: 5px 10px;
+}
+.our__solutions .industry__card .card-body h3 {
+  font-size: 37px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.our__solutions .industry__card .card-body p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.our__solutions .industry__card .card-footer {
+  border: 1px solid white !important;
+  padding: 12px 10px;
+  margin: 5px 10px;
+}
+.our__solutions .industry__card .card-footer ul li {
+  font-size: 16px;
+  border-bottom: 1px solid white;
+  line-height: 30px;
+}
+.our__solutions .industry__card .card-footer ul li:last-child {
+  border-bottom: 0px;
+}
+.our__solutions .industries__cardSLider button.slick-next {
+  top: auto;
+  bottom: -50px;
+  right: 1%;
+  margin-right: 15px;
+}
+.our__solutions .industries__cardSLider button.slick-next::before {
+  background: var(--light-green);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--white);
+}
+.our__solutions .industries__cardSLider button.slick-prev {
+  top: auto;
+  bottom: -50px;
+  left: auto;
+  right: 0;
+  z-index: 1;
+  margin-right: 190px;
+}
+.our__solutions .industries__cardSLider button.slick-prev::before {
+  background: var(--light-green);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--white);
+}
+.our__solutions .pagination {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 300;
+  justify-content: flex-end;
+  position: relative;
+  top: 35px;
+  right: 65px;
+}
+
+@media screen and (max-width: 620.99px) {
+  .our__solutions .industries__cardSLider button.slick-next {
+    right: 50%;
+    margin-right: -105px;
+    z-index: 1;
+  }
+  .our__solutions .industries__cardSLider button.slick-prev {
+    left: 50%;
+    right: 0;
+    margin-left: -150px;
+    z-index: 1;
+  }
+  .our__solutions .pagination {
+    justify-content: center;
+    position: relative;
+    top: 35px;
+    right: 0;
+  }
+  .industry__card {
+    text-align: center;
+  }
+}
 @font-face {
   font-family: "Droid Arabic Kufi";
   src: url("../fonts/DroidArabicKufi.eot");
