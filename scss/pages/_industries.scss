@@ -109,12 +109,15 @@
             button.slick-next {
                 right: 50%;
                 margin-right: -105px;
+                z-index: 1;
+
             }
     
             button.slick-prev {
                 left: 50%;
                 right: 0;
-                margin-left: -150px
+                margin-left: -150px;
+                z-index: 1;
             }
         }
         .pagination {

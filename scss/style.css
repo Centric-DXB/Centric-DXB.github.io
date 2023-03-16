@@ -4971,9 +4971,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   .soluton__banner .content h1 .secondary-heading {
     font-size: 26px;
   }
-  .our__solutionCLient {
-    padding-top: 0px !important;
-  }
   .pagination__list ul li a {
     font-size: 16px !important;
   }
@@ -5749,11 +5746,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   .our__solutions .industries__cardSLider button.slick-next {
     right: 50%;
     margin-right: -105px;
+    z-index: 1;
   }
   .our__solutions .industries__cardSLider button.slick-prev {
     left: 50%;
     right: 0;
     margin-left: -150px;
+    z-index: 1;
   }
   .our__solutions .pagination {
     justify-content: center;
