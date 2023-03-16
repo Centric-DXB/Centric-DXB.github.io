@@ -437,6 +437,27 @@
         ]
     });
 
+
+    /*  share Price vlaue display on header*/
+
+    const settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://yh-finance.p.rapidapi.com/stock/v2/get-summary?symbol=7200.SR&region=SAR",
+        "method": "GET",
+        "headers": {
+            "X-RapidAPI-Key": "f789a57fe4msh013b5906189c1dep122727jsnf841993f419c",
+            "X-RapidAPI-Host": "yh-finance.p.rapidapi.com"
+        }
+    };
+    $.ajax(settings).done(function (response) {
+        var sharePrice = 'Share Price ' + response.price.regularMarketPrice.fmt + ' - TWDL | ' + response.price.regularMarketOpen.fmt + ' | ' + response.price.regularMarketChangePercent.fmt + ' ' + response.price.regularMarketChange.fmt;
+        $('#sharePrice').append($('<option>', {
+            value: '1',
+            text: sharePrice
+        }));
+    });
+
     
     
     
