@@ -105,7 +105,6 @@
 
 @media screen and (max-width: 620.99px) {
     .our__solutions {
-
         .industries__cardSLider {
             button.slick-next {
                 right: 50%;
@@ -115,17 +114,15 @@
             button.slick-prev {
                 left: 50%;
                 right: 0;
-                margin-left: -150px;
+                margin-left: -150px
             }
         }
-
         .pagination {
             justify-content: center;
             position: relative;
             top: 35px;
             right: 0;
         }
-
     }
 
     .industry__card {
