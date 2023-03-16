@@ -397,24 +397,24 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
-        speed: 2000,
-        //autoplay: true,
+        speed: 1000,
+        autoplay: true,
         arrows: true,
         responsive: [
             {
             breakpoint: 1200,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
-                    dots:true
+                    //dots:true
                 }
             },
             {
             breakpoint: 992,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
-                    dots:true
+                    //dots:true
                 }
             },
             {
@@ -423,7 +423,7 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     //infinite: true,
-                    dots: true
+                    //dots: true
                 }
             },
             {
@@ -431,7 +431,7 @@
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    dots:true
+                    //dots:true
                 }
             },
         ]
