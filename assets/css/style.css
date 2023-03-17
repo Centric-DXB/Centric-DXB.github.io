@@ -5053,20 +5053,26 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   position: relative;
 }
 .herobanner img {
-  position: absolute;
-  z-index: -1;
+  position: relative;
   max-width: 100%;
 }
-.herobanner .herobanner-topheading {
+.herobanner .herobanner-content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.herobanner .herobanner-content .herobanner-topheading {
   display: block;
   margin: 400px 0 0 0;
   color: var(--white);
 }
-.herobanner .herobanner-topheading h2 {
+.herobanner .herobanner-content .herobanner-topheading h2 {
   font-size: 20px;
   margin-bottom: 50px;
 }
-.herobanner .herobanner-topheading h1 {
+.herobanner .herobanner-content .herobanner-topheading h1 {
   font-size: 60px;
 }
 
@@ -5939,6 +5945,242 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     text-align: center;
   }
 }
+.our--services-wrapper {
+  display: block;
+  width: 100%;
+  background: #122d6e;
+  padding: 50px 0 100px;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.our--services-wrapper h2 {
+  font-size: 33px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 50px;
+  position: relative;
+  padding-left: 110px;
+  text-transform: unset;
+  margin-top: 50px;
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .our--services-wrapper h2 {
+    font-size: 33px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .our--services-wrapper h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .our--services-wrapper h2 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .our--services-wrapper h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .our--services-wrapper h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .our--services-wrapper h2 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 24px;
+  }
+}
+.our--services-wrapper h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: var(--light-green);
+  left: 0;
+  top: 20px;
+}
+.our--services-wrapper h2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../images/logowhitecircle.svg) no-repeat 0 0;
+  left: 60px;
+  top: 6px;
+}
+.our--services-wrapper p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  padding-left: 110px;
+}
+.our--services-wrapper img {
+  max-width: 100%;
+}
+
+.contactus-wrapper {
+  display: block;
+  width: 100%;
+  padding: 0 0 100px;
+}
+.contactus-wrapper h2 {
+  font-size: 30px;
+  color: var(--dark-blue-color);
+  padding-left: 100px;
+  position: relative;
+  text-transform: unset;
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+@media (max-width: 767px) {
+  .contactus-wrapper h2 {
+    padding-left: 120px;
+    font-size: 20px;
+    letter-spacing: 0;
+    padding-top: 10px;
+  }
+}
+.contactus-wrapper h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: var(--light-green);
+  left: 0;
+  top: 19px;
+}
+@media (max-width: 767px) {
+  .contactus-wrapper h2::after {
+    left: 20px;
+  }
+}
+.contactus-wrapper h2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../images/logocolorcircle.svg) no-repeat 0 0;
+  left: 60px;
+  top: 6px;
+}
+@media (max-width: 767px) {
+  .contactus-wrapper h2::before {
+    left: 80px;
+  }
+}
+.contactus-wrapper .contact-form {
+  padding-left: 100px;
+  display: block;
+}
+.contactus-wrapper .contact-form h3 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: var(--dark-purple);
+}
+.contactus-wrapper .contact-form p {
+  font-size: 18px;
+  color: #ababab;
+  margin-bottom: 40px;
+}
+.contactus-wrapper .contact-form form label {
+  font-size: 16px;
+  color: var(--dark-purple);
+  margin-bottom: 5px;
+  font-family: var(--poppins);
+  font-weight: 900;
+}
+.contactus-wrapper .contact-form form .contact-field {
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  padding: 15px 10px;
+  box-shadow: none;
+  border-radius: 0;
+  color: black;
+  background: var(--white);
+  width: 100%;
+}
+.contactus-wrapper .contact-form form .contact-field::placeholder {
+  color: rgba(116, 123, 133, 0.5);
+}
+.contactus-wrapper .contact-form form input[type=checkbox] {
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.contactus-wrapper .contact-form form button {
+  line-height: 50px;
+  background: var(--slider-active-green);
+  padding: 0 60px 0 30px;
+  color: var(--white);
+  position: relative;
+  margin-top: 50px;
+}
+.contactus-wrapper .contact-form form button svg {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  transition: all 0.3s linear;
+}
+.contactus-wrapper .contact-form form button:hover svg {
+  right: 20px;
+  transition: all 0.3s linear;
+}
+
+.location-map-wrapper {
+  display: block;
+  width: 100%;
+  padding: 100px 0;
+  background: var(--dark-blue-color);
+}
+.location-map-wrapper .location-heading {
+  color: var(--white);
+  padding-left: 110px;
+}
+.location-map-wrapper .location-heading h2 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.location-map-wrapper .location-heading p {
+  font-size: 20px;
+  padding-right: 510px;
+}
+.location-map-wrapper .locationmap {
+  margin-top: 100px;
+}
+.location-map-wrapper .locations--name-wrapper {
+  display: block;
+  margin-top: 150px;
+}
+.location-map-wrapper .locations--name-wrapper li {
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+}
+.location-map-wrapper .locations--name-wrapper .location-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+}
+.location-map-wrapper .locations--name-wrapper .location-wrapper .location-address {
+  color: var(--white);
+  padding-left: 20px;
+}
+.location-map-wrapper .locations--name-wrapper .location-wrapper .location-address h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.location-map-wrapper .locations--name-wrapper .location-wrapper .location-address p {
+  font-size: 12px;
+}
+
 @font-face {
   font-family: "Droid Arabic Kufi";
   src: url("../fonts/DroidArabicKufi.eot");

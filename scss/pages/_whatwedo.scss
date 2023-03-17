@@ -8,22 +8,30 @@
     //min-height: 1070px;
     position: relative;
     img{
-        position: absolute;
-        z-index: -1;
+        position: relative;
+        //z-index: -1;
         max-width: 100%;
     }
-    .herobanner-topheading{
-        display: block;
-        margin: 400px 0 0 0;
-        color: var(--white);
-        h2{
-            font-size: 20px;
-            margin-bottom: 50px;
-        }
-        h1{
-            font-size: 60px;
+    .herobanner-content{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .herobanner-topheading{
+            display: block;
+            margin: 400px 0 0 0;
+            color: var(--white);
+            h2{
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+            h1{
+                font-size: 60px;
+            }
         }
     }
+    
 }
 .whatwedo-wrapper{
     display: block;
