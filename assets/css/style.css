@@ -5918,6 +5918,121 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     text-align: center;
   }
 }
+.wwa__chairmen__section {
+  background: var(--white);
+  background-size: cover;
+  position: relative;
+}
+.wwa__chairmen__section::before {
+  position: absolute;
+  content: "";
+  background: var(--light-green);
+  height: 80px;
+  width: 40%;
+}
+.wwa__chairmen__section .starter-template ul {
+  display: flex;
+  justify-content: center;
+  margin: 90px 0px 0px;
+  height: auto;
+  top: 120px;
+  border-bottom: 0;
+}
+.wwa__chairmen__section .starter-template ul li {
+  border: 1px solid transparent;
+}
+.wwa__chairmen__section .starter-template ul li:hover {
+  text-decoration: none;
+}
+.wwa__chairmen__section .starter-template ul li a.active {
+  background-color: var(--dark-blue-color);
+  color: var(--white);
+}
+.wwa__chairmen__section .starter-template ul li a {
+  font-size: 16px;
+}
+.wwa__chairmen__section .starter-template ul li a:hover {
+  text-decoration: none;
+}
+.wwa__chairmen__section #myTabContent {
+  margin-top: 200px;
+  z-index: 1;
+}
+.wwa__chairmen__section #myTabContent .seo__img {
+  max-width: 65%;
+}
+.wwa__chairmen__section #myTabContent .qoute {
+  display: flex;
+  justify-content: end;
+}
+.wwa__chairmen__section #myTabContent h3 {
+  font-size: 33px;
+  color: var(--light-green);
+}
+.wwa__chairmen__section #myTabContent h6 {
+  font-size: 26px;
+  color: var(--medium-grey);
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.wwa__chairmen__section #myTabContent p {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--medium-grey);
+  line-height: 30px;
+}
+.wwa__chairmen__section #myTabContent p:last-child {
+  margin-top: 30px;
+}
+.wwa__chairmen__section #myTabContent a {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+  background: var(--light-green);
+  color: var(--white);
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--poppins);
+  line-height: 50px;
+  text-decoration: none;
+}
+.wwa__chairmen__section #myTabContent a svg {
+  margin-left: 20px;
+}
+.wwa__chairmen__section #myTabContent a:hover {
+  background: var(--white);
+  color: var(--light-green);
+}
+
+.ceo__memberSlider .card {
+  background: transparent;
+  margin: 60px 0;
+}
+.ceo__memberSlider .card .card-header {
+  background: transparent;
+}
+.ceo__memberSlider .card .accordion .item .item-header h2 i {
+  float: right;
+  font-size: 30px;
+  color: #eca300;
+  background-color: black;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.ceo__memberSlider .card button.btn.btn-link.collapsed i {
+  transform: rotate(0deg);
+}
+.ceo__memberSlider .card button.btn.btn-link i {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
 @font-face {
   font-family: "Droid Arabic Kufi";
   src: url("../fonts/DroidArabicKufi.eot");

@@ -1,0 +1,141 @@
+.wwa__chairmen__section {
+    background: var(--white);
+    background-size: cover;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        background: var(--light-green);
+        height: 80px;
+        width: 40%;
+    }
+
+
+ .starter-template {
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 90px 0px 0px;
+        height: auto;
+        top: 120px;
+        border-bottom: 0;
+
+        li {
+            border: 1px solid transparent;
+           
+            &:hover {
+                text-decoration: none;
+            }
+
+            a.active {
+                background-color: var(--dark-blue-color);
+                color: var(--white);
+            }
+            a
+            {
+                font-size: 16px;
+              
+
+                &:hover {
+                    text-decoration: none;
+                }
+                
+            }
+        }
+    }
+ } 
+    
+    #myTabContent {
+        margin-top: 200px;
+        z-index: 1;
+
+        .seo__img {
+            max-width: 65%;
+        }
+
+        .qoute {
+            display: flex;
+            justify-content: end;
+        }
+
+        h3 {
+            font-size: 33px;
+            color: var(--light-green);
+        }
+        h6 {
+            font-size: 26px;
+            color: var(--medium-grey);
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            color: var(--medium-grey);
+            line-height: 30px;
+            // max-width: 70%;
+
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
+
+        a{
+            display: inline-block;
+            text-align: center;
+            padding: 0 20px;
+            background: var(--light-green);
+            color: var(--white);
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            transition: all .3s ease-in-out;
+            font-family: var(--poppins);
+            line-height: 50px;
+            text-decoration: none;
+            svg{
+                margin-left: 20px;
+            }
+            &:hover{
+                background: var(--white);
+                color: var(--light-green);
+            }
+        }
+    }
+
+}
+
+
+.ceo__memberSlider {
+    .card {
+        background: transparent;
+        margin: 60px 0;
+        .card-header {
+            background: transparent;
+        }
+
+        .accordion .item .item-header h2 i {
+            float: right;
+            font-size: 30px;
+            color: #eca300;
+            background-color: black;
+            width: 60px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        
+        button.btn.btn-link.collapsed i {
+            transform: rotate(0deg);
+        }
+        
+        button.btn.btn-link i {
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+        
+    }
+}
