@@ -458,6 +458,33 @@
         }));
     });
 
+    // SERVICES SECTION FUNCTIONS
+    $(".services--items a").click(function(e) {
+        e.preventDefault();
+
+        $(".service-img img").removeClass("active");
+    
+        var img_id = $(this).data("dex");
+    
+        $("#"+img_id).addClass("active");
+
+        //console.log("#"+img_id);
+    
+        $(".services--items li a").removeClass("active-text");
+        $(this).addClass("active-text");
+    });
+
+    // OUR INDUSTRIES FUNCTIONS
+    $("#").click(function() {
+
+        $(".industry--carousel-content").removeClass("active");
+        $(".industry--image").removeClass("active");
+        
+    
+        $(".our-industry--content a").removeClass("active");
+        $(this).addClass("active");
+    });
+
     
     
     

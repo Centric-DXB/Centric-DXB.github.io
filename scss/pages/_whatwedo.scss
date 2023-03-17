@@ -2,10 +2,16 @@
 .herobanner{
     display: block;
     width: 100%;
-    background: url(../images/herobanner.png) no-repeat 0 0;
+    //background: url(../images/herobanner.png) no-repeat 0 0;
     background-size: cover;
     position: relative;
-    min-height: 1070px;
+    //min-height: 1070px;
+    position: relative;
+    img{
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
     .herobanner-topheading{
         display: block;
         margin: 400px 0 0 0;
@@ -162,7 +168,7 @@
             padding-bottom: 50px;
         }
         .industry--carousel-content {
-            display: block;
+            display: none;
             h3{
                 font-size: 33px;
                 margin-bottom: 10px;
@@ -172,6 +178,9 @@
                 font-size: 20px;
                 margin-bottom: 20px;
                 line-height: 30px;
+            }
+            &.active{
+                display: block;
             }
         }
     }
@@ -184,6 +193,10 @@
             overflow: hidden;
             height: 800px;
             width: 140%;
+            display: none;
+            &.active{
+                display: block;
+            }
             @media (max-width: 1800px) {
                 width: 125%;
             }
@@ -527,7 +540,7 @@
                 a{
                     color: var(--white);
                     text-decoration: none;
-                    &:hover{
+                    &:hover, &.active-text{
                         font-weight: 700;
                     }
                 }
@@ -553,6 +566,16 @@
     .service-img{
         display: block;
         margin-top: 50px;
+        position: relative;
+        img{
+            position: absolute;
+            opacity: 0;
+            transition: all .2s linear;
+            &.active{
+                opacity: 1;
+                transition: all .2s linear;
+            }
+        }
     }
 }
 .technologies-wrapper{

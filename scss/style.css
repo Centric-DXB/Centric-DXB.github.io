@@ -5048,10 +5048,14 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .herobanner {
   display: block;
   width: 100%;
-  background: url(../images/herobanner.png) no-repeat 0 0;
   background-size: cover;
   position: relative;
-  min-height: 1070px;
+  position: relative;
+}
+.herobanner img {
+  position: absolute;
+  z-index: -1;
+  max-width: 100%;
 }
 .herobanner .herobanner-topheading {
   display: block;
@@ -5240,7 +5244,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content {
-  display: block;
+  display: none;
 }
 .ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content h3 {
   font-size: 33px;
@@ -5252,6 +5256,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-bottom: 20px;
   line-height: 30px;
 }
+.ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content.active {
+  display: block;
+}
 .ourindustry-wrapper .industry--image-wrapper {
   position: relative;
 }
@@ -5262,6 +5269,10 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   overflow: hidden;
   height: 800px;
   width: 140%;
+  display: none;
+}
+.ourindustry-wrapper .industry--image-wrapper .industry--image.active {
+  display: block;
 }
 @media (max-width: 1800px) {
   .ourindustry-wrapper .industry--image-wrapper .industry--image {
@@ -5663,7 +5674,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--white);
   text-decoration: none;
 }
-.services-wrapper .services--items-wrapper .services--items li a:hover {
+.services-wrapper .services--items-wrapper .services--items li a:hover, .services-wrapper .services--items-wrapper .services--items li a.active-text {
   font-weight: 700;
 }
 .services-wrapper .service--explore-btn {
@@ -5685,6 +5696,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .services-wrapper .service-img {
   display: block;
   margin-top: 50px;
+  position: relative;
+}
+.services-wrapper .service-img img {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.services-wrapper .service-img img.active {
+  opacity: 1;
+  transition: all 0.2s linear;
 }
 
 .technologies-wrapper {
