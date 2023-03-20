@@ -297,7 +297,7 @@
         slidesToScroll: 1,
         autoplaySpeed: 3000,
         speed: 2000,
-        autoplay: false,
+        autoplay: true,
         dots: false,
         arrows: true,
         responsive: [
@@ -457,6 +457,12 @@
             text: sharePrice
         }));
     });
+
+
+
+
+
+
 
     
     

@@ -34,6 +34,8 @@
             a
             {
                 font-size: 16px;
+                color: var(--medium-grey);
+                text-shadow: none;
               
 
                 &:hover {
@@ -51,6 +53,9 @@
 
         .seo__img {
             max-width: 65%;
+            position: absolute;
+            left: 60px;
+            top: 60px;
         }
 
         .qoute {
@@ -199,6 +204,10 @@
         
         
     }
+
+    .collapse.show {
+       
+    }
 }
 
 
@@ -211,14 +220,13 @@
         
         div {
           flex: 1;
-          height: 70vh;
-          transition: flex 0.5s ease-out;
+          height: 90vh;
+          transition: flex 0.8s ease-out;
           color: white;
           font-family: sans-serif;
           text-align: center;
           
           h1 {
-            padding-top: 40vh;
             transition: color 0.5s ease-out;
           }
           
@@ -233,35 +241,142 @@
           transform: skewX(10deg);
           margin-left: -5%;
           position: relative;
+          cursor: pointer;
 
           &::before {
             position: absolute;
             content: '';
-            background: url(../images/) no-repeat;
+            background: url(../../assets/images/left-pusedo.png) no-repeat;
+            background-position: bottom;
+            background-size: 100%;
+            height:300px;
+            width: 100%;
+            top: auto;
+            left: 0;
+            bottom: 0;
           }
           
           &:hover {
             
-            h1 {
-              color: blue;
-            }
+         h1 {
+            -webkit-text-fill-color: var(--white);
+         }
             
           }
+         
         }
         
         .right {
           background:var(--light-green);
           transform: skewX(10deg);
           margin-right: -5%;
+          position: relative;
+          cursor: pointer;
+
+          &::before {
+            position: absolute;
+            content: '';
+            // background: url(../../assets/images/right-puesdo-1.png) no-repeat;
+            background-position: bottom;
+            background-size: 100%;
+            height:300px;
+            width: 100%;
+            top: auto;
+            left: auto;
+            right: 0;
+            bottom: 0;
+          }
           
-           &:hover {
+          &:hover {
             
             h1 {
-              color: red;
+               -webkit-text-fill-color: var(--white);
             }
-            
-          }
+               
+             }
+         
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+            align-items: center;
+            flex-direction: column;
+            max-width: 50%;
+            margin: 0 auto;
+            transform: none;
+
+            h1 {
+                font-size: 80px;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 1px;
+                margin-bottom: 40px;
+
+               
+            }
+
+            h3 {
+                font-size: 48px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 30px;
+            }
         }
         
       }
+}
+
+.section__affiliate {
+    .affilate__card {
+        background:#385394;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        color: var(--white);
+        padding: 20px;
+        margin-bottom: 20px;
+
+        .card-header {
+            padding: 0;
+            min-width: 300px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .card-body {
+            padding: 1rem 4rem;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                background-color: #ffffff78;
+                height: 80%;
+                width: 1;
+                left: 30px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            p {
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+
+             a {
+                font-size: 16px;
+                font-weight: 400;
+                color: var(--white);
+                text-transform: uppercase;
+                text-decoration: none;
+             }
+        }
+    }
 }
