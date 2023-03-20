@@ -110,9 +110,43 @@
 .ceo__memberSlider {
     .card {
         background: transparent;
-        margin: 60px 0;
+        margin: 60px 10px;
+        border-radius: 0;
         .card-header {
             background: transparent;
+            padding: 0;
+            border-bottom: 0;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+
+            h4 {
+                font-weight: 400;
+                span {
+                    font-size: 20px;
+                    color: var(--medium-grey);
+                    &:last-child {
+                        font-size: 18px;
+                        color: var(--medium-grey);
+
+                    }
+                }
+            }
+
+            button {
+                background: var(--light-green);
+                color: var(--white);
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+            }
         }
 
         .accordion .item .item-header h2 i {
@@ -136,6 +170,98 @@
             transform: rotate(180deg);
             transition: 0.5s;
         }
+
+        .t-p {
+            padding: 20px;
+            p {
+                font-size: 20px;
+                color: var(--medium-grey);
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+    
+             a {
+                color: var(--light-green);
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 200;
+                &:hover {
+                    text-decoration: none;
+                    color: var(--light-green);
+                }
+               
+             }
+        }
+
+      
+        
         
     }
+}
+
+
+.split__section {
+    overflow-x: hidden;
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        
+        div {
+          flex: 1;
+          height: 70vh;
+          transition: flex 0.5s ease-out;
+          color: white;
+          font-family: sans-serif;
+          text-align: center;
+          
+          h1 {
+            padding-top: 40vh;
+            transition: color 0.5s ease-out;
+          }
+          
+          &:hover {
+            flex: 1.5;
+          }
+          
+        }
+        
+        .left {
+          background:var(--dark-blue-color);
+          transform: skewX(10deg);
+          margin-left: -5%;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: '';
+            background: url(../images/) no-repeat;
+          }
+          
+          &:hover {
+            
+            h1 {
+              color: blue;
+            }
+            
+          }
+        }
+        
+        .right {
+          background:var(--light-green);
+          transform: skewX(10deg);
+          margin-right: -5%;
+          
+           &:hover {
+            
+            h1 {
+              color: red;
+            }
+            
+          }
+        }
+        
+      }
 }

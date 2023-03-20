@@ -4726,7 +4726,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .top__section {
   background: var(--dark-purple);
   background-size: cover;
-  height: 100vh;
   padding: 80px 0;
   position: relative;
   /* Add indicator arrow for the active tab */
@@ -4735,7 +4734,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   position: absolute;
   content: "";
   background-color: var(--white);
-  height: 100vh;
+  height: 100%;
   width: 50%;
   top: 0;
   right: 0;
@@ -4760,7 +4759,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 24px;
 }
 .top__section .nav {
-  width: 580px;
+  width: 610px;
   height: auto;
   top: auto;
   left: auto;
@@ -4771,6 +4770,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   align-items: center;
   align-content: stretch;
   margin: 80px 0px 0px;
+  position: unset;
 }
 .top__section .nav .card {
   background: transparent;
@@ -4807,6 +4807,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--white);
   position: relative;
   padding: 0px 8px;
+  width: 180px;
+  height: 210px;
 }
 .top__section .nav-pills-custom .nav-link.active {
   background-color: transparent;
@@ -6008,10 +6010,40 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 
 .ceo__memberSlider .card {
   background: transparent;
-  margin: 60px 0;
+  margin: 60px 10px;
+  border-radius: 0;
 }
 .ceo__memberSlider .card .card-header {
   background: transparent;
+  padding: 0;
+  border-bottom: 0;
+}
+.ceo__memberSlider .card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+.ceo__memberSlider .card .card-footer h4 {
+  font-weight: 400;
+}
+.ceo__memberSlider .card .card-footer h4 span {
+  font-size: 20px;
+  color: var(--medium-grey);
+}
+.ceo__memberSlider .card .card-footer h4 span:last-child {
+  font-size: 18px;
+  color: var(--medium-grey);
+}
+.ceo__memberSlider .card .card-footer button {
+  background: var(--light-green);
+  color: var(--white);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
 }
 .ceo__memberSlider .card .accordion .item .item-header h2 i {
   float: right;
@@ -6032,6 +6064,73 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   transform: rotate(180deg);
   transition: 0.5s;
 }
+.ceo__memberSlider .card .t-p {
+  padding: 20px;
+}
+.ceo__memberSlider .card .t-p p {
+  font-size: 20px;
+  color: var(--medium-grey);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.ceo__memberSlider .card .t-p a {
+  color: var(--light-green);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.ceo__memberSlider .card .t-p a:hover {
+  text-decoration: none;
+  color: var(--light-green);
+}
+
+.split__section {
+  overflow-x: hidden;
+}
+.split__section .container-fluid {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.split__section .container-fluid div {
+  flex: 1;
+  height: 70vh;
+  transition: flex 0.5s ease-out;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+.split__section .container-fluid div h1 {
+  padding-top: 40vh;
+  transition: color 0.5s ease-out;
+}
+.split__section .container-fluid div:hover {
+  flex: 1.5;
+}
+.split__section .container-fluid .left {
+  background: var(--dark-blue-color);
+  transform: skewX(10deg);
+  margin-left: -5%;
+  position: relative;
+}
+.split__section .container-fluid .left::before {
+  position: absolute;
+  content: "";
+  background: url(../images/) no-repeat;
+}
+.split__section .container-fluid .left:hover h1 {
+  color: blue;
+}
+.split__section .container-fluid .right {
+  background: var(--light-green);
+  transform: skewX(10deg);
+  margin-right: -5%;
+}
+.split__section .container-fluid .right:hover h1 {
+  color: red;
+}
 
 @font-face {
   font-family: "Droid Arabic Kufi";
@@ -6048,6 +6147,14 @@ html, body, a, p, header, footer, form, section, article, textarea, input, ul, l
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+span {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
   font-family: "Poppins", sans-serif;
 }
 
