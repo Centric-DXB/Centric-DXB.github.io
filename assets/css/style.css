@@ -909,14 +909,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic header .logo {
   padding: 15px 30px 15px 0px;
 }
-.arabic header .top-main-navigation ul li {
-  display: none;
-}
 .arabic header .top-main-navigation ul li.arabic-text {
   display: block;
-}
-.arabic header .main-menu ul li {
-  display: none;
 }
 .arabic header .main-menu ul li.arabic-text {
   display: block;
@@ -5249,9 +5243,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     padding-bottom: 50px;
   }
 }
-.ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content {
-  display: none;
-}
 .ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content h3 {
   font-size: 33px;
   margin-bottom: 10px;
@@ -5262,8 +5253,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-bottom: 20px;
   line-height: 30px;
 }
-.ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content.active {
-  display: block;
+.ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content#gover, .ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content#smartciti {
+  display: none;
 }
 .ourindustry-wrapper .industry--image-wrapper {
   position: relative;
@@ -5275,10 +5266,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   overflow: hidden;
   height: 800px;
   width: 140%;
-  display: none;
 }
-.ourindustry-wrapper .industry--image-wrapper .industry--image.active {
-  display: block;
+.ourindustry-wrapper .industry--image-wrapper .industry--image#gover-img, .ourindustry-wrapper .industry--image-wrapper .industry--image#smartciti-img {
+  display: none;
 }
 @media (max-width: 1800px) {
   .ourindustry-wrapper .industry--image-wrapper .industry--image {

@@ -475,16 +475,26 @@
     });
 
     // OUR INDUSTRIES FUNCTIONS
-    $("#").click(function() {
+    $("#gover-name").click(function() {
+        $("#gover, #gover-img").show();
+        $("#health, #health-img").hide();
+        $("#smartciti, #smartciti-img").hide();
 
-        $(".industry--carousel-content").removeClass("active");
-        $(".industry--image").removeClass("active");
-        
     
-        $(".our-industry--content a").removeClass("active");
-        $(this).addClass("active");
+        //$(".our-industry--content a").removeClass("active");
+        //$(this).addClass("active");
+    });
+    $("#smart-name").click(function() {
+        $("#gover, #gover-img").hide();
+        $("#health, #health-img").hide();
+        $("#smartciti, #smartciti-img").show();
     });
 
+    $("#health-name").click(function() {
+        $("#gover, #gover-img").hide();
+        $("#health, #health-img").show();
+        $("#smartciti, #smartciti-img").hide();
+    });
     
     
     

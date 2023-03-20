@@ -176,7 +176,6 @@
             padding-bottom: 50px;
         }
         .industry--carousel-content {
-            display: none;
             h3{
                 font-size: 33px;
                 margin-bottom: 10px;
@@ -187,8 +186,8 @@
                 margin-bottom: 20px;
                 line-height: 30px;
             }
-            &.active{
-                display: block;
+            &#gover, &#smartciti{
+                display: none;
             }
         }
     }
@@ -201,9 +200,8 @@
             overflow: hidden;
             height: 800px;
             width: 140%;
-            display: none;
-            &.active{
-                display: block;
+            &#gover-img, &#smartciti-img{
+                display: none;
             }
             @media (max-width: 1800px) {
                 width: 125%;
