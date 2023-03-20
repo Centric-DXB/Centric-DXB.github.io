@@ -176,6 +176,10 @@
             padding-bottom: 50px;
         }
         .industry--carousel-content {
+            display: none;
+            &.active{
+                display: block;
+            }
             h3{
                 font-size: 33px;
                 margin-bottom: 10px;
