@@ -5063,12 +5063,42 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin: 400px 0 0 0;
   color: var(--white);
 }
+@media (max-width: 1400px) {
+  .herobanner .herobanner-content .herobanner-topheading {
+    margin: 300px 0 0 0;
+  }
+}
+@media (max-width: 1200px) {
+  .herobanner .herobanner-content .herobanner-topheading {
+    margin: 250px 0 0 0;
+  }
+}
+@media (max-width: 992px) {
+  .herobanner .herobanner-content .herobanner-topheading {
+    margin: 150px 0 0 0;
+  }
+}
 .herobanner .herobanner-content .herobanner-topheading h2 {
   font-size: 20px;
   margin-bottom: 50px;
 }
+@media (max-width: 1200px) {
+  .herobanner .herobanner-content .herobanner-topheading h2 {
+    margin-bottom: 20px;
+  }
+}
 .herobanner .herobanner-content .herobanner-topheading h1 {
   font-size: 60px;
+}
+@media (max-width: 992px) {
+  .herobanner .herobanner-content .herobanner-topheading h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .herobanner .herobanner-content .herobanner-topheading h1 {
+    font-size: 36px;
+  }
 }
 
 .whatwedo-wrapper {
@@ -5260,9 +5290,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-bottom: 20px;
   line-height: 30px;
 }
-.ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content#gover, .ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content#smartciti {
-  display: none;
-}
 .ourindustry-wrapper .industry--image-wrapper {
   position: relative;
 }
@@ -5273,9 +5300,10 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   overflow: hidden;
   height: 800px;
   width: 140%;
-}
-.ourindustry-wrapper .industry--image-wrapper .industry--image#gover-img, .ourindustry-wrapper .industry--image-wrapper .industry--image#smartciti-img {
   display: none;
+}
+.ourindustry-wrapper .industry--image-wrapper .industry--image.active {
+  display: block;
 }
 @media (max-width: 1800px) {
   .ourindustry-wrapper .industry--image-wrapper .industry--image {
@@ -5377,7 +5405,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--white);
 }
 .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper .our-industry--content h3 {
-  font-size: 40px;
+  font-size: 33px;
   text-align: center;
 }
 .ourindustry-wrapper .ourindustry--carousel-wrapper .ourindustry--carousel .our-industry-wrapper .our-industry--content h3 a {
@@ -6428,6 +6456,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-bottom: 20px;
   color: var(--dark-purple);
 }
+@media (max-width: 1400px) {
+  .contactus-wrapper .contact-form h3 {
+    font-size: 50px;
+  }
+}
 .contactus-wrapper .contact-form p {
   font-size: 18px;
   color: #ababab;
@@ -6495,6 +6528,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 20px;
   padding-right: 510px;
 }
+@media (max-width: 1400px) {
+  .location-map-wrapper .location-heading p {
+    padding-right: 100px;
+  }
+}
 .location-map-wrapper .locationmap {
   margin-top: 100px;
 }
@@ -6517,6 +6555,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .location-map-wrapper .locations--name-wrapper .location-wrapper .location-address {
   color: var(--white);
   padding-left: 20px;
+}
+@media (max-width: 992px) {
+  .location-map-wrapper .locations--name-wrapper .location-wrapper .location-address {
+    width: 70%;
+  }
 }
 .location-map-wrapper .locations--name-wrapper .location-wrapper .location-address h3 {
   font-size: 20px;

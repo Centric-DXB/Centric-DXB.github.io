@@ -475,27 +475,37 @@
     });
 
     // OUR INDUSTRIES FUNCTIONS
-    $("#gover-name").click(function() {
-        $("#gover, #gover-img").show();
-        $("#health, #health-img").hide();
-        $("#smartciti, #smartciti-img").hide();
+    // $("#gover-name").click(function() {
+    //     $("#gover, #gover-img").show();
+    //     $("#health, #health-img").hide();
+    //     $("#smartciti, #smartciti-img").hide();
+    // });
+    // $("#smart-name").click(function() {
+    //     $("#gover, #gover-img").hide();
+    //     $("#health, #health-img").hide();
+    //     $("#smartciti, #smartciti-img").show();
+    // });
 
+    // $("#health-name").click(function() {
+    //     $("#gover, #gover-img").hide();
+    //     $("#health, #health-img").show();
+    //     $("#smartciti, #smartciti-img").hide();
+    // });
     
-        //$(".our-industry--content a").removeClass("active");
-        //$(this).addClass("active");
-    });
-    $("#smart-name").click(function() {
-        $("#gover, #gover-img").hide();
-        $("#health, #health-img").hide();
-        $("#smartciti, #smartciti-img").show();
-    });
+    $(".our-industry--content a").click(function() {
+        const id = $('.industry--carousel-content').attr("id");
 
-    $("#health-name").click(function() {
-        $("#gover, #gover-img").hide();
-        $("#health, #health-img").show();
-        $("#smartciti, #smartciti-img").hide();
+        $(`#${id}`).addClass("active");
+        $(this).removeClass("active");
+
+
+        $(`.industry--carousel-content-wrapper > ${id}-img`).addClass("active");
     });
     
+    // $(".our-industry--content a").click(function() {
+    //     $('.industry--carousel-content').removeClass('active');
+    //     $(this).addClass('active');
+    // });
     
     
     

@@ -52,6 +52,9 @@
             font-weight: 900;
             margin-bottom: 20px;
             color: var(--dark-purple);
+            @media (max-width: 1400px) {
+                font-size: 50px;
+            }
         }
         p{
             font-size: 18px;
@@ -122,6 +125,9 @@
         p{
             font-size: 20px;
             padding-right: 510px;
+            @media (max-width: 1400px) {
+                padding-right: 100px;
+            }
         }
     }
     .locationmap{
@@ -144,6 +150,9 @@
             .location-address{
                 color: var(--white);
                 padding-left: 20px;
+                @media (max-width: 992px) {
+                    width: 70%
+                }
                 h3{
                     font-size: 20px;
                     margin-bottom: 20px;
