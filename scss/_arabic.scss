@@ -430,7 +430,7 @@
   .seminar--wrapper{
     .seminar-wrapper{
       direction: rtl;
-      background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogoarabic.png) no-repeat bottom left;
+      background: rgba($color: #fff, $alpha: .2) url('../images/newstransparentlogoarabic.png') no-repeat bottom left;
       .seminar--image-date{
         width: 100%;
         .seminar--date{
@@ -439,7 +439,7 @@
       }
       .seminar--info{
         h3{
-          background:url(../images/greenclock.png) no-repeat right center;
+          background:url('../images/greenclock.png') no-repeat right center;
           padding-left: 0;
           padding-right: 50px;
         }
@@ -659,6 +659,118 @@
       }
     }
   } 
+
+
+
+
+
+
+  // WHO WE ARE ARABIC START HERE 
+
+  .soluton__banner {
+    .content {
+      direction: rtl;
+      right: 0;
+      padding-right: 110px;
+      text-align: right;
+    }
+  }
+  .our__solutions {
+  .pagination__list
+ {
+  ul {
+    li{
+      direction: rtl;
+      &::before {
+        left: -8px;
+        right: auto;
+      }
+    }
+  }
+ }
+    .content {
+      h2 {
+        &::after {
+          left: auto;
+          right: -60px;
+        }
+        &::before {
+          left: auto;
+          right: -100px;
+        }
+      }
+
+       p {
+        margin-bottom: 60px;
+       }
+    } 
+  } 
+
+  .wwa__chairmen__section{
+    #myTabContent {
+      .seo__img {
+        left: auto;
+        right: 60px;
+      }
+    }
+  } 
+  .ceo__memberSlider {
+    .card {
+      .card-footer {
+        direction: rtl;
+      }
+      .t-p {
+        direction: rtl;
+      }
+    }
+  } 
+
+  .split__section {
+    direction: ltr;
+  }
+
+  .section__affiliate {
+    .affilate__card {
+      .card-body {
+        &::before {
+          direction: rtl;
+          left: auto;
+          right: 30px;
+        }
+      }
+    }
+  }  
+
+
 }
+
+
+@media screen and (max-width: 1440.99px) {
+  .arabic {
+    .our__solutions {
+      .content {
+        padding-right: 110px;
+      } 
+    } 
+  }
+}
+
+@media screen and (max-width: 768.99px) {
+  .arabic {
+    .wwa__chairmen__section {
+      #myTabContent {
+        .seo__img {
+            right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 

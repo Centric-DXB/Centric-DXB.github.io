@@ -293,34 +293,42 @@
 
     $('.ceo__memberSlider').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
         speed: 2000,
-        autoplay: true,
+        autoplay: false,
         dots: false,
         arrows: true,
         responsive: [
            
             {
-            breakpoint: 768,
+            breakpoint: 1025,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     //infinite: true,
-                    dots: true
+                    dots: false,
+                    arrows:false,
                 }
             },
             {
-            breakpoint: 550,
+            breakpoint: 630,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    dots:true
+                    dots:false,
+                    arrows:false,
+
                 }
             },
         ]
       });
+
+      $('.ceo__memberSlider  .card .card-footer').on('click', function(){
+        $('.ceo__memberSlider  .card .card-footer').removeClass('cstmAccordionBg');
+        $(this).addClass('cstmAccordionBg');
+    });
     
     // ENGLISH CAROUSEL
     $('.seminar-carousel').slick({

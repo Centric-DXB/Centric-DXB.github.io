@@ -36,6 +36,8 @@
                 font-size: 16px;
                 color: var(--medium-grey);
                 text-shadow: none;
+                border-radius: 5px;
+                border: 1px solid var(--medium-grey);
               
 
                 &:hover {
@@ -56,6 +58,7 @@
             position: absolute;
             left: 60px;
             top: 60px;
+
         }
 
         .qoute {
@@ -111,6 +114,17 @@
 
 }
 
+.member__slide {
+    overflow-x: hidden;
+    .container-fluid {
+        padding: 0;
+
+        .ceo__memberSlider {
+            margin: 0px 0px 0px 80px;
+        }
+    }
+}
+
 
 .ceo__memberSlider {
     .card {
@@ -151,6 +165,10 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 50px;
+                -webkit-transition: height 0s ease;
+                -moz-transition: height 0.60s ease;
+                -o-transition: height 0.60s ease;
+                 transition: height 0.60s ease;
             }
         }
 
@@ -167,14 +185,14 @@
             border-radius: 5px;
         }
         
-        button.btn.btn-link.collapsed i {
-            transform: rotate(0deg);
-        }
+        // button.btn.btn-link.collapsed i {
+        //     transform: rotate(0deg);
+        // }
         
-        button.btn.btn-link i {
-            transform: rotate(180deg);
-            transition: 0.5s;
-        }
+        // button.btn.btn-link i {
+        //     transform: rotate(180deg);
+        //     transition: 0.5s;
+        // }
 
         .t-p {
             padding: 20px;
@@ -221,7 +239,7 @@
         div {
           flex: 1;
           height: 90vh;
-          transition: flex 0.8s ease-out;
+          transition: flex 0.9s ease-out;
           color: white;
           font-family: sans-serif;
           text-align: center;
@@ -242,6 +260,7 @@
           margin-left: -5%;
           position: relative;
           cursor: pointer;
+          z-index: 1;
 
           &::before {
             position: absolute;
@@ -254,6 +273,19 @@
             top: auto;
             left: 0;
             bottom: 0;
+          }
+
+          &::after {
+            position: absolute;
+            content: "";
+            background:url('../../assets/images/split-icon.png') no-repeat;
+            height: 100px;
+            width: 100px;
+            top: 50%;
+            left: 96%;
+            z-index: 2;
+            transform: translate(-10%, -50%);
+            cursor: pointer;
           }
           
           &:hover {
@@ -380,3 +412,301 @@
         }
     }
 }
+
+.cstmAccordionBg{
+    background-color: var(--dark-blue-color) !important;
+    
+
+    h2 {
+        button {
+            transform: rotate(178deg);
+            // transition: 3ms;
+        }
+    }
+
+    h4 {
+        span{
+            color: var(--light-green) !important;
+            &:last-child {
+            color: var(--white) !important;
+            }
+        }
+    }
+}
+
+.shrText {
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+
+@media screen and (max-width: 1600.99px) {
+    .wwa__chairmen__section {
+        #myTabContent {
+            margin-top: 150px;
+            .seo__img {
+                max-width: 30%;
+            }
+
+            .qoute {
+                height: 20%;
+            }
+        }
+
+        .starter-template  {
+            ul {
+                margin: 30px 0px 0px;
+            }
+        }
+    }
+
+    .split__section {
+
+        .container-fluid {
+            .content {
+                h3 {
+                    font-size: 42px;
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 1366.99px) {
+    .wwa__chairmen__section {
+        #myTabContent {
+            .seo__img {
+                max-width: 27%;
+            }
+            
+        }
+    }
+
+    .ceo__memberSlider {
+        .card {
+            .card-footer {
+                h4 {
+                    span {
+                        font-size: 16px;
+                        &:last-child {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .t-p {
+                p {
+                    font-size: 16px;
+                }
+                a  {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }  
+    
+    .split__section {
+        .container-fluid{
+            .content {
+                h3 {
+                    font-size: 34px;
+                    margin-bottom: 30px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            } 
+        } 
+    }
+
+
+    .section__affiliate {
+        .affilate__card {
+            .card-body {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }  
+}
+
+
+@media screen and (max-width: 1024.99px) {
+    .wwa__chairmen__section {
+        #myTabContent {
+            .seo__img {
+                max-width: 25%;
+                left: 20px;
+            }
+
+            .qoute {
+                height: 15%
+            }
+
+            p {
+                font-size: 16px;
+            }
+            h6 {
+                margin-bottom: 20px;
+            }
+            
+        }
+
+        .starter-template {
+            ul {
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .member__slide {
+        .container-fluid {
+            padding: auto;
+            .ceo__memberSlider {
+                margin: 0px;
+            }
+        }
+
+    }  
+
+    .split__section {
+        .container-fluid {
+            .left, .right {
+                transform: none;
+            }
+            .content {
+                h1 {
+                    font-size: 60px;
+                }
+                h3 {
+                    font-size: 28px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        } 
+    } 
+
+    .section__affiliate{
+        .affilate__card {
+            .card-body {
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    } 
+}
+
+
+@media screen and (max-width: 768.99px) {
+    .wwa__chairmen__section {
+        #myTabContent {
+            .seo__img {
+                position: relative;
+                left: 0;
+                max-width: 100%;
+            }
+            .qoute {
+                height: 7%;
+            }
+        }
+        .starter-template {
+            ul {
+                margin: 0px;
+            }
+        }  
+    }  
+    
+    .split__section {
+        .container-fluid {
+            .content {
+                h1 {
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }  
+
+
+    
+
+}
+
+
+@media screen and (max-width: 620.99px) {
+    .wwa__chairmen__section {
+        #myTabContent {
+          h3 {
+            margin-top: 30px;
+          }
+        }
+        .starter-template {
+            ul {
+                margin: 0px;
+            }
+        }  
+    }  
+    
+    .split__section {
+        .container-fluid {
+            display: block;
+            div {
+                height: 80vh;
+            }
+            .content {
+                max-width: 70%;
+                h1 {
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .left{
+                &::after {
+                    top: auto;
+                    left: 46%;
+                    bottom: -100px;
+                }
+            }
+
+        }
+    }  
+   
+    .section__affiliate  {
+        .affilate__card {
+            display:block;
+            .card-header {
+                img {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+
+    
+
+}
+  
