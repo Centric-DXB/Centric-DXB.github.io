@@ -47,6 +47,9 @@
     .contact-form{
         padding-left: 100px;
         display: block;
+        @media (max-width: 992px) {
+            padding-left: 0;
+        }
         h3{
             font-size: 60px;
             font-weight: 900;
@@ -54,6 +57,12 @@
             color: var(--dark-purple);
             @media (max-width: 1400px) {
                 font-size: 50px;
+            }
+            @media (max-width: 1200px) {
+                font-size: 40px;
+            }
+            @media (max-width: 992px) {
+                font-size: 36px;
             }
         }
         p{
@@ -117,10 +126,22 @@
     .location-heading{
         color: var(--white);
         padding-left: 110px;
+        @media (max-width: 992px) {
+            padding-left: 0;
+        }
         h2{
             font-size: 60px;
             font-weight: 900;
             margin-bottom: 20px;
+            @media (max-width: 1400px) {
+                font-size: 50px;
+            }
+            @media (max-width: 1200px) {
+                font-size: 40px;
+            }
+            @media (max-width: 992px) {
+                font-size: 36px;
+            }
         }
         p{
             font-size: 20px;
@@ -147,9 +168,14 @@
             padding-bottom: 50px;
             border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
             margin-bottom: 30px;
+            .img{
+                width: 30%;
+                text-align: center;
+            }
             .location-address{
                 color: var(--white);
                 padding-left: 20px;
+                width: 70%;
                 @media (max-width: 992px) {
                     width: 70%
                 }

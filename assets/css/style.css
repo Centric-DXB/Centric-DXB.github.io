@@ -903,6 +903,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 
+.arabic h1, .arabic h2, .arabic h3, .arabic h4, .arabic h5, .arabic h6 {
+  font-family: var(--arabic-font);
+}
 .arabic .arabic-text {
   font-family: var(--arabic-font);
 }
@@ -1170,7 +1173,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-clients .our-clients-heading.arabic-text,
 .arabic .our-clients .our-partner-heading.arabic-text,
 .arabic .our-vendor-partner .our-clients-heading.arabic-text,
-.arabic .our-vendor-partner .our-partner-heading.arabic-text {
+.arabic .our-vendor-partner .our-partner-heading.arabic-text,
+.arabic .services--list-wrapper .services--list-heading.arabic-text,
+.arabic .our--services-wrapper.arabic-text {
   display: inline-block;
 }
 .arabic .home-about-us .about-us h2,
@@ -1180,7 +1185,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-clients .our-clients-heading h2,
 .arabic .our-clients .our-partner-heading h2,
 .arabic .our-vendor-partner .our-clients-heading h2,
-.arabic .our-vendor-partner .our-partner-heading h2 {
+.arabic .our-vendor-partner .our-partner-heading h2,
+.arabic .services--list-wrapper .services--list-heading h2,
+.arabic .our--services-wrapper h2 {
   padding-left: 0px;
   padding-right: 110px;
   font-family: var(--arabic-font);
@@ -1193,7 +1200,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-clients .our-clients-heading h2::before,
 .arabic .our-clients .our-partner-heading h2::before,
 .arabic .our-vendor-partner .our-clients-heading h2::before,
-.arabic .our-vendor-partner .our-partner-heading h2::before {
+.arabic .our-vendor-partner .our-partner-heading h2::before,
+.arabic .services--list-wrapper .services--list-heading h2::before,
+.arabic .our--services-wrapper h2::before {
   left: auto;
   right: 60px;
 }
@@ -1204,7 +1213,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-clients .our-clients-heading h2::after,
 .arabic .our-clients .our-partner-heading h2::after,
 .arabic .our-vendor-partner .our-clients-heading h2::after,
-.arabic .our-vendor-partner .our-partner-heading h2::after {
+.arabic .our-vendor-partner .our-partner-heading h2::after,
+.arabic .services--list-wrapper .services--list-heading h2::after,
+.arabic .our--services-wrapper h2::after {
   left: auto;
   right: 0;
 }
@@ -1303,27 +1314,33 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-right: 0;
   padding-left: 50px;
 }
-.arabic .industry-wrapper .carousel-wrapper {
+.arabic .industry-wrapper .carousel-wrapper, .arabic .services--list-wrapper .carousel-wrapper {
   direction: rtl;
 }
-.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text {
-  display: block;
-}
-.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text h2 {
+.arabic .industry-wrapper .carousel-wrapper .carousel-content h2, .arabic .services--list-wrapper .carousel-wrapper .carousel-content h2 {
   font-family: var(--arabic-font);
 }
-.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text p {
+.arabic .industry-wrapper .carousel-wrapper .carousel-content p, .arabic .services--list-wrapper .carousel-wrapper .carousel-content p {
   line-height: normal;
 }
-.arabic .industry-wrapper .carousel-wrapper .carousel-content a {
+.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text, .arabic .services--list-wrapper .carousel-wrapper .carousel-content.arabic-text {
+  display: block;
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text h2, .arabic .services--list-wrapper .carousel-wrapper .carousel-content.arabic-text h2 {
   font-family: var(--arabic-font);
 }
-.arabic .industry-wrapper .carousel-wrapper .carousel-content a svg {
+.arabic .industry-wrapper .carousel-wrapper .carousel-content.arabic-text p, .arabic .services--list-wrapper .carousel-wrapper .carousel-content.arabic-text p {
+  line-height: normal;
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-content a, .arabic .services--list-wrapper .carousel-wrapper .carousel-content a {
+  font-family: var(--arabic-font);
+}
+.arabic .industry-wrapper .carousel-wrapper .carousel-content a svg, .arabic .services--list-wrapper .carousel-wrapper .carousel-content a svg {
   margin-right: 20px;
   margin-left: 0;
   transform: rotate(-180deg);
 }
-.arabic .industry-wrapper .carousel-wrapper .carousel-number h1 {
+.arabic .industry-wrapper .carousel-wrapper .carousel-number h1, .arabic .services--list-wrapper .carousel-wrapper .carousel-number h1 {
   text-align: left;
   padding: 20px 0 0 20px;
 }
@@ -6044,6 +6061,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   line-height: 30px;
   padding-left: 110px;
 }
+@media (max-width: 992px) {
+  .our--services-wrapper p {
+    padding-left: 0;
+  }
+}
 .our--services-wrapper img {
   max-width: 100%;
 }
@@ -6143,7 +6165,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .services--list-wrapper .carousel-wrapper img {
   display: inline-block;
-  transform: scale(1.5);
+  transform: scale(1);
 }
 .services--list-wrapper .carousel-wrapper .carousel-number {
   position: absolute;
@@ -6314,63 +6336,44 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   width: 81%;
   left: 0;
 }
+@media (max-width: 1200px) {
+  .services--list-wrapper .slick-carousel::before {
+    width: 75%;
+  }
+}
 .services--list-wrapper .slick-carousel::after {
   right: 0;
   width: 10%;
 }
 .services--list-wrapper .slick-carousel .slick-next {
-  right: 170px;
+  right: 7%;
   top: unset;
   bottom: -160px;
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
+@media (max-width: 1800px) {
   .services--list-wrapper .slick-carousel .slick-next {
-    right: 50px;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1100px) {
-  .services--list-wrapper .slick-carousel .slick-next {
-    right: 50px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .services--list-wrapper .slick-carousel .slick-next {
-    right: 50px;
-    top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .services--list-wrapper .slick-carousel .slick-next {
-    right: 50px;
-    top: 0;
+    right: 7%;
   }
 }
 .services--list-wrapper .slick-carousel .slick-prev {
-  right: 320px;
+  right: 18%;
   top: unset;
   left: auto;
   bottom: -160px;
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
+@media (max-width: 1800px) {
   .services--list-wrapper .slick-carousel .slick-prev {
-    right: 120px;
+    right: 18%;
   }
 }
-@media (min-width: 1000px) and (max-width: 1100px) {
+@media (max-width: 1200px) {
   .services--list-wrapper .slick-carousel .slick-prev {
-    right: 120px;
+    right: 21%;
   }
 }
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (max-width: 992px) {
   .services--list-wrapper .slick-carousel .slick-prev {
-    right: 120px;
-    top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .services--list-wrapper .slick-carousel .slick-prev {
-    right: 120px;
-    top: 0;
+    right: 23%;
   }
 }
 .services--list-wrapper .slick-carousel .slick-next, .services--list-wrapper .slick-carousel .slick-prev {
@@ -6450,6 +6453,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-left: 100px;
   display: block;
 }
+@media (max-width: 992px) {
+  .contactus-wrapper .contact-form {
+    padding-left: 0;
+  }
+}
 .contactus-wrapper .contact-form h3 {
   font-size: 60px;
   font-weight: 900;
@@ -6459,6 +6467,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media (max-width: 1400px) {
   .contactus-wrapper .contact-form h3 {
     font-size: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .contactus-wrapper .contact-form h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .contactus-wrapper .contact-form h3 {
+    font-size: 36px;
   }
 }
 .contactus-wrapper .contact-form p {
@@ -6519,10 +6537,30 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--white);
   padding-left: 110px;
 }
+@media (max-width: 992px) {
+  .location-map-wrapper .location-heading {
+    padding-left: 0;
+  }
+}
 .location-map-wrapper .location-heading h2 {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 20px;
+}
+@media (max-width: 1400px) {
+  .location-map-wrapper .location-heading h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .location-map-wrapper .location-heading h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .location-map-wrapper .location-heading h2 {
+    font-size: 36px;
+  }
 }
 .location-map-wrapper .location-heading p {
   font-size: 20px;
@@ -6552,9 +6590,14 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 30px;
 }
+.location-map-wrapper .locations--name-wrapper .location-wrapper .img {
+  width: 30%;
+  text-align: center;
+}
 .location-map-wrapper .locations--name-wrapper .location-wrapper .location-address {
   color: var(--white);
   padding-left: 20px;
+  width: 70%;
 }
 @media (max-width: 992px) {
   .location-map-wrapper .locations--name-wrapper .location-wrapper .location-address {
