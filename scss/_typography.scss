@@ -30,7 +30,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--poppins);
 }
 body.arabic{
     direction: rtl;

@@ -501,11 +501,18 @@
 
         $(`.industry--carousel-content-wrapper > ${id}-img`).addClass("active");
     });
+
+    $(".business--name-wrapper").click(function(e) {
+        e.preventDefault();
+        
+        $(".service--business-img img").removeClass("current");
+        
+        var img_id = $(this).data("dex");
     
-    // $(".our-industry--content a").click(function() {
-    //     $('.industry--carousel-content').removeClass('active');
-    //     $(this).addClass('active');
-    // });
+        $("#"+img_id).addClass("current");
+
+        //console.log("#"+img_id);
     
-    
-    
+        $(".business--name-wrapper").removeClass("current");
+        $(this).addClass("current");
+    });
