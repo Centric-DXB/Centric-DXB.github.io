@@ -467,19 +467,19 @@
     });
 
     // SERVICES SECTION FUNCTIONS
-    $(".services--items a").click(function(e) {
+    $(".nav-pills-custom a").click(function(e) {
         e.preventDefault();
-
-        $(".service-img img").removeClass("active");
-    
+        
+        $(".tab-content .tab-pane").removeClass("show active");
+        console.log("helo");
         var img_id = $(this).data("dex");
     
-        $("#"+img_id).addClass("active");
+        $("#"+img_id).addClass("show active");
 
         //console.log("#"+img_id);
     
-        $(".services--items li a").removeClass("active-text");
-        $(this).addClass("active-text");
+        $(".nav-pills-custom a").removeClass("active");
+        $(this).addClass("active");
     });
 
     // OUR INDUSTRIES FUNCTIONS
@@ -514,6 +514,7 @@
     //     $('.industry--carousel-content').removeClass('active');
     //     $(this).addClass('active');
     // });
+    
     
     
     
