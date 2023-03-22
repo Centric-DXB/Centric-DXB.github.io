@@ -3326,7 +3326,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     margin: 0 30px 30px;
     font-size: 18px;
     letter-spacing: 3px;
-    line-height: 40px;
   }
 }
 .servingbusiness--wrapper h2::after {
@@ -3364,11 +3363,29 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .servingbusiness--wrapper .business--name-list .business--name-wrapper {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
 .servingbusiness--wrapper .business--name-list .business--name-wrapper:last-child {
   background: none;
 }
 .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--number {
   font-size: 60px;
+  font-weight: 900;
+}
+@media (max-width: 1200px) {
+  .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--number {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--number {
+    font-size: 36px;
+    line-height: 60px;
+  }
 }
 .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--name-content {
   width: 75%;
@@ -3376,6 +3393,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--name-content h3 {
   font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+@media (max-width: 1200px) {
+  .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--name-content h3 {
+    font-size: 20px;
+  }
 }
 .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--name-content h3 a {
   color: var(--white);
@@ -3383,6 +3407,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--name-content p {
   font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--name-content p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .servingbusiness--wrapper .business--name-list .business--name-wrapper .business--name-content p {
+    font-size: 14px;
+  }
 }
 .servingbusiness--wrapper .business--name-list .business--name-wrapper.current .business--number {
   color: var(--slider-active-green);
