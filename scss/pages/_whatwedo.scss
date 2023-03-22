@@ -2,22 +2,54 @@
 .herobanner{
     display: block;
     width: 100%;
-    background: url(../images/herobanner.png) no-repeat 0 0;
+    //background: url(../images/herobanner.png) no-repeat 0 0;
     background-size: cover;
     position: relative;
-    min-height: 1070px;
-    .herobanner-topheading{
-        display: block;
-        margin: 400px 0 0 0;
-        color: var(--white);
-        h2{
-            font-size: 20px;
-            margin-bottom: 50px;
-        }
-        h1{
-            font-size: 60px;
+    //min-height: 1070px;
+    position: relative;
+    img{
+        position: relative;
+        //z-index: -1;
+        max-width: 100%;
+    }
+    .herobanner-content{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .herobanner-topheading{
+            display: block;
+            margin: 400px 0 0 0;
+            color: var(--white);
+            @media (max-width: 1400px) {
+                margin: 300px 0 0 0;
+            }
+            @media (max-width: 1200px) {
+                margin: 250px 0 0 0;
+            }
+            @media (max-width: 992px) {
+                margin: 150px 0 0 0;
+            }
+            h2{
+                font-size: 20px;
+                margin-bottom: 50px;
+                @media (max-width: 1200px) {
+                    margin-bottom: 20px;
+                }
+            }
+            h1{
+                font-size: 60px;
+                @media (max-width: 992px) {
+                    font-size: 50px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 36px;
+                }
+            }
         }
     }
+    
 }
 .whatwedo-wrapper{
     display: block;
@@ -162,7 +194,10 @@
             padding-bottom: 50px;
         }
         .industry--carousel-content {
-            display: block;
+            display: none;
+            &.active{
+                display: block;
+            }
             h3{
                 font-size: 33px;
                 margin-bottom: 10px;
@@ -173,6 +208,9 @@
                 margin-bottom: 20px;
                 line-height: 30px;
             }
+            // &#gover, &#smartciti{
+            //     display: none;
+            // }
         }
     }
     .industry--image-wrapper{
@@ -184,6 +222,13 @@
             overflow: hidden;
             height: 800px;
             width: 140%;
+            display: none;
+            // &#gover-img, &#smartciti-img{
+            //     display: none;
+            // }
+            &.active{
+                display: block;
+            }
             @media (max-width: 1800px) {
                 width: 125%;
             }
@@ -270,7 +315,7 @@
                     z-index: 99;
                     color: var(--white);
                     h3{
-                        font-size: 40px;
+                        font-size: 33px;
                         text-align: center;
                         a{
                             color: var(--white);
@@ -527,7 +572,7 @@
                 a{
                     color: var(--white);
                     text-decoration: none;
-                    &:hover{
+                    &:hover, &.active-text{
                         font-weight: 700;
                     }
                 }
@@ -553,6 +598,16 @@
     .service-img{
         display: block;
         margin-top: 50px;
+        position: relative;
+        img{
+            position: absolute;
+            opacity: 0;
+            transition: all .2s linear;
+            &.active{
+                opacity: 1;
+                transition: all .2s linear;
+            }
+        }
     }
 }
 .technologies-wrapper{

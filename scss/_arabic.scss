@@ -1,4 +1,7 @@
 .arabic {
+  h1, h2, h3, h4, h5, h6{
+    font-family: var(--arabic-font);
+  }
   .arabic-text{
     font-family: var(--arabic-font);
   }
@@ -9,7 +12,7 @@
     .top-main-navigation{
       ul{
         li{
-          display: none;
+          //display: none;
           &.arabic-text{
             display: block;
           }
@@ -19,7 +22,7 @@
     .main-menu{
       ul{
         li{
-          display: none;
+          //display: none;
           &.arabic-text{
             display: block;
           }
@@ -28,7 +31,8 @@
       .lang-toggle1{
         .slider1{
           &::before{
-            left: -20px;
+            //left: -20px;
+            left: 5px;
           }
         }
       }
@@ -50,6 +54,16 @@
             }
           }
         }
+      }
+    }
+  }
+  .herobanner-content{
+    .herobanner-topheading{
+      h2{
+
+      }
+      h1{
+
       }
     }
   }
@@ -319,7 +333,9 @@
   .our-clients .our-clients-heading,
   .our-clients .our-partner-heading,
   .our-vendor-partner .our-clients-heading,
-  .our-vendor-partner .our-partner-heading {
+  .our-vendor-partner .our-partner-heading,
+  .services--list-wrapper .services--list-heading,
+  .our--services-wrapper {
     //display: none;
     &.arabic-text{
       display: inline-block;
@@ -450,11 +466,17 @@
       }
     }
   }
-  .industry-wrapper{
+  .industry-wrapper, .services--list-wrapper{
     .carousel-wrapper{
       direction: rtl;
       .carousel-content{
         //display: none;
+        h2{
+          font-family: var(--arabic-font);
+        }
+        p{
+          line-height: normal;
+        }
         &.arabic-text{
           display: block;
           h2{

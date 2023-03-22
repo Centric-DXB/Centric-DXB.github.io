@@ -1,0 +1,360 @@
+// SERVICES PAGES CSS
+
+.our--services-wrapper{
+    display: block;
+    width: 100%;
+    background: rgba($color: #122D6E, $alpha: 1.0);
+    padding: 50px 0 100px;
+    color: var(--white);
+    border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
+    h2{
+        font-size: 33px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 50px;
+        position: relative;
+        padding-left: 110px;
+        text-transform: unset;
+        margin-top: 50px;
+        @media (min-width: 1300px) and (max-width: 1400px) {
+            font-size: 33px;
+        }
+        @media (min-width: 1200px) and (max-width: 1300px) {
+            font-size: 30px;
+        }
+        @media (min-width: 1100px) and (max-width: 1200px) {
+            font-size: 28px;
+        }
+        @media (min-width: 992px) and (max-width: 1100px) {
+            font-size: 24px;
+        }
+        @media (max-width: 991px) {
+            font-size: 22px;
+        }
+        @media (max-width: 600px) {
+            font-size: 18px;
+            letter-spacing: 3px;
+            line-height: 24px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: var(--light-green);
+            left: 0;
+            top: 20px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../images/logowhitecircle.svg) no-repeat 0 0;
+            left: 60px;
+            top: 6px;
+            //transform: rotate(45deg);
+        }
+    }
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 30px;
+        padding-left: 110px;
+        @media (max-width: 992px) {
+            padding-left: 0;
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+
+// INDUSTRY
+.services--list-wrapper{
+    display: block;
+    width: 100%;
+    background: var(--dark-purple);
+    padding: 50px 0 150px;
+    position: relative;
+    border-bottom: 1px solid rgba($color: #ffffff, $alpha: .2);
+    
+    .services--list-heading{
+        &.arabic-text{
+            display: none;
+        }
+        h2{
+            font-size: 33px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 110px;
+            letter-spacing: 5px;
+            text-transform: unset;
+            margin-top: 50px;
+            @media (min-width: 1300px) and (max-width: 1400px) {
+                font-size: 33px;
+            }
+            @media (min-width: 1200px) and (max-width: 1300px) {
+                font-size: 30px;
+            }
+            @media (min-width: 1100px) and (max-width: 1200px) {
+                font-size: 28px;
+            }
+            @media (min-width: 992px) and (max-width: 1100px) {
+                font-size: 24px;
+            }
+            @media (max-width: 991px) {
+                font-size: 22px;
+            }
+            @media (max-width: 600px) {
+                font-size: 18px;
+                letter-spacing: 3px;
+                line-height: 24px;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                background: var(--light-green);
+                left: 0;
+                top: 20px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background: url(../images/logowhitecircle.svg) no-repeat 0 0;
+                left: 60px;
+                top: 6px;
+                //transform: rotate(45deg);
+            }
+        }
+    }
+    .carousel-wrapper{
+        overflow: hidden;
+        width: 95% !important;
+        display: inline-block;
+        position: relative;
+        height: 650px;
+        transition: all .3s ease-in-out;
+        margin-right: 10px;
+        margin-top: 50px;
+        border: 1px solid rgba($color: #fff, $alpha: .2);
+        @media (max-width: 1300px) {
+            height: 500px;
+        }
+        @media (max-width: 1200px) {
+            height: 500px;
+        }
+        img{
+            display: inline-block;
+            transform: scale(1);
+        }
+        .carousel-number{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            text-align: right;
+            color: var(--white);
+            z-index: 99;
+            h1{
+                font-size: 110px;
+                font-weight: 900;
+                color: rgba($color: #015596, $alpha: .5);
+                padding: 20px 20px 0 0;
+                @media (max-width: 992px) {
+                    font-size: 80px;
+                }
+            }
+        }
+        .carousel-content{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 20px 0 20px;
+            background: url(../images/dimfilterbackground.png) no-repeat center center;
+            overflow: hidden;
+            height: 220px;
+            transition: all .2s linear;
+            &.arabic-text{
+                display: none;
+            }
+            h2{
+                font-size: 36px;
+                color: var(--white);
+                font-weight: 500;
+                margin-bottom: 20px;
+                @media (min-width: 1300px) and (max-width: 1500px) {
+                    font-size: 30px;
+                }
+                @media (min-width: 1200px) and (max-width: 1300px) {
+                    font-size: 30px;
+                }
+                @media (min-width: 1100px) and (max-width: 1200px) {
+                    font-size: 26px;
+                }
+                @media (min-width: 992px) and (max-width: 1100px) {
+                    font-size: 26px;
+                }
+                @media (min-width: 768px) and (max-width: 992px) {
+                    font-size: 24px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 22px;
+                }
+            }
+            p{
+                font-size: 22px;
+                color: var(--white);
+                height: 130px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                opacity: 0;
+                line-height: 30px;
+                @media (min-width: 1300px) and (max-width: 1500px) {
+                    font-size: 22px;
+                }
+                @media (min-width: 1200px) and (max-width: 1300px) {
+                    font-size: 18px;
+                }
+                @media (min-width: 1100px) and (max-width: 1200px) {
+                    font-size: 18px;
+                }
+                @media (min-width: 992px) and (max-width: 1100px) {
+                    font-size: 16px;
+                }
+                @media (min-width: 768px) and (max-width: 992px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+            a{
+                display: inline-block;
+                text-align: center;
+                padding: 0 20px;
+                background: var(--light-green);
+                color: var(--white);
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-top: 20px;
+                transition: all .3s ease-in-out;
+                font-family: var(--poppins);
+                line-height: 50px;
+                text-decoration: none;
+                svg{
+                    margin-left: 20px;
+                }
+                &:hover{
+                    background: var(--white);
+                    color: var(--light-green);
+                }
+            }
+        }
+        &:hover{
+            .carousel-content{
+                bottom: 0;
+                transition: all .2s linear;
+                height: 650px;
+                //background: var(--carousel-hover-bg);
+                //background: #04143A;
+                background: url(../images/serviceslist-hover.png) no-repeat center center;
+                padding-top: 170px;
+                @media (max-width: 1300px) {
+                    padding-top: 290px;
+                }
+                @media (max-width: 1200px) {
+                    padding-top: 340px;
+                }
+                p{
+                    overflow: auto;
+                    height: auto;
+                    opacity: 1;
+                }
+            }    
+        }
+    }
+    
+    .slick-carousel{
+        position: relative;
+        .slick-slide{
+            margin: 0 10px;
+        }
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            bottom: -90px;
+            background: rgba($color: #fff, $alpha: .2);
+        }
+        &::before{
+            width: 81%;
+            left: 0;
+            @media (max-width: 1200px) {
+                width: 75%;
+            }
+        }
+        &::after{
+            right: 0;
+            width: 10%;
+        }
+        .slick-next {
+            right: 7%;
+            top: unset;
+            bottom: -160px;
+            @media (max-width: 1800px) {
+                right: 7%;
+            }
+            
+        }
+        .slick-prev {
+            right: 18%;
+            top: unset;
+            left: auto;
+            bottom: -160px;
+            @media (max-width: 1800px) {
+                right: 18%;
+            }
+            @media (max-width: 1200px) {
+                right: 21%;
+            }
+            @media (max-width: 992px) {
+                right: 23%;
+            }
+            
+        }
+        .slick-next, .slick-prev{
+            width: 70px;
+            height: 70px;
+            background: rgba($color: #ccc, $alpha: 1.0);
+            border: 5px solid rgba($color: #fff, $alpha: 1.0);
+            border-radius: 50px;
+            line-height: 30px;
+            z-index: 99;
+            &:hover{
+                background: rgba($color: #61D281, $alpha: 1.0);
+            }
+        }
+        .slick-prev:before,
+        .slick-next:before
+        {
+            opacity: 1;
+        }
+        .slick-prev:hover:before,
+        .slick-prev:focus:before,
+        .slick-next:hover:before,
+        .slick-next:focus:before
+        {
+            opacity: 1;
+            //color: var(--light-parrot-green);
+        }
+    }
+}
