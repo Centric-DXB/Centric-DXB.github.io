@@ -291,36 +291,44 @@
         ]
       });
 
-    // $('.industries__cardSLider').slick({
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3,
-    //     autoplaySpeed: 3000,
-    //     speed: 2000,
-    //     autoplay: false,
-    //     dots: false,
-    //     arrows: true,
-    //     responsive: [
+    $('.ceo__memberSlider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        speed: 2000,
+        autoplay: false,
+        dots: false,
+        arrows: true,
+        responsive: [
            
-    //         {
-    //         breakpoint: 768,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1,
-    //                 //infinite: true,
-    //                 dots: true
-    //             }
-    //         },
-    //         {
-    //         breakpoint: 550,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1,
-    //                 dots:true
-    //             }
-    //         },
-    //     ]
-    //   });
+            {
+            breakpoint: 1025,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    dots: false,
+                    arrows:false,
+                }
+            },
+            {
+            breakpoint: 630,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots:false,
+                    arrows:false,
+
+                }
+            },
+        ]
+      });
+
+      $('.ceo__memberSlider  .card .card-footer').on('click', function(){
+        $('.ceo__memberSlider  .card .card-footer').removeClass('cstmAccordionBg');
+        $(this).addClass('cstmAccordionBg');
+    });
     
     // ENGLISH CAROUSEL
     $('.seminar-carousel').slick({
@@ -459,19 +467,19 @@
     });
 
     // SERVICES SECTION FUNCTIONS
-    $(".services--items a").click(function(e) {
+    $(".nav-pills-custom a").click(function(e) {
         e.preventDefault();
-
-        $(".service-img img").removeClass("active");
-    
+        
+        $(".tab-content .tab-pane").removeClass("show active");
+        console.log("helo");
         var img_id = $(this).data("dex");
     
-        $("#"+img_id).addClass("active");
+        $("#"+img_id).addClass("show active");
 
         //console.log("#"+img_id);
     
-        $(".services--items li a").removeClass("active-text");
-        $(this).addClass("active-text");
+        $(".nav-pills-custom a").removeClass("active");
+        $(this).addClass("active");
     });
 
     // OUR INDUSTRIES FUNCTIONS
@@ -516,3 +524,23 @@
         $(".business--name-wrapper").removeClass("current");
         $(this).addClass("current");
     });
+    
+
+
+    
+    
+        $("#"+img_id).addClass("current");
+
+        //console.log("#"+img_id);
+    
+        $(".business--name-wrapper").removeClass("current");
+        $(this).addClass("current");
+    });
+    
+
+
+
+    
+    
+    
+    
