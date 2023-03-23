@@ -143,7 +143,7 @@
 .top__section {
     background: var(--dark-purple);
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     padding: 80px 0;
     position: relative;
 
@@ -151,7 +151,7 @@
         position:absolute;
         content: '';
         background-color: var(--white);
-        height: 100vh;
+        height: 100%;
         width: 50%;
         top: 0;
         right: 0;
@@ -178,17 +178,18 @@
     }
 
     .nav {
-        width: 580px;
+        width: 610px;
         height: auto; 
         top: auto;
         left: auto;
         display: flex;
-        flex-direction: row-reverse !important;
+        flex-direction: row !important;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         align-content: stretch;
         margin: 80px 0px 0px;
+        position: unset;
 
         
         .card {
@@ -198,6 +199,8 @@
             .card-footer {
                 p {
                     font-size: 16px;
+                    padding-left: 0;
+                    padding-right: 0;
                 }
             }
         }
@@ -219,6 +222,8 @@
 
         p {
             font-size: 20px;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 
@@ -239,6 +244,8 @@
     color: var(--white);
     position: relative;
     padding: 0px 8px;
+    width: 180px;
+    height: 210px;
 }
 
 .nav-pills-custom .nav-link.active {
