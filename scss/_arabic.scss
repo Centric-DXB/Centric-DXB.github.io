@@ -335,7 +335,13 @@
   .our-vendor-partner .our-clients-heading,
   .our-vendor-partner .our-partner-heading,
   .services--list-wrapper .services--list-heading,
-  .our--services-wrapper {
+  .our--services-wrapper,
+  .whatwedo-wrapper, 
+  .ourindustry-wrapper, 
+  .topsolutions-wrapper, 
+  .services-wrapper, 
+  .technologies-wrapper,
+  .contactus-wrapper {
     //display: none;
     &.arabic-text{
       display: inline-block;
@@ -565,6 +571,87 @@
         display: block;
         p{
           font-family: var(--arabic-font);
+        }
+      }
+    }
+  }
+
+  .whatwedo-wrapper{
+    background: rgba($color: #122D6E, $alpha: 1.0) url(../images/misglobelargearabic.png) no-repeat top left;
+  }
+  .ourindustry-wrapper{
+    &::before{
+      left: 0;
+      right: unset;
+    }
+    .industry--image-wrapper{
+      .industry--image{
+        left: unset;
+        right: 45px;
+        @media (max-width: 1200px) {
+          right: 0;
+        }
+      }
+    }
+  }
+  .services-wrapper{
+    p{
+      padding-left: 300px;
+      padding-right: 110px;
+    }
+  }
+  .technologies-wrapper{
+    .parallax-bg{
+      right: unset;
+      left: 0;
+      background: rgba($color: #122D6E, $alpha: 1.0) url(../images/technology-parallex-img.png) no-repeat fixed left;
+    }
+    .tech--accordion-wrapper{
+      .accordion{
+        .accordion-item{
+          .accordion-thumb::before{
+            right: unset;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .services--list-wrapper{
+    .slick-carousel{
+      &::before{
+        width: 10%;
+      }
+      &::after{
+        width: 80%;
+      }
+    }
+    .slick-carousel{
+      .slick-prev{
+        right: unset;
+        left: 8%;
+      }
+      .slick-next{
+        right: unset;
+        left: 18%;
+      }
+    }
+  }
+  .location-map-wrapper{
+    .location-heading{
+      p{
+        padding-left: 510px;
+        padding-right: 0;
+        @media (max-width: 1400px) {
+          padding-left: 100px;
+        }
+      }
+    }
+    .locations--name-wrapper{
+      .location-wrapper{
+        .location-address{
+          padding-left: 0;
+          padding-right: 20px;
         }
       }
     }

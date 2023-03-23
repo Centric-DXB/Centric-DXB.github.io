@@ -1176,7 +1176,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-vendor-partner .our-clients-heading.arabic-text,
 .arabic .our-vendor-partner .our-partner-heading.arabic-text,
 .arabic .services--list-wrapper .services--list-heading.arabic-text,
-.arabic .our--services-wrapper.arabic-text {
+.arabic .our--services-wrapper.arabic-text,
+.arabic .whatwedo-wrapper.arabic-text,
+.arabic .ourindustry-wrapper.arabic-text,
+.arabic .topsolutions-wrapper.arabic-text,
+.arabic .services-wrapper.arabic-text,
+.arabic .technologies-wrapper.arabic-text,
+.arabic .contactus-wrapper.arabic-text {
   display: inline-block;
 }
 .arabic .home-about-us .about-us h2,
@@ -1188,7 +1194,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-vendor-partner .our-clients-heading h2,
 .arabic .our-vendor-partner .our-partner-heading h2,
 .arabic .services--list-wrapper .services--list-heading h2,
-.arabic .our--services-wrapper h2 {
+.arabic .our--services-wrapper h2,
+.arabic .whatwedo-wrapper h2,
+.arabic .ourindustry-wrapper h2,
+.arabic .topsolutions-wrapper h2,
+.arabic .services-wrapper h2,
+.arabic .technologies-wrapper h2,
+.arabic .contactus-wrapper h2 {
   padding-left: 0px;
   padding-right: 110px;
   font-family: var(--arabic-font);
@@ -1203,7 +1215,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-vendor-partner .our-clients-heading h2::before,
 .arabic .our-vendor-partner .our-partner-heading h2::before,
 .arabic .services--list-wrapper .services--list-heading h2::before,
-.arabic .our--services-wrapper h2::before {
+.arabic .our--services-wrapper h2::before,
+.arabic .whatwedo-wrapper h2::before,
+.arabic .ourindustry-wrapper h2::before,
+.arabic .topsolutions-wrapper h2::before,
+.arabic .services-wrapper h2::before,
+.arabic .technologies-wrapper h2::before,
+.arabic .contactus-wrapper h2::before {
   left: auto;
   right: 60px;
 }
@@ -1216,7 +1234,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-vendor-partner .our-clients-heading h2::after,
 .arabic .our-vendor-partner .our-partner-heading h2::after,
 .arabic .services--list-wrapper .services--list-heading h2::after,
-.arabic .our--services-wrapper h2::after {
+.arabic .our--services-wrapper h2::after,
+.arabic .whatwedo-wrapper h2::after,
+.arabic .ourindustry-wrapper h2::after,
+.arabic .topsolutions-wrapper h2::after,
+.arabic .services-wrapper h2::after,
+.arabic .technologies-wrapper h2::after,
+.arabic .contactus-wrapper h2::after {
   left: auto;
   right: 0;
 }
@@ -1412,6 +1436,62 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .our-transparency .terms-data.arabic-text p {
   font-family: var(--arabic-font);
+}
+.arabic .whatwedo-wrapper {
+  background: #122d6e url(../images/misglobelargearabic.png) no-repeat top left;
+}
+.arabic .ourindustry-wrapper::before {
+  left: 0;
+  right: unset;
+}
+.arabic .ourindustry-wrapper .industry--image-wrapper .industry--image {
+  left: unset;
+  right: 45px;
+}
+@media (max-width: 1200px) {
+  .arabic .ourindustry-wrapper .industry--image-wrapper .industry--image {
+    right: 0;
+  }
+}
+.arabic .services-wrapper p {
+  padding-left: 300px;
+  padding-right: 110px;
+}
+.arabic .technologies-wrapper .parallax-bg {
+  right: unset;
+  left: 0;
+  background: #122d6e url(../images/technology-parallex-img.png) no-repeat fixed left;
+}
+.arabic .technologies-wrapper .tech--accordion-wrapper .accordion .accordion-item .accordion-thumb::before {
+  right: unset;
+  left: 0;
+}
+.arabic .services--list-wrapper .slick-carousel::before {
+  width: 10%;
+}
+.arabic .services--list-wrapper .slick-carousel::after {
+  width: 80%;
+}
+.arabic .services--list-wrapper .slick-carousel .slick-prev {
+  right: unset;
+  left: 8%;
+}
+.arabic .services--list-wrapper .slick-carousel .slick-next {
+  right: unset;
+  left: 18%;
+}
+.arabic .location-map-wrapper .location-heading p {
+  padding-left: 510px;
+  padding-right: 0;
+}
+@media (max-width: 1400px) {
+  .arabic .location-map-wrapper .location-heading p {
+    padding-left: 100px;
+  }
+}
+.arabic .location-map-wrapper .locations--name-wrapper .location-wrapper .location-address {
+  padding-left: 0;
+  padding-right: 20px;
 }
 .arabic .foot .footer-links .links {
   border-right: none;
@@ -5493,6 +5573,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media (max-width: 1200px) {
   .ourindustry-wrapper .industry--image-wrapper .industry--image {
     position: relative;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .ourindustry-wrapper .industry--image-wrapper .industry--image img {
+    width: 100%;
   }
 }
 .ourindustry-wrapper .industry--image-wrapper .industry--image h3 {
@@ -5691,7 +5778,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .topsolutions-wrapper .topsolutions--data p {
-  font-size: 20px;
+  font-size: 16px;
 }
 @media (max-width: 1400px) {
   .topsolutions-wrapper .topsolutions--data p {
