@@ -527,18 +527,6 @@
     
 
 
-    
-    
-        $("#"+img_id).addClass("current");
-
-        //console.log("#"+img_id);
-    
-        $(".business--name-wrapper").removeClass("current");
-        $(this).addClass("current");
-    });
-    
-
-
 
     
     

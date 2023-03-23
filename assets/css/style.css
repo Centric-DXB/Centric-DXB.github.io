@@ -204,6 +204,7 @@ header .main-menu ul li {
   line-height: 40px;
   text-transform: uppercase;
   font-family: var(--poppins);
+  position: relative;
 }
 header .main-menu ul li.arabic-text {
   display: none;
@@ -248,6 +249,29 @@ header .main-menu ul li a.search {
 header .main-menu ul li a.search svg {
   color: black;
   font-size: 16px;
+}
+header .main-menu ul li ul.dropdown--menu {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(-20px);
+}
+header .main-menu ul li ul.dropdown--menu li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+header .main-menu ul li ul.dropdown--menu li a {
+  color: var(--black);
+}
+header .main-menu ul li:hover ul.dropdown--menu {
+  opacity: 1;
+  transition: all 0.5s ease;
+  transform: translateY(0px);
 }
 header .main-menu .lang-toggle1 {
   display: inline-flex;
