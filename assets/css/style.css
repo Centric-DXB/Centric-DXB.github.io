@@ -6065,20 +6065,23 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 37px;
   margin-bottom: 25px;
   font-weight: 400;
+  min-height: 90px;
 }
 .our__solutions .industry__card .card-body p {
   font-size: 20px;
   line-height: 30px;
+  min-height: 200px;
 }
 .our__solutions .industry__card .card-footer {
   border: 1px solid white !important;
-  padding: 12px 10px;
+  padding: 0;
   margin: 5px 10px;
 }
 .our__solutions .industry__card .card-footer ul li {
   font-size: 16px;
   border-bottom: 1px solid white;
-  line-height: 30px;
+  line-height: 40px;
+  padding-left: 10px;
 }
 .our__solutions .industry__card .card-footer ul li:last-child {
   border-bottom: 0px;
