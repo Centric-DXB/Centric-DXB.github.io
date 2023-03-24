@@ -4843,8 +4843,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .top__section .nav .card .card-footer p {
   font-size: 16px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .top__section .tab-content {
   position: relative;
@@ -4860,8 +4863,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .top__section .tab-content p {
   font-size: 20px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 .top__section .main__box {
   display: flex;
@@ -4888,7 +4890,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .solution__form {
   background: var(--dark-purple);
   background-size: cover;
-  height: 100vh;
   padding: 60px 0;
   position: relative;
   overflow: hidden;
