@@ -183,7 +183,7 @@
         top: auto;
         left: auto;
         display: flex;
-        flex-direction: row-reverse !important;
+        flex-direction: row !important;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -200,6 +200,10 @@
                 p {
                     font-size: 16px;
                     padding: 0;
+                    white-space: nowrap;
+                    width: 130px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
         }
