@@ -199,6 +199,7 @@
             .card-footer {
                 p {
                     font-size: 16px;
+                    padding: 0;
                 }
             }
         }
@@ -220,6 +221,7 @@
 
         p {
             font-size: 20px;
+            padding: 0;
         }
     }
 
@@ -263,7 +265,7 @@
 .solution__form {
     background: var(--dark-purple);
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     padding: 60px 0;
     position: relative;
     overflow: hidden;
