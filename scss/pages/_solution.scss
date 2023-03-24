@@ -124,7 +124,7 @@
             color: var(--white);
             padding-left: 110px;
             font-family: var(--poppins);
-            margin-bottom: 100px;
+            margin-bottom: 20px;
             max-width: 85%;
             width: 100%;
 
@@ -199,8 +199,11 @@
             .card-footer {
                 p {
                     font-size: 16px;
-                    padding-left: 0;
-                    padding-right: 0;
+                    padding: 0;
+                    white-space: nowrap;
+                    width: 130px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
         }
@@ -222,8 +225,7 @@
 
         p {
             font-size: 20px;
-            padding-left: 0;
-            padding-right: 0;
+            padding: 0;
         }
     }
 
@@ -267,7 +269,7 @@
 .solution__form {
     background: var(--dark-purple);
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     padding: 60px 0;
     position: relative;
     overflow: hidden;
