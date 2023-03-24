@@ -201,17 +201,34 @@ header{
                     position: absolute;
                     top: 100%;
                     left: 10px;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    background: var(--white);
+                    width: 200px;
+                    display: block;
+                    //flex-direction: column;
+                    background: rgba($color: #000000, $alpha: .4);
+                    backdrop-filter: blur(30px);
                     opacity: 0;
                     transition: all 0.5s ease;
-                    transform: translateY(-20px);
+                    transform: translateY(-25px);
+                    &::before{
+                        border-top: 7px solid transparent;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-bottom: 7px solid rgba($color: #000, $alpha: .4);
+                        left: 20%;
+                        top: -14px;
+                        position: absolute;
+                        content: '';
+                    }
                     li{
                         border-bottom: 1px solid rgba($color: #000000, $alpha: .2);
+                        padding: 0;
                         a{
-                            color: var(--black);
+                            color: var(--white);
+                            display: block;
+                            padding: 0 10px;
+                            &:hover{
+                                background: var(--slider-active-green);
+                            }
                         }
                     }
                 }

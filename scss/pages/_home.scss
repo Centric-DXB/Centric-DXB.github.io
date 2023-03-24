@@ -795,8 +795,8 @@
             display: block;
             position: relative;
             width: 60%;
-            @media (max-width: 767px) {
-                
+            @media (max-width: 992px) {
+                width: 100%;
             }
             img{
                 max-width:100%;
