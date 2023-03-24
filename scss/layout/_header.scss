@@ -356,8 +356,8 @@ header{
                         border-bottom: 1px solid rgba($color: #ffffff, $alpha: .2);
                         line-height: 45px;
                         font-size: 16px;
-                        padding: 0 0 0 20px;
                         text-align: left;
+                        position: relative;
                         @media (max-width: 450px) {
                             font-size: 12px;
                         }
@@ -368,10 +368,21 @@ header{
                             color: var(--white);
                             text-decoration: none;
                             display: block;
+                            padding: 0 0 0 20px;
                         }
                         select{
                             background: transparent;
                             color: var(--white);
+                            margin-left: 20px;
+                        }
+                        ul.dropdown--menu{
+                            position: relative;
+                            display: none;
+                        }
+                        &:hover{
+                            ul.dropdown--menu{
+                                display: block;
+                            }
                         }
                     }
                 }

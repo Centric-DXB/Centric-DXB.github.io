@@ -783,12 +783,12 @@
         margin: 0 10px;
         @media (max-width: 992px) {
             flex-direction: column;
-            width: 90%;
+            width: 100%;
             background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat right 100%;
         }
         @media (max-width: 767px) {
             flex-direction: column;
-            width: 90%;
+            width: 100%;
             background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat right 120%;
         }
         .seminar--image-date{
