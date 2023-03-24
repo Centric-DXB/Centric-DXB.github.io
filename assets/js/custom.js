@@ -391,15 +391,24 @@
         $('body').removeClass('arabic');
     });
 
-    // (Optional) Active an item if it has the class "is-active"	
-	$(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
-	
-	$(".accordion > .accordion-item").click(function() {
-		// Cancel the siblings
-		$(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
-		// Toggle the item
-		$(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
-	});
+    const elements = [...$(".accordion-item p")];
+    elements.forEach((el) => {
+        if (!$(el).parent("li").hasClass("active")) {
+            $(el).hide();
+        }
+    });
+    // (Optional) Active an item if it has the class "is-active"
+    $(".accordion > .accordion-item.is-active").children("p").slideDown();
+    $(".accordion > .accordion-item").click(function () {
+        // Cancel the siblings
+        $(this)
+            .siblings(".accordion-item")
+            .removeClass("is-active")
+            .children("p")
+            .slideUp();
+        // Toggle the item
+        $(this).toggleClass("is-active").children("p").slideToggle("ease-out");
+    });
 
     $('.ourindustry--carousel').slick({
         slidesToShow: 3,
@@ -500,14 +509,23 @@
     //     $("#smartciti, #smartciti-img").hide();
     // });
     
-    $(".our-industry--content a").click(function() {
-        const id = $('.industry--carousel-content').attr("id");
-
-        $(`#${id}`).addClass("active");
-        $(this).removeClass("active");
-
-
-        $(`.industry--carousel-content-wrapper > ${id}-img`).addClass("active");
+    function removeClasses(element, isImageElement = false) {
+        let id = $(element).attr("id");
+        if (!id) return;
+        if ($(element).hasClass("active")) {
+            $(element).removeClass("active");
+        }
+    }
+    $(".our-industry--content a").click(function () {
+        const id = $(this).attr("id");
+        const updateId = id.replace("-name", "");
+        // console.log(updateId);
+        const elements = $(".industry--carousel-content");
+        [...elements].forEach(removeClasses);
+        $(`#${updateId}`).addClass("active");
+        const imgElements = $(".industry--image");
+        [...imgElements].forEach(removeClasses);
+        $(`.industry--image#${updateId}-img`).addClass("active");
     });
 
     $(".business--name-wrapper").click(function(e) {
