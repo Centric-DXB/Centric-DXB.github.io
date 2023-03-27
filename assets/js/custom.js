@@ -8,7 +8,7 @@
         slidesToScroll: 1,
         speed: 800,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 2000,
         Infinit: false,
         dots: true
     });

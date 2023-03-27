@@ -153,7 +153,7 @@
         }
         img{
             display: inline-block;
-            transform: scale(1);
+            transform: scale(1.2);
         }
         .carousel-number{
             position: absolute;
@@ -179,7 +179,7 @@
             left: 0;
             width: 100%;
             padding: 30px 20px 0 20px;
-            background: url(../images/dimfilterbackground.png) no-repeat center center;
+            background: url(../images/dimfilterbackground.png) repeat-x center center;
             overflow: hidden;
             height: 220px;
             transition: all .2s linear;

@@ -1976,6 +1976,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .home-slider .slick-slider .slick-dots {
   bottom: 25px;
 }
+@media (max-width: 3000px) {
+  .home-slider .slick-slider .slick-dots {
+    bottom: 100px;
+  }
+}
+@media (max-width: 1700px) {
+  .home-slider .slick-slider .slick-dots {
+    bottom: 25px;
+  }
+}
 .home-slider .slick-slider .slick-dots li {
   transform: rotate(135deg);
   margin-right: 15px;
@@ -5415,6 +5425,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .herobanner img {
   position: relative;
   max-width: 100%;
+  width: 100%;
 }
 .herobanner .herobanner-content {
   position: absolute;
@@ -7057,7 +7068,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .services--list-wrapper .carousel-wrapper img {
   display: inline-block;
-  transform: scale(1);
+  transform: scale(1.2);
 }
 .services--list-wrapper .carousel-wrapper .carousel-number {
   position: absolute;
@@ -7085,7 +7096,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 0;
   width: 100%;
   padding: 30px 20px 0 20px;
-  background: url(../images/dimfilterbackground.png) no-repeat center center;
+  background: url(../images/dimfilterbackground.png) repeat-x center center;
   overflow: hidden;
   height: 220px;
   transition: all 0.2s linear;
