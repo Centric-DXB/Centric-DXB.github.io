@@ -357,4 +357,14 @@
             //color: var(--light-parrot-green);
         }
     }
+    .pagination{
+        color: var(--white);
+        font-size: 30px;
+        font-weight: 300;
+        justify-content: flex-end;
+        position: relative;
+        top: 70px;
+        right: 240px;
+        font-weight: 900;
+    }
 }

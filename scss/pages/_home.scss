@@ -1672,6 +1672,7 @@
         img{
             display: none;
             transition: all 0.2s ease-in-out;
+            width: 85%;
             &.current{
                 display: inline-block;
                 transition: all 0.2s ease-in-out;

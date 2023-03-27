@@ -3618,6 +3618,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .servingbusiness--wrapper .service--business-img img {
   display: none;
   transition: all 0.2s ease-in-out;
+  width: 85%;
 }
 .servingbusiness--wrapper .service--business-img img.current {
   display: inline-block;
@@ -7254,6 +7255,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .services--list-wrapper .slick-carousel .slick-next:hover:before,
 .services--list-wrapper .slick-carousel .slick-next:focus:before {
   opacity: 1;
+}
+.services--list-wrapper .pagination {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 300;
+  justify-content: flex-end;
+  position: relative;
+  top: 70px;
+  right: 240px;
+  font-weight: 900;
 }
 
 .contactus-wrapper {
