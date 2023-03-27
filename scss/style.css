@@ -4944,18 +4944,21 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 
 .soluton__banner {
   position: relative;
-  display: flex;
+  display: block;
+  width: 100%;
   align-items: center;
 }
 .soluton__banner img {
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 .soluton__banner .content {
   padding-left: 110px;
   position: absolute;
   z-index: 1;
   left: 110px;
+  top: 400px;
 }
 .soluton__banner .content h1 span {
   display: block;
@@ -6385,15 +6388,45 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .wwa__chairmen__section .starter-template ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 90px 0px 0px;
   height: auto;
   top: 50px;
   border-bottom: 0;
   border: 1px solid #ccc;
-  width: 30%;
+  width: 565px;
   border-radius: 10px;
-  left: 39%;
+  background: var(--white);
+}
+@media (max-width: 3000px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 42%;
+  }
+}
+@media (max-width: 2300px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 41%;
+  }
+}
+@media (max-width: 2000px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 40%;
+  }
+}
+@media (max-width: 1800px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 39%;
+  }
+}
+@media (max-width: 1700px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 39%;
+  }
+}
+@media (max-width: 1400px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 38%;
+  }
 }
 .wwa__chairmen__section .starter-template ul li:hover {
   text-decoration: none;
@@ -6425,6 +6458,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   position: absolute;
   left: 60px;
   top: 60px;
+}
+@media (max-width: 1800px) {
+  .wwa__chairmen__section #myTabContent .seo__img {
+    max-width: 33%;
+  }
+}
+@media (max-width: 1700px) {
+  .wwa__chairmen__section #myTabContent .seo__img {
+    max-width: 33%;
+  }
 }
 .wwa__chairmen__section #myTabContent .qoute {
   display: flex;
@@ -6743,7 +6786,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     height: 20%;
   }
   .wwa__chairmen__section .starter-template ul {
-    margin: 30px 0px 0px;
+    margin: 100px 0px 0px;
   }
   .split__section .container-fluid .content h3 {
     font-size: 42px;
