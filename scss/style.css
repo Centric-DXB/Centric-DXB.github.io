@@ -5096,7 +5096,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .top__section .nav {
   width: 610px;
-  height: auto;
   top: auto;
   left: auto;
   display: flex;
@@ -5105,7 +5104,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   justify-content: center;
   align-items: center;
   align-content: stretch;
-  margin: 80px 0px 0px;
+  margin: 0px 0px 0px;
   position: unset;
 }
 .top__section .nav .card {
@@ -5153,6 +5152,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding: 0px 8px;
   width: 180px;
   height: 210px;
+  margin-bottom: 20px;
 }
 .top__section .nav-pills-custom .nav-link.active {
   background-color: transparent;
@@ -6644,15 +6644,21 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
   margin-bottom: 40px;
+  font-style: italic;
 }
 .split__section .container-fluid .content h3 {
   font-size: 48px;
   font-weight: 500;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 25px;
 }
 .split__section .container-fluid .content p {
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
+  font-style: italic;
+  text-align: left;
 }
 
 .section__affiliate .affilate__card {
@@ -6861,6 +6867,17 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     height: auto;
   }
 }
+.textTruncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.unsetTextTruncate {
+  -webkit-line-clamp: unset;
+}
+
 .our--services-wrapper {
   display: block;
   width: 100%;
