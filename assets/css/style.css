@@ -4824,7 +4824,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .top__section .nav {
   width: 610px;
-  height: auto;
   top: auto;
   left: auto;
   display: flex;
@@ -4833,7 +4832,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   justify-content: center;
   align-items: center;
   align-content: stretch;
-  margin: 80px 0px 0px;
+  margin: 0px 0px 0px;
   position: unset;
 }
 .top__section .nav .card {
@@ -4881,6 +4880,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding: 0px 8px;
   width: 180px;
   height: 210px;
+  margin-bottom: 20px;
 }
 .top__section .nav-pills-custom .nav-link.active {
   background-color: transparent;
