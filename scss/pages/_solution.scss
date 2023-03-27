@@ -124,7 +124,7 @@
             color: var(--white);
             padding-left: 110px;
             font-family: var(--poppins);
-            margin-bottom: 100px;
+            margin-bottom: 20px;
             max-width: 85%;
             width: 100%;
 
@@ -179,7 +179,7 @@
 
     .nav {
         width: 610px;
-        height: auto; 
+        // height: auto; 
         top: auto;
         left: auto;
         display: flex;
@@ -188,7 +188,7 @@
         justify-content: center;
         align-items: center;
         align-content: stretch;
-        margin: 80px 0px 0px;
+        margin: 0px 0px 0px;
         position: unset;
 
         
@@ -199,8 +199,13 @@
             .card-footer {
                 p {
                     font-size: 16px;
-                    padding-left: 0;
-                    padding-right: 0;
+                    text-align: center;
+                    color: var(--white);
+                    padding: 0;
+                    white-space: nowrap;
+                    width: 130px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
         }
@@ -222,8 +227,7 @@
 
         p {
             font-size: 20px;
-            padding-left: 0;
-            padding-right: 0;
+            padding: 0;
         }
     }
 
@@ -246,6 +250,7 @@
     padding: 0px 8px;
     width: 180px;
     height: 210px;
+    margin-bottom: 20px;
 }
 
 .nav-pills-custom .nav-link.active {
@@ -267,7 +272,7 @@
 .solution__form {
     background: var(--dark-purple);
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     padding: 60px 0;
     position: relative;
     overflow: hidden;
@@ -403,6 +408,25 @@
         }
     } 
 }
+
+@media screen and (max-width: 840.99px) {
+    .top__section {
+
+        &::before {
+            width: 100%;
+            height: 60vh;
+            top: auto;
+            left: 0;
+            right:0;
+            bottom: -160px;
+        }
+        .nav{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
 
 
 @media screen and (max-width: 768.99px) {
