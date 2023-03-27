@@ -6644,15 +6644,21 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
   margin-bottom: 40px;
+  font-style: italic;
 }
 .split__section .container-fluid .content h3 {
   font-size: 48px;
   font-weight: 500;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 25px;
 }
 .split__section .container-fluid .content p {
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
+  font-style: italic;
+  text-align: left;
 }
 
 .section__affiliate .affilate__card {
