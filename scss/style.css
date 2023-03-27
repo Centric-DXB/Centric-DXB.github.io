@@ -4776,7 +4776,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--white);
   padding-left: 110px;
   font-family: var(--poppins);
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   max-width: 85%;
   width: 100%;
 }
