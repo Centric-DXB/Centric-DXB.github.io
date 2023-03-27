@@ -160,6 +160,7 @@ header{
                 line-height: 40px;
                 text-transform: uppercase;
                 font-family: var(--poppins);
+                position: relative;
                 &.arabic-text{
                     display: none;
                 }
@@ -187,12 +188,55 @@ header{
                     text-align: center;
                     padding-top: 6px;
                     margin-top: 5px;
+                    line-height: 20px;
                     @media (max-width: 768px) {
                         display: inline-block;
                     }
                     svg{
                         color: black;
                         font-size: 16px;
+                    }
+                }
+                ul.dropdown--menu{
+                    position: absolute;
+                    top: 100%;
+                    left: 10px;
+                    width: 200px;
+                    display: block;
+                    //flex-direction: column;
+                    background: rgba($color: #000000, $alpha: .4);
+                    backdrop-filter: blur(30px);
+                    opacity: 0;
+                    transition: all 0.5s ease;
+                    transform: translateY(-25px);
+                    &::before{
+                        border-top: 7px solid transparent;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-bottom: 7px solid rgba($color: #000, $alpha: .4);
+                        left: 20%;
+                        top: -14px;
+                        position: absolute;
+                        content: '';
+                    }
+                    li{
+                        border-bottom: 1px solid rgba($color: #000000, $alpha: .2);
+                        padding: 0;
+                        a{
+                            color: var(--white);
+                            display: block;
+                            padding: 0 10px;
+                            &:hover{
+                                background: var(--slider-active-green);
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    ul.dropdown--menu{
+                        opacity: 1;
+                        transition: all 0.5s ease;
+                        transform: translateY(0px);
                     }
                 }
             }
@@ -312,8 +356,8 @@ header{
                         border-bottom: 1px solid rgba($color: #ffffff, $alpha: .2);
                         line-height: 45px;
                         font-size: 16px;
-                        padding: 0 0 0 20px;
                         text-align: left;
+                        position: relative;
                         @media (max-width: 450px) {
                             font-size: 12px;
                         }
@@ -324,10 +368,21 @@ header{
                             color: var(--white);
                             text-decoration: none;
                             display: block;
+                            padding: 0 0 0 20px;
                         }
                         select{
                             background: transparent;
                             color: var(--white);
+                            margin-left: 20px;
+                        }
+                        ul.dropdown--menu{
+                            position: relative;
+                            display: none;
+                        }
+                        &:hover{
+                            ul.dropdown--menu{
+                                display: block;
+                            }
                         }
                     }
                 }
