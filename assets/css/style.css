@@ -6867,6 +6867,17 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     height: auto;
   }
 }
+.textTruncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.unsetTextTruncate {
+  -webkit-line-clamp: unset;
+}
+
 .our--services-wrapper {
   display: block;
   width: 100%;
