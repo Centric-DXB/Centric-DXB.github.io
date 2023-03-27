@@ -6,7 +6,7 @@
         position: absolute;
         content: '';
         background: var(--light-green);
-        height: 80px;
+        height: 100px;
         width: 40%;
     }
 
@@ -17,11 +17,15 @@
         justify-content: center;
         margin: 90px 0px 0px;
         height: auto;
-        top: 120px;
+        top: 50px;
         border-bottom: 0;
+        border: 1px solid #ccc;
+        width: 30%;
+        border-radius: 10px;
+        left: 39%;
 
         li {
-            border: 1px solid transparent;
+            //border: 1px solid transparent;
            
             &:hover {
                 text-decoration: none;
@@ -30,18 +34,22 @@
             a.active {
                 background-color: var(--dark-blue-color);
                 color: var(--white);
+                border: none;
             }
             a
             {
-                font-size: 16px;
+                font-size: 20px;
                 color: var(--medium-grey);
                 text-shadow: none;
-                border-radius: 5px;
-                border: 1px solid var(--medium-grey);
-              
+                border-radius: 10px;
+                //border: 1px solid var(--medium-grey);
+                line-height: 50px;
+                padding: .5rem 1.9rem;
+                border: none;
 
                 &:hover {
                     text-decoration: none;
+                    border: none;
                 }
                 
             }
@@ -50,7 +58,7 @@
  } 
     
     #myTabContent {
-        margin-top: 200px;
+        margin-top: 140px;
         z-index: 1;
 
         .seo__img {
@@ -83,6 +91,7 @@
             color: var(--medium-grey);
             line-height: 30px;
             // max-width: 70%;
+            margin-bottom: 10px;
 
             &:last-child {
                 margin-top: 30px;
