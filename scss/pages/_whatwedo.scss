@@ -31,6 +31,9 @@
             @media (max-width: 992px) {
                 margin: 150px 0 0 0;
             }
+            @media (max-width: 767px) {
+                margin: 70px 0 0 0;
+            }
             h2{
                 font-size: 20px;
                 margin-bottom: 50px;
@@ -46,6 +49,9 @@
                 @media (max-width: 767px) {
                     font-size: 36px;
                 }
+                @media (max-width: 600px) {
+                    font-size: 24px;
+                }
             }
         }
     }
@@ -58,6 +64,10 @@
     padding: 50px 0 100px;
     min-height: 1000px;
     color: var(--white);
+    @media (max-width: 992px) {
+        background: rgba($color: #122D6E, $alpha: 1.0);
+        min-height: 600px;
+    }
     h2{
         font-size: 33px;
         font-weight: 500;
@@ -112,6 +122,9 @@
         margin-bottom: 20px;
         line-height: 30px;
         padding-left: 110px;
+        @media (max-width: 992px) {
+            padding-left: 0;
+        }
     }
 }
 .ourindustry-wrapper{
@@ -193,6 +206,9 @@
             min-height: 400px;
             padding-bottom: 50px;
         }
+        @media (max-width: 992px) {
+            padding-left: 0;
+        }
         .industry--carousel-content {
             display: none;
             &.active{
@@ -249,6 +265,14 @@
             }
             @media (max-width: 1200px) {
                 position: relative;
+                width: 100%;
+                left: 0;
+                height: auto;
+            }
+            img{
+                @media (max-width: 1200px) {
+                    width: 100%;
+                }
             }
             h3{
                 font-size: 116px;
@@ -430,7 +454,7 @@
             }
         }
         p{
-            font-size: 20px;
+            font-size: 16px;
             @media (max-width: 1400px) {
                 font-size: 18px;
             }
