@@ -8,7 +8,7 @@
         slidesToScroll: 1,
         speed: 800,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 2000,
         Infinit: false,
         dots: true
     });
@@ -554,6 +554,71 @@
         $(this).addClass("active-text");
     });
     
+
+    var $pg = $('.pagination');
+    var $slikEl = $('.slick-carousel');
+
+    $slikEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $pg.text(i + ' / ' + slick.slideCount);
+      });
+
+    // SERVICES PAGE LIST CAROUSEL
+    $slikEl.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        speed: 400,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+            breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
+            breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
+            breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
+            breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    //infinite: true,
+                    //dots: true
+                }
+            },
+            {
+            breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            
+        ]
+    });
 
 
 

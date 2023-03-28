@@ -235,6 +235,12 @@
         }
         .slick-dots{
             bottom: 25px;
+            @media (max-width: 3000px) {
+                bottom: 100px;
+            }
+            @media (max-width: 1700px) {
+                bottom: 25px;
+            }
             li{
                 transform: rotate(135deg);
                 margin-right: 15px;
@@ -1672,6 +1678,7 @@
         img{
             display: none;
             transition: all 0.2s ease-in-out;
+            width: 85%;
             &.current{
                 display: inline-block;
                 transition: all 0.2s ease-in-out;
