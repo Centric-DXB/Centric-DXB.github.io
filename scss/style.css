@@ -6550,6 +6550,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--light-green);
   padding-top: 210px;
 }
+@media (max-width: 1200px) {
+  .wwa__chairmen__section #myTabContent h3 {
+    font-size: 28px;
+    padding-top: 240px;
+  }
+}
 @media (max-width: 992px) {
   .wwa__chairmen__section #myTabContent h3 {
     padding-top: 100px;
@@ -6560,6 +6566,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--medium-grey);
   font-weight: 300;
   margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .wwa__chairmen__section #myTabContent h6 {
+    font-size: 21px;
+    font-weight: 400;
+  }
 }
 .wwa__chairmen__section #myTabContent p {
   font-size: 20px;
