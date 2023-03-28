@@ -656,6 +656,15 @@
       }
     }
   }
+  .top__section{
+    &::before{
+      right: unset;
+      left: 0;
+    }
+    &::after{
+      transform: rotate(180deg);
+    }
+  }
   .foot{
     .footer-links{
       .links{

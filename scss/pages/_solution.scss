@@ -1,18 +1,22 @@
 .soluton__banner {
     // background: url(../images/solution-banner.png) no-repeat;
     position: relative;
-    display: flex;
+    //display: flex;
+    display: block;
+    width: 100%;
     align-items: center;
 
     img {
         height: 100%;
         object-fit: cover;
+        width: 100%;
     }
     .content {
         padding-left: 110px;
         position: absolute;
         z-index: 1;
         left: 110px;
+        top: 400px;
         h1 {
             span {
                 display: block;
