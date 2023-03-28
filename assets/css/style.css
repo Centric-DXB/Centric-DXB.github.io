@@ -6388,8 +6388,18 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   height: 100px;
   width: 40%;
 }
+@media (max-width: 992px) {
+  .wwa__chairmen__section::before {
+    display: none;
+  }
+}
 .wwa__chairmen__section .starter-template {
   background: url(../images/big-qoute.png) no-repeat right 100px;
+}
+@media (max-width: 992px) {
+  .wwa__chairmen__section .starter-template {
+    background: none;
+  }
 }
 .wwa__chairmen__section .starter-template ul {
   display: flex;
@@ -6445,9 +6455,18 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 992px) {
   .wwa__chairmen__section .starter-template ul {
-    width: 100%;
+    width: 99%;
     left: 0;
     position: relative;
+  }
+}
+@media (max-width: 767px) {
+  .wwa__chairmen__section .starter-template ul {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    top: 100px;
   }
 }
 .wwa__chairmen__section .starter-template ul li:hover {
@@ -6473,6 +6492,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     padding: 0.5rem 1.5rem;
   }
 }
+@media (max-width: 1024px) {
+  .wwa__chairmen__section .starter-template ul li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .wwa__chairmen__section .starter-template ul li a {
+    font-size: 17px;
+  }
+}
 .wwa__chairmen__section .starter-template ul li a:hover {
   text-decoration: none;
   border: none;
@@ -6480,6 +6509,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .wwa__chairmen__section #myTabContent {
   margin-top: 140px;
   z-index: 1;
+}
+@media screen and (max-width: 992px) {
+  .wwa__chairmen__section #myTabContent {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .wwa__chairmen__section #myTabContent {
+    margin-top: 100px;
+  }
 }
 .wwa__chairmen__section #myTabContent .seo__img {
   max-width: 65%;
@@ -6497,6 +6536,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     max-width: 33%;
   }
 }
+@media (max-width: 992px) {
+  .wwa__chairmen__section #myTabContent .seo__img {
+    top: 60px;
+  }
+}
 .wwa__chairmen__section #myTabContent .qoute {
   display: flex;
   justify-content: end;
@@ -6505,6 +6549,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 33px;
   color: var(--light-green);
   padding-top: 210px;
+}
+@media (max-width: 992px) {
+  .wwa__chairmen__section #myTabContent h3 {
+    padding-top: 100px;
+  }
 }
 .wwa__chairmen__section #myTabContent h6 {
   font-size: 26px;
@@ -6805,9 +6854,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 
 @media screen and (max-width: 1600.99px) {
-  .wwa__chairmen__section #myTabContent {
-    margin-top: 150px;
-  }
   .wwa__chairmen__section #myTabContent .seo__img {
     max-width: 30%;
   }
@@ -6851,7 +6897,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media screen and (max-width: 1024.99px) {
   .wwa__chairmen__section #myTabContent .seo__img {
-    max-width: 100%;
+    max-width: 90%;
     left: 20px;
     position: relative;
   }
@@ -6863,9 +6909,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
   .wwa__chairmen__section #myTabContent h6 {
     margin-bottom: 20px;
-  }
-  .wwa__chairmen__section .starter-template ul li a {
-    font-size: 14px;
   }
   .member__slide .container-fluid {
     padding: auto;
