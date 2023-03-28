@@ -1542,6 +1542,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-left: 0;
   padding-right: 20px;
 }
+.arabic .top__section::before {
+  right: unset;
+  left: 0;
+}
+.arabic .top__section::after {
+  transform: rotate(180deg);
+}
 .arabic .foot .footer-links .links {
   border-right: none;
   border-left: 1px solid #73BC45;
