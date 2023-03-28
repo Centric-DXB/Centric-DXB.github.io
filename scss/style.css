@@ -1992,6 +1992,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .home-slider .slick-slider .slick-dots {
   bottom: 25px;
 }
+@media (max-width: 3000px) {
+  .home-slider .slick-slider .slick-dots {
+    bottom: 100px;
+  }
+}
+@media (max-width: 1700px) {
+  .home-slider .slick-slider .slick-dots {
+    bottom: 25px;
+  }
+}
 .home-slider .slick-slider .slick-dots li {
   transform: rotate(135deg);
   margin-right: 15px;
@@ -3634,6 +3644,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .servingbusiness--wrapper .service--business-img img {
   display: none;
   transition: all 0.2s ease-in-out;
+  width: 85%;
 }
 .servingbusiness--wrapper .service--business-img img.current {
   display: inline-block;
@@ -5433,6 +5444,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .herobanner img {
   position: relative;
   max-width: 100%;
+  width: 100%;
 }
 .herobanner .herobanner-content {
   position: absolute;
@@ -7203,7 +7215,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .services--list-wrapper .carousel-wrapper img {
   display: inline-block;
-  transform: scale(1);
+  transform: scale(1.2);
 }
 .services--list-wrapper .carousel-wrapper .carousel-number {
   position: absolute;
@@ -7231,7 +7243,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 0;
   width: 100%;
   padding: 30px 20px 0 20px;
-  background: url(../images/dimfilterbackground.png) no-repeat center center;
+  background: url(../images/dimfilterbackground.png) repeat-x center center;
   overflow: hidden;
   height: 220px;
   transition: all 0.2s linear;
@@ -7435,6 +7447,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .services--list-wrapper .slick-carousel .slick-next:hover:before,
 .services--list-wrapper .slick-carousel .slick-next:focus:before {
   opacity: 1;
+}
+.services--list-wrapper .pagination {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 300;
+  justify-content: flex-end;
+  position: relative;
+  top: 70px;
+  right: 240px;
+  font-weight: 900;
 }
 
 .contactus-wrapper {
