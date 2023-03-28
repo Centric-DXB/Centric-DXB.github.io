@@ -349,7 +349,7 @@
         
         .left {
           background:var(--dark-blue-color);
-          transform: skewX(10deg);
+          transform: skewX(-10deg);
           margin-left: -5%;
           position: relative;
           cursor: pointer;
@@ -377,23 +377,20 @@
             top: 50%;
             left: 96%;
             z-index: 2;
-            transform: translate(-10%, -50%);
+            transform: translate(-10%, -50%) skew(10deg);
             cursor: pointer;
           }
           
           &:hover {
-            
-         h1 {
-            -webkit-text-fill-color: var(--white);
-         }
-            
-          }
-         
+                h1 {
+                    -webkit-text-fill-color: var(--white);
+                }
+            }
         }
         
         .right {
           background:var(--light-green);
-          transform: skewX(10deg);
+          transform: skewX(-10deg);
           margin-right: -5%;
           position: relative;
           cursor: pointer;
@@ -413,13 +410,10 @@
           }
           
           &:hover {
-            
-            h1 {
-               -webkit-text-fill-color: var(--white);
-            }
-               
+                h1 {
+                -webkit-text-fill-color: var(--white);
+                }   
              }
-         
         }
 
         .content {
@@ -430,31 +424,27 @@
             flex-direction: column;
             max-width: 50%;
             margin: 0 auto;
-            transform: none;
+            transform: skewX(10deg);
 
             h1 {
                 font-size: 80px;
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke: 1px;
                 margin-bottom: 40px;
-                font-style: italic;
-
-               
+                //font-style: italic;
             }
-
             h3 {
                 font-size: 48px;
                 font-weight: 500;
-                font-style: italic;
+                //font-style: italic;
                 text-align: left;
                 margin-bottom: 25px;
             }
-
             p {
                 font-size: 20px;
                 font-weight: 300;
                 line-height: 30px;
-                font-style: italic;
+                //font-style: italic;
                 text-align: left;
             }
         }
