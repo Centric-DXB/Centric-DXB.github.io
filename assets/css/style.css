@@ -6473,17 +6473,17 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 1200px) {
   .wwa__chairmen__section .starter-template ul {
-    width: 609px;
+    width: 615px;
   }
 }
 @media (max-width: 1024px) {
   .wwa__chairmen__section .starter-template ul {
-    width: 551px;
+    width: 555px;
   }
 }
 @media (max-width: 992px) {
   .wwa__chairmen__section .starter-template ul {
-    width: 99%;
+    width: 100%;
     left: 0;
     position: relative;
   }
