@@ -5196,6 +5196,17 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 20px;
   padding: 0;
 }
+.top__section .tab-content .solutions--points {
+  display: block;
+  width: 100%;
+}
+.top__section .tab-content .solutions--points li {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 0 10px 10px 0;
+}
 .top__section .main__box {
   display: flex;
   flex-direction: row;
