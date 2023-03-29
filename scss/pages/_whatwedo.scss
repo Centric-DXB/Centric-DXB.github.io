@@ -689,6 +689,9 @@
             }
         }
     }
+    p{
+        padding-left: 100px;
+    }
     .tech--accordion-wrapper{
         display: block;
         padding-left: 100px;
@@ -752,6 +755,7 @@
                     padding-bottom: .8rem;
                     display: none;
                     font-size: 20px;
+                    padding-left: 0;
                 }
             }
         }

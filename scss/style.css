@@ -6231,6 +6231,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     left: 80px;
   }
 }
+.technologies-wrapper p {
+  padding-left: 100px;
+}
 .technologies-wrapper .tech--accordion-wrapper {
   display: block;
   padding-left: 100px;
@@ -6288,6 +6291,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-bottom: 0.8rem;
   display: none;
   font-size: 20px;
+  padding-left: 0;
 }
 .technologies-wrapper .parallax-bg {
   background: #122d6e url(../images/technology-parallex-img.png) no-repeat fixed right;
