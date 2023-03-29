@@ -1231,7 +1231,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .topsolutions-wrapper.arabic-text,
 .arabic .services-wrapper.arabic-text,
 .arabic .technologies-wrapper.arabic-text,
-.arabic .contactus-wrapper.arabic-text {
+.arabic .contactus-wrapper.arabic-text,
+.arabic .servingbusiness--wrapper.arabic-text {
   display: inline-block;
 }
 .arabic .home-about-us .about-us h2,
@@ -1249,7 +1250,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .topsolutions-wrapper h2,
 .arabic .services-wrapper h2,
 .arabic .technologies-wrapper h2,
-.arabic .contactus-wrapper h2 {
+.arabic .contactus-wrapper h2,
+.arabic .servingbusiness--wrapper h2 {
   padding-left: 0px;
   padding-right: 110px;
   font-family: var(--arabic-font);
@@ -1270,7 +1272,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .topsolutions-wrapper h2::before,
 .arabic .services-wrapper h2::before,
 .arabic .technologies-wrapper h2::before,
-.arabic .contactus-wrapper h2::before {
+.arabic .contactus-wrapper h2::before,
+.arabic .servingbusiness--wrapper h2::before {
   left: auto;
   right: 60px;
 }
@@ -1289,7 +1292,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .topsolutions-wrapper h2::after,
 .arabic .services-wrapper h2::after,
 .arabic .technologies-wrapper h2::after,
-.arabic .contactus-wrapper h2::after {
+.arabic .contactus-wrapper h2::after,
+.arabic .servingbusiness--wrapper h2::after {
   left: auto;
   right: 0;
 }
@@ -1565,6 +1569,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   border-right: none;
   border-left: 1px solid #73BC45;
 }
+@media (max-width: 992px) {
+  .arabic .foot .footer-links .links {
+    border-left: none;
+  }
+}
 .arabic .foot .footer-links .links.arabic-text {
   display: inline-flex;
 }
@@ -1575,6 +1584,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .foot .footer-links .links.arabic-text:last-child {
   border: none;
+}
+.arabic .foot .footer-links .links:nth-child(2) {
+  border-left: none;
 }
 .arabic .foot .footer-links .links li a {
   padding-left: 0;
@@ -1587,7 +1599,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media (max-width: 992px) {
   .arabic .foot .footer-location .location::after {
     left: 70px;
+    top: 210px;
   }
+}
+.arabic .foot .footer-location .location .location-info {
+  width: 100%;
 }
 .arabic .foot .footer-location .location .location-info.jeddah {
   padding-right: 90px;
@@ -1602,8 +1618,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 767px) {
   .arabic .foot .footer-location .location .location-info.jeddah {
-    background: url(../images/jeddah.svg) no-repeat 340px 0;
-    padding-right: 130px;
+    background: url(../images/jeddah.svg) no-repeat center 0;
+    padding-right: 0;
+    padding-top: 100px;
   }
 }
 .arabic .foot .footer-location .location .location-info.riyadh {
@@ -1619,8 +1636,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 767px) {
   .arabic .foot .footer-location .location .location-info.riyadh {
-    background: url(../images/riyadh.svg) no-repeat 340px 0;
-    padding-right: 130px;
+    background: url(../images/riyadh.svg) no-repeat center 0;
+    padding-right: 0;
+    padding-top: 100px;
   }
 }
 .arabic .foot .footer-location .location .location-info.alkhobar {
@@ -1632,6 +1650,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   .arabic .foot .footer-location .location .location-info.alkhobar {
     background: url(../images/khobar.svg) no-repeat right 0;
     padding-right: 130px;
+  }
+}
+@media (max-width: 767px) {
+  .arabic .foot .footer-location .location .location-info.alkhobar {
+    background: url(../images/khobar.svg) no-repeat center 0;
+    padding-right: 0;
+    padding-top: 100px;
   }
 }
 .arabic .foot .footer-location .location .location-info.arabic-text {
@@ -6286,7 +6311,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   right: 0;
   top: 20px;
 }
-.technologies-wrapper .tech--accordion-wrapper .accordion .accordion-item .accordion-panel {
+.technologies-wrapper .tech--accordion-wrapper .accordion .accordion-item .accordion-panel, .technologies-wrapper .tech--accordion-wrapper .accordion .accordion-item p {
   margin: 0;
   padding-bottom: 0.8rem;
   display: none;

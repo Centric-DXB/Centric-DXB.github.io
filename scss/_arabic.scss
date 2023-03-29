@@ -341,7 +341,8 @@
   .topsolutions-wrapper, 
   .services-wrapper, 
   .technologies-wrapper,
-  .contactus-wrapper{
+  .contactus-wrapper,
+  .servingbusiness--wrapper{
     //display: none;
     &.arabic-text{
       display: inline-block;
@@ -690,6 +691,9 @@
     .footer-links{
       .links{
         //display: none;
+        @media (max-width: 992px) {
+          border-left: none;
+        }
         &.arabic-text{
           display: inline-flex;
           @media (max-width: 992px) {
@@ -701,6 +705,9 @@
         }
         border-right: none;
         border-left: 1px solid #73BC45;
+        &:nth-child(2){
+          border-left: none;
+        }
         li {
           a{
             padding-left: 0;
@@ -716,10 +723,12 @@
           right: unset;
           @media (max-width: 992px) {
             left: 70px;
+            top: 210px;
           }
         }
         .location-info{
           //display: none;
+          width: 100%;
           &.jeddah{
             padding-right: 90px;
             padding-left: 0;
@@ -729,8 +738,9 @@
               padding-right: 130px;
             }
             @media (max-width: 767px) {
-              background: url(../images/jeddah.svg) no-repeat 340px 0;
-              padding-right: 130px;
+              background: url(../images/jeddah.svg) no-repeat center 0;
+              padding-right: 0;
+              padding-top: 100px;
             }
           }
           &.riyadh{
@@ -742,8 +752,9 @@
               padding-right: 130px;
             }
             @media (max-width: 767px) {
-              background: url(../images/riyadh.svg) no-repeat 340px 0;
-              padding-right: 130px;
+              background: url(../images/riyadh.svg) no-repeat center 0;
+              padding-right: 0;
+              padding-top: 100px;
             }
           }
           &.alkhobar{
@@ -753,6 +764,11 @@
             @media (max-width: 992px) {
               background: url(../images/khobar.svg) no-repeat right 0;
               padding-right: 130px;
+            }
+            @media (max-width: 767px) {
+              background: url(../images/khobar.svg) no-repeat center 0;
+              padding-right: 0;
+              padding-top: 100px;
             }
           }
           &.arabic-text{
