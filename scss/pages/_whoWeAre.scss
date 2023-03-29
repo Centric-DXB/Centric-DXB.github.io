@@ -2,27 +2,75 @@
     background: var(--white);
     background-size: cover;
     position: relative;
+    min-height: 850px;
+    padding-bottom: 100px;
     &::before {
         position: absolute;
         content: '';
         background: var(--light-green);
         height: 100px;
         width: 40%;
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
 
 
  .starter-template {
+    background: url(../images/big-qoute.png) no-repeat right 100px;
+    @media (max-width: 992px) {
+        background: none;
+    }
     ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         margin: 90px 0px 0px;
         height: auto;
         top: 50px;
         border-bottom: 0;
         border: 1px solid #ccc;
-        width: 30%;
+        //width: 30%;
+        width: 770px;
         border-radius: 10px;
-        left: 39%;
+        //left: 39%;
+        background: var(--white);
+        @media (max-width: 3000px) {
+            left: 42%;
+        }
+        @media (max-width: 2300px) {
+            left: 41%;
+        }
+        @media (max-width: 2000px) {
+            left: 40%;
+        }
+        @media (max-width: 1800px) {
+            left: 39%;
+        }
+        @media (max-width: 1700px) {
+            left: 39%;
+        }
+        @media (max-width: 1400px) {
+            left: 38%;
+        }
+        @media (max-width: 1200px) {
+            width: 615px;
+        }
+        @media (max-width: 1024px) {
+            width: 555px;
+        }
+        @media (max-width: 992px) {
+            width: 100%;
+            left: 0;
+            position: relative;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            position: relative;
+            justify-content: center;
+            flex-direction: column;
+            top: 100px;
+        }
+
 
         li {
             //border: 1px solid transparent;
@@ -36,8 +84,7 @@
                 color: var(--white);
                 border: none;
             }
-            a
-            {
+            a{
                 font-size: 20px;
                 color: var(--medium-grey);
                 text-shadow: none;
@@ -46,6 +93,16 @@
                 line-height: 50px;
                 padding: .5rem 1.9rem;
                 border: none;
+                @media (max-width: 1200px) {
+                    font-size: 16px;
+                    padding: .5rem 1.5rem;
+                }
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 992px) {
+                    font-size: 17px;
+                }
 
                 &:hover {
                     text-decoration: none;
@@ -60,12 +117,27 @@
     #myTabContent {
         margin-top: 140px;
         z-index: 1;
+        @media screen and (max-width: 992px) {
+            margin-top: 50px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 100px;
+        }
 
         .seo__img {
             max-width: 65%;
             position: absolute;
             left: 60px;
             top: 60px;
+            @media (max-width: 1800px) {
+                max-width: 33%;
+            }
+            @media (max-width: 1700px) {
+                max-width: 33%;
+            }
+            @media (max-width: 992px) {
+                top: 60px;
+            }
 
         }
 
@@ -77,12 +149,24 @@
         h3 {
             font-size: 33px;
             color: var(--light-green);
+            padding-top: 210px;
+            @media (max-width: 1200px) {
+                font-size: 28px;
+                padding-top: 240px;
+            }
+            @media (max-width: 992px) {
+                padding-top: 100px;
+            }
         }
         h6 {
             font-size: 26px;
             color: var(--medium-grey);
             font-weight: 300;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            @media (max-width: 1200px) {
+                font-size: 21px;
+                font-weight: 400;
+            }
         }
 
         p {
@@ -265,7 +349,7 @@
         
         .left {
           background:var(--dark-blue-color);
-          transform: skewX(10deg);
+          transform: skewX(-10deg);
           margin-left: -5%;
           position: relative;
           cursor: pointer;
@@ -293,23 +377,20 @@
             top: 50%;
             left: 96%;
             z-index: 2;
-            transform: translate(-10%, -50%);
+            transform: translate(-10%, -50%) skew(10deg);
             cursor: pointer;
           }
           
           &:hover {
-            
-         h1 {
-            -webkit-text-fill-color: var(--white);
-         }
-            
-          }
-         
+                h1 {
+                    -webkit-text-fill-color: var(--white);
+                }
+            }
         }
         
         .right {
           background:var(--light-green);
-          transform: skewX(10deg);
+          transform: skewX(-10deg);
           margin-right: -5%;
           position: relative;
           cursor: pointer;
@@ -329,13 +410,10 @@
           }
           
           &:hover {
-            
-            h1 {
-               -webkit-text-fill-color: var(--white);
-            }
-               
+                h1 {
+                -webkit-text-fill-color: var(--white);
+                }   
              }
-         
         }
 
         .content {
@@ -346,31 +424,27 @@
             flex-direction: column;
             max-width: 50%;
             margin: 0 auto;
-            transform: none;
+            transform: skewX(10deg);
 
             h1 {
                 font-size: 80px;
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke: 1px;
                 margin-bottom: 40px;
-                font-style: italic;
-
-               
+                //font-style: italic;
             }
-
             h3 {
                 font-size: 48px;
                 font-weight: 500;
-                font-style: italic;
+                //font-style: italic;
                 text-align: left;
                 margin-bottom: 25px;
             }
-
             p {
                 font-size: 20px;
                 font-weight: 300;
                 line-height: 30px;
-                font-style: italic;
+                //font-style: italic;
                 text-align: left;
             }
         }
@@ -463,7 +537,7 @@
 @media screen and (max-width: 1600.99px) {
     .wwa__chairmen__section {
         #myTabContent {
-            margin-top: 150px;
+            //margin-top: 150px;
             .seo__img {
                 max-width: 30%;
             }
@@ -475,7 +549,7 @@
 
         .starter-template  {
             ul {
-                margin: 30px 0px 0px;
+                margin: 100px 0px 0px;
             }
         }
     }
@@ -558,8 +632,9 @@
     .wwa__chairmen__section {
         #myTabContent {
             .seo__img {
-                max-width: 25%;
+                max-width: 90%;
                 left: 20px;
+                position: relative;
             }
 
             .qoute {
@@ -579,7 +654,7 @@
             ul {
                 li {
                     a {
-                        font-size: 14px;
+                        //font-size: 14px;
                     }
                 }
             }

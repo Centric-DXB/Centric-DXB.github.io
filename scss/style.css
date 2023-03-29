@@ -1545,6 +1545,22 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-left: 0;
   padding-right: 20px;
 }
+.arabic .top__section::before {
+  right: unset;
+  left: 0;
+}
+.arabic .top__section::after {
+  transform: rotate(180deg);
+}
+.arabic .wwa__chairmen__section .starter-template {
+  background: url(../images/qoutearabic.png) no-repeat left 100px;
+}
+@media (max-width: 2000px) {
+  .arabic .wwa__chairmen__section .starter-template ul {
+    left: unset;
+    right: 40%;
+  }
+}
 .arabic .foot .footer-links .links {
   border-right: none;
   border-left: 1px solid #73BC45;
@@ -4958,18 +4974,21 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 
 .soluton__banner {
   position: relative;
-  display: flex;
+  display: block;
+  width: 100%;
   align-items: center;
 }
 .soluton__banner img {
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 .soluton__banner .content {
   padding-left: 110px;
   position: absolute;
   z-index: 1;
   left: 110px;
+  top: 400px;
 }
 .soluton__banner .content h1 span {
   display: block;
@@ -6401,6 +6420,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   background: var(--white);
   background-size: cover;
   position: relative;
+  min-height: 850px;
+  padding-bottom: 100px;
 }
 .wwa__chairmen__section::before {
   position: absolute;
@@ -6409,17 +6430,86 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   height: 100px;
   width: 40%;
 }
+@media (max-width: 992px) {
+  .wwa__chairmen__section::before {
+    display: none;
+  }
+}
+.wwa__chairmen__section .starter-template {
+  background: url(../images/big-qoute.png) no-repeat right 100px;
+}
+@media (max-width: 992px) {
+  .wwa__chairmen__section .starter-template {
+    background: none;
+  }
+}
 .wwa__chairmen__section .starter-template ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 90px 0px 0px;
   height: auto;
   top: 50px;
   border-bottom: 0;
   border: 1px solid #ccc;
-  width: 30%;
+  width: 770px;
   border-radius: 10px;
-  left: 39%;
+  background: var(--white);
+}
+@media (max-width: 3000px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 42%;
+  }
+}
+@media (max-width: 2300px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 41%;
+  }
+}
+@media (max-width: 2000px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 40%;
+  }
+}
+@media (max-width: 1800px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 39%;
+  }
+}
+@media (max-width: 1700px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 39%;
+  }
+}
+@media (max-width: 1400px) {
+  .wwa__chairmen__section .starter-template ul {
+    left: 38%;
+  }
+}
+@media (max-width: 1200px) {
+  .wwa__chairmen__section .starter-template ul {
+    width: 615px;
+  }
+}
+@media (max-width: 1024px) {
+  .wwa__chairmen__section .starter-template ul {
+    width: 555px;
+  }
+}
+@media (max-width: 992px) {
+  .wwa__chairmen__section .starter-template ul {
+    width: 100%;
+    left: 0;
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  .wwa__chairmen__section .starter-template ul {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    top: 100px;
+  }
 }
 .wwa__chairmen__section .starter-template ul li:hover {
   text-decoration: none;
@@ -6438,6 +6528,22 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding: 0.5rem 1.9rem;
   border: none;
 }
+@media (max-width: 1200px) {
+  .wwa__chairmen__section .starter-template ul li a {
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .wwa__chairmen__section .starter-template ul li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .wwa__chairmen__section .starter-template ul li a {
+    font-size: 17px;
+  }
+}
 .wwa__chairmen__section .starter-template ul li a:hover {
   text-decoration: none;
   border: none;
@@ -6446,11 +6552,36 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-top: 140px;
   z-index: 1;
 }
+@media screen and (max-width: 992px) {
+  .wwa__chairmen__section #myTabContent {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .wwa__chairmen__section #myTabContent {
+    margin-top: 100px;
+  }
+}
 .wwa__chairmen__section #myTabContent .seo__img {
   max-width: 65%;
   position: absolute;
   left: 60px;
   top: 60px;
+}
+@media (max-width: 1800px) {
+  .wwa__chairmen__section #myTabContent .seo__img {
+    max-width: 33%;
+  }
+}
+@media (max-width: 1700px) {
+  .wwa__chairmen__section #myTabContent .seo__img {
+    max-width: 33%;
+  }
+}
+@media (max-width: 992px) {
+  .wwa__chairmen__section #myTabContent .seo__img {
+    top: 60px;
+  }
 }
 .wwa__chairmen__section #myTabContent .qoute {
   display: flex;
@@ -6459,12 +6590,30 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .wwa__chairmen__section #myTabContent h3 {
   font-size: 33px;
   color: var(--light-green);
+  padding-top: 210px;
+}
+@media (max-width: 1200px) {
+  .wwa__chairmen__section #myTabContent h3 {
+    font-size: 28px;
+    padding-top: 240px;
+  }
+}
+@media (max-width: 992px) {
+  .wwa__chairmen__section #myTabContent h3 {
+    padding-top: 100px;
+  }
 }
 .wwa__chairmen__section #myTabContent h6 {
   font-size: 26px;
   color: var(--medium-grey);
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  .wwa__chairmen__section #myTabContent h6 {
+    font-size: 21px;
+    font-weight: 400;
+  }
 }
 .wwa__chairmen__section #myTabContent p {
   font-size: 20px;
@@ -6606,7 +6755,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .split__section .container-fluid .left {
   background: var(--dark-blue-color);
-  transform: skewX(10deg);
+  transform: skewX(-10deg);
   margin-left: -5%;
   position: relative;
   cursor: pointer;
@@ -6633,7 +6782,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   top: 50%;
   left: 96%;
   z-index: 2;
-  transform: translate(-10%, -50%);
+  transform: translate(-10%, -50%) skew(10deg);
   cursor: pointer;
 }
 .split__section .container-fluid .left:hover h1 {
@@ -6641,7 +6790,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .split__section .container-fluid .right {
   background: var(--light-green);
-  transform: skewX(10deg);
+  transform: skewX(-10deg);
   margin-right: -5%;
   position: relative;
   cursor: pointer;
@@ -6669,19 +6818,17 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   flex-direction: column;
   max-width: 50%;
   margin: 0 auto;
-  transform: none;
+  transform: skewX(10deg);
 }
 .split__section .container-fluid .content h1 {
   font-size: 80px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
   margin-bottom: 40px;
-  font-style: italic;
 }
 .split__section .container-fluid .content h3 {
   font-size: 48px;
   font-weight: 500;
-  font-style: italic;
   text-align: left;
   margin-bottom: 25px;
 }
@@ -6689,7 +6836,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
-  font-style: italic;
   text-align: left;
 }
 
@@ -6759,9 +6905,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 
 @media screen and (max-width: 1600.99px) {
-  .wwa__chairmen__section #myTabContent {
-    margin-top: 150px;
-  }
   .wwa__chairmen__section #myTabContent .seo__img {
     max-width: 30%;
   }
@@ -6769,7 +6912,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     height: 20%;
   }
   .wwa__chairmen__section .starter-template ul {
-    margin: 30px 0px 0px;
+    margin: 100px 0px 0px;
   }
   .split__section .container-fluid .content h3 {
     font-size: 42px;
@@ -6805,8 +6948,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media screen and (max-width: 1024.99px) {
   .wwa__chairmen__section #myTabContent .seo__img {
-    max-width: 25%;
+    max-width: 90%;
     left: 20px;
+    position: relative;
   }
   .wwa__chairmen__section #myTabContent .qoute {
     height: 15%;
@@ -6816,9 +6960,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
   .wwa__chairmen__section #myTabContent h6 {
     margin-bottom: 20px;
-  }
-  .wwa__chairmen__section .starter-template ul li a {
-    font-size: 14px;
   }
   .member__slide .container-fluid {
     padding: auto;

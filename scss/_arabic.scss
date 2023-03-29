@@ -341,7 +341,7 @@
   .topsolutions-wrapper, 
   .services-wrapper, 
   .technologies-wrapper,
-  .contactus-wrapper {
+  .contactus-wrapper{
     //display: none;
     &.arabic-text{
       display: inline-block;
@@ -661,6 +661,27 @@
         .location-address{
           padding-left: 0;
           padding-right: 20px;
+        }
+      }
+    }
+  }
+  .top__section{
+    &::before{
+      right: unset;
+      left: 0;
+    }
+    &::after{
+      transform: rotate(180deg);
+    }
+  }
+
+  .wwa__chairmen__section{
+    .starter-template{
+      background: url(../images/qoutearabic.png) no-repeat left 100px;
+      ul{
+        @media (max-width: 2000px){
+          left: unset;
+          right: 40%;
         }
       }
     }
