@@ -221,13 +221,24 @@
                 color: var(--dark-blue-color);
             }
             p{
-                font-size: 20px;
+                font-size: 18px;
                 margin-bottom: 20px;
                 line-height: 30px;
             }
             // &#gover, &#smartciti{
             //     display: none;
             // }
+            .ourindustries--points{
+                display: block;
+                width: 100%;
+                li{
+                    display: inline-block;
+                    margin: 0 10px 10px 0;
+                    border: 1px solid rgba($color: #ccc, $alpha: 1.0);
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                }
+            }
         }
     }
     .industry--image-wrapper{

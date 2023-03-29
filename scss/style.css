@@ -953,7 +953,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 
-.arabic h1, .arabic h2, .arabic h3, .arabic h4, .arabic h5, .arabic h6 {
+.arabic h1, .arabic h2, .arabic h3, .arabic h4, .arabic h5, .arabic h6, .arabic p {
   font-family: var(--arabic-font);
 }
 .arabic .arabic-text {
@@ -1501,6 +1501,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   .arabic .ourindustry-wrapper .industry--image-wrapper .industry--image {
     right: 0;
   }
+}
+.arabic .ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content .ourindustries--points li {
+  font-family: var(--arabic-font);
 }
 .arabic .services-wrapper p {
   padding-left: 300px;
@@ -5707,9 +5710,20 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: var(--dark-blue-color);
 }
 .ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content p {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
   line-height: 30px;
+}
+.ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content .ourindustries--points {
+  display: block;
+  width: 100%;
+}
+.ourindustry-wrapper .industry--carousel-content-wrapper .industry--carousel-content .ourindustries--points li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 .ourindustry-wrapper .industry--image-wrapper {
   position: relative;
