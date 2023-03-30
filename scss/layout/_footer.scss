@@ -218,6 +218,7 @@
                 margin-right: 5px;
                 transition: all .2s ease-in-out;
                 cursor: pointer;
+                margin-bottom: 15px;
                 @media (max-width: 400px) {
                     margin-bottom: 10px;
                 }
@@ -383,6 +384,20 @@
                     font-weight: 500;
                     width: 100%;
                     line-height: 40px;
+                }
+                .g-recaptcha{
+                    transform: scale(.7);
+                    transform-origin: 0 0;
+                    @media (max-width: 1400px) {
+                        transform: scale(.6);
+                    }
+                    @media (max-width: 1200px) {
+                        transform: scale(.5);
+                    }
+                    @media (max-width: 992px) {
+                        transform: scale(1);
+                        margin-bottom: 20px;
+                    }
                 }
             }
             h2{

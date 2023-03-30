@@ -689,6 +689,9 @@
             }
         }
     }
+    p{
+        padding-left: 100px;
+    }
     .tech--accordion-wrapper{
         display: block;
         padding-left: 100px;
@@ -747,11 +750,12 @@
                     }
                 }
                 /* Panel */
-                .accordion-panel {
+                .accordion-panel, p {
                     margin: 0;
                     padding-bottom: .8rem;
                     display: none;
                     font-size: 20px;
+                    padding-left: 0;
                 }
             }
         }
