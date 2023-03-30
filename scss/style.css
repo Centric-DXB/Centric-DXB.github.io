@@ -918,7 +918,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media (max-width: 992px) {
   .foot .footer-two-div .footer-newsletter .newsletter-form .g-recaptcha {
     transform: scale(1);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .foot .footer-two-div .footer-newsletter .newsletter-form .g-recaptcha {
+    transform: scale(0.7);
+    margin-bottom: 0;
   }
 }
 .foot .footer-two-div .footer-newsletter h2 {
