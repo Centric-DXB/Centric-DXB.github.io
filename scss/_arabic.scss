@@ -22,6 +22,7 @@
     .main-menu{
       ul{
         li{
+          font-family: var(--arabic-font);
           //display: none;
           &.arabic-text{
             display: block;
@@ -29,6 +30,9 @@
           ul.dropdown--menu{
             right: 10px;
             left: unset;
+            &::before{
+              right: 20%;
+            }
           }
         }
       }
@@ -715,6 +719,9 @@
           left: unset;
           right: 40%;
         }
+        li{
+          font-family: var(--arabic-font);
+        }
       }
     }
   }
@@ -871,27 +878,26 @@
     }
   }
   .our__solutions {
-  .pagination__list
- {
-  ul {
-    li{
-      direction: rtl;
-      &::before {
-        left: -8px;
-        right: auto;
+    .pagination__list{
+        ul {
+          li{
+            direction: rtl;
+            &::before {
+              left: -8px;
+              right: auto;
+            }
+          }
+        }
       }
-    }
-  }
- }
     .content {
       h2 {
         &::after {
           left: auto;
-          right: -60px;
+          right: 0;
         }
         &::before {
           left: auto;
-          right: -100px;
+          right: 60px;
         }
       }
 
