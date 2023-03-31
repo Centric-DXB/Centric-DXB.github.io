@@ -927,6 +927,17 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     margin-bottom: 0;
   }
 }
+.foot .footer-two-div .footer-newsletter .newsletter-form .error {
+  color: red;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.foot .footer-two-div .footer-newsletter .newsletter-form #success-alert-newsletter {
+  background: var(--seminar-green-color);
+  text-align: center;
+  color: var(--white);
+  border: none;
+}
 .foot .footer-two-div .footer-newsletter h2 {
   font-size: 18px;
   margin-bottom: 10px;
