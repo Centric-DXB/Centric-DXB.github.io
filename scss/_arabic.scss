@@ -467,7 +467,8 @@
                     padding-right: 70px;
                     color: var(--white);
                     text-align: right;
-                    font-family: var(--arabic-font);
+                    //font-family: var(--arabic-font);
+                    font-family: var(--poppins);
                     &::before{
                       left: auto;
                       right: 0;
@@ -722,15 +723,71 @@
   .wwa__chairmen__section{
     .starter-template{
       background: url(../images/qoutearabic.png) no-repeat left 100px;
+      @media (max-width: 992px) {
+        background: none;
+      }
       ul{
         @media (max-width: 2000px){
           left: unset;
           right: 40%;
+          width: 740px;
+        }
+        @media (max-width: 1200px){
+          width: 631px;
+        }
+        @media (max-width: 1100px){
+          width: 596px;
+        }
+        @media (max-width: 992px){
+          width: 98%;
+          right: 0;
         }
         li{
           font-family: var(--arabic-font);
+          a{
+            font-size: 16px;
+            @media (max-width: 1200px) {
+              font-size: 14px;
+            }
+            @media (max-width: 1100px) {
+              font-size: 13px;
+            }
+            @media (max-width: 992px) {
+              font-size: 14px;
+            }
+          }
         }
       }
+    }
+  }
+  .our__solutions{
+    .industry__card{
+      text-align: right;
+      .card-footer{
+        ul{
+          li{
+            padding-left: 0;
+            padding-right: 10px;
+            font-family: var(--arabic-font);
+          }
+        }
+      }
+    }
+    .industries__cardSLider{
+      button{
+        &.slick-prev{
+          left: 5%;
+          right: unset;
+        }
+        &.slick-next{
+          left: 20%;
+          right: unset;
+        }
+      }
+    }
+    .pagination{
+      right: unset;
+      left: 9%;
     }
   }
   .foot{
@@ -920,6 +977,10 @@
       .seo__img {
         left: auto;
         right: 60px;
+        @media (max-width: 992px) {
+          right: 0;
+          max-width: 100%;
+        }
       }
     }
   } 

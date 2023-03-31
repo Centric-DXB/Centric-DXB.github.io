@@ -1444,7 +1444,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-right: 70px;
   color: var(--white);
   text-align: right;
-  font-family: var(--arabic-font);
+  font-family: var(--poppins);
 }
 .arabic .home-slider .slick-list .slick-slide .home-slider-content .slide--content h2::before {
   left: auto;
@@ -1649,14 +1649,74 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .wwa__chairmen__section .starter-template {
   background: url(../images/qoutearabic.png) no-repeat left 100px;
 }
+@media (max-width: 992px) {
+  .arabic .wwa__chairmen__section .starter-template {
+    background: none;
+  }
+}
 @media (max-width: 2000px) {
   .arabic .wwa__chairmen__section .starter-template ul {
     left: unset;
     right: 40%;
+    width: 740px;
+  }
+}
+@media (max-width: 1200px) {
+  .arabic .wwa__chairmen__section .starter-template ul {
+    width: 631px;
+  }
+}
+@media (max-width: 1100px) {
+  .arabic .wwa__chairmen__section .starter-template ul {
+    width: 596px;
+  }
+}
+@media (max-width: 992px) {
+  .arabic .wwa__chairmen__section .starter-template ul {
+    width: 98%;
+    right: 0;
   }
 }
 .arabic .wwa__chairmen__section .starter-template ul li {
   font-family: var(--arabic-font);
+}
+.arabic .wwa__chairmen__section .starter-template ul li a {
+  font-size: 16px;
+}
+@media (max-width: 1200px) {
+  .arabic .wwa__chairmen__section .starter-template ul li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1100px) {
+  .arabic .wwa__chairmen__section .starter-template ul li a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 992px) {
+  .arabic .wwa__chairmen__section .starter-template ul li a {
+    font-size: 14px;
+  }
+}
+.arabic .our__solutions .industry__card {
+  text-align: right;
+}
+.arabic .our__solutions .industry__card .card-footer ul li {
+  padding-left: 0;
+  padding-right: 10px;
+  font-family: var(--arabic-font);
+}
+.arabic .our__solutions .industries__cardSLider button.slick-prev {
+  left: 5%;
+  right: unset;
+}
+.arabic .our__solutions .industries__cardSLider button.slick-next {
+  left: 20%;
+  right: unset;
+}
+.arabic .our__solutions .pagination {
+  right: unset;
+  left: 9%;
 }
 .arabic .foot .footer-links .links {
   border-right: none;
@@ -1819,6 +1879,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .wwa__chairmen__section #myTabContent .seo__img {
   left: auto;
   right: 60px;
+}
+@media (max-width: 992px) {
+  .arabic .wwa__chairmen__section #myTabContent .seo__img {
+    right: 0;
+    max-width: 100%;
+  }
 }
 .arabic .ceo__memberSlider .card .card-footer {
   direction: rtl;
