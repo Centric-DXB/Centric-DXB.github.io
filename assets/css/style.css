@@ -1309,8 +1309,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper.arabic-text,
 .arabic .servingbusiness--wrapper.arabic-text,
 .arabic .solution__form.arabic-text,
-.arabic .our__solutions .content.arabic-text,
-.arabic .solution__form.arabic-text {
+.arabic .our__solutions .content.arabic-text {
   display: inline-block;
 }
 .arabic .home-about-us .about-us h2,
@@ -1331,8 +1330,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper h2,
 .arabic .servingbusiness--wrapper h2,
 .arabic .solution__form h2,
-.arabic .our__solutions .content h2,
-.arabic .solution__form h2 {
+.arabic .our__solutions .content h2 {
   padding-left: 0px;
   padding-right: 110px;
   font-family: var(--arabic-font);
@@ -1356,8 +1354,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper h2::before,
 .arabic .servingbusiness--wrapper h2::before,
 .arabic .solution__form h2::before,
-.arabic .our__solutions .content h2::before,
-.arabic .solution__form h2::before {
+.arabic .our__solutions .content h2::before {
   left: auto;
   right: 60px;
 }
@@ -1379,8 +1376,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper h2::after,
 .arabic .servingbusiness--wrapper h2::after,
 .arabic .solution__form h2::after,
-.arabic .our__solutions .content h2::after,
-.arabic .solution__form h2::after {
+.arabic .our__solutions .content h2::after {
   left: auto;
   right: 0;
 }
@@ -5455,9 +5451,20 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-family: var(--poppins);
   width: 100%;
 }
+@media (max-width: 992px) {
+  .solution__form .content p {
+    padding-left: 0;
+  }
+}
 .solution__form #form {
   position: relative;
   z-index: 1;
+  padding-left: 110px;
+}
+@media (max-width: 992px) {
+  .solution__form #form {
+    padding-left: 0;
+  }
 }
 .solution__form #form label {
   color: #fff;
