@@ -396,8 +396,13 @@
                     }
                     @media (max-width: 992px) {
                         transform: scale(1);
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
                     }
+                    @media (max-width: 400px) {
+                        transform: scale(.7);
+                        margin-bottom: 0;
+                    }
+
                 }
             }
             h2{
