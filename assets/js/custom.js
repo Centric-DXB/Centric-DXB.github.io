@@ -1,4 +1,13 @@
-
+// language specifier start
+var language = $("#langueage");
+var languageText = "";
+languageText =  language.val()!=undefined ? language.innerHTML : 'en';
+console.log(languageText);
+if (languageText == 'ar') {
+    var of = "من";
+} else {
+    var of = "of";
+}
     // $('.sliderHome').bxSlider({
     //     auto: true,
     //     stopAutoOnClick: true,
@@ -156,8 +165,8 @@
     $('.client-logos').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplaySpeed: 3000,
-        speed: 2000,
+        autoplaySpeed: 1000,
+        speed: 800,
         autoplay: true,
         dots: false,
         arrows: false,
@@ -198,8 +207,8 @@
     $('.partners-logos').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplaySpeed: 3000,
-        speed: 2000,
+        autoplaySpeed: 1000,
+        speed: 800,
         autoplay: true,
         dots: false,
         arrows: false,
@@ -267,7 +276,7 @@
 
     $slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
-        $st.text(i + ' of ' + slick.slideCount);
+        $st.text(i + ' ' + of + ' ' + slick.slideCount);
       });
       
       $slickEl.slick({

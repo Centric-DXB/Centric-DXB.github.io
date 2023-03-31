@@ -404,6 +404,17 @@
                     }
 
                 }
+                .error{
+                    color: rgba($color: #ff0000, $alpha: 1.0);
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                }
+                #success-alert-newsletter{
+                    background: var(--seminar-green-color);
+                    text-align: center;
+                    color: var(--white);
+                    border: none;
+                }
             }
             h2{
                 font-size: 18px;
