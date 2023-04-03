@@ -178,6 +178,11 @@ header{
                 a{
                     color: var(--white);
                     text-decoration: none;
+                    svg{
+                        margin-left: 5px;
+                        transform: rotate(0deg);
+                        transition: all 0.5s ease;
+                    }
                 }
                 a.search{
                     background: var(--white);
@@ -208,7 +213,9 @@ header{
                     backdrop-filter: blur(30px);
                     opacity: 0;
                     transition: all 0.5s ease;
-                    transform: translateY(-25px);
+                    //transform: translateY(-25px);
+                    transform: scaleY(0);
+                    transform-origin: top;
                     &::before{
                         border-top: 7px solid transparent;
                         border-left: 7px solid transparent;
@@ -236,7 +243,12 @@ header{
                     ul.dropdown--menu{
                         opacity: 1;
                         transition: all 0.5s ease;
-                        transform: translateY(0px);
+                        //transform: translateY(0px);
+                        transform: scaleY(1);
+                    }
+                    svg{
+                        transform: rotate(-180deg);
+                        transition: all 0.5s ease;
                     }
                 }
             }
