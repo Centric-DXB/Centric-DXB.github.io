@@ -406,6 +406,13 @@ header .mobile--header .menu-menu .navigation ul li {
     font-size: 12px;
   }
 }
+header .mobile--header .menu-menu .navigation ul li svg {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transform: rotate(0deg);
+  transition: all 0.2s linear;
+}
 header .mobile--header .menu-menu .navigation ul li.arabic-text {
   display: none;
 }
@@ -426,6 +433,10 @@ header .mobile--header .menu-menu .navigation ul li ul.dropdown--menu {
 }
 header .mobile--header .menu-menu .navigation ul li:hover ul.dropdown--menu {
   display: block;
+}
+header .mobile--header .menu-menu .navigation ul li:hover svg {
+  transform: rotate(180deg);
+  transition: all 0.2s linear;
 }
 header .mobile--header .mobile-logo {
   display: block;
@@ -1029,6 +1040,15 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic header .main-menu .lang-toggle1 .slider1::before {
   left: 5px;
 }
+.arabic header .mobile--header .menu-menu .navigation ul li {
+  display: block;
+  text-align: right;
+  padding: 0 20px 0 0;
+  font-family: var(--arabic-font);
+}
+.arabic header .mobile--header .menu-menu .navigation ul li a {
+  display: block;
+}
 .arabic header .mobile--header .menu-menu .navigation ul li.arabic-text {
   display: block;
   text-align: right;
@@ -1036,6 +1056,14 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic header .mobile--header .menu-menu .navigation ul li.arabic-text a {
   display: block;
+}
+.arabic header .mobile--header .menu-menu .navigation ul li select {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.arabic header .mobile--header .menu-menu .navigation ul li svg {
+  right: unset;
+  left: 15px;
 }
 .arabic .wrapper nav.topsolution li .solutions--data .solutions--points.arabic-text {
   display: block;
