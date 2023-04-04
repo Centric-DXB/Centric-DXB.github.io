@@ -1,13 +1,13 @@
 // language specifier start
-var language = $("#langueage");
-var languageText = "";
-languageText =  language.val()!=undefined ? language.innerHTML : 'en';
-console.log(languageText);
-if (languageText == 'ar') {
-    var of = "من";
-} else {
-    var of = "of";
-}
+// var language = $("#langueage");
+// var languageText = "";
+// languageText =  language.val()!=undefined ? language.innerHTML : 'en';
+// console.log(languageText);
+// if (languageText == 'ar') {
+//     var of = "من";
+// } else {
+//     var of = "of";
+// }
     // $('.sliderHome').bxSlider({
     //     auto: true,
     //     stopAutoOnClick: true,
@@ -276,7 +276,7 @@ if (languageText == 'ar') {
 
     $slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
-        $st.text(i + ' ' + of + ' ' + slick.slideCount);
+        $st.text(i + ' / ' + slick.slideCount);
       });
       
       $slickEl.slick({
