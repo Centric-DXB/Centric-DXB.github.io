@@ -51,6 +51,13 @@
           ul{
             li{
               //display: none;
+              display: block;
+              text-align: right;
+              padding: 0 20px 0 0;
+              font-family: var(--arabic-font);
+              a{
+                display: block;
+              }
               &.arabic-text{
                 display: block;
                 text-align: right;
@@ -58,6 +65,14 @@
                 a{
                   display: block;
                 }
+              }
+              select{
+                margin-right: 20px;
+                margin-left: 0;
+              }
+              svg{
+                right: unset;
+                left: 15px;
               }
             }
           }
