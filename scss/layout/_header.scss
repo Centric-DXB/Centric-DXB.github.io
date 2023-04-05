@@ -397,15 +397,16 @@ header{
                         ul.dropdown--menu{
                             position: relative;
                             display: none;
+                            background: var(--blue-color);
                         }
                         &:hover{
-                            ul.dropdown--menu{
-                                display: block;
-                            }
-                            svg{
-                                transform: rotate(180deg);
-                                transition: all .2s linear;
-                            }
+                            // ul.dropdown--menu{
+                            //     display: block;
+                            // }
+                            // svg{
+                            //     transform: rotate(180deg);
+                            //     transition: all .2s linear;
+                            // }
                         }
                     }
                 }

@@ -629,6 +629,11 @@
         ]
     });
 
+    // MOBILE MENU DROPDOWN
+    $('.navigation li a svg').click(function(){
+        $('.dropdown--menu').slideToggle('fast');
+    });
+
 
 
     

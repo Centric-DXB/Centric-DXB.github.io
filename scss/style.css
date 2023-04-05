@@ -430,13 +430,7 @@ header .mobile--header .menu-menu .navigation ul li select {
 header .mobile--header .menu-menu .navigation ul li ul.dropdown--menu {
   position: relative;
   display: none;
-}
-header .mobile--header .menu-menu .navigation ul li:hover ul.dropdown--menu {
-  display: block;
-}
-header .mobile--header .menu-menu .navigation ul li:hover svg {
-  transform: rotate(180deg);
-  transition: all 0.2s linear;
+  background: var(--blue-color);
 }
 header .mobile--header .mobile-logo {
   display: block;
