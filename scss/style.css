@@ -1010,7 +1010,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 
-.arabic h1, .arabic h2, .arabic h3, .arabic h4, .arabic h5, .arabic h6, .arabic p {
+.arabic h1, .arabic h2, .arabic h3, .arabic h4, .arabic h5, .arabic h6, .arabic p, .arabic li {
   font-family: var(--arabic-font);
 }
 .arabic .arabic-text {
@@ -1111,6 +1111,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .slick-list {
   direction: initial;
+}
+.arabic .home-about-us .about-us h2, .arabic .home-about-us .about-us p {
+  font-family: var(--arabic-font);
 }
 .arabic .home-about-us .about-us.arabic-text {
   display: block;
@@ -1355,7 +1358,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .technologies-wrapper.arabic-text,
 .arabic .contactus-wrapper.arabic-text,
 .arabic .servingbusiness--wrapper.arabic-text,
-.arabic .solution__form.arabic-text,
+.arabic .solution__form .content.arabic-text,
 .arabic .our__solutions .content.arabic-text {
   display: inline-block;
 }
@@ -1376,7 +1379,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .technologies-wrapper h2,
 .arabic .contactus-wrapper h2,
 .arabic .servingbusiness--wrapper h2,
-.arabic .solution__form h2,
+.arabic .solution__form .content h2,
 .arabic .our__solutions .content h2 {
   padding-left: 0px;
   padding-right: 110px;
@@ -1400,7 +1403,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .technologies-wrapper h2::before,
 .arabic .contactus-wrapper h2::before,
 .arabic .servingbusiness--wrapper h2::before,
-.arabic .solution__form h2::before,
+.arabic .solution__form .content h2::before,
 .arabic .our__solutions .content h2::before {
   left: auto;
   right: 60px;
@@ -1422,7 +1425,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .technologies-wrapper h2::after,
 .arabic .contactus-wrapper h2::after,
 .arabic .servingbusiness--wrapper h2::after,
-.arabic .solution__form h2::after,
+.arabic .solution__form .content h2::after,
 .arabic .our__solutions .content h2::after {
   left: auto;
   right: 0;
@@ -1517,10 +1520,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   background: url("../images/greenclock.png") no-repeat right center;
   padding-left: 0;
   padding-right: 50px;
+  font-family: var(--arabic-font);
 }
 .arabic .seminar--wrapper .seminar-wrapper .seminar--info h2 {
   padding-right: 0;
   padding-left: 50px;
+  font-family: var(--arabic-font);
 }
 .arabic .seminar--wrapper .seminar-wrapper .seminar--info p {
   padding: 0 0 0 70px;
@@ -1582,6 +1587,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our-transparency .transparency-wrapper .transparency-info {
   padding-left: unset;
   padding-right: 20px;
+}
+.arabic .our-transparency .transparency-wrapper .transparency-info span {
+  font-family: var(--arabic-font);
 }
 .arabic .our-transparency .transparency-wrapper .transparency-info h2 {
   font-family: var(--arabic-font);
@@ -1761,6 +1769,31 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   right: unset;
   left: 9%;
 }
+.arabic .services-wrapper .services--items-wrapper .services--items li {
+  font-family: var(--arabic-font);
+}
+.arabic .solution__form #form {
+  padding-left: 0;
+  padding-right: 110px;
+}
+@media (max-width: 992px) {
+  .arabic .solution__form #form {
+    padding-right: 0;
+  }
+}
+.arabic .solution__form #form label {
+  font-family: var(--arabic-font);
+}
+.arabic .solution__form .content p {
+  font-family: var(--arabic-font);
+  padding-left: 0;
+  padding-right: 110px;
+}
+@media (max-width: 992px) {
+  .arabic .solution__form .content p {
+    padding-right: 0;
+  }
+}
 .arabic .foot .footer-links .links {
   border-right: none;
   border-left: 1px solid #73BC45;
@@ -1783,6 +1816,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .foot .footer-links .links:nth-child(2) {
   border-left: none;
+}
+.arabic .foot .footer-links .links li {
+  font-family: var(--arabic-font);
 }
 .arabic .foot .footer-links .links li a {
   padding-left: 0;
@@ -1889,7 +1925,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     transform-origin: 150px 0;
   }
 }
-.arabic .foot .footer-bottom {
+.arabic .foot .footer-bottom ul li {
   font-family: var(--arabic-font);
 }
 .arabic .foot .footer-bottom.arabic-text {
@@ -1918,6 +1954,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .our__solutions .content p {
   margin-bottom: 60px;
+  font-family: var(--arabic-font);
 }
 .arabic .wwa__chairmen__section #myTabContent .seo__img {
   left: auto;
@@ -1928,6 +1965,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     right: 0;
     max-width: 100%;
   }
+}
+.arabic .wwa__chairmen__section #myTabContent a {
+  font-family: var(--arabic-font);
 }
 .arabic .ceo__memberSlider .card .card-footer {
   direction: rtl;
