@@ -406,12 +406,16 @@ header .mobile--header .menu-menu .navigation ul li {
     font-size: 12px;
   }
 }
-header .mobile--header .menu-menu .navigation ul li svg {
+header .mobile--header .menu-menu .navigation ul li span {
+  display: inline-block;
   position: absolute;
-  right: 15px;
-  top: 15px;
-  transform: rotate(0deg);
-  transition: all 0.2s linear;
+  top: 0;
+  right: 0;
+  padding: 0 10px;
+  cursor: pointer;
+}
+header .mobile--header .menu-menu .navigation ul li span svg {
+  color: var(--white);
 }
 header .mobile--header .menu-menu .navigation ul li.arabic-text {
   display: none;
@@ -2847,7 +2851,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media (max-width: 767px) {
   .seminar--wrapper .seminar-wrapper {
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     background: rgba(255, 255, 255, 0.2) url(../images/newstransparentlogo.png) no-repeat right 120%;
   }
 }

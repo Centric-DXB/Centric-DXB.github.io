@@ -373,13 +373,25 @@ header{
                         @media (max-width: 450px) {
                             font-size: 12px;
                         }
-                        svg{
+                        span{
+                            display: inline-block;
+                            //border: 1px solid #fff;
                             position: absolute;
-                            right: 15px;
-                            top: 15px;
-                            transform: rotate(0deg);
-                            transition: all .2s linear;
+                            top: 0;
+                            right: 0;
+                            padding: 0 10px;
+                            cursor: pointer;
+                            svg{
+                                color: var(--white);
+                            }
                         }
+                        // svg{
+                        //     position: absolute;
+                        //     right: 15px;
+                        //     top: 15px;
+                        //     transform: rotate(0deg);
+                        //     transition: all .2s linear;
+                        // }
                         &.arabic-text{
                             display: none;
                         }

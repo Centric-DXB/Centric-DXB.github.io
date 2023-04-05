@@ -249,6 +249,11 @@
     $('.mobile-menu').click(function(){
         $('.navigation').slideToggle();
     });
+    // MOBILE MENU DROPDOWN
+    $('.navigation ul li span').click(function(){
+        $('.dropdown--menu').slideToggle('fast');
+    });
+
     // $('html, body').animate({
     //     scrollTop().offset.top
     // }, 5000);
@@ -334,7 +339,7 @@
         ]
       });
 
-      $('.ceo__memberSlider  .card .card-footer').on('click', function(){
+    $('.ceo__memberSlider  .card .card-footer').on('click', function(){
         $('.ceo__memberSlider  .card .card-footer').removeClass('cstmAccordionBg');
         $(this).addClass('cstmAccordionBg');
     });
@@ -629,10 +634,7 @@
         ]
     });
 
-    // MOBILE MENU DROPDOWN
-    $('.navigation li a svg').click(function(){
-        $('.dropdown--menu').slideToggle('fast');
-    });
+    
 
 
 
