@@ -235,6 +235,10 @@ header .main-menu ul li a svg {
   transform: rotate(0deg);
   transition: all 0.5s ease;
 }
+header .main-menu ul li a:hover svg {
+  transform: rotate(-180deg);
+  transition: all 0.5s ease;
+}
 header .main-menu ul li a.search {
   background: var(--white);
   border-radius: 50px;
@@ -254,6 +258,10 @@ header .main-menu ul li a.search {
 header .main-menu ul li a.search svg {
   color: black;
   font-size: 16px;
+  margin-left: 0;
+}
+header .main-menu ul li a.search:hover svg {
+  transform: rotate(0deg);
 }
 header .main-menu ul li ul.dropdown--menu {
   position: absolute;
@@ -294,10 +302,6 @@ header .main-menu ul li:hover ul.dropdown--menu {
   opacity: 1;
   transition: all 0.5s ease;
   transform: scaleY(1);
-}
-header .main-menu ul li:hover svg {
-  transform: rotate(-180deg);
-  transition: all 0.5s ease;
 }
 header .main-menu .lang-toggle1 {
   display: inline-flex;
@@ -3449,7 +3453,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: #61D281;
   top: 60px;
   z-index: 99;
-  font-size: 23px;
+  font-size: 21px;
 }
 .home-about-us .lefttext-wrapper .lefttext.arabic-text {
   display: none;
@@ -3530,7 +3534,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: #CED83C;
   top: 80px;
   z-index: 99;
-  font-size: 23px;
+  font-size: 21px;
 }
 .home-about-us .toptext-wrapper .toptext.arabic-text {
   display: none;
@@ -3621,7 +3625,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   color: #33ADF0;
   top: 230px;
   z-index: 99;
-  font-size: 23px;
+  font-size: 21px;
 }
 .home-about-us .bottomtext-wrapper .bottomtext.arabic-text {
   display: none;
