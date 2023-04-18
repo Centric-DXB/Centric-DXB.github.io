@@ -5393,6 +5393,14 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   right: 0;
   left: auto;
 }
+@media (max-width: 992px) {
+  .top__section::before {
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    top: unset;
+  }
+}
 .top__section::after {
   position: absolute;
   font-family: "Font Awesome 5 Pro";
@@ -5410,6 +5418,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   align-items: center;
   color: #fff;
   font-size: 24px;
+}
+@media (max-width: 992px) {
+  .top__section::after {
+    top: 48%;
+    transform: rotate(90deg);
+  }
 }
 .top__section .nav {
   width: 610px;
@@ -5620,6 +5634,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
   .soluton__banner .content {
     left: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .top__section .nav {
+    width: 100%;
   }
 }
 @media screen and (max-width: 840.99px) {
@@ -7782,6 +7801,254 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   top: 70px;
   right: 240px;
   font-weight: 900;
+}
+
+.carrers-wrapper {
+  background: var(--dark-purple);
+}
+.carrers-wrapper h2 {
+  font-size: 33px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 100px;
+  color: var(--white);
+}
+.carrers-wrapper h2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../images/logowhitecircle.svg) no-repeat 0 0;
+  left: 60px;
+  top: 6px;
+}
+.carrers-wrapper h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: var(--light-green);
+  left: 0;
+  top: 19px;
+}
+.carrers-wrapper p {
+  color: var(--white);
+  padding-left: 100px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.carrers-wrapper a {
+  background: var(--light-green);
+  padding: 0 60px 0 30px;
+  line-height: 60px;
+  color: var(--white);
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.padding-tb {
+  padding: 150px 0;
+}
+
+.careers-whowe {
+  min-height: 660px;
+}
+
+.benefits-wrappers {
+  display: block;
+  background: var(--white) url(../images/logo-light.png) no-repeat top right;
+  margin-bottom: 20px;
+}
+.benefits-wrappers.border {
+  border-radius: 10px;
+  padding: 200px 15px 20px;
+}
+.benefits-wrappers h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  min-height: 65px;
+}
+.benefits-wrappers p {
+  color: var(--black);
+  padding-left: 0;
+}
+
+.benefits-container {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.success-story {
+  min-height: 950px;
+}
+.success-story .story-wrapper {
+  background: url(../images/careers-quote.png) no-repeat right 100px;
+  padding: 250px 50px 0 0;
+}
+.success-story .story-wrapper .story-title {
+  display: block;
+  margin: 100px 0 0 100px;
+}
+.success-story .story-wrapper .story-title span {
+  color: #6CC24A;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.success-story .story-wrapper .story-title p {
+  padding-left: 0;
+}
+.success-story .story-img {
+  position: absolute;
+  right: 0;
+}
+
+.careercarousel-wrapper {
+  display: block;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  width: 55%;
+  padding: 200px 10px 120px 50px;
+}
+.careercarousel-wrapper h2 {
+  color: #122D6E;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+.careercarousel-wrapper h2::before, .careercarousel-wrapper h2::after {
+  display: none;
+}
+.careercarousel-wrapper p {
+  color: #747b85;
+  padding-left: 0;
+}
+.careercarousel-wrapper .careers-carousel .slick-dots {
+  text-align: left;
+  bottom: -50px;
+}
+.careercarousel-wrapper .careers-carousel .slick-dots li {
+  margin: 0 10px;
+}
+.careercarousel-wrapper .careers-carousel .slick-dots li button::before {
+  font-size: 0;
+  font-family: "";
+  background: #6CC24A;
+  width: 35px;
+  height: 6px;
+  border-radius: 10px;
+}
+.careercarousel-wrapper .careers-carousel .slick-dots li.slick-active button::before {
+  background: #6CC24A;
+}
+
+.initiatives {
+  min-height: 800px;
+}
+.initiatives .initiative-leftcontent {
+  padding: 200px 0 0 0;
+}
+
+.careers-conatiner {
+  display: block;
+  padding-right: 50px;
+}
+.careers-conatiner .careers-icon {
+  display: block;
+  margin-bottom: 30px;
+}
+.careers-conatiner h3 {
+  padding-top: 50px;
+  position: relative;
+  color: #122D6E;
+}
+.careers-conatiner h3::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 6px;
+  top: 0;
+  left: 0;
+  background: rgba(116, 123, 133, 0.2);
+  border-radius: 10px;
+}
+
+.applyform-conatiner {
+  padding-left: 110px;
+  padding-top: 50px;
+}
+.applyform-conatiner label {
+  color: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+.applyform-conatiner input, .applyform-conatiner select, .applyform-conatiner textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  color: #fff;
+}
+.applyform-conatiner input::placeholder, .applyform-conatiner select::placeholder, .applyform-conatiner textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.applyform-conatiner input option, .applyform-conatiner select option, .applyform-conatiner textarea option {
+  color: rgba(255, 255, 255, 0.7);
+}
+.applyform-conatiner input, .applyform-conatiner select {
+  padding: 10px 15px;
+}
+.applyform-conatiner textarea {
+  height: 200px;
+}
+.applyform-conatiner button {
+  background: #6CC24A;
+  padding: 0 60px 0 30px;
+  color: #fff;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.cvsupport {
+  display: inline-block;
+  background: url(../images/cvsupport.png) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.cvsupport h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+.cvsupport p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.cvsupport a {
+  display: inline-block;
+  padding: 0 80px 0 20px;
+  line-height: 60px;
+  font-size: 18px;
+  background: #6CC24A;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+.cvsupport a svg {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  transition: all 0.4s linear;
+}
+.cvsupport a:hover svg {
+  right: 20px;
+  transition: all 0.4s linear;
 }
 
 .contactus-wrapper {

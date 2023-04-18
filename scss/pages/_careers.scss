@@ -1,0 +1,253 @@
+.carrers-wrapper{
+    background: var(--dark-purple);
+    h2{
+        font-size: 33px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 100px;
+        color: var(--white);
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../images/logowhitecircle.svg) no-repeat 0 0;
+            left: 60px;
+            top: 6px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: var(--light-green);
+            left: 0;
+            top: 19px;
+        }
+    }
+    p{
+        color: var(--white);
+        padding-left: 100px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    a{
+        background: var(--light-green);
+        padding: 0 60px 0 30px;
+        line-height: 60px;
+        color: var(--white);
+        display: inline-block;
+        margin-left: 100px;
+        margin-top: 50px;
+        text-decoration: none;
+    }
+}
+.padding-tb{
+    padding: 150px 0;
+}
+.careers-whowe{
+    min-height: 660px;
+}
+.benefits-wrappers{
+    display: block;
+    background: var(--white) url(../images/logo-light.png) no-repeat top right;
+    margin-bottom: 20px;
+    &.border{
+        border-radius: 10px;
+        padding: 200px 15px 20px;
+    }
+    h3{
+        font-size: 26px;
+        margin-bottom: 10px;
+        min-height: 65px;
+    }
+    p{
+        color: var(--black);
+        padding-left: 0;
+    }
+}
+.benefits-container{
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.success-story{
+    min-height: 950px;
+    .story-wrapper{
+        background: url(../images/careers-quote.png) no-repeat right 100px;
+        padding: 250px 50px 0 0;
+        .story-title{
+            display: block;
+            margin: 100px 0 0 100px;
+            span{
+                color: $seminar-green-color;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+    .story-img{
+        position: absolute;
+        right: 0;
+    }
+}
+.careercarousel-wrapper{
+    display: block;
+    background: $white;
+    position: absolute;
+    right: 0;
+    width: 55%;
+    padding: 200px 10px 120px 50px;
+    h2{
+        color: $dark-blue-color;
+        padding-left: 0;
+        margin-bottom: 50px;
+        &::before, &::after{
+            display: none;
+        }
+    }
+    p{
+        color: rgba($color: $grey, $alpha: 1.0);
+        padding-left: 0;
+    }
+    .careers-carousel{
+        .slick-dots{
+            text-align: left;
+            bottom: -50px;
+            li{
+                margin: 0 10px;
+                button{
+                    &::before{
+                        font-size: 0;
+                        font-family: '';
+                        background: $seminar-green-color;
+                        width: 35px;
+                        height: 6px;
+                        border-radius: 10px;
+                    }
+                }
+                &.slick-active{
+                    button{
+                        &::before{
+                            background: $seminar-green-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.initiatives{
+    min-height: 800px;
+    .initiative-leftcontent{
+        padding: 200px 0 0 0;
+    }
+}
+.careers-conatiner{
+    display: block;
+    padding-right: 50px;
+    .careers-icon{
+        display: block;
+        margin-bottom: 30px;
+    }
+    h3{
+        padding-top: 50px;
+        position: relative;
+        color: $dark-blue-color;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 6px;
+            top: 0;
+            left: 0;
+            background: rgba($color: $grey, $alpha: .2);
+            border-radius: 10px;
+        }
+    }
+}
+.applyform-conatiner{
+    padding-left: 110px;
+    padding-top: 50px;
+    label{
+        color: $white;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input, select, textarea{
+        width: 100%;
+        background: transparent;
+        border: 1px solid rgba($color: #fff, $alpha: .2);
+        margin-bottom: 20px;
+        color: $white;
+        &::placeholder{
+            color: rgba($color: #fff, $alpha: .7);
+        }
+        option{
+            color: rgba($color: #fff, $alpha: .7);
+        }
+    }
+    input, select{
+        padding: 10px 15px;
+    }
+    textarea{
+        height: 200px;
+    }
+    button{
+        background: $seminar-green-color;
+        padding: 0 60px 0 30px;
+        color: $white;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}
+.cvsupport{
+    display: inline-block;
+    background: url(../images/cvsupport.png) no-repeat center center;
+    background-size: cover;
+    color: $white;
+    text-align: center;
+    width: 100%;
+    h2{
+        font-size: 60px;
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+    p{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    a{
+        display: inline-block;
+        padding: 0 80px 0 20px;
+        line-height: 60px;
+        font-size: 18px;
+        background: $seminar-green-color;
+        color: $white;
+        text-decoration: none;
+        position: relative;
+        text-transform: uppercase;
+        svg{
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            transition: all .4s linear;
+        }
+        &:hover{
+            svg{
+                right: 20px;
+                transition: all .4s linear;
+            }
+        }
+    }
+}
+
+
+
+
+
