@@ -794,7 +794,7 @@
         }
         @media (max-width: 767px) {
             flex-direction: column;
-            width: 100%;
+            width: 95%;
             background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat right 120%;
         }
         .seminar--image-date{
@@ -1254,7 +1254,7 @@
             color: #61D281;
             top: 60px;
             z-index: 99;
-            font-size: 23px;
+            font-size: 21px;
             &.arabic-text{
                 display: none;
             }
@@ -1321,7 +1321,7 @@
             color: #CED83C;
             top: 80px;
             z-index: 99;
-            font-size: 23px;
+            font-size: 21px;
             &.arabic-text{
                 display: none;
             }
@@ -1398,7 +1398,7 @@
             color: #33ADF0;
             top: 230px;
             z-index: 99;
-            font-size: 23px;
+            font-size: 21px;
             &.arabic-text{
                 display: none;
             }

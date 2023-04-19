@@ -1,5 +1,5 @@
 .arabic {
-  h1, h2, h3, h4, h5, h6, p{
+  h1, h2, h3, h4, h5, h6, p, li{
     font-family: var(--arabic-font);
   }
   .arabic-text{
@@ -181,6 +181,9 @@
   .home-about-us{
     .about-us{
       //display: none;
+      h2, p{
+        font-family: var(--arabic-font);
+      }
       &.arabic-text{
         display: block;
         h2, p{
@@ -395,8 +398,8 @@
   .technologies-wrapper,
   .contactus-wrapper,
   .servingbusiness--wrapper,
-  .solution__form, 
-  .our__solutions .content{
+  .solution__form .content, 
+  .our__solutions .content,{
     //display: none;
     &.arabic-text{
       display: inline-block;
@@ -520,10 +523,12 @@
           background:url('../images/greenclock.png') no-repeat right center;
           padding-left: 0;
           padding-right: 50px;
+          font-family: var(--arabic-font);
         }
         h2{
           padding-right: 0;
           padding-left: 50px;
+          font-family: var(--arabic-font);
         }
         p{
           padding: 0 0 0 70px;
@@ -592,6 +597,9 @@
       .transparency-info{
         padding-left: unset;
         padding-right: 20px;
+        span{
+          font-family: var(--arabic-font);
+        }
         h2{
           font-family: var(--arabic-font);
           font-size: 33px;
@@ -804,6 +812,37 @@
       left: 9%;
     }
   }
+  .services-wrapper{
+    .services--items-wrapper{
+      .services--items{
+        li{
+          font-family: var(--arabic-font);
+        }
+      }
+    }
+  }
+  .solution__form{
+    #form{
+      padding-left: 0;
+      padding-right: 110px;
+      @media (max-width: 992px) {
+        padding-right: 0;
+      }
+      label{
+        font-family: var(--arabic-font);
+      }
+    }
+    .content{
+      p{
+        font-family: var(--arabic-font);
+        padding-left: 0;
+        padding-right: 110px;
+        @media (max-width: 992px) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
   .foot{
     .footer-links{
       .links{
@@ -826,6 +865,7 @@
           border-left: none;
         }
         li {
+          font-family: var(--arabic-font);
           a{
             padding-left: 0;
             padding-right: 20px;
@@ -934,7 +974,11 @@
     }
     .footer-bottom{
       //display: none;
-      font-family: var(--arabic-font);
+      ul{
+        li{
+          font-family: var(--arabic-font);
+        }
+      }
       &.arabic-text{
         display: block;
       }
@@ -982,6 +1026,7 @@
 
        p {
         margin-bottom: 60px;
+        font-family: var(--arabic-font);
        }
     } 
   } 
@@ -995,6 +1040,9 @@
           right: 0;
           max-width: 100%;
         }
+      }
+      a{
+        font-family: var(--arabic-font);
       }
     }
   } 
