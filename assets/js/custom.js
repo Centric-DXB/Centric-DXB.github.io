@@ -680,7 +680,36 @@
         ]
     });
 
+    $('.bullets-points').click(function(){
+        $(".bullets-points").removeClass("active");
+        $(this).addClass("active");
+        $('.future-content').removeClass("active");
+        var content_id = $(this).data("dex");
+        $('#'+content_id).addClass("active");
+    });
+    $('.future-img').click(function(){
+        $(".future-img").removeClass("active");
+        $(this).addClass("active");
+        $('.future-content').removeClass("active");
+        var content_id = $(this).data("dex");
+        $('#'+content_id).addClass("active");
+    });
 
+
+    $(".setaccordionbtn a").on("click", function() {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(this).siblings(".content").slideUp(200);
+            $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
+        } else {
+          $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
+          $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+          $(".set > a").removeClass("active");
+          $(this).addClass("active");
+          $(".content").slideUp(200);
+          $(this).siblings(".content").slideDown(200);
+        }
+      });
     
     
     
