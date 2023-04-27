@@ -8457,6 +8457,134 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 12px;
 }
 
+.news-wrapper {
+  padding: 50px 0 200px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.custom-input {
+  padding: 0.6rem;
+  background-color: #122D6E;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 100%;
+  color: #fff;
+  margin-top: 7px;
+}
+
+.custom-input::placeholder {
+  color: #fff;
+  padding-left: 40px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 57%;
+  left: 20px;
+}
+
+.news-update-section label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.news p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  padding: 0;
+}
+
+.read-more {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.read-more span {
+  color: #81C357 !important;
+  margin-right: 12px;
+}
+
+.read-more:not(.collapsed) .arrow img {
+  rotate: -90deg;
+}
+
+.custom-card-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+}
+
+.custom-card-container:nth-child(1) {
+  margin-top: -220px;
+}
+
+.custom-card-container .card {
+  border: none;
+  width: 89%;
+  margin: auto;
+}
+
+.custom-card-container span {
+  color: #707070;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.custom-card-container .subject {
+  color: #122D6E;
+}
+
+.custom-card-container .description {
+  color: #747B85;
+}
+
+.loadmore-button {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+  background: var(--light-green);
+  color: var(--white);
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--poppins);
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.join-conversation {
+  background-color: #81C357;
+  padding: 2rem;
+  text-align: center;
+}
+
+.join-conversation h4 {
+  color: #fff;
+}
+
+.join-conversation h3 {
+  font-weight: bolder;
+  color: #122D6E;
+  mix-blend-mode: color-burn;
+}
+
+.images-section img {
+  width: 267px;
+  aspect-ratio: 1/1;
+}
+
+.img-3 {
+  width: auto !important;
+  height: 267px;
+  object-fit: cover;
+}
+
 @font-face {
   font-family: "Droid Arabic Kufi";
   src: url("../fonts/DroidArabicKufi.eot");

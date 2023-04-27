@@ -710,7 +710,3 @@
           $(this).siblings(".content").slideDown(200);
         }
       });
-    
-    
-    
-    
