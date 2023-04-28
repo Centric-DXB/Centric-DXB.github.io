@@ -690,12 +690,12 @@ $('.future-images-wrapper img').click(handingFutureSection)
 $('.position-wrapper a.course-accordion').click(function () {
     const element =  $(this).parent().parent();
     if (element.attr('style')) {
-        $(this).addClass('minus')
+        $(this).removeClass('minus')
         element.removeAttr("style");
         $(`.position-location p`,element).removeAttr("style")
     }
     else {
-        $(this).removeClass('minus')
+        $(this).addClass('minus')
         $(element).css({height: 'auto'})
         $(`.position-location p`,element).css({overflow: 'unset', maxHeight: 'unset'})
     }

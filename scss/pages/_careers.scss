@@ -470,13 +470,29 @@
       letter-spacing: 0px;
       font-weight: 600;
       font-style: normal;
+      display: block;
+      &.minus {
+        &::after {
+          content: "";
+          color: $slider-active-green;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+          font-size: 50px;
+          background-color: $slider-active-green;
+          height: 4px;
+          width: 25px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
       &::after {
         content: "\002B";
         color: $slider-active-green;
         font-weight: bold;
         float: right;
         margin-left: 5px;
-        font-size: 70px;
+        font-size: 50px;
       }
       &.active,
       &:hover {
