@@ -1,4 +1,8 @@
 .arabic {
+  .careers-whowe .posRel .careersabout-img {
+    left: unset;
+    right: 0;
+  }
   h1, h2, h3, h4, h5, h6, p, li{
     font-family: var(--arabic-font);
   }
@@ -380,7 +384,30 @@
       }
     }
   }
-  
+  .careerMainPage .future-container .future-content-wrapper {
+    padding: 100px 100px 0 0px;
+  }
+  .careerMainPage .careercarousel-wrapper {
+    right: unset;
+    left: 0;
+  }
+  .careerMainPage .initiatives {
+    min-height: 770px;
+  }
+  .careerMainPage .position-wrapper {
+    padding: 50px 120px 50px 0px;
+  }
+  .careerMainPage .success-story .posRel .story-img {
+    left: unset;
+    right: 0;
+  }
+  .careerMainPage .position-wrapper .accordionbtn .course-accordion::after {
+    float: left;
+  }
+  .careerMainPage .success-story .story-wrapper {
+    background: url('../images/careers-quote.png') no-repeat left 100px;
+  }
+  .jobposition-wrapper,
   .home-about-us .about-us,
   .top-solutions-wrapper .top-solutions-heading,
   .our-transparency .transparency-heading,
@@ -398,8 +425,9 @@
   .technologies-wrapper,
   .contactus-wrapper,
   .servingbusiness--wrapper,
-  .solution__form .content, 
-  .our__solutions .content,{
+  .solution__form .content,
+  .carrers-wrapper,
+  .our__solutions .content{
     //display: none;
     &.arabic-text{
       display: inline-block;

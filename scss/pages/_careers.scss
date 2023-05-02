@@ -1,471 +1,690 @@
-.carrers-wrapper{
-    background: var(--dark-purple);
-    h2{
-        font-size: 33px;
-        margin-bottom: 50px;
-        position: relative;
-        padding-left: 100px;
-        color: var(--white);
-        &::before {
-            content: "";
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background: url(../images/logowhitecircle.svg) no-repeat 0 0;
-            left: 60px;
-            top: 6px;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 50px;
-            height: 4px;
-            background: var(--light-green);
-            left: 0;
-            top: 19px;
-        }
+.carrers-wrapper {
+  background: var(--dark-purple);
+  .our__solutions {
+    padding: 40px 0px 30px;
+    .pagination__list ul {
+      padding-left: 70px;
     }
-    p{
-        color: var(--white);
-        padding-left: 100px;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    a.button{
-        background: var(--light-green);
-        padding: 0 60px 0 30px;
-        line-height: 60px;
-        color: var(--white);
-        display: inline-block;
-        margin-left: 100px;
-        margin-top: 50px;
-        text-decoration: none;
-    }
-}
-
-.jobposition-wrapper{
-    background: $white;
-    h2{
-        font-size: 33px;
-        margin-bottom: 50px;
-        position: relative;
-        padding-left: 100px;
-        color: $dark-blue-color;
-        &::before {
-            content: "";
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background: url(../images/logocolorcircle.svg) no-repeat 0 0;
-            left: 60px;
-            top: 6px;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 50px;
-            height: 4px;
-            background: var(--light-green);
-            left: 0;
-            top: 19px;
-        }
-    }
-    p{
-        color: var(--white);
-        padding-left: 100px;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    a.button{
-        background: var(--light-green);
-        padding: 0 60px 0 30px;
-        line-height: 60px;
-        color: var(--white);
-        display: inline-block;
-        margin-left: 100px;
-        margin-top: 50px;
-        text-decoration: none;
-    }
-}
-.padding-tb{
-    padding: 150px 0;
-}
-.careers-whowe{
-    min-height: 660px;
-    .careersabout-content{
-        display: block;
-        padding-right: 50px;
-    }
-    .careersabout-img{
-        position: absolute;
-        right: 0;
-    }
-}
-.future-container{
-    .bullets-wrapper{
-        display: block;
-        padding: 100px 0 0 110px;
-    }
-    .bullets-points{
-        display: flex;
-        margin-bottom: 30px;
-        cursor: pointer;
-        .bullets-points-number{
-            font-size: 40px;
-            display: inline-block;
-            color: rgba($color: #fff, $alpha: .5);
-            transition: all .2s linear;
-        }
-        .bullets-pointscontent{
-            color: rgba($color: #fff, $alpha: .5);
-            font-size: 30px;
-            padding: 6px 0 0 25px;
-            transition: all .2s linear;
-            font-weight: 700;
-        }
-        &:hover{
-            .bullets-points-number, .bullets-pointscontent{
-                color: rgba($color: #fff, $alpha: 1.0);
-                transition: all .2s linear;
-            }
-        }
-        &.active{
-            .bullets-points-number, .bullets-pointscontent{
-                color: rgba($color: $seminar-green-color, $alpha: 1.0);
-            }
-        }
-
-        // li{
-        //     font-size: 30px;
-        //     margin-bottom: 30px;
-        //     span{
-        //         font-size: 40px;
-        //         display: inline-block;
-        //     }
-        //     a{
-        //         color: rgba($color: #fff, $alpha: .5);
-        //         text-decoration: none;
-        //     }
-        // }
-    }
-    .future-img{
-        opacity: 0.3;
-        margin-bottom: -50px;
-        position: relative;
-        z-index: 10;
-        transition: all .2s linear;
-        &.active{
-            opacity: 1;
-            transform: scale(1.3);
-            z-index: 11;
-            transition: all .2s linear;
-        }
-    }
-    .future-content-wrapper{
-        padding: 100px 0 0 100px;
-        .future-content{
-            display: none;
-            h3{
-                color: rgba($color: $seminar-green-color, $alpha: 1.0);
-                font-size: 30px;
-                margin-bottom: 30px;
-            }
-            p{
-                padding: 0;
-                font-size: 20px;
-            }
-            &.active{
-                display: block;
-            }
-        }
-    }
-}
-.benefits-wrappers{
-    display: block;
-    background: var(--white) url(../images/logo-light.png) no-repeat top right;
-    margin-bottom: 20px;
-    &.border{
-        border-radius: 10px;
-        padding: 200px 15px 20px;
-    }
-    h3{
-        font-size: 26px;
-        margin-bottom: 10px;
-        min-height: 65px;
-    }
-    p{
-        color: var(--black);
-        padding-left: 0;
-    }
-}
-.benefits-container{
+  }
+  h2 {
+    font-size: 33px;
+    margin-bottom: 50px;
+    position: relative;
     padding-left: 100px;
-    padding-top: 100px;
+    color: var(--white);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url('../images/logowhitecircle.svg') no-repeat 0 0;
+      left: 60px;
+      top: 6px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background: var(--light-green);
+      left: 0;
+      top: 19px;
+    }
+  }
+  p {
+    color: var(--white);
+    padding-left: 100px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  a.button {
+    background: var(--light-green);
+    padding: 0 60px 0 30px;
+    line-height: 60px;
+    color: var(--white);
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-decoration: none;
+  }
 }
-.success-story{
-    min-height: 950px;
-    .story-wrapper{
-        background: url(../images/careers-quote.png) no-repeat right 100px;
-        padding: 250px 50px 0 0;
-        .story-title{
-            display: block;
-            margin: 100px 0 0 100px;
-            span{
-                color: $seminar-green-color;
-                margin-bottom: 10px;
-                font-weight: 700;
-            }
-            p{
-                padding-left: 0;
-            }
-        }
+
+.jobposition-wrapper {
+  background: $white;
+  h2 {
+    font-size: 33px;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 100px;
+    color: $dark-blue-color;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(../images/logocolorcircle.svg) no-repeat 0 0;
+      left: 60px;
+      top: 6px;
     }
-    .story-img{
-        position: absolute;
-        right: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background: var(--light-green);
+      left: 0;
+      top: 19px;
     }
+  }
+  p {
+    color: var(--white);
+    padding-left: 100px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  a.button {
+    background: var(--light-green);
+    padding: 0 60px 0 30px;
+    line-height: 60px;
+    color: var(--white);
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-decoration: none;
+  }
 }
-.careercarousel-wrapper{
-    display: block;
-    background: $white;
-    position: absolute;
-    right: 0;
-    width: 55%;
-    padding: 200px 10px 120px 50px;
-    h2{
-        color: $dark-blue-color;
-        padding-left: 0;
-        margin-bottom: 50px;
-        &::before, &::after{
-            display: none;
-        }
-    }
-    p{
-        color: rgba($color: $grey, $alpha: 1.0);
-        padding-left: 0;
-    }
-    .careers-carousel{
-        .slick-dots{
-            text-align: left;
-            bottom: -50px;
-            li{
-                margin: 0 10px;
-                button{
-                    &::before{
-                        font-size: 0;
-                        font-family: '';
-                        background: $seminar-green-color;
-                        width: 35px;
-                        height: 6px;
-                        border-radius: 10px;
-                    }
-                }
-                &.slick-active{
-                    button{
-                        &::before{
-                            background: $seminar-green-color;
-                        }
-                    }
-                }
-            }
-        }
-    }
+.padding-tb {
+  padding: 150px 0;
 }
-.initiatives{
-    min-height: 800px;
-    .initiative-leftcontent{
-        padding: 200px 0 0 0;
-    }
-}
-.careers-conatiner{
+.careers-whowe {
+  min-height: 660px;
+  overflow: hidden;
+  .careersabout-content {
     display: block;
     padding-right: 50px;
-    .careers-icon{
-        display: block;
-        margin-bottom: 30px;
+  }
+  .posRel {
+    position: relative;
+    .careersabout-img {
+      position: absolute;
+      left: 0;
+      .img-fluid {
+        max-width: 900px;
+      }
     }
-    h3{
-        padding-top: 50px;
-        position: relative;
-        color: $dark-blue-color;
-        &::before{
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 6px;
-            top: 0;
-            left: 0;
-            background: rgba($color: $grey, $alpha: .2);
-            border-radius: 10px;
-        }
-    }
+  }
 }
-.applyform-conatiner{
-    padding-left: 110px;
-    padding-top: 50px;
-    label{
-        color: $white;
-        display: block;
-        margin-bottom: 5px;
+.future-container {
+  .bullets-wrapper {
+    display: block;
+    padding: 100px 0 0 110px;
+  }
+  .bullets-points {
+    display: flex;
+    margin-bottom: 30px;
+    cursor: pointer;
+    .bullets-points-number {
+      font-size: 40px;
+      display: inline-block;
+      color: rgba($color: #fff, $alpha: 0.5);
+      transition: all 0.2s linear;
     }
-    input, select, textarea{
-        width: 100%;
-        background: transparent;
-        border: 1px solid rgba($color: #fff, $alpha: .2);
-        margin-bottom: 20px;
-        color: $white;
-        padding: 10px 15px;
-        &::placeholder{
-            color: rgba($color: #fff, $alpha: .7);
-        }
-        option{
-            color: rgba($color: #fff, $alpha: .7);
-        }
+    .bullets-pointscontent {
+      color: rgba($color: #fff, $alpha: 0.5);
+      font-size: 30px;
+      padding: 6px 0 0 25px;
+      transition: all 0.2s linear;
+      font-weight: 700;
     }
-    textarea{
-        height: 200px;
+    &:hover {
+      .bullets-points-number,
+      .bullets-pointscontent {
+        color: rgba($color: #fff, $alpha: 1);
+        transition: all 0.2s linear;
+      }
     }
-    button{
-        background: $seminar-green-color;
-        padding: 0 80px 0 30px;
-        color: $white;
-        line-height: 60px;
-        text-transform: uppercase;
-        font-size: 20px;
-        position: relative;
-        margin-top: 50px;
-        svg{
-            position: absolute;
-            top: 20px;
-            right: 50px;
-            transition: all .5s linear;
-        }
-        &:hover{
-            svg{
-                right: 20px;
-                transition: all .5s linear;
-            }
-        }
+    &.active {
+      .bullets-points-number,
+      .bullets-pointscontent {
+        color: rgba($color: $seminar-green-color, $alpha: 1);
+      }
     }
-}
-.cvsupport{
-    display: inline-block;
-    background: url(../images/cvsupport.png) no-repeat center center;
-    background-size: cover;
-    color: $white;
-    text-align: center;
-    width: 100%;
-    h2{
-        font-size: 60px;
-        margin-bottom: 30px;
-        font-weight: 900;
+
+    // li{
+    //     font-size: 30px;
+    //     margin-bottom: 30px;
+    //     span{
+    //         font-size: 40px;
+    //         display: inline-block;
+    //     }
+    //     a{
+    //         color: rgba($color: #fff, $alpha: .5);
+    //         text-decoration: none;
+    //     }
+    // }
+  }
+  .future-img {
+    opacity: 0.3;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 10;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    &.active {
+      opacity: 1;
+      transform: scale(1.3);
+      z-index: 11;
+      transition: all 0.2s linear;
     }
-    p{
+  }
+  .future-content-wrapper {
+    padding: 100px 0 0 100px;
+    .future-content {
+      display: none;
+      h3 {
+        color: rgba($color: $seminar-green-color, $alpha: 1);
         font-size: 30px;
         margin-bottom: 30px;
+      }
+      p {
+        padding: 0;
+        font-size: 20px;
+      }
+      &.active {
+        display: block;
+      }
     }
-    a{
-        display: inline-block;
-        padding: 0 80px 0 20px;
-        line-height: 60px;
-        font-size: 18px;
-        background: $seminar-green-color;
-        color: $white;
-        text-decoration: none;
-        position: relative;
-        text-transform: uppercase;
-        svg{
-            position: absolute;
-            top: 20px;
-            right: 50px;
-            transition: all .4s linear;
-        }
-        &:hover{
-            svg{
-                right: 20px;
-                transition: all .4s linear;
-            }
-        }
-    }
+  }
 }
-.position-wrapper{
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid rgba($color: #000000, $alpha: 1.0);
-    padding: 50px 0 50px 120px;
+.benefits-wrappers {
+  display: block;
+  background: var(--white) url(../images/logo-light.png) no-repeat top right;
+  margin-bottom: 20px;
+  &.border {
+    border-radius: 10px;
+    padding: 200px 15px 20px;
+  }
+  h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    min-height: 65px;
+  }
+  p {
+    color: var(--black);
+    padding-left: 0;
+  }
+}
+.benefits-container {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+.success-story {
+  min-height: 950px;
+  overflow: hidden;
+  .story-wrapper {
+    background: url(../images/careers-quote.png) no-repeat right 100px;
+    padding: 250px 50px 0 0;
+    .story-title {
+      display: block;
+      margin: 100px 0 0 100px;
+      span {
+        color: $seminar-green-color;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+      p {
+        padding-left: 0;
+      }
+    }
+  }
+  .posRel {
+    position: relative;
+    .story-img {
+      position: absolute;
+      left: 0;
+      .img-fluid {
+        max-width: 900px;
+      }
+    }
+  }
+}
+.careercarousel-wrapper {
+  display: block;
+  background: $white;
+  position: absolute;
+  right: 0;
+  width: 55%;
+  padding: 200px 10px 120px 50px;
+  h2 {
+    color: $dark-blue-color;
+    padding-left: 0;
+    margin-bottom: 50px;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  p {
+    color: rgba($color: $grey, $alpha: 1);
+    padding-left: 0;
+  }
+  .careers-carousel {
+    .slick-dots {
+      text-align: left;
+      bottom: -50px;
+      li {
+        margin: 0 10px;
+        button {
+          &::before {
+            font-size: 0;
+            font-family: "";
+            background: $seminar-green-color;
+            width: 35px;
+            height: 6px;
+            border-radius: 10px;
+          }
+        }
+        &.slick-active {
+          button {
+            &::before {
+              background: $seminar-green-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.initiatives {
+  min-height: 800px;
+  .initiative-leftcontent {
+    padding: 200px 0 0 0;
+  }
+}
+.careers-conatiner {
+  display: block;
+  padding-right: 50px;
+  .careers-icon {
+    display: block;
+    margin-bottom: 30px;
+  }
+  h3 {
+    padding-top: 50px;
+    position: relative;
+    color: $dark-blue-color;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 6px;
+      top: 0;
+      left: 0;
+      background: rgba($color: $grey, $alpha: 0.2);
+      border-radius: 10px;
+    }
+  }
+}
+.applyform-conatiner {
+  padding-left: 110px;
+  padding-top: 50px;
+  label {
+    color: $white;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba($color: #fff, $alpha: 0.2);
+    margin-bottom: 20px;
+    color: $white;
+    padding: 10px 15px;
+    &::placeholder {
+      color: rgba($color: #fff, $alpha: 0.7);
+    }
+    option {
+      color: rgba($color: #fff, $alpha: 0.7);
+    }
+  }
+  textarea {
     height: 200px;
-    .position-name{
-        width: 50%;
-        h3{
-            font-size: 30px;
-            color: $dark-blue-color;
-        }
+  }
+  button {
+    background: $seminar-green-color;
+    padding: 0 80px 0 30px;
+    color: $white;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    margin-top: 50px;
+    svg {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      transition: all 0.5s linear;
     }
-    .position-location{
-        width: 100%;
-        span{
-            color: $slider-active-green;
-        }
-        p{
-            color: $black-color;
-            padding: 0;
-            max-height: 100px;
-            overflow: hidden;
-        }
-        a{
-            background: var(--light-green);
-            padding: 0 60px 0 30px;
-            line-height: 60px;
-            color: $white;
-            display: inline-block;
-            margin-top: 50px;
-            text-decoration: none;
-        }
+    &:hover {
+      svg {
+        right: 20px;
+        transition: all 0.5s linear;
+      }
     }
-    .accordionbtn{
-        width: 30%;
-        .course-accordion {
-            background-color: transparent;
-            color: $black-color;
-            cursor: pointer;
-            padding: 8px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 22px;
-              font-weight: 600;
-            transition: 0.4s;
-              font-family: "Raleway";
-            line-height: 1.5em;
-            text-transform: none;
-            letter-spacing: 0px;
-            font-weight: 600;
-            font-style: normal;
-            &::after {
-                content: '\002B';
-                color: $slider-active-green;
-                font-weight: bold;
-                float: right;
-                margin-left: 5px;
-                font-size: 70px;
-            }
-            &.active, &:hover {
-                //background-color: rgba(166,166,166,0.6);
-            }
-            &.active{
-                &::after {
-                    content: "\2212";
-                }
-            }
-        }
-        
-        
+  }
+}
+.cvsupport {
+  display: inline-block;
+  background: url(../images/cvsupport.png) no-repeat center center;
+  background-size: cover;
+  color: $white;
+  text-align: center;
+  width: 100%;
+  h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: 900;
+  }
+  p {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  a {
+    display: inline-block;
+    padding: 0 80px 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    background: $seminar-green-color;
+    color: $white;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    svg {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      transition: all 0.4s linear;
     }
+    &:hover {
+      svg {
+        right: 20px;
+        transition: all 0.4s linear;
+      }
+    }
+  }
+}
+.position-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba($color: #000000, $alpha: 1);
+  padding: 50px 0 50px 120px;
+  height: 200px;
+  .position-name {
+    width: 50%;
+    h3 {
+      font-size: 30px;
+      color: $dark-blue-color;
+    }
+  }
+  .position-location {
+    width: 100%;
+    span {
+      color: $slider-active-green;
+    }
+    p {
+      color: $black-color;
+      padding: 0;
+      max-height: 100px;
+      overflow: hidden;
+    }
+    a {
+      background: var(--light-green);
+      padding: 0 60px 0 30px;
+      line-height: 60px;
+      color: $white;
+      display: inline-block;
+      margin-top: 50px;
+      text-decoration: none;
+    }
+  }
+  .accordionbtn {
+    width: 30%;
+    .course-accordion {
+      background-color: transparent;
+      color: $black-color;
+      cursor: pointer;
+      padding: 8px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 22px;
+      font-weight: 600;
+      transition: 0.4s;
+      font-family: "Raleway";
+      line-height: 1.5em;
+      text-transform: none;
+      letter-spacing: 0px;
+      font-weight: 600;
+      font-style: normal;
+      display: block;
+      &.minus {
+        &::after {
+          content: "";
+          color: $slider-active-green;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+          font-size: 50px;
+          background-color: $slider-active-green;
+          height: 4px;
+          width: 25px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      &::after {
+        content: "\002B";
+        color: $slider-active-green;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        font-size: 50px;
+      }
+      &.active,
+      &:hover {
+        //background-color: rgba(166,166,166,0.6);
+      }
+      &.active {
+        &::after {
+          content: "\2212";
+        }
+      }
+    }
+  }
 }
 
 
-
-
+@media screen and (max-width: 991px) {
+  .careerMainPage {
+    .padding-tb {
+      padding: 70px 0;
+    }
+    .careers-whowe {
+      .posRel {
+        .careersabout-img {
+          position: unset;
+          margin-top: 50px;
+          .img-fluid {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    .carrers-wrapper {
+      .our__solutions {
+        .container {
+          padding: 0;
+        }
+        .pagination__list {
+          margin-bottom: 0;
+          ul {
+            padding-left: 0px;
+          }
+        }
+      }
+      a.button {
+        padding: 0 20px;
+        margin-left: 0;
+        margin-top: 0;
+      }
+      h2 {
+        margin: 0 0px 30px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 40px;
+      }
+      p {
+        padding-left: 0;
+        padding-bottom: 50px;
+        margin: 0 0px;
+        font-size: 16px;
+      }
+    }
+    .future-container {
+      .bullets-wrapper {
+        padding: 30px 0px 30px 0px;
+      }
+      .bullets-points {
+        .bullets-points-number {
+          font-size: 27px;
+        }
+        .bullets-pointscontent {
+          font-size: 20px;
+        }
+      }
+      .future-img {
+        max-width: 100px;
+      }
+      .future-images-wrapper {
+        text-align: center;
+      }
+      .future-container {
+        .future-content-wrapper {
+          padding: 100px 0 0 0px;
+        }
+      }
+    }
+    .future-content-wrapper {
+      padding: 100px 0 0 0px;
+    }
+    .initiatives {
+      .initiative-leftcontent {
+        padding: 30px 0 0 0;
+      }
+    }
+    .applyform-conatiner {
+      padding-left: 0px;
+      padding-top: 0px;
+    }
+    .benefits-container {
+      padding-left: 0px;
+      padding-top: 0px;
+    }
+    .careercarousel-wrapper {
+      position: unset;
+      width: 100%;
+      padding: 40px 30px 0px 30px;
+      h2 {
+        text-align: center;
+      }
+    }
+    .slick-slide {
+      .careers-conatiner {
+        text-align: center;
+        padding-right: 0px;
+        h3 {
+          &::before {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        img {
+          margin: auto;
+        }
+      }
+    }
+    .careercarousel-wrapper {
+      .careers-carousel {
+        .slick-dots {
+          text-align: center;
+          bottom: 80px;
+        }
+      }
+    }
+    .success-story {
+      .story-wrapper {
+        background: url('../images/careers-quote.png') no-repeat right 170px;
+        background-size: 90px;
+        padding: 220px 0px 0 0;
+        .story-title {
+          margin: 0px 0 0 0px;
+        }
+      }
+      .posRel {
+        .story-img {
+          position: unset;
+          .img-fluid {
+            max-width: 100%; 
+          }
+        }
+      }
+    }
+    .jobposition-wrapper {
+      h2 {
+        margin: 0 0px 30px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 40px;
+      }
+      .position-wrapper {
+        padding: 50px 0 50px 0px;
+        flex-direction: column;
+        position: relative;
+        height: 240px;
+        .position-name {
+          width: 85%;
+          h3 {
+            margin-bottom: 10px;
+            font-size: 23px;
+          }
+        }
+        .position-location {
+          p {
+            max-height: 65px;
+            font-size: 14px;
+            margin-top: 10px;
+          }
+        }
+        .accordionbtn {
+          width: 100%;
+          position: absolute;
+          .course-accordion {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .cvsupport {
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
