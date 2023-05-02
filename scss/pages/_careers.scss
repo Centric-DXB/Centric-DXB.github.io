@@ -343,6 +343,10 @@
     margin-bottom: 20px;
     color: $white;
     padding: 10px 15px;
+    option {
+      color: #73bc45;
+      background: #122D6E;
+    }
     &::placeholder {
       color: rgba($color: #fff, $alpha: 0.7);
     }
@@ -434,11 +438,15 @@
     span {
       color: $slider-active-green;
     }
+    .acc-desc {
+      max-height: 120px;
+      overflow: hidden;
+    }
     p {
       color: $black-color;
       padding: 0;
-      max-height: 100px;
-      overflow: hidden;
+      // max-height: 100px;
+      // overflow: hidden;
     }
     a {
       background: var(--light-green);
@@ -509,6 +517,20 @@
 
 
 @media screen and (max-width: 991px) {
+  .arabic {
+    .careerMainPage {
+      .careers-whowe {
+        .careersabout-content {
+          padding-right: 0;
+        }
+      }
+      .future-container {
+        .future-content-wrapper {
+          padding: 100px 0px 0 0px;
+        }
+      }
+    }
+  }
   .careerMainPage {
     .padding-tb {
       padding: 70px 0;
@@ -664,7 +686,7 @@
         }
         .position-location {
           p {
-            max-height: 65px;
+            // max-height: 65px;
             font-size: 14px;
             margin-top: 10px;
           }
