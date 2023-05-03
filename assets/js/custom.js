@@ -692,12 +692,12 @@ $('.position-wrapper a.course-accordion').click(function () {
     if (element.attr('style')) {
         $(this).removeClass('minus')
         element.removeAttr("style");
-        $(`.position-location p`,element).removeAttr("style")
+        $(`.position-location .acc-desc`,element).removeAttr("style")
     }
     else {
         $(this).addClass('minus')
         $(element).css({height: 'auto'})
-        $(`.position-location p`,element).css({overflow: 'unset', maxHeight: 'unset'})
+        $(`.position-location .acc-desc`,element).css({overflow: 'unset', maxHeight: 'unset'})
     }
 })
 
