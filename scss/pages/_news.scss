@@ -13,6 +13,16 @@
     color: #fff;
     margin-top: 7px;
 }
+input.custom-input{
+        padding: .6rem;
+        background-color: #122D6E;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        width: 100%;
+        color: #fff;
+        margin-top: 7px;
+        padding-left: 50px;
+}
 .custom-input::placeholder{
     color: #fff;
     padding-left: 40px;
@@ -22,12 +32,10 @@
     top: 57%;
     left: 20px;
 }
-
 .news-update-section label{
     font-size: 14px;
     font-weight: 400;
 }
-
 .news p {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
@@ -41,11 +49,9 @@
     color: #81C357 !important;
     margin-right: 12px;
 }
-
 .read-more:not(.collapsed) .arrow img{
     rotate: -90deg;
 }
-
 .custom-card-container{
     display: grid;
     gap: 10px;
@@ -56,7 +62,7 @@
 }
 .custom-card-container .card{
     border: none;
-    width: 89%;
+    width: 420px;
     margin: auto;
 }
 .custom-card-container span{
@@ -65,14 +71,12 @@
 .underline{
     text-decoration: underline;
 }
-
 .custom-card-container .subject{
     color: #122D6E;
 }
 .custom-card-container .description{
     color: #747B85;
 }
-
 .loadmore-button{
     display: inline-block;
     text-align: center;
@@ -87,7 +91,6 @@
     line-height: 50px;
     text-decoration: none;
 }
-
 .join-conversation{
     background-color: #81C357;
     padding: 2rem;
@@ -101,9 +104,9 @@
     color: #122D6E;
     mix-blend-mode: color-burn;
 }
-.images-section img{
-    width: 267px;
-    aspect-ratio: 1 / 1;
+.images-section img {
+    width: 270.5px;
+    aspect-ratio: 1/1;
 }
 .img-3 {
     width: auto !important;

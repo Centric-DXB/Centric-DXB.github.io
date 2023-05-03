@@ -358,7 +358,7 @@ header .main-menu .lang-toggle1 input:checked + .slider1 {
   background-color: var(--slider-active-green);
 }
 header .main-menu .lang-toggle1 input:focus + .slider1 {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 header .main-menu .lang-toggle1 input:checked + .slider1:before {
   -webkit-transform: translateX(26px);
@@ -389,7 +389,7 @@ header .mobile--header .menu-menu .mobile-menu svg {
 }
 header .mobile--header .menu-menu .navigation {
   position: absolute;
-  top: 80px;
+  top: 61px;
   left: 0;
   width: 100%;
   background: var(--blue-normal);
@@ -1015,6 +1015,10 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 
+.arabic .careers-whowe .posRel .careersabout-img {
+  left: unset;
+  right: 0;
+}
 .arabic h1, .arabic h2, .arabic h3, .arabic h4, .arabic h5, .arabic h6, .arabic p, .arabic li {
   font-family: var(--arabic-font);
 }
@@ -1346,6 +1350,34 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     right: 0;
   }
 }
+.arabic .careerMainPage .jobposition-wrapper h2,
+.arabic .careerMainPage .carrers-wrapper h2 {
+  letter-spacing: normal;
+}
+.arabic .careerMainPage .future-container .future-content-wrapper {
+  padding: 100px 100px 0 0px;
+}
+.arabic .careerMainPage .careercarousel-wrapper {
+  right: unset;
+  left: 0;
+}
+.arabic .careerMainPage .initiatives {
+  min-height: 770px;
+}
+.arabic .careerMainPage .position-wrapper {
+  padding: 50px 120px 50px 0px;
+}
+.arabic .careerMainPage .success-story .posRel .story-img {
+  left: unset;
+  right: 0;
+}
+.arabic .careerMainPage .position-wrapper .accordionbtn .course-accordion::after {
+  float: left;
+}
+.arabic .careerMainPage .success-story .story-wrapper {
+  background: url("../images/careers-quote.png") no-repeat left 100px;
+}
+.arabic .jobposition-wrapper.arabic-text,
 .arabic .home-about-us .about-us.arabic-text,
 .arabic .top-solutions-wrapper .top-solutions-heading.arabic-text,
 .arabic .our-transparency .transparency-heading.arabic-text,
@@ -1364,9 +1396,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper.arabic-text,
 .arabic .servingbusiness--wrapper.arabic-text,
 .arabic .solution__form .content.arabic-text,
+.arabic .carrers-wrapper.arabic-text,
 .arabic .our__solutions .content.arabic-text {
   display: inline-block;
 }
+.arabic .jobposition-wrapper h2,
 .arabic .home-about-us .about-us h2,
 .arabic .top-solutions-wrapper .top-solutions-heading h2,
 .arabic .our-transparency .transparency-heading h2,
@@ -1385,12 +1419,14 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper h2,
 .arabic .servingbusiness--wrapper h2,
 .arabic .solution__form .content h2,
+.arabic .carrers-wrapper h2,
 .arabic .our__solutions .content h2 {
   padding-left: 0px;
   padding-right: 110px;
   font-family: var(--arabic-font);
   letter-spacing: 0;
 }
+.arabic .jobposition-wrapper h2::before,
 .arabic .home-about-us .about-us h2::before,
 .arabic .top-solutions-wrapper .top-solutions-heading h2::before,
 .arabic .our-transparency .transparency-heading h2::before,
@@ -1409,10 +1445,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper h2::before,
 .arabic .servingbusiness--wrapper h2::before,
 .arabic .solution__form .content h2::before,
+.arabic .carrers-wrapper h2::before,
 .arabic .our__solutions .content h2::before {
   left: auto;
   right: 60px;
 }
+.arabic .jobposition-wrapper h2::after,
 .arabic .home-about-us .about-us h2::after,
 .arabic .top-solutions-wrapper .top-solutions-heading h2::after,
 .arabic .our-transparency .transparency-heading h2::after,
@@ -1431,6 +1469,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper h2::after,
 .arabic .servingbusiness--wrapper h2::after,
 .arabic .solution__form .content h2::after,
+.arabic .carrers-wrapper h2::after,
 .arabic .our__solutions .content h2::after {
   left: auto;
   right: 0;
@@ -7807,6 +7846,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .carrers-wrapper {
   background: var(--dark-purple);
 }
+.carrers-wrapper .our__solutions {
+  padding: 40px 0px 30px;
+}
 .carrers-wrapper .our__solutions .pagination__list ul {
   padding-left: 70px;
 }
@@ -7903,14 +7945,21 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 
 .careers-whowe {
   min-height: 660px;
+  overflow: hidden;
 }
 .careers-whowe .careersabout-content {
   display: block;
   padding-right: 50px;
 }
-.careers-whowe .careersabout-img {
+.careers-whowe .posRel {
+  position: relative;
+}
+.careers-whowe .posRel .careersabout-img {
   position: absolute;
-  right: 0;
+  left: 0;
+}
+.careers-whowe .posRel .careersabout-img .img-fluid {
+  max-width: 900px;
 }
 
 .future-container .bullets-wrapper {
@@ -7950,6 +7999,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   position: relative;
   z-index: 10;
   transition: all 0.2s linear;
+  cursor: pointer;
 }
 .future-container .future-img.active {
   opacity: 1;
@@ -8002,6 +8052,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 
 .success-story {
   min-height: 950px;
+  overflow: hidden;
 }
 .success-story .story-wrapper {
   background: url(../images/careers-quote.png) no-repeat right 100px;
@@ -8019,9 +8070,15 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .success-story .story-wrapper .story-title p {
   padding-left: 0;
 }
-.success-story .story-img {
+.success-story .posRel {
+  position: relative;
+}
+.success-story .posRel .story-img {
   position: absolute;
-  right: 0;
+  left: 0;
+}
+.success-story .posRel .story-img .img-fluid {
+  max-width: 900px;
 }
 
 .careercarousel-wrapper {
@@ -8112,6 +8169,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-bottom: 20px;
   color: #fff;
   padding: 10px 15px;
+}
+.applyform-conatiner input option,
+.applyform-conatiner select option,
+.applyform-conatiner textarea option {
+  color: #73bc45;
+  background: #122D6E;
 }
 .applyform-conatiner input::placeholder,
 .applyform-conatiner select::placeholder,
@@ -8206,11 +8269,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .position-wrapper .position-location span {
   color: #81C357;
 }
+.position-wrapper .position-location .acc-desc {
+  max-height: 120px;
+  overflow: hidden;
+}
 .position-wrapper .position-location p {
   color: #000000;
   padding: 0;
-  max-height: 100px;
-  overflow: hidden;
 }
 .position-wrapper .position-location a {
   background: var(--light-green);
@@ -8242,6 +8307,20 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   letter-spacing: 0px;
   font-weight: 600;
   font-style: normal;
+  display: block;
+}
+.position-wrapper .accordionbtn .course-accordion.minus::after {
+  content: "";
+  color: #81C357;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 50px;
+  background-color: #81C357;
+  height: 4px;
+  width: 25px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .position-wrapper .accordionbtn .course-accordion::after {
   content: "+";
@@ -8249,12 +8328,161 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-weight: bold;
   float: right;
   margin-left: 5px;
-  font-size: 70px;
+  font-size: 50px;
 }
 .position-wrapper .accordionbtn .course-accordion.active::after {
   content: "−";
 }
 
+@media screen and (max-width: 991px) {
+  .arabic .careerMainPage .careers-whowe .careersabout-content {
+    padding-right: 0;
+  }
+  .arabic .careerMainPage .future-container .future-content-wrapper {
+    padding: 100px 0px 0 0px;
+  }
+  .careerMainPage .padding-tb {
+    padding: 70px 0;
+  }
+  .careerMainPage .careers-whowe .posRel .careersabout-img {
+    position: unset;
+    margin-top: 50px;
+  }
+  .careerMainPage .careers-whowe .posRel .careersabout-img .img-fluid {
+    max-width: 100%;
+  }
+  .careerMainPage .carrers-wrapper .our__solutions .container {
+    padding: 0;
+  }
+  .careerMainPage .carrers-wrapper .our__solutions .pagination__list {
+    margin-bottom: 0;
+  }
+  .careerMainPage .carrers-wrapper .our__solutions .pagination__list ul {
+    padding-left: 0px;
+  }
+  .careerMainPage .carrers-wrapper a.button {
+    padding: 0 20px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .careerMainPage .carrers-wrapper h2 {
+    margin: 0 0px 30px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 40px;
+  }
+  .careerMainPage .carrers-wrapper p {
+    padding-left: 0;
+    padding-bottom: 50px;
+    margin: 0 0px;
+    font-size: 16px;
+  }
+  .careerMainPage .future-container .bullets-wrapper {
+    padding: 30px 0px 30px 0px;
+  }
+  .careerMainPage .future-container .bullets-points .bullets-points-number {
+    font-size: 27px;
+  }
+  .careerMainPage .future-container .bullets-points .bullets-pointscontent {
+    font-size: 20px;
+  }
+  .careerMainPage .future-container .future-img {
+    max-width: 100px;
+  }
+  .careerMainPage .future-container .future-images-wrapper {
+    text-align: center;
+  }
+  .careerMainPage .future-container .future-container .future-content-wrapper {
+    padding: 100px 0 0 0px;
+  }
+  .careerMainPage .future-content-wrapper {
+    padding: 100px 0 0 0px;
+  }
+  .careerMainPage .initiatives .initiative-leftcontent {
+    padding: 30px 0 0 0;
+  }
+  .careerMainPage .applyform-conatiner {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .careerMainPage .benefits-container {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .careerMainPage .careercarousel-wrapper {
+    position: unset;
+    width: 100%;
+    padding: 40px 30px 0px 30px;
+  }
+  .careerMainPage .careercarousel-wrapper h2 {
+    text-align: center;
+  }
+  .careerMainPage .slick-slide .careers-conatiner {
+    text-align: center;
+    padding-right: 0px;
+  }
+  .careerMainPage .slick-slide .careers-conatiner h3::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .careerMainPage .slick-slide .careers-conatiner img {
+    margin: auto;
+  }
+  .careerMainPage .careercarousel-wrapper .careers-carousel .slick-dots {
+    text-align: center;
+    bottom: 80px;
+  }
+  .careerMainPage .success-story .story-wrapper {
+    background: url("../images/careers-quote.png") no-repeat right 170px;
+    background-size: 90px;
+    padding: 220px 0px 0 0;
+  }
+  .careerMainPage .success-story .story-wrapper .story-title {
+    margin: 0px 0 0 0px;
+  }
+  .careerMainPage .success-story .posRel .story-img {
+    position: unset;
+  }
+  .careerMainPage .success-story .posRel .story-img .img-fluid {
+    max-width: 100%;
+  }
+  .careerMainPage .jobposition-wrapper h2 {
+    margin: 0 0px 30px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 40px;
+  }
+  .careerMainPage .jobposition-wrapper .position-wrapper {
+    padding: 50px 0 50px 0px;
+    flex-direction: column;
+    position: relative;
+    height: 240px;
+  }
+  .careerMainPage .jobposition-wrapper .position-wrapper .position-name {
+    width: 85%;
+  }
+  .careerMainPage .jobposition-wrapper .position-wrapper .position-name h3 {
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+  .careerMainPage .jobposition-wrapper .position-wrapper .position-location p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .careerMainPage .jobposition-wrapper .position-wrapper .accordionbtn {
+    width: 100%;
+    position: absolute;
+  }
+  .careerMainPage .jobposition-wrapper .position-wrapper .accordionbtn .course-accordion {
+    display: inline-block;
+  }
+  .careerMainPage .cvsupport h2 {
+    font-size: 40px;
+  }
+  .careerMainPage .cvsupport p {
+    font-size: 18px;
+  }
+}
 .contactus-wrapper {
   display: block;
   width: 100%;
@@ -8486,6 +8714,17 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-top: 7px;
 }
 
+input.custom-input {
+  padding: 0.6rem;
+  background-color: #122D6E;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 100%;
+  color: #fff;
+  margin-top: 7px;
+  padding-left: 50px;
+}
+
 .custom-input::placeholder {
   color: #fff;
   padding-left: 40px;
@@ -8534,7 +8773,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 
 .custom-card-container .card {
   border: none;
-  width: 89%;
+  width: 420px;
   margin: auto;
 }
 
@@ -8586,7 +8825,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 
 .images-section img {
-  width: 267px;
+  width: 270.5px;
   aspect-ratio: 1/1;
 }
 
