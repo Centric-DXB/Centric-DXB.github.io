@@ -8824,15 +8824,15 @@ input.custom-input {
   mix-blend-mode: color-burn;
 }
 
-.images-section img {
-  width: 270.5px;
-  aspect-ratio: 1/1;
+.img-section {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-.img-3 {
-  width: auto !important;
-  height: 267px;
-  object-fit: cover;
+.img-section img {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 150px;
 }
 
 @font-face {
