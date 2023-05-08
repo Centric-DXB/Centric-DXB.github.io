@@ -8764,7 +8764,7 @@ input.custom-input {
 .custom-card-container {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(560px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
 }
 
 .custom-card-container:nth-child(1) {
@@ -8775,6 +8775,10 @@ input.custom-input {
   border: none;
   width: 85%;
   margin: auto;
+}
+
+.collapse p {
+  color: #747B85;
 }
 
 .custom-card-container span {
