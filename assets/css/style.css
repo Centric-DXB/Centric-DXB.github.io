@@ -8777,7 +8777,7 @@ input.custom-input {
   margin: auto;
 }
 
-.card .card-body div:nth-child(2) p {
+.card .card-body > div p {
   color: #747B85;
 }
 
