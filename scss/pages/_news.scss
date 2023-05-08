@@ -55,14 +55,14 @@ input.custom-input{
 .custom-card-container{
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(400px,2fr));
+    grid-template-columns: repeat(auto-fit, minmax(560px,2fr));
 }
 .custom-card-container:nth-child(1){
     margin-top: -220px;
 }
 .custom-card-container .card{
     border: none;
-    width: 420px;
+    width: 85%;
     margin: auto;
 }
 .custom-card-container span{
