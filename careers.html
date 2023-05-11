@@ -343,7 +343,7 @@
         </div>
       </div>
     </section>
-    <section class="carrers-wrapper success-story">
+    <section style="overflow: visible;" class="carrers-wrapper success-story carousel-border-bottom">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
@@ -360,11 +360,38 @@
           </div>
           <div class="col-lg-5 posRel">
             <div class="story-img">
-              <img src="assets/images/careers-story.png" alt="" class="img-fluid">
+              <img id="careerStoryMainImage" src="assets/images/careers-story.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-11 ms-auto  mb-5">
+            <div  id="success-carousel" >
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img1.jpg')" class="item col"><img src="./assets/images/success-stories-img1.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img2.jpg')" class="item col"><img src="./assets/images/success-stories-img2.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img3.jpg')" class="item col"><img src="./assets/images/success-stories-img3.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img4.jpg')" class="item col"><img src="./assets/images/success-stories-img4.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img5.jpg')" class="item col"><img src="./assets/images/success-stories-img5.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img6.jpg')" class="item col"><img src="./assets/images/success-stories-img6.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img7.jpg')" class="item col"><img src="./assets/images/success-stories-img7.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img8.jpg')" class="item col"><img src="./assets/images/success-stories-img8.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img9.jpg')" class="item col"><img src="./assets/images/success-stories-img9.jpg"></div>
+              <div onclick="changeSuccessStoriesImage('./assets/images/success-stories-img10.jpg')" class="item col"><img src="./assets/images/success-stories-img10.jpg"></div>
+          </div>
+        </div>
       </div>
+      <div class="row justify-content-end">
+        <div class="pagination-btn col-lg-3 d-flex justify-content-between">
+          <button class="slick-prev-btn slick-prev"></button>
+            <div>
+            <span id="currentImageCount">01</span>
+            <span class="slash"> / </span>
+            <span id="totalImageCount">20</span>
+            </div>
+          <button class="slick-next-btn slick-next"></button>
+        </div>
+      </div>
+    </div>
     </section>
     <section class="carrers-wrapper padding-tb">
       <div class="container">
@@ -376,37 +403,37 @@
         </div>
         <div class="benefits-container">
           <div class="row">
-            <div class="col-xxl-4">
+            <div class="col-xl-4">
               <div class="benefits-wrappers border">
                 <h3>2 Weeks minimum vacations</h3>
                 <p>Regular R&R is a must. No limit, but there is a minimum.</p>
               </div>
             </div>
-            <div class="col-xxl-4">
+            <div class="col-xl-4">
               <div class="benefits-wrappers border">
                 <h3>Top-Tier Healthcare</h3>
                 <p>MIS covers 100% of premium of you and your family.</p>
               </div>
             </div>
-            <div class="col-xxl-4">
+            <div class="col-xl-4">
               <div class="benefits-wrappers border">
                 <h3>Health and Wellness perks</h3>
                 <p>SAR 150/Month workout classes or meditation.</p>
               </div>
             </div>
-            <div class="col-xxl-4">
+            <div class="col-xl-4">
               <div class="benefits-wrappers border">
                 <h3>Commuter Benefits</h3>
                 <p>If working at the office is your thing, we've got you covered.</p>
               </div>
             </div>
-            <div class="col-xxl-4">
+            <div class="col-xl-4">
               <div class="benefits-wrappers border">
                 <h3>Weekly team Lunch</h3>
                 <p>New week, new cuisine, Lunch on us, every Wednesday.</p>
               </div>
             </div>
-            <div class="col-xxl-4">
+            <div class="col-xl-4">
               <div class="benefits-wrappers border">
                 <h3>Hybrid work policy</h3>
                 <p>WFH or WFO - both styles of work are available to employees.</p>

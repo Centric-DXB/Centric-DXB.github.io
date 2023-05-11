@@ -683,6 +683,71 @@ $('.careers-carousel').slick({
     ]
 });
 
+
+$('#success-carousel').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    dots: false,
+    arrows: true,
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //infinite: true,
+                //dots: true
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+    ],
+    prevArrow: $('.slick-prev-btn'),
+    nextArrow: $('.slick-next-btn')
+})
+
+var slider = $('#success-carousel');
+var currentSlide = slider.slick('slickCurrentSlide');
+var totalSlides = slider.slick('slickGetOption', 'slidesToShow');
+var currentSlideCount = $('#currentImageCount');
+var totalSlideCount = $('#totalImageCount');
+
+// Update the initial slide count
+currentSlideCount.text(currentSlide);
+totalSlideCount.text(totalSlides);
+
+// Attach event listeners to the previous and next buttons
+$('.slick-prev-btn, .slick-next-btn').on('click', function() {
+  currentSlide = slider.slick('slickCurrentSlide');
+  currentSlideCount.text(currentSlide);
+});
+
+
 // Your Future with us section
 $('.bullets-points').click(handingFutureSection);
 $('.future-images-wrapper img').click(handingFutureSection)
@@ -696,8 +761,8 @@ $('.position-wrapper a.course-accordion').click(function () {
     }
     else {
         $(this).addClass('minus')
-        $(element).css({height: 'auto'})
-        $(`.position-location .acc-desc`,element).css({overflow: 'unset', maxHeight: 'unset'})
+        $(element).css({maxHeight: '100%'})
+        $(`.position-location .acc-desc`,element).css({overflow: 'unset', maxHeight: '100%'})
     }
 })
 
@@ -733,3 +798,9 @@ function handingFutureSection() {
     $(".future-content-wrapper div.active").removeClass("active");
     $(`.future-content-wrapper div[data-dex=${elementIndex}]`).addClass('active')
 }
+
+function changeSuccessStoriesImage(url){
+    let careerStoryMainImage = document.querySelector('#careerStoryMainImage');
+
+    careerStoryMainImage.src  = url;
+}   
