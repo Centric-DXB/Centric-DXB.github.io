@@ -696,7 +696,7 @@ $('#success-carousel').slick({
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 //dots:true
             }
@@ -704,7 +704,7 @@ $('#success-carousel').slick({
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 //dots:true
             }
@@ -712,7 +712,7 @@ $('#success-carousel').slick({
         {
             breakpoint: 768,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 //infinite: true,
                 //dots: true
@@ -721,7 +721,7 @@ $('#success-carousel').slick({
         {
             breakpoint: 550,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 //dots:true
             }
@@ -737,6 +737,7 @@ var totalSlides = slider.slick('slickGetOption', 'slidesToShow');
 var currentSlideCount = $('#currentImageCount');
 var totalSlideCount = $('#totalImageCount');
 
+console.log(totalSlides);
 // Update the initial slide count
 currentSlideCount.text(currentSlide);
 totalSlideCount.text(totalSlides);

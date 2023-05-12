@@ -8058,8 +8058,8 @@ body {
   min-height: 950px;
   overflow: hidden;
 }
-.success-story .container {
-  margin-top: 61px;
+.success-story .row:nth-child(1) {
+  padding-top: 61px;
 }
 .success-story .story-wrapper {
   background: url(../images/careers-quote.png) no-repeat right 25px;
@@ -8535,7 +8535,7 @@ body {
 }
 .success-story .slick-slide {
   width: 100% !important;
-  margin-right: 30px;
+  margin-right: 15px;
   box-sizing: border-box !important;
 }
 .success-story .slick-slider {
@@ -8835,9 +8835,10 @@ input.custom-input {
 }
 
 .custom-card-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
 }
 
 .custom-card-container:nth-child(1) {
@@ -8845,11 +8846,24 @@ input.custom-input {
 }
 
 .custom-card-container .card {
+  flex-basis: 45%;
   border: none;
   width: 85%;
-  margin: auto;
+  margin: 0 auto;
+  max-height: unset;
+  animation: cardAnimation 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
+@keyframes cardAnimation {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 100%;
+    opacity: 1;
+  }
+}
 .card .card-body > div p {
   color: #747B85;
 }
@@ -8884,21 +8898,23 @@ input.custom-input {
   line-height: 50px;
   text-decoration: none;
 }
+.loadmore-button:hover {
+  color: rgba(255, 255, 255, 0.8274509804);
+}
 
 .join-conversation {
-  background-color: #81C357;
   padding: 2rem;
   text-align: center;
 }
 
 .join-conversation h4 {
-  color: #fff;
+  color: #81C357;
+  font-weight: 300;
 }
 
 .join-conversation h3 {
   font-weight: bolder;
-  color: #122D6E;
-  mix-blend-mode: color-burn;
+  color: #000;
 }
 
 .img-section {
@@ -8912,6 +8928,11 @@ input.custom-input {
   width: 150px;
 }
 
+@media only screen and (max-width: 650px) {
+  .custom-card-container .card {
+    flex-basis: 90%;
+  }
+}
 @font-face {
   font-family: "Droid Arabic Kufi";
   src: url("../fonts/DroidArabicKufi.eot");
