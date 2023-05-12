@@ -800,8 +800,16 @@ function handingFutureSection() {
     $(`.future-content-wrapper div[data-dex=${elementIndex}]`).addClass('active')
 }
 
-function changeSuccessStoriesImage(url){
+function changeSuccessStoriesSection(imageUrl, title, description, name, designation){
     let careerStoryMainImage = document.querySelector('#careerStoryMainImage');
+    let careerStoryTitle = document.querySelector('#careerStoryTitle');
+    let careerStoryDescription = document.querySelector('#careerStoryDescription');
+    let careerStoryPersonName = document.querySelector('#careerStoryPersonName');
+    let careerStoryPersonDesignation = document.querySelector('#careerStoryPersonDesignation');
 
-    careerStoryMainImage.src  = url;
+    careerStoryTitle.innerHTML = title;
+    careerStoryDescription.innerHTML = description;
+    careerStoryPersonName.innerHTML = name;
+    careerStoryPersonDesignation.innerHTML = designation;
+    careerStoryMainImage.src  = imageUrl;
 }   
