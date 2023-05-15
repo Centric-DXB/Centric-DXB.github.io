@@ -813,3 +813,6 @@ function changeSuccessStoriesSection(imageUrl, title, description, name, designa
     careerStoryPersonDesignation.innerHTML = designation;
     careerStoryMainImage.src  = imageUrl;
 }   
+
+
+changeSuccessStoriesSection('./assets/images/careers-story.png', 'Our Success Stories', "Be your true self and dont be afraid to apply to such a great opportunity what I got for myself. As a digital assets, you will make world class work with a friendly and talented team. At digital assets you will make a team", 'Muhammad ALi khan', 'Senior Software Data Scientist');
