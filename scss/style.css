@@ -8932,6 +8932,10 @@ input.custom-input {
   width: 150px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 650px) {
   .custom-card-container .card {
     flex-basis: 90%;

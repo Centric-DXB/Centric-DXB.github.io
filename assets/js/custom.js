@@ -811,4 +811,3 @@ function changeSuccessStoriesSection(index){
     });
     storryWrapper.classList.add('active');
 }   
-
