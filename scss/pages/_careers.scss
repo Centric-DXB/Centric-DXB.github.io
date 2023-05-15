@@ -226,7 +226,7 @@ body{
 .success-story {
   min-height: 950px;
   overflow: hidden;
-  .row:nth-child(1){
+  .row{
     padding-top: 61px;
   }
   .story-wrapper {
@@ -783,7 +783,10 @@ body{
   color: #B9C0D1;
 }
 
-.story-wrapper:not(.active){
+.story-section-wrapper{
   display: none;
 }
 
+.story-section-wrapper.active{
+  display: flex;
+}

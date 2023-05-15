@@ -8058,7 +8058,7 @@ body {
   min-height: 950px;
   overflow: hidden;
 }
-.success-story .row:nth-child(1) {
+.success-story .row {
   padding-top: 61px;
 }
 .success-story .story-wrapper {
@@ -8556,8 +8556,12 @@ body {
   color: #B9C0D1;
 }
 
-.story-wrapper:not(.active) {
+.story-section-wrapper {
   display: none;
+}
+
+.story-section-wrapper.active {
+  display: flex;
 }
 
 .contactus-wrapper {

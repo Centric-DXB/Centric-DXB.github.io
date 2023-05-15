@@ -801,7 +801,7 @@ function handingFutureSection() {
 }
 
 function changeSuccessStoriesSection(index){
-    let storyWrappers = document.querySelectorAll('.story-wrapper');
+    let storyWrappers = document.querySelectorAll('.story-section-wrapper');
     let storryWrapper = document.querySelector(`#storyWrapper${index}`);
     storyWrappers.forEach((wrapper)=>{
         if(wrapper.classList.contains('active')){
