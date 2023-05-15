@@ -8556,6 +8556,10 @@ body {
   color: #B9C0D1;
 }
 
+.story-wrapper:not(.active) {
+  display: none;
+}
+
 .contactus-wrapper {
   display: block;
   width: 100%;

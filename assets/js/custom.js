@@ -800,19 +800,15 @@ function handingFutureSection() {
     $(`.future-content-wrapper div[data-dex=${elementIndex}]`).addClass('active')
 }
 
-function changeSuccessStoriesSection(imageUrl, title, description, name, designation){
-    let careerStoryMainImage = document.querySelector('#careerStoryMainImage');
-    let careerStoryTitle = document.querySelector('#careerStoryTitle');
-    let careerStoryDescription = document.querySelector('#careerStoryDescription');
-    let careerStoryPersonName = document.querySelector('#careerStoryPersonName');
-    let careerStoryPersonDesignation = document.querySelector('#careerStoryPersonDesignation');
-
-    careerStoryTitle.innerHTML = title;
-    careerStoryDescription.innerHTML = description;
-    careerStoryPersonName.innerHTML = name;
-    careerStoryPersonDesignation.innerHTML = designation;
-    careerStoryMainImage.src  = imageUrl;
+function changeSuccessStoriesSection(index){
+    let storyWrappers = document.querySelectorAll('.story-wrapper');
+    let storryWrapper = document.querySelector(`#storyWrapper${index}`);
+    storyWrappers.forEach((wrapper)=>{
+        if(wrapper.classList.contains('active')){
+            wrapper.classList.remove('active');
+            return;
+        }
+    });
+    storryWrapper.classList.add('active');
 }   
 
-
-changeSuccessStoriesSection('./assets/images/careers-story.png', 'Our Success Stories', "Be your true self and dont be afraid to apply to such a great opportunity what I got for myself. As a digital assets, you will make world class work with a friendly and talented team. At digital assets you will make a team", 'Muhammad ALi khan', 'Senior Software Data Scientist');
