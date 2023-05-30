@@ -761,9 +761,10 @@ body{
 }
 
 .success-story button{
-  position: static !important;
-  width: auto !important;
-  height: auto !important;
+  position: relative;
+  width: auto ;
+  height: auto ;
+  top: 10px;
 }
 
 .success-story button::before{

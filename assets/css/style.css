@@ -1375,7 +1375,29 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   float: left;
 }
 .arabic .careerMainPage .success-story .story-wrapper {
-  background: url("../images/careers-quote.png") no-repeat left 100px;
+  background: url("../images/careers-quote-arabic.png") no-repeat left 25px;
+}
+@media (max-width: 992px) {
+  .arabic .careerMainPage .success-story .story-wrapper {
+    background-size: 90px;
+    padding: 100px 0 0 0;
+  }
+}
+.arabic .careerMainPage .success-story button {
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 10px;
+}
+.arabic .careerMainPage .success-story .slick-prev {
+  left: -235px;
+}
+.arabic .careerMainPage .success-story .slick-next {
+  right: -235px;
+}
+.arabic .careerMainPage .success-story .slick-slider {
+  margin-left: -400px;
+  margin-right: 0;
 }
 .arabic .jobposition-wrapper.arabic-text,
 .arabic .home-about-us .about-us.arabic-text,
@@ -8541,9 +8563,10 @@ body {
 }
 
 .success-story button {
-  position: static !important;
-  width: auto !important;
-  height: auto !important;
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 10px;
 }
 
 .success-story button::before {
