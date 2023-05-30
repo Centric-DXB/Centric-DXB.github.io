@@ -5846,6 +5846,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     margin: 70px 0 0 0;
   }
 }
+@media (max-width: 550px) {
+  .herobanner .herobanner-content .herobanner-topheading {
+    margin: 50px 0 0 0;
+  }
+}
 .herobanner .herobanner-content .herobanner-topheading h2 {
   font-size: 20px;
   margin-bottom: 50px;
@@ -5870,7 +5875,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 600px) {
   .herobanner .herobanner-content .herobanner-topheading h1 {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 
@@ -7869,7 +7874,7 @@ body {
   width: 30px;
   height: 30px;
   background: url("../images/logowhitecircle.svg") no-repeat 0 0;
-  left: 60px;
+  left: 40px;
   top: 6px;
 }
 .carrers-wrapper h2::after {
@@ -7878,7 +7883,7 @@ body {
   width: 50px;
   height: 4px;
   background: var(--light-green);
-  left: 0;
+  left: -20px;
   top: 19px;
 }
 .carrers-wrapper p {
@@ -8083,9 +8088,18 @@ body {
 .success-story .posRel .story-img {
   position: absolute;
   left: 0;
+  top: -61px;
+  width: 840px;
+}
+@media (max-width: 992px) {
+  .success-story .posRel .story-img {
+    top: 0;
+    position: relative;
+    width: 100%;
+  }
 }
 .success-story .posRel .story-img .img-fluid {
-  max-width: 580px;
+  max-width: 100%;
 }
 
 .careercarousel-wrapper {
@@ -8129,6 +8143,10 @@ body {
 
 .initiatives {
   min-height: 800px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  position: relative;
 }
 .initiatives .initiative-leftcontent {
   padding: 200px 0 0 0;
@@ -8146,6 +8164,12 @@ body {
   padding-top: 50px;
   position: relative;
   color: #122D6E;
+  font-size: 28px;
+}
+@media (max-width: 1300px) {
+  .careers-conatiner h3 {
+    font-size: 26px;
+  }
 }
 .careers-conatiner h3::before {
   position: absolute;
@@ -8156,6 +8180,15 @@ body {
   left: 0;
   background: rgba(116, 123, 133, 0.2);
   border-radius: 10px;
+}
+.careers-conatiner p {
+  font-size: 20px;
+  color: #747B85;
+}
+@media (max-width: 1300px) {
+  .careers-conatiner p {
+    font-size: 18px;
+  }
 }
 
 .applyform-conatiner {
@@ -8442,9 +8475,9 @@ body {
     bottom: 80px;
   }
   .careerMainPage .success-story .story-wrapper {
-    background: url("../images/careers-quote.png") no-repeat right 170px;
+    background: url("../images/careers-quote.png") no-repeat right 0px;
     background-size: 90px;
-    padding: 220px 0px 0 0;
+    padding: 50px 0px 0 0;
   }
   .careerMainPage .success-story .story-wrapper .story-title {
     margin: 0px 0 0 0px;
@@ -8490,6 +8523,11 @@ body {
   }
   .careerMainPage .cvsupport p {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .careerMainPage .success-story .story-wrapper {
+    padding: 70px 0 0 0;
   }
 }
 .pagination-btn {
@@ -8539,7 +8577,14 @@ body {
   box-sizing: border-box !important;
 }
 .success-story .slick-slider {
-  margin-right: -70px;
+  margin-right: -300px;
+  margin-top: 50px;
+}
+@media (max-width: 992px) {
+  .success-story .slick-slider {
+    margin-right: 0;
+    margin-top: 0;
+  }
 }
 
 .pagination-btn {
