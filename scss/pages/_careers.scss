@@ -21,7 +21,7 @@ body{
       width: 30px;
       height: 30px;
       background: url('../images/logowhitecircle.svg') no-repeat 0 0;
-      left: 60px;
+      left: 40px;
       top: 6px;
     }
 
@@ -31,7 +31,7 @@ body{
       width: 50px;
       height: 4px;
       background: var(--light-green);
-      left: 0;
+      left: -20px;
       top: 19px;
     }
   }
@@ -250,8 +250,16 @@ body{
     .story-img {
       position: absolute;
       left: 0;
+      top: -61px;
+      width: 840px;
+      @media (max-width: 992px) {
+        top: 0;
+        position: relative;
+        width: 100%;
+      }
       .img-fluid {
-        max-width: 580px;
+        //max-width: 580px;
+        max-width: 100%;
       }
     }
   }
@@ -305,6 +313,10 @@ body{
 }
 .initiatives {
   min-height: 800px;
+  border-top: 1px solid rgba($color: #fff, $alpha: .2);
+  border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
+  overflow: hidden;
+  position: relative;
   .initiative-leftcontent {
     padding: 200px 0 0 0;
   }
@@ -320,6 +332,10 @@ body{
     padding-top: 50px;
     position: relative;
     color: $dark-blue-color;
+    font-size: 28px;
+    @media (max-width: 1300px) {
+      font-size: 26px;
+    }
     &::before {
       position: absolute;
       content: "";
@@ -329,6 +345,13 @@ body{
       left: 0;
       background: rgba($color: $grey, $alpha: 0.2);
       border-radius: 10px;
+    }
+  }
+  p{
+    font-size: 20px;
+    color: $grey;
+    @media (max-width: 1300px) {
+      font-size: 18px;
     }
   }
 }
@@ -657,9 +680,9 @@ body{
     }
     .success-story {
       .story-wrapper {
-        background: url('../images/careers-quote.png') no-repeat right 170px;
+        background: url('../images/careers-quote.png') no-repeat right 0px;
         background-size: 90px;
-        padding: 220px 0px 0 0;
+        padding: 50px 0px 0 0;
         .story-title {
           margin: 0px 0 0 0px;
         }
@@ -718,6 +741,15 @@ body{
     }
   }
 }
+@media screen and (max-width: 450px) {
+  .careerMainPage{
+    .success-story{
+      .story-wrapper{
+        padding: 70px 0 0 0;
+      }
+    }
+  }  
+}
 
 .pagination-btn {
     position: relative;
@@ -729,9 +761,10 @@ body{
 }
 
 .success-story button{
-  position: static !important;
-  width: auto !important;
-  height: auto !important;
+  position: relative;
+  width: auto ;
+  height: auto ;
+  top: 10px;
 }
 
 .success-story button::before{
@@ -767,7 +800,12 @@ body{
     box-sizing: border-box !important;
   }
   .slick-slider {
-    margin-right: -70px;
+    margin-right: -300px;
+    margin-top: 50px;
+    @media (max-width: 992px) {
+      margin-right: 0;
+      margin-top: 0;
+    }
   }
 }
 
