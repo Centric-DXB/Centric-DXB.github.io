@@ -683,6 +683,9 @@ $('.careers-carousel').slick({
     ]
 });
 
+$('.readmore-btn').on('click', function(){
+    $('.message-content').toggleClass('is-active');
+})
 
 $('#success-carousel').slick({
     slidesToShow: 5,

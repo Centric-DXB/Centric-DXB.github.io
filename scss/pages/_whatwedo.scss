@@ -506,7 +506,7 @@
     padding: 100px 0;
     background: var(--dark-blue-color);
     @media (max-width: 992px) {
-        min-height: 1800px;
+        min-height: 1350px;
     }
     @media (max-width: 768px) {
         min-height: 1650px;
@@ -707,6 +707,9 @@
     .tech--accordion-wrapper{
         display: block;
         padding-left: 100px;
+        @media (max-width: 575px) {
+            padding-left: 0;
+        }
         .accordion {
             margin: 1rem 0;
             padding: 0;
@@ -741,6 +744,9 @@
                     font-weight: 900;
                     @media (max-width: 1400px) {
                         font-size: 33px;
+                    }
+                    @media (max-width: 575px) {
+                        font-size: 26px;
                     }
                     
                     // Chevron
