@@ -942,7 +942,7 @@
     display: block;
     width: 100%;
     background: url(../images/homeaboutbackground.png) no-repeat center center;
-    padding: 150px 0 100px;
+    padding: 150px 0 60px;
     //min-height: 1130px;
     background-size: cover ;
     @media (min-width:1300px) and (max-width: 1400px) {
@@ -1565,6 +1565,7 @@
     width: 100%;
     background: var(--dark-purple) url(../images/businessglobe.png) no-repeat right top;
     padding: 100px 0;
+    margin-top: -6px;
     h2{
         font-size: 33px;
         font-weight: 500;

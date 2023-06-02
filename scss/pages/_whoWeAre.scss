@@ -425,6 +425,9 @@
             max-width: 50%;
             margin: 0 auto;
             transform: skewX(10deg);
+            @media (max-width: 1024px) {
+                transform: skewX(0deg);
+            }
 
             h1 {
                 font-size: 80px;
@@ -461,6 +464,9 @@
         color: var(--white);
         padding: 20px;
         margin-bottom: 20px;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
 
         .card-header {
             padding: 0;
@@ -469,7 +475,9 @@
             border-radius: 10px;
             display: inline-block;
             background: var(--white);
-
+            @media (max-width: 460px) {
+                min-width: auto;
+            }
             img {
                 //height: 100%;
             }
@@ -478,6 +486,9 @@
         .card-body {
             padding: 1rem 4rem;
             position: relative;
+            @media (max-width: 992px) {
+                padding: 1rem 0;
+            }
             &::before {
                 position: absolute;
                 content: '';
@@ -487,6 +498,9 @@
                 left: 30px;
                 top: 50%;
                 transform: translate(-50%, -50%);
+                @media (max-width: 992px) {
+                    display: none;
+                }
             }
             p {
                 font-size: 20px;

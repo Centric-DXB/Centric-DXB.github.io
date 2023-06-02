@@ -2021,6 +2021,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .our__solutions .content p {
   margin-bottom: 60px;
   font-family: var(--arabic-font);
+  padding-left: 0;
+  padding-right: 110px;
+}
+@media (max-width: 992px) {
+  .arabic .our__solutions .content p {
+    max-width: 100%;
+  }
 }
 .arabic .wwa__chairmen__section #myTabContent .seo__img {
   left: auto;
@@ -3139,7 +3146,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   display: block;
   width: 100%;
   background: url(../images/homeaboutbackground.png) no-repeat center center;
-  padding: 150px 0 100px;
+  padding: 150px 0 60px;
   background-size: cover;
 }
 @media (min-width: 1300px) and (max-width: 1400px) {
@@ -3867,6 +3874,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   width: 100%;
   background: var(--dark-purple) url(../images/businessglobe.png) no-repeat right top;
   padding: 100px 0;
+  margin-top: -6px;
 }
 .servingbusiness--wrapper h2 {
   font-size: 33px;
@@ -5437,6 +5445,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .our__solutions .content__img {
   margin-bottom: 80px;
 }
+@media (max-width: 992px) {
+  .our__solutions .content__img {
+    text-align: center;
+  }
+}
 
 .top__section {
   background: var(--dark-purple);
@@ -5457,7 +5470,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 992px) {
   .top__section::before {
-    height: 50%;
+    height: 61%;
     width: 100%;
     bottom: 0;
     top: unset;
@@ -5483,8 +5496,13 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 992px) {
   .top__section::after {
-    top: 48%;
+    top: 37%;
     transform: rotate(90deg);
+  }
+}
+@media (max-width: 768px) {
+  .top__section::after {
+    top: 50%;
   }
 }
 .top__section .nav {
@@ -5706,7 +5724,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media screen and (max-width: 840.99px) {
   .top__section::before {
     width: 100%;
-    height: 60vh;
+    height: 70%;
     top: auto;
     left: 0;
     right: 0;
@@ -5731,8 +5749,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   .top__section .content h2 {
     font-size: 24px;
   }
+  .top__section::before {
+    height: 57%;
+  }
   .top__section .nav {
-    width: 350px;
+    width: 100%;
     left: 0;
   }
   .top__section .tab-content p {
@@ -5783,7 +5804,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     height: auto;
   }
   .top__section::before {
-    height: 68vh;
+    height: 46%;
     width: 100%;
     top: auto;
     right: 0;
@@ -5806,7 +5827,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     padding: 80px 0 !important;
   }
   .top__section::before {
-    height: 80vh;
+    height: 50%;
     width: 100%;
     top: auto;
     right: 0;
@@ -5816,7 +5837,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media screen and (max-width: 390.99px) {
   .top__section::before {
-    height: 90vh;
+    height: 42%;
     width: 100%;
     top: auto;
     right: 0;
@@ -6409,6 +6430,21 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding: 100px 0;
   background: var(--dark-blue-color);
 }
+@media (max-width: 992px) {
+  .services-wrapper {
+    min-height: 1800px;
+  }
+}
+@media (max-width: 768px) {
+  .services-wrapper {
+    min-height: 1650px;
+  }
+}
+@media (max-width: 575px) {
+  .services-wrapper {
+    min-height: 1630px;
+  }
+}
 .services-wrapper h2 {
   font-size: 33px;
   font-weight: 500;
@@ -6501,7 +6537,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media (max-width: 1200px) {
   .services-wrapper .services--items-wrapper {
     width: 100%;
-    height: 300px;
+    height: 450px;
     margin-left: 0;
   }
 }
@@ -7216,6 +7252,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin: 0 auto;
   transform: skewX(10deg);
 }
+@media (max-width: 1024px) {
+  .split__section .container-fluid .content {
+    transform: skewX(0deg);
+  }
+}
 .split__section .container-fluid .content h1 {
   font-size: 80px;
   -webkit-text-fill-color: transparent;
@@ -7244,6 +7285,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding: 20px;
   margin-bottom: 20px;
 }
+@media (max-width: 992px) {
+  .section__affiliate .affilate__card {
+    flex-direction: column;
+  }
+}
 .section__affiliate .affilate__card .card-header {
   padding: 0;
   min-width: 400px;
@@ -7252,9 +7298,19 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   display: inline-block;
   background: var(--white);
 }
+@media (max-width: 460px) {
+  .section__affiliate .affilate__card .card-header {
+    min-width: auto;
+  }
+}
 .section__affiliate .affilate__card .card-body {
   padding: 1rem 4rem;
   position: relative;
+}
+@media (max-width: 992px) {
+  .section__affiliate .affilate__card .card-body {
+    padding: 1rem 0;
+  }
 }
 .section__affiliate .affilate__card .card-body::before {
   position: absolute;
@@ -7265,6 +7321,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 30px;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 992px) {
+  .section__affiliate .affilate__card .card-body::before {
+    display: none;
+  }
 }
 .section__affiliate .affilate__card .card-body p {
   font-size: 20px;
@@ -8374,13 +8435,12 @@ body {
   display: block;
 }
 .position-wrapper .accordionbtn .course-accordion.minus::after {
-  content: "";
+  content: "-";
   color: #81C357;
   font-weight: bold;
   float: right;
   margin-left: 5px;
   font-size: 50px;
-  background-color: #81C357;
   height: 4px;
   width: 25px;
   top: 50%;
@@ -8520,7 +8580,8 @@ body {
     padding: 50px 0 50px 0px;
     flex-direction: column;
     position: relative;
-    height: 240px;
+    min-height: 270px;
+    background: #fff;
   }
   .careerMainPage .jobposition-wrapper .position-wrapper .position-name {
     width: 85%;

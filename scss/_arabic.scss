@@ -1079,6 +1079,11 @@
        p {
         margin-bottom: 60px;
         font-family: var(--arabic-font);
+        padding-left: 0;
+        padding-right: 110px;
+        @media (max-width: 992px) {
+          max-width: 100%;
+        }
        }
     } 
   } 
