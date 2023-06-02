@@ -32,6 +32,11 @@ input.custom-input{
     top: 57%;
     left: 20px;
 }
+.news-update-section{
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
 .news-update-section label{
     font-size: 14px;
     font-weight: 400;

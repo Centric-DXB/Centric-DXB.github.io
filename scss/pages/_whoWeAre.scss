@@ -168,6 +168,15 @@
                 font-weight: 400;
             }
         }
+        .message-content{
+            display: block;
+            height: 33%;
+            overflow: hidden;
+            transition: all .3s linear;
+            &.is-active{
+                height: 60%;
+            }
+        }
 
         p {
             font-size: 20px;
