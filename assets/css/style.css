@@ -4780,6 +4780,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .wrapper article section .solutions--content .three-two-column img {
   position: absolute;
+  width: 100%;
 }
 .wrapper article section .solutions--content .three-two-column.two-column {
   width: 45.5%;
