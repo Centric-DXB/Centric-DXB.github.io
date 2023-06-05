@@ -137,6 +137,10 @@
             margin-bottom: 20px;
             max-width: 85%;
             width: 100%;
+            @media (max-width: 992px) {
+                padding-left: 0;
+                max-width: 100%;
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -169,7 +173,7 @@
         right: 0;
         left: auto;
         @media (max-width: 992px) {
-            height: 48%;
+            height: 45%;
             width: 100%;
             bottom: 0;
             top: unset;
@@ -194,11 +198,14 @@
         color: #fff;
         font-size: 24px;
         @media (max-width: 992px) {
-            top: 50%;
+            top: 53%;
             transform: rotate(90deg);
         }
         @media (max-width: 768px) {
-            top: 50%;
+            top: 41%;
+        }
+        @media (max-width: 767px) {
+            top: 54%;
         }
     }
 
@@ -462,7 +469,7 @@
         &::before {
             width: 100%;
             //height: 60vh;
-            height: 60%;
+            height: 57%;
             top: auto;
             left: 0;
             right:0;
@@ -508,7 +515,7 @@
         }
         &::before {
             // display: none;
-            height: 57%;
+            height: 67%;
         }
 
         .nav {
@@ -523,6 +530,16 @@
         }
     }
 
+}
+
+@media screen and (max-width: 767px){
+    .top__section {
+
+        &::before {
+            // display: none;
+            height: 54%;
+        }
+    }
 }
 
 
@@ -606,7 +623,7 @@
 
             &::before {
                 //height: 68vh;
-                height: 46%;
+                height: 42%;
                 width: 100%;
                 top: auto;
                 right: 0;
@@ -652,7 +669,7 @@
     .top__section {
 
         &::before {
-            height: 46%;
+            height: 47%;
             width: 100%;
             top: auto;
             right: 0;
@@ -668,7 +685,7 @@
     .top__section {
 
         &::before {
-            height: 50%;
+            height: 39%;
             width: 100%;
             top: auto;
             right: 0;

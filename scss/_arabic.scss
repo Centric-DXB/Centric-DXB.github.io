@@ -726,6 +726,10 @@
     p{
       padding-left: 300px;
       padding-right: 110px;
+      @media (max-width: 992px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
   }
   .technologies-wrapper{
@@ -852,16 +856,36 @@
         &.slick-prev{
           left: 5%;
           right: unset;
+          @media (max-width: 767px) {
+            left: 20%;
+          }
+          @media (max-width: 620px) {
+            left: 50%;
+          }
         }
         &.slick-next{
-          left: 20%;
+          left: 25%;
           right: unset;
+          @media (max-width: 992px) {
+            left: 35%;
+          }
+          @media (max-width: 767px) {
+            left: 80%;
+          }
         }
       }
     }
     .pagination{
       right: unset;
       left: 9%;
+      @media (max-width: 992px) {
+        left: 14%;
+      }
+      @media (max-width: 767px) {
+        left: 0;
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
   .services-wrapper{
@@ -1083,6 +1107,7 @@
         padding-right: 110px;
         @media (max-width: 992px) {
           max-width: 100%;
+          padding-right: 0;
         }
        }
     } 
@@ -1138,6 +1163,15 @@
     .our__solutions {
       .content {
         padding-right: 110px;
+      } 
+    } 
+  }
+}
+@media screen and (max-width: 992px) {
+  .arabic {
+    .our__solutions {
+      .content {
+        padding-right: 0;
       } 
     } 
   }
