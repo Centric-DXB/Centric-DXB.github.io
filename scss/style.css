@@ -5602,6 +5602,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .top__section .tab-content {
   position: relative;
 }
+@media (max-width: 992px) {
+  .top__section .tab-content .tab-pane {
+    padding: 8rem 3rem 0 3rem !important;
+  }
+}
 .top__section .tab-content .countered {
   font-size: 80px;
   font-weight: bold;
@@ -6503,7 +6508,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 992px) {
   .services-wrapper {
-    min-height: 1280px;
+    min-height: 1800px;
   }
 }
 @media (max-width: 768px) {
@@ -6654,6 +6659,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   display: block;
   margin-top: 50px;
   padding-left: 110px;
+}
+@media (max-width: 992px) {
+  .services-wrapper .service--explore-btn {
+    padding-left: 0;
+  }
 }
 .services-wrapper .service--explore-btn a {
   display: inline-block;
