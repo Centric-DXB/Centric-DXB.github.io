@@ -294,13 +294,23 @@
             height: 1px;
             bottom: -90px;
             background: rgba($color: #fff, $alpha: .2);
+            @media (max-width: 550px) {
+                display: none;
+            }
         }
         &::before{
-            width: 81%;
+            width: 76%;
             left: 0;
-            @media (max-width: 1200px) {
-                width: 75%;
+            @media (max-width: 1400px) {
+                width: 70%;
             }
+            @media (max-width: 1200px) {
+                width: 65%;
+            }
+            @media (max-width: 992px) {
+                width: 10%;
+            }
+            
         }
         &::after{
             right: 0;
@@ -316,18 +326,25 @@
             
         }
         .slick-prev {
-            right: 18%;
+            right: unset;
             top: unset;
-            left: auto;
+            left: 75%;
             bottom: -160px;
             @media (max-width: 1800px) {
-                right: 18%;
+                left: 75%;
+            }
+            @media (max-width: 1600px) {
+                left: 75%;
+            }
+            @media (max-width: 1400px) {
+                left: 70%;
             }
             @media (max-width: 1200px) {
-                right: 21%;
+                left: 65%;
             }
             @media (max-width: 992px) {
-                right: 23%;
+                right: unset;
+                left: 70px;
             }
             
         }
@@ -356,6 +373,25 @@
             opacity: 1;
             //color: var(--light-parrot-green);
         }
+        .slick-dots{
+            bottom: -60px;
+            li{
+                button{
+                    &::before{
+                        font-size: 20px;
+                        color: #fff;
+                        opacity: 1;
+                    }
+                }
+                &.slick-active{
+                    button{
+                        &::before{
+                            color: var(--light-green);
+                        }
+                    }
+                }
+            }
+        }
     }
     .pagination{
         color: var(--white);
@@ -364,7 +400,25 @@
         justify-content: flex-end;
         position: relative;
         top: 70px;
-        right: 240px;
+        left: 0;
         font-weight: 900;
+        width: 85%;
+        @media (max-width: 1800px) {
+            width: 86%;
+        }
+        @media (max-width: 1600px) {
+            width: 86%;
+        }
+        @media (max-width: 1400px) {
+            width: 84%;
+        }
+        @media (max-width: 1200px) {
+            width: 82%;
+        }
+        @media (max-width: 992px) {
+            right: 0;
+            width: 100%;
+            justify-content: center;
+        }
     }
 }
