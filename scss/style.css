@@ -210,6 +210,23 @@ header .main-menu ul li {
 header .main-menu ul li.arabic-text {
   display: none;
 }
+header .main-menu ul li.sub-menu {
+  padding: 0 25px 0 15px;
+}
+header .main-menu ul li.sub-menu:hover .downarrow-icon::before {
+  color: var(--slider-active-green);
+  transition: all 0.2s linear;
+}
+header .main-menu ul li.sub-menu .downarrow-icon::before {
+  position: absolute;
+  content: "\f107";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 20px;
+}
 @media (min-width: 992px) and (max-width: 1100px) {
   header .main-menu ul li {
     padding: 0 10px;
@@ -230,6 +247,14 @@ header .main-menu ul li.arabic-text {
 header .main-menu ul li a {
   color: var(--white);
   text-decoration: none;
+  line-height: 40px;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+header .main-menu ul li a:hover {
+  color: var(--slider-active-green);
+  border-bottom: 3px solid var(--slider-active-green);
+  transition: all 0.3s linear;
 }
 header .main-menu ul li a svg {
   margin-left: 5px;
@@ -1736,10 +1761,20 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 0;
 }
 .arabic .services--list-wrapper .slick-carousel::before {
-  width: 10%;
+  width: 8%;
 }
 .arabic .services--list-wrapper .slick-carousel::after {
-  width: 80%;
+  width: 76%;
+}
+@media (max-width: 1400px) {
+  .arabic .services--list-wrapper .slick-carousel::after {
+    width: 70%;
+  }
+}
+@media (max-width: 992px) {
+  .arabic .services--list-wrapper .slick-carousel::after {
+    width: 10%;
+  }
 }
 .arabic .services--list-wrapper .slick-carousel .slick-prev {
   right: unset;
@@ -1747,7 +1782,58 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .services--list-wrapper .slick-carousel .slick-next {
   right: unset;
-  left: 18%;
+  left: 21%;
+}
+@media (max-width: 1800px) {
+  .arabic .services--list-wrapper .slick-carousel .slick-next {
+    left: 23%;
+  }
+}
+@media (max-width: 1600px) {
+  .arabic .services--list-wrapper .slick-carousel .slick-next {
+    left: 24%;
+  }
+}
+@media (max-width: 1400px) {
+  .arabic .services--list-wrapper .slick-carousel .slick-next {
+    left: 26%;
+  }
+}
+@media (max-width: 1200px) {
+  .arabic .services--list-wrapper .slick-carousel .slick-next {
+    left: 28%;
+  }
+}
+@media (max-width: 992px) {
+  .arabic .services--list-wrapper .slick-carousel .slick-next {
+    left: unset;
+    right: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .arabic .services--list-wrapper .slick-carousel .slick-next {
+    left: unset;
+    right: 50px;
+  }
+}
+.arabic .services--list-wrapper .pagination {
+  left: 0;
+  width: 85%;
+}
+@media (max-width: 1800px) {
+  .arabic .services--list-wrapper .pagination {
+    width: 83%;
+  }
+}
+@media (max-width: 1400px) {
+  .arabic .services--list-wrapper .pagination {
+    width: 82%;
+  }
+}
+@media (max-width: 992px) {
+  .arabic .services--list-wrapper .pagination {
+    width: 100%;
+  }
 }
 .arabic .location-map-wrapper .location-heading p {
   padding-left: 510px;
@@ -1835,12 +1921,14 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 767px) {
   .arabic .our__solutions .industries__cardSLider button.slick-prev {
-    left: 20%;
+    left: 10%;
+    margin-left: 0;
   }
 }
 @media (max-width: 620px) {
   .arabic .our__solutions .industries__cardSLider button.slick-prev {
-    left: 50%;
+    left: 20%;
+    margin-left: 0;
   }
 }
 .arabic .our__solutions .industries__cardSLider button.slick-next {
@@ -1854,12 +1942,19 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 767px) {
   .arabic .our__solutions .industries__cardSLider button.slick-next {
-    left: 80%;
+    left: unset;
+    right: 0;
+  }
+}
+@media (max-width: 620px) {
+  .arabic .our__solutions .industries__cardSLider button.slick-next {
+    left: unset;
+    right: 35%;
   }
 }
 .arabic .our__solutions .pagination {
   right: unset;
-  left: 9%;
+  left: 12%;
 }
 @media (max-width: 992px) {
   .arabic .our__solutions .pagination {
@@ -5911,7 +6006,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     bottom: 0;
   }
 }
-@media screen and (max-width: 390.99px) {
+@media screen and (max-width: 383px) {
   .top__section::before {
     height: 39%;
     width: 100%;

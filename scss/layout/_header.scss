@@ -163,6 +163,29 @@ header {
         &.arabic-text {
           display: none;
         }
+        &.sub-menu{
+          padding: 0 25px 0 15px;
+          &:hover{
+            .downarrow-icon{
+              &::before{
+                color: var(--slider-active-green);
+                transition: all .2s linear;
+              }
+            }  
+          }
+          .downarrow-icon{
+            &::before{
+              position: absolute;
+              content: '\f107';
+              font-weight: 900;
+              font-family: "Font Awesome 5 Free";
+              top: 0;
+              right: 0;
+              color: #fff;
+              font-size: 20px;
+            }
+          }
+       }
         @media (min-width: 992px) and (max-width: 1100px) {
           padding: 0 10px;
           font-size: 11px;
@@ -177,6 +200,14 @@ header {
         a {
           color: var(--white);
           text-decoration: none;
+          line-height: 40px;
+          display: inline-block;
+          transition: all .3s linear;
+          &:hover{
+            color: var(--slider-active-green);
+            border-bottom: 3px solid var(--slider-active-green);
+            transition: all .3s linear;
+          }
           svg {
             margin-left: 5px;
             transform: rotate(0deg);
