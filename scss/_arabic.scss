@@ -752,10 +752,16 @@
   .services--list-wrapper{
     .slick-carousel{
       &::before{
-        width: 10%;
+        width: 8%;
       }
       &::after{
-        width: 80%;
+        width: 76%;
+        @media (max-width: 1400px) {
+          width: 70%;
+        }
+        @media (max-width: 992px) {
+          width: 10%;
+        }
       }
     }
     .slick-carousel{
@@ -765,7 +771,40 @@
       }
       .slick-next{
         right: unset;
-        left: 18%;
+        left: 21%;
+        @media (max-width:1800px) {
+          left: 23%;
+        }
+        @media (max-width:1600px) {
+          left: 24%;
+        }
+        @media (max-width:1400px) {
+          left: 26%;
+        }
+        @media (max-width:1200px) {
+          left: 28%;
+        }
+        @media (max-width:992px) {
+          left: unset;
+          right: 70px;
+        }
+        @media (max-width:768px) {
+          left: unset;
+          right: 50px;
+        }
+      }
+    }
+    .pagination{
+      left: 0;
+      width: 85%;
+      @media (max-width: 1800px) {
+        width: 83%;
+      }
+      @media (max-width: 1400px) {
+        width: 82%;
+      }
+      @media (max-width: 992px) {
+        width: 100%;
       }
     }
   }
@@ -857,11 +896,17 @@
           left: 5%;
           right: unset;
           @media (max-width: 767px) {
-            left: 20%;
+            left: 10%;
+            margin-left: 0;
           }
           @media (max-width: 620px) {
-            left: 50%;
+            left: 20%;
+            margin-left: 0;
           }
+          // @media (max-width: 420px) {
+          //   left: 20%;
+          //   margin-left: 0;
+          // }
         }
         &.slick-next{
           left: 25%;
@@ -870,14 +915,19 @@
             left: 35%;
           }
           @media (max-width: 767px) {
-            left: 80%;
+            left: unset;
+            right: 0;
+          }
+          @media (max-width: 620px) {
+            left: unset;
+            right: 35%;
           }
         }
       }
     }
     .pagination{
       right: unset;
-      left: 9%;
+      left: 12%;
       @media (max-width: 992px) {
         left: 14%;
       }
