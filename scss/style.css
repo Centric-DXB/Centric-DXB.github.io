@@ -1993,6 +1993,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     padding-right: 0;
   }
 }
+.arabic .applyform-conatiner #custom-text {
+  padding: 5px 20px 20px 0;
+}
 .arabic .foot .footer-links .links {
   border-right: none;
   border-left: 1px solid #73BC45;
@@ -8600,6 +8603,21 @@ body {
   right: 20px;
   transition: all 0.5s linear;
 }
+.applyform-conatiner button#custom-button {
+  background: #6CC24A;
+  padding: 0 30px;
+  color: #fff;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+.applyform-conatiner #custom-text {
+  display: inline-block;
+  padding: 5px 0 20px 20px;
+  color: #fff;
+}
 
 .cvsupport {
   display: inline-block;
@@ -8961,6 +8979,41 @@ body {
   display: flex;
 }
 
+.contact__us__wrapper {
+  padding: 50px 0 0 0;
+}
+.contact__us__wrapper .pagination__list ul {
+  display: flex;
+  gap: 15px;
+  padding-left: 110px;
+}
+.contact__us__wrapper .pagination__list ul li {
+  position: relative;
+}
+.contact__us__wrapper .pagination__list ul li a {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--medium-grey);
+  text-decoration: none;
+}
+.contact__us__wrapper .pagination__list ul li::before {
+  position: absolute;
+  content: "";
+  background: var(--medium-grey);
+  height: 25px;
+  width: 2px;
+  right: -10px;
+  top: 0px;
+  transform: rotate(9deg);
+}
+.contact__us__wrapper .pagination__list ul li:last-child a {
+  color: var(--light-green);
+  font-weight: bold;
+}
+.contact__us__wrapper .pagination__list ul li:last-child::before {
+  display: none;
+}
+
 .contactus-wrapper {
   display: block;
   width: 100%;
@@ -8973,7 +9026,7 @@ body {
   position: relative;
   text-transform: unset;
   margin-bottom: 50px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 @media (max-width: 767px) {
   .contactus-wrapper h2 {

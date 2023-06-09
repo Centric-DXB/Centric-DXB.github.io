@@ -12,6 +12,26 @@
 //     auto: true,
 //     stopAutoOnClick: true,
 // });
+
+
+// CAREERS PAGE JOB APPLICATION FILE
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+customBtn.addEventListener("click", function () {
+realFileBtn.click();
+});
+realFileBtn.addEventListener("change", function () {
+if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+    /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+} else {
+    customTxt.innerHTML = "No file chosen, yet.";
+}
+});
+
+
 $('.sliderHome').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -814,3 +834,4 @@ function changeSuccessStoriesSection(index){
     });
     storryWrapper.classList.add('active');
 }   
+
