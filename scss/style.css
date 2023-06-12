@@ -6948,15 +6948,15 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding: 5px 10px;
 }
 .our__solutions .industry__card .card-body h3 {
-  font-size: 37px;
+  font-size: 33px;
   margin-bottom: 25px;
   font-weight: 400;
-  min-height: 90px;
+  min-height: 50px;
 }
 .our__solutions .industry__card .card-body p {
   font-size: 20px;
   line-height: 30px;
-  min-height: 200px;
+  min-height: 130px;
 }
 .our__solutions .industry__card .card-footer {
   border: 1px solid white !important;
@@ -6974,7 +6974,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .our__solutions .industries__cardSLider button.slick-next {
   top: auto;
-  bottom: -50px;
+  bottom: -20px;
   right: 1%;
   margin-right: 15px;
 }
@@ -6990,7 +6990,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .our__solutions .industries__cardSLider button.slick-prev {
   top: auto;
-  bottom: -50px;
+  bottom: -20px;
   left: auto;
   right: 0;
   z-index: 1;
@@ -7012,7 +7012,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-weight: 300;
   justify-content: flex-end;
   position: relative;
-  top: 35px;
+  top: 0px;
   right: 65px;
 }
 
@@ -9192,6 +9192,9 @@ body {
 }
 .location-map-wrapper .locationmap {
   margin-top: 100px;
+}
+.location-map-wrapper .locationmap img {
+  width: 100%;
 }
 .location-map-wrapper .locations--name-wrapper {
   display: block;
