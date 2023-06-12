@@ -981,6 +981,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 12px;
   padding-bottom: 10px;
 }
+.foot .footer-two-div .footer-newsletter .newsletter-form #captcha_error {
+  margin-top: -1.5em;
+}
 .foot .footer-two-div .footer-newsletter .newsletter-form #success-alert-newsletter {
   background: var(--seminar-green-color);
   text-align: center;
