@@ -831,9 +831,41 @@
     &::before{
       right: unset;
       left: 0;
+      @media (max-width: 992px) {
+        height: 44%;
+      }
+      @media (max-width: 768px) {
+        height: 45%;
+      }
+      @media (max-width: 767px) {
+        height: 45%;
+      }
+      @media (max-width: 620px) {
+        height: 42%;
+      }
+      @media (max-width: 575px) {
+        height: 48%;
+      }
+      @media (max-width: 563px) {
+        height: 42%;
+      }
+      @media (max-width: 450px) {
+        height: 47%;
+      }
+      @media (max-width: 383px) {
+        height: 39%;
+      }
     }
     &::after{
       transform: rotate(180deg);
+      left: unset;
+      right: 47%;
+      @media (max-width: 992px) {
+        transform: rotate(90deg);
+      }
+      @media (max-width: 767px) {
+        top: 53%;
+      }
     }
   }
 
@@ -971,7 +1003,23 @@
   }
   .applyform-conatiner{
     #custom-text {
-      padding: 5px 20px 20px 0;
+      padding: 15px 20px 15px 0;
+    }
+    button#custom-button{
+      left: 0;
+      right: unset;
+    }
+  }
+  .contact__us__wrapper{
+    .pagination__list{
+      ul{
+        li{
+          &::before{
+            right: unset;
+            left: -10px;
+          }
+        }
+      }
     }
   } 
   .foot{
@@ -1115,7 +1163,7 @@
       }
     }
   } 
-
+  
 
 
 

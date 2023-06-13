@@ -427,12 +427,18 @@ body{
     &:hover{
       color: $seminar-green-color;
     }
+    @media (max-width: 460px) {
+      position: relative;
+    }
   }
   #custom-text {
     display: block;
     padding: 15px 0 15px 20px;
     color: #fff;
     border: 1px solid rgba($color: #fff, $alpha: .2);
+    @media (max-width: 400px) {
+      font-size: 14px;
+    }
   }
 }
 .cvsupport {
