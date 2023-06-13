@@ -984,6 +984,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .foot .footer-two-div .footer-newsletter .newsletter-form #captcha_error {
   margin-top: -1.5em;
 }
+@media (max-width: 992px) {
+  .foot .footer-two-div .footer-newsletter .newsletter-form #captcha_error {
+    margin-top: -0.5em;
+  }
+}
+@media (max-width: 400px) {
+  .foot .footer-two-div .footer-newsletter .newsletter-form #captcha_error {
+    margin-top: -1.5em;
+  }
+}
 .foot .footer-two-div .footer-newsletter .newsletter-form #success-alert-newsletter {
   background: var(--seminar-green-color);
   text-align: center;
@@ -9428,7 +9438,7 @@ input.custom-input {
 .loadmore-button {
   display: inline-block;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 60px 0 20px;
   background: var(--light-green);
   color: var(--white);
   font-size: 18px;
@@ -9436,11 +9446,32 @@ input.custom-input {
   margin-top: 20px;
   transition: all 0.3s ease-in-out;
   font-family: var(--poppins);
-  line-height: 50px;
+  line-height: 60px;
   text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+.loadmore-button svg {
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  transition: all 0.3s linear;
 }
 .loadmore-button:hover {
   color: rgba(255, 255, 255, 0.8274509804);
+}
+.loadmore-button:hover svg {
+  right: 10px;
+  transition: all 0.3s linear;
+}
+
+.dataerror-wrapper {
+  display: block;
+  padding: 50px 0 150px;
+}
+.dataerror-wrapper p {
+  font-size: 40px;
+  color: white;
 }
 
 .join-conversation {

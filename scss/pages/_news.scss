@@ -110,7 +110,7 @@ input.custom-input{
 .loadmore-button{
     display: inline-block;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 60px 0 20px;
     background: var(--light-green);
     color: var(--white);
     font-size: 18px;
@@ -118,11 +118,31 @@ input.custom-input{
     margin-top: 20px;
     transition: all 0.3s ease-in-out;
     font-family: var(--poppins);
-    line-height: 50px;
+    line-height: 60px;
     text-decoration: none;
-
+    cursor: pointer;
+    position: relative;
+    svg{
+        position: absolute;
+        right: 30px;
+        top: 22px;
+        transition: all .3s linear;
+    }
     &:hover{
         color: #ffffffd3;
+        svg{
+            right: 10px;
+            transition: all .3s linear;
+        }
+    }
+}
+.dataerror-wrapper{
+    display: block;
+    padding: 50px 0 150px;
+    p{
+        font-size: 40px;
+        color: white;
+
     }
 }
 .join-conversation{
