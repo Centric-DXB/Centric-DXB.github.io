@@ -9466,7 +9466,7 @@ input.custom-input {
 }
 
 .dataerror-wrapper {
-  display: block;
+  display: none;
   padding: 50px 0 150px;
 }
 .dataerror-wrapper p {
