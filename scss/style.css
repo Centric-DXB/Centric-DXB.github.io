@@ -1855,8 +1855,60 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   right: unset;
   left: 0;
 }
+@media (max-width: 992px) {
+  .arabic .top__section::before {
+    height: 44%;
+  }
+}
+@media (max-width: 768px) {
+  .arabic .top__section::before {
+    height: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .arabic .top__section::before {
+    height: 45%;
+  }
+}
+@media (max-width: 620px) {
+  .arabic .top__section::before {
+    height: 42%;
+  }
+}
+@media (max-width: 575px) {
+  .arabic .top__section::before {
+    height: 48%;
+  }
+}
+@media (max-width: 563px) {
+  .arabic .top__section::before {
+    height: 42%;
+  }
+}
+@media (max-width: 450px) {
+  .arabic .top__section::before {
+    height: 47%;
+  }
+}
+@media (max-width: 383px) {
+  .arabic .top__section::before {
+    height: 39%;
+  }
+}
 .arabic .top__section::after {
   transform: rotate(180deg);
+  left: unset;
+  right: 47%;
+}
+@media (max-width: 992px) {
+  .arabic .top__section::after {
+    transform: rotate(90deg);
+  }
+}
+@media (max-width: 767px) {
+  .arabic .top__section::after {
+    top: 53%;
+  }
 }
 .arabic .wwa__chairmen__section .starter-template {
   background: url(../images/qoutearabic.png) no-repeat left 100px;
@@ -1997,7 +2049,15 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .arabic .applyform-conatiner #custom-text {
-  padding: 5px 20px 20px 0;
+  padding: 15px 20px 15px 0;
+}
+.arabic .applyform-conatiner button#custom-button {
+  left: 0;
+  right: unset;
+}
+.arabic .contact__us__wrapper .pagination__list ul li::before {
+  right: unset;
+  left: -10px;
 }
 .arabic .foot .footer-links .links {
   border-right: none;
@@ -8616,11 +8676,21 @@ body {
 .applyform-conatiner button#custom-button:hover {
   color: #6CC24A;
 }
+@media (max-width: 460px) {
+  .applyform-conatiner button#custom-button {
+    position: relative;
+  }
+}
 .applyform-conatiner #custom-text {
   display: block;
   padding: 15px 0 15px 20px;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 400px) {
+  .applyform-conatiner #custom-text {
+    font-size: 14px;
+  }
 }
 
 .cvsupport {
