@@ -2202,6 +2202,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .foot .footer-bottom ul li {
   font-family: var(--arabic-font);
+  border-right: none;
+  border-left: 1px solid #fff;
+}
+.arabic .foot .footer-bottom ul li:last-child {
+  border-left: none;
 }
 .arabic .foot .footer-bottom.arabic-text {
   display: block;
