@@ -1902,7 +1902,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 383px) {
   .arabic .top__section::before {
-    height: 39%;
+    height: 35%;
   }
 }
 .arabic .top__section::after {
@@ -2202,6 +2202,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .foot .footer-bottom ul li {
   font-family: var(--arabic-font);
+  border-right: none;
+  border-left: 1px solid #fff;
+}
+.arabic .foot .footer-bottom ul li:last-child {
+  border-left: none;
 }
 .arabic .foot .footer-bottom.arabic-text {
   display: block;
@@ -6074,12 +6079,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     padding: 80px 0 !important;
   }
   .top__section::before {
-    height: 49%;
+    height: 45%;
   }
 }
 @media screen and (max-width: 383px) {
   .top__section::before {
-    height: 41%;
+    height: 37%;
   }
 }
 .herobanner {

@@ -853,7 +853,7 @@
         height: 47%;
       }
       @media (max-width: 383px) {
-        height: 39%;
+        height: 35%;
       }
     }
     &::after{
@@ -1156,6 +1156,11 @@
       ul{
         li{
           font-family: var(--arabic-font);
+          border-right: none;
+          border-left: 1px solid #fff;
+          &:last-child{
+            border-left: none;
+          }
         }
       }
       &.arabic-text{
