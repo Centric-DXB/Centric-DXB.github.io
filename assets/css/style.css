@@ -1398,6 +1398,22 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .careerMainPage .careercarousel-wrapper {
   right: unset;
   left: 0;
+  padding: 200px 50px 120px 10px;
+}
+.arabic .careerMainPage .careercarousel-wrapper h2 {
+  padding-right: 0;
+}
+.arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner {
+  padding-right: 0;
+  padding-left: 50px;
+  text-align: right;
+}
+.arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner .careers-icon img {
+  display: inline-block;
+}
+.arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner h3::before {
+  left: unset;
+  right: 0;
 }
 .arabic .careerMainPage .initiatives {
   min-height: 770px;
@@ -8674,13 +8690,14 @@ body {
 .applyform-conatiner .uploadfile-wrapper {
   position: relative;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 .applyform-conatiner button#custom-button {
   background: transparent; /* $seminar-green-color */
   padding: 0 30px;
   color: #fff;
   line-height: 25px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 20px;
   position: absolute;
   top: 0;
@@ -8693,7 +8710,8 @@ body {
 }
 @media (max-width: 460px) {
   .applyform-conatiner button#custom-button {
-    position: relative;
+    font-size: 18px;
+    padding: 10px;
   }
 }
 .applyform-conatiner #custom-text {
@@ -9075,6 +9093,11 @@ body {
   display: flex;
   gap: 15px;
   padding-left: 110px;
+}
+@media (max-width: 992px) {
+  .contact__us__wrapper .pagination__list ul {
+    padding-left: 0;
+  }
 }
 .contact__us__wrapper .pagination__list ul li {
   position: relative;

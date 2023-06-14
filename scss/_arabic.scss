@@ -394,6 +394,30 @@
   .careerMainPage .careercarousel-wrapper {
     right: unset;
     left: 0;
+    padding: 200px 50px 120px 10px;
+  }
+  .careerMainPage .careercarousel-wrapper{
+    h2{
+      padding-right: 0;
+    }
+    .careers-carousel{
+      .careers-conatiner{
+        padding-right: 0;
+        padding-left: 50px;
+        text-align: right;
+        .careers-icon{
+          img{
+            display: inline-block;
+          }
+        }
+        h3{
+          &::before{
+            left: unset;
+            right: 0;
+          }
+        }
+      }
+    }
   }
   .careerMainPage .initiatives {
     min-height: 770px;
