@@ -5760,7 +5760,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 767px) {
   .top__section::after {
-    top: 51%;
+    top: 53%;
   }
 }
 .top__section .nav {
@@ -5797,6 +5797,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media (max-width: 992px) {
   .top__section .tab-content .tab-pane {
     padding: 8rem 3rem 0 3rem !important;
+  }
+}
+@media (max-width: 383px) {
+  .top__section .tab-content .tab-pane {
+    padding: 12rem 3rem 0 3rem !important;
   }
 }
 .top__section .tab-content .countered {
@@ -5838,6 +5843,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   width: 180px;
   height: 210px;
   margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .top__section .nav-pills-custom .nav-link {
+    display: inline-block;
+  }
 }
 .top__section .nav-pills-custom .nav-link.active {
   background-color: transparent;
@@ -5982,6 +5992,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media screen and (max-width: 992px) {
   .top__section .nav {
     width: 100%;
+    display: block;
+    text-align: center;
   }
 }
 @media screen and (max-width: 840.99px) {
@@ -6017,7 +6029,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media screen and (max-width: 767px) {
   .top__section::before {
-    height: 47%;
+    height: 45%;
   }
 }
 @media screen and (max-width: 620.99px) {
@@ -6077,7 +6089,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     height: auto;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 573px) {
   .top__section {
     height: auto;
   }
@@ -6085,9 +6097,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     height: 50%;
   }
 }
-@media screen and (max-width: 563px) {
+@media screen and (max-width: 572px) {
   .top__section::before {
-    height: 44%;
+    height: 43%;
   }
 }
 @media screen and (max-width: 480.99px) {
@@ -6100,7 +6112,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media screen and (max-width: 383px) {
   .top__section::before {
-    height: 37%;
+    height: 43%;
   }
 }
 .herobanner {
@@ -6700,7 +6712,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 575px) {
   .services-wrapper {
-    min-height: 1630px;
+    min-height: 1750px;
+  }
+}
+@media (max-width: 383px) {
+  .services-wrapper {
+    min-height: 2800px;
   }
 }
 .services-wrapper h2 {
