@@ -9074,7 +9074,6 @@ body {
 .contact__us__wrapper .pagination__list ul {
   display: flex;
   gap: 15px;
-  padding-left: 110px;
 }
 .contact__us__wrapper .pagination__list ul li {
   position: relative;

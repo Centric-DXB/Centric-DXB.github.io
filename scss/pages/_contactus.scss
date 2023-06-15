@@ -5,9 +5,10 @@
         ul{
             display: flex;
             gap: 15px;
-            padding-left: 110px;
+            // padding-left: 110px;
             li{
                 position: relative;
+                
                 a{
                     font-size: 20px;
                     font-weight: 300;
@@ -22,6 +23,7 @@
                     width: 2px;
                     right: -10px;
                     top: 0px;
+
                     transform: rotate(9deg);
                 }
                 &:last-child{
