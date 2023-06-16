@@ -9092,6 +9092,7 @@ body {
 .contact__us__wrapper .pagination__list ul {
   display: flex;
   gap: 15px;
+  padding-left: 100px;
 }
 @media (max-width: 992px) {
   .contact__us__wrapper .pagination__list ul {
