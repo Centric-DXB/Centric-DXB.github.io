@@ -6154,7 +6154,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     margin: 150px 0 0 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .herobanner .herobanner-content .herobanner-topheading {
     margin: 70px 0 0 0;
   }
@@ -6181,7 +6181,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     font-size: 50px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .herobanner .herobanner-content .herobanner-topheading h1 {
     font-size: 36px;
   }
@@ -6328,7 +6328,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-bottom: 50px;
   margin-top: 150px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ourindustry-wrapper h2 {
     padding-left: 120px;
     font-size: 20px;
@@ -6345,7 +6345,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 0;
   top: 19px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ourindustry-wrapper h2::after {
     left: 20px;
   }
@@ -6359,7 +6359,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 60px;
   top: 6px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .ourindustry-wrapper h2::before {
     left: 80px;
   }
@@ -6700,7 +6700,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding: 100px 0;
   background: var(--dark-blue-color);
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .services-wrapper {
     min-height: 1350px;
   }
@@ -6708,16 +6708,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media (max-width: 768px) {
   .services-wrapper {
     min-height: 1400px;
-  }
-}
-@media (max-width: 575px) {
-  .services-wrapper {
-    min-height: 1750px;
-  }
-}
-@media (max-width: 383px) {
-  .services-wrapper {
-    min-height: 2800px;
   }
 }
 .services-wrapper h2 {
@@ -6895,6 +6885,16 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   width: 100%;
   position: relative;
 }
+@media (min-width: 575px) and (max-width: 768px) {
+  .technologies-wrapper {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .technologies-wrapper {
+    margin-top: 280px;
+  }
+}
 .technologies-wrapper h2 {
   font-size: 30px;
   color: var(--dark-blue-color);
@@ -6903,7 +6903,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin-bottom: 50px;
   margin-top: 150px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .technologies-wrapper h2 {
     padding-left: 120px;
     font-size: 20px;
@@ -6920,7 +6920,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 0;
   top: 19px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .technologies-wrapper h2::after {
     left: 20px;
   }
@@ -6934,7 +6934,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: 60px;
   top: 6px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .technologies-wrapper h2::before {
     left: 80px;
   }
@@ -7121,10 +7121,10 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   justify-content: flex-end;
   position: relative;
   top: 0px;
-  right: 65px;
+  right: 75px;
 }
 
-@media screen and (max-width: 620.99px) {
+@media screen and (max-width: 621px) {
   .our__solutions .industries__cardSLider button.slick-next {
     right: 50%;
     margin-right: -105px;
@@ -7139,7 +7139,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   .our__solutions .pagination {
     justify-content: center;
     position: relative;
-    top: 35px;
+    top: 5px;
     right: 0;
   }
   .industry__card {
