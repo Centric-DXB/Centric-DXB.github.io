@@ -5801,7 +5801,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 383px) {
   .top__section .tab-content .tab-pane {
-    padding: 12rem 3rem 0 3rem !important;
+    padding: 12rem 0 0 0 !important;
   }
 }
 .top__section .tab-content .countered {
@@ -6089,12 +6089,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     height: auto;
   }
 }
-@media screen and (max-width: 573px) {
+@media screen and (max-width: 575px) {
   .top__section {
     height: auto;
   }
   .top__section::before {
-    height: 50%;
+    height: 54%;
   }
 }
 @media screen and (max-width: 572px) {
@@ -6107,12 +6107,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     padding: 80px 0 !important;
   }
   .top__section::before {
-    height: 45%;
+    height: 48%;
   }
 }
-@media screen and (max-width: 383px) {
+@media screen and (max-width: 388px) {
   .top__section::before {
-    height: 43%;
+    height: 38%;
   }
 }
 .herobanner {
@@ -7151,7 +7151,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   background-size: cover;
   position: relative;
   min-height: 850px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 .wwa__chairmen__section::before {
   position: absolute;
@@ -7292,6 +7292,14 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     margin-top: 100px;
   }
 }
+.wwa__chairmen__section #myTabContent #home {
+  height: 680px;
+  transition: all 0.3s linear;
+}
+.wwa__chairmen__section #myTabContent #home.height-auto {
+  height: 950px;
+  transition: all 0.3s linear;
+}
 .wwa__chairmen__section #myTabContent .seo__img {
   max-width: 65%;
   position: absolute;
@@ -7352,7 +7360,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   transition: all 0.3s linear;
 }
 .wwa__chairmen__section #myTabContent .message-content.is-active {
-  height: 60%;
+  height: 55%;
 }
 .wwa__chairmen__section #myTabContent p {
   font-size: 20px;

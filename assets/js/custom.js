@@ -708,6 +708,7 @@ $('.careers-carousel').slick({
 
 $('.readmore-btn').on('click', function(){
     $('.message-content').toggleClass('is-active');
+    $('#home').toggleClass('height-auto');
 })
 
 $('#success-carousel').slick({
