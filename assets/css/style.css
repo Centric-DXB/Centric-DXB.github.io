@@ -5801,7 +5801,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 383px) {
   .top__section .tab-content .tab-pane {
-    padding: 12rem 0 0 0 !important;
+    padding: 12rem 3rem 0 3rem !important;
   }
 }
 .top__section .tab-content .countered {
