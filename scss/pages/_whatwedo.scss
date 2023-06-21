@@ -500,7 +500,7 @@
         background-size: cover;
     }
 }
-.services-wrapper{
+.solution__topsolution-wrapper{
     display: block;
     width: 100%;
     padding: 100px 0;
@@ -516,6 +516,24 @@
     }
     @media (max-width: 383px) {
         min-height: 2800px;
+    }
+}
+.services-wrapper{
+    display: block;
+    width: 100%;
+    padding: 100px 0;
+    background: var(--dark-blue-color);
+    @media (max-width: 992px) {
+        min-height: 1700px;
+    }
+    @media (max-width: 768px) {
+        min-height: 1600px;
+    }
+    @media (max-width: 575px) {
+        min-height: 1650px;
+    }
+    @media (max-width: 480px) {
+        min-height: 1550px;
     }
     h2{
         font-size: 33px;
