@@ -109,11 +109,11 @@
         justify-content: flex-end;
         position: relative;
         top: 0px;
-        right: 65px;
+        right: 75px;
     }
 }
 
-@media screen and (max-width: 620.99px) {
+@media screen and (max-width: 621px) {
     .our__solutions {
         .industries__cardSLider {
             button.slick-next {
@@ -133,7 +133,7 @@
         .pagination {
             justify-content: center;
             position: relative;
-            top: 35px;
+            top: 5px;
             right: 0;
         }
     }

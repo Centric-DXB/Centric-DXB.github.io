@@ -3,6 +3,7 @@
     background-size: cover;
     position: relative;
     min-height: 850px;
+    display: block;
     padding-bottom: 30px;
     &::before {
         position: absolute;
@@ -112,9 +113,13 @@
             }
         }
     }
- } 
+ }
+ .moretext {
+  display: none;
+ }
     
     #myTabContent {
+      
         margin-top: 140px;
         z-index: 1;
         @media screen and (max-width: 992px) {
@@ -124,10 +129,10 @@
             margin-top: 100px;
         }
         #home{
-            height: 680px;
+            // height: 680px;
             transition: all 0.3s linear;
             &.height-auto{
-                height: 950px;
+                // height: 950px;
                 transition: all 0.3s linear;
             }
         }
@@ -178,12 +183,12 @@
         }
         .message-content{
             display: block;
-            height: 33%;
-            overflow: hidden;
+            // height: 33%;
+            // overflow: hidden;
             transition: all .3s linear;
-            &.is-active{
-                height: 55%;
-            }
+            // &.is-active{
+            //     height: 55%;
+            // }
         }
 
         p {
