@@ -157,20 +157,32 @@ header .top-main-navigation ul li a:hover {
   border-bottom: 3px solid var(--slider-active-green);
   transition: all 0.3s linear;
 }
-header .top-main-navigation ul li select {
+header .top-main-navigation ul .topMainNavigationSharePrice {
+  border-radius: 5px;
+  padding: 0px 10px;
+  height: 40px;
+  background-color: var(--slider-active-green);
+}
+header .top-main-navigation ul .topMainNavigationSharePrice:hover {
+  border: 2px solid var(--white);
+  transition: all 0.3s linear;
+}
+header .top-main-navigation ul .topMainNavigationSharePrice a {
+  color: var(--white);
+  text-decoration: none;
+  line-height: 40px;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+header .top-main-navigation ul .topMainNavigationSharePrice a:hover {
+  color: var(--slider-active-green);
+  border-bottom: 3px solid var(--slider-active-green);
+  transition: all 0.3s linear;
+}
+header .top-main-navigation ul .topMainNavigationSharePrice select {
   background: transparent;
   padding: 10px;
   color: var(--white);
-}
-header .top-main-navigation ul li .topMainNavigationSharePrice {
-  border-radius: 5px;
-  padding: 0px 10px;
-  height: 30px;
-  background-color: var(--slider-active-green);
-}
-header .top-main-navigation ul li .topMainNavigationSharePrice:hover {
-  border: 2px solid var(--white);
-  transition: all 0.3s linear;
 }
 @media (max-width: 768px) {
   header .main-menu {
@@ -1089,6 +1101,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic header .top-main-navigation ul li.arabic-text {
   display: block;
+}
+.arabic header .top-main-navigation ul .topMainNavigationSharePrice {
+  height: 40px;
 }
 .arabic header .main-menu ul li {
   font-family: var(--arabic-font);

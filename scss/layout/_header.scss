@@ -120,16 +120,18 @@ header {
             transition: all .3s linear;
           }
         }
-        select {
-          background: transparent;
-          padding: 10px;
-          color: var(--white);
-        }
-        .topMainNavigationSharePrice
+        // select {
+        //   background: transparent;
+        //   padding: 10px;
+        //   color: var(--white);
+        // }
+        
+      }
+      .topMainNavigationSharePrice
         {
           border-radius:5px;
           padding: 0px 10px;
-          height: 30px;
+          height: 40px;
           background-color:var(--slider-active-green) ;
           &:hover{
             // color: var(--slider-active-green);
@@ -138,10 +140,30 @@ header {
             
             transition: all .3s linear;
           }
+          a {
+            color: var(--white);
+            text-decoration: none;
+            line-height: 40px;
+            display: inline-block;
+            transition: all .3s linear;
+            &:hover{
+              color: var(--slider-active-green);
+              border-bottom: 3px solid var(--slider-active-green);
+              transition: all .3s linear;
+            }
+          }
+          select {
+            background: transparent;
+            padding: 10px;
+            color: var(--white);
+            // option {
+            //   background-color:var(--slider-active-green) ;
+            // }
+          }
         }
-      }
     }
   }
+  // header .top-main-navigation ul li 
 
   .main-menu {
     @media (max-width: 768px) {
@@ -508,4 +530,4 @@ header {
       }
     }
   }
-}
+  }
