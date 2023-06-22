@@ -1321,25 +1321,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"></script>
 
      <!-- ReadMore javascript effect added by mohsin////////////////////////////////////// -->
-     <script>
-        function handleExpandMore() {
-          $(".moreless-button").click(function () {
-            const expandMore = ".expand-more";
-            const expandLess = ".expand-less";
-            const parent = $(this).parent();
-            $(".moretext", parent).slideToggle();
-            const isExpanded = $(this).hasClass("expand-more");
-  
-            if (isExpanded) {
-              $(expandMore, parent).addClass("d-none");
-              $(expandLess, parent).removeClass("d-none");
-            } else {
-              $(expandLess, parent).addClass("d-none");
-              $(expandMore, parent).removeClass("d-none");
-            }
-          });
-        }
-        handleExpandMore()
-      </script>
+     <script src="/assets/js/WhoWeAreExpandMore.js"></script>
   </body>
 </html>
