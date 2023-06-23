@@ -706,6 +706,116 @@ $('.careers-carousel').slick({
     ]
 });
 
+
+var $pgin = $('.pagination');
+var $slikSLD = $('.casestudy-listing-carousel');
+
+$slikSLD.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $pgin.text(i + ' / ' + slick.slideCount);
+});
+
+// CASE STUDY CAROUSEL
+$slikSLD.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    //dots: true,
+    autoplay: true,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //infinite: true,
+                arrows: false,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
+            }
+        },
+    ]
+});
+
+
+$('.relatedstories-carousel').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    //dots: true,
+    autoplay: true,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //infinite: true,
+                arrows: false,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
+            }
+        },
+    ]
+});
+
+
+$('.plusicon').on('click', function(){
+    $('.datalist').slideToggle();
+})
+
 $('.readmore-btn').on('click', function(){
     $('.message-content').toggleClass('is-active');
     $('#home').toggleClass('height-auto');
@@ -757,6 +867,24 @@ $('#success-carousel').slick({
     prevArrow: $('.slick-prev-btn'),
     nextArrow: $('.slick-next-btn')
 })
+
+// BLOG FAQ ACCORDION
+$('.accordion-list > li > .answer').hide();
+    
+  $('.accordion-list > li').click(function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active").find(".answer").slideUp();
+    } else {
+      $(".accordion-list > li.active .answer").slideUp();
+      $(".accordion-list > li.active").removeClass("active");
+      $(this).addClass("active").find(".answer").slideDown();
+    }
+    return false;
+  });
+
+
+
+
 
 var slider = $('#success-carousel');
 var currentSlide = slider.slick('slickCurrentSlide');
