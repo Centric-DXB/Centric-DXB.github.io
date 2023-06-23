@@ -134,21 +134,20 @@ header {
           height: 40px;
           background-color:var(--slider-active-green) ;
           &:hover{
-            // color: var(--slider-active-green);
+            color: var(--slider-active-green);
             // border-bottom: 3px solid var(--slider-active-green);
             border: 2px solid var(--white);
-            
             transition: all .3s linear;
           }
-          a {
+          .anchorText {
             color: var(--white);
             text-decoration: none;
             line-height: 40px;
             display: inline-block;
             transition: all .3s linear;
             &:hover{
-              color: var(--slider-active-green);
-              border-bottom: 3px solid var(--slider-active-green);
+              color: var(--white) ;
+              border-bottom:0px;
               transition: all .3s linear;
             }
           }
