@@ -2307,6 +2307,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     max-width: 100%;
   }
 }
+@media (min-width: 993px) and (max-width: 1024.99px) {
+  .arabic .wwa__chairmen__section #myTabContent .seo__img {
+    right: 20;
+  }
+}
 .arabic .wwa__chairmen__section #myTabContent a {
   font-family: var(--arabic-font);
 }

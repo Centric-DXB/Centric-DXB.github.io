@@ -1244,6 +1244,7 @@
           max-width: 100%;
           padding-right: 0;
         }
+        
        }
     } 
   } 
@@ -1256,6 +1257,9 @@
         @media (max-width: 992px) {
           right: 0;
           max-width: 100%;
+        }
+        @media (min-width: 993px) and (max-width:1024.99px) {
+          right:20;
         }
       }
       a{
