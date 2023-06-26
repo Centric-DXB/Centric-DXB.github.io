@@ -880,7 +880,16 @@ $('.accordion-list > li > .answer').hide();
       $(this).addClass("active").find(".answer").slideDown();
     }
     return false;
-  });
+});
+$(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();
+    var fixedDiv = $(".index-content");
+    if(scrollTop > 500){
+        fixedDiv.addClass("fixed");
+    } else{
+        fixedDiv.removeClass("fixed");
+    }
+});
 
 
 
