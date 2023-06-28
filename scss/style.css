@@ -2265,6 +2265,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   left: auto;
   right: 60px;
 }
+@media (max-width: 1024px) {
+  .arabic .wwa__chairmen__section #myTabContent .seo__img {
+    right: 0;
+    max-width: 100%;
+  }
+}
 @media (max-width: 992px) {
   .arabic .wwa__chairmen__section #myTabContent .seo__img {
     right: 0;

@@ -1251,6 +1251,10 @@
       .seo__img {
         left: auto;
         right: 60px;
+        @media (max-width: 1024px) {
+          right: 0;
+          max-width: 100%;
+        }
         @media (max-width: 992px) {
           right: 0;
           max-width: 100%;
