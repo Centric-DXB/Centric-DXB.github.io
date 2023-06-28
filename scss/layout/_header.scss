@@ -105,18 +105,65 @@ header {
         @media (max-width: 600px) {
           text-align: center;
         }
+        .topMainNavigationPhone{
+          color: var(--slider-active-green);
+        }
         a {
           color: var(--white);
           text-decoration: none;
+          line-height: 40px;
+          display: inline-block;
+          transition: all .3s linear;
+          &:hover{
+            color: var(--slider-active-green);
+            border-bottom: 3px solid var(--slider-active-green);
+            transition: all .3s linear;
+          }
         }
-        select {
-          background: transparent;
-          padding: 10px;
-          color: var(--white);
-        }
+        // select {
+        //   background: transparent;
+        //   padding: 10px;
+        //   color: var(--white);
+        // }
+        
       }
+      .topMainNavigationSharePrice
+        {
+          border-radius:5px;
+          padding: 0px 10px;
+          height: 40px;
+          background-color:var(--slider-active-green) ;
+          &:hover{
+            color: var(--slider-active-green);
+            // border-bottom: 3px solid var(--slider-active-green);
+            border: 2px solid var(--white);
+            transition: all .3s linear;
+          }
+          .anchorText {
+            color: var(--white);
+            text-decoration: none;
+            line-height: 40px;
+            display: inline-block;
+            transition: all .3s linear;
+            &:hover{
+              color: var(--white) ;
+              border-bottom:0px;
+              transition: all .3s linear;
+            }
+          }
+          select {
+            background: transparent;
+            padding: 10px;
+            color: var(--white);
+            // option {
+            //   background-color:var(--slider-active-green) ;
+            // }
+          }
+        }
     }
   }
+  // header .top-main-navigation ul li 
+
   .main-menu {
     @media (max-width: 768px) {
       text-align: right;
@@ -482,4 +529,4 @@ header {
       }
     }
   }
-}
+  }

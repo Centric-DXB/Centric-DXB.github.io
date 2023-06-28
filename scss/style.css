@@ -142,11 +142,45 @@ header .top-main-navigation ul li.arabic-text {
     text-align: center;
   }
 }
+header .top-main-navigation ul li .topMainNavigationPhone {
+  color: var(--slider-active-green);
+}
 header .top-main-navigation ul li a {
   color: var(--white);
   text-decoration: none;
+  line-height: 40px;
+  display: inline-block;
+  transition: all 0.3s linear;
 }
-header .top-main-navigation ul li select {
+header .top-main-navigation ul li a:hover {
+  color: var(--slider-active-green);
+  border-bottom: 3px solid var(--slider-active-green);
+  transition: all 0.3s linear;
+}
+header .top-main-navigation ul .topMainNavigationSharePrice {
+  border-radius: 5px;
+  padding: 0px 10px;
+  height: 40px;
+  background-color: var(--slider-active-green);
+}
+header .top-main-navigation ul .topMainNavigationSharePrice:hover {
+  color: var(--slider-active-green);
+  border: 2px solid var(--white);
+  transition: all 0.3s linear;
+}
+header .top-main-navigation ul .topMainNavigationSharePrice .anchorText {
+  color: var(--white);
+  text-decoration: none;
+  line-height: 40px;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+header .top-main-navigation ul .topMainNavigationSharePrice .anchorText:hover {
+  color: var(--white);
+  border-bottom: 0px;
+  transition: all 0.3s linear;
+}
+header .top-main-navigation ul .topMainNavigationSharePrice select {
   background: transparent;
   padding: 10px;
   color: var(--white);
@@ -1068,6 +1102,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic header .top-main-navigation ul li.arabic-text {
   display: block;
+}
+.arabic header .top-main-navigation ul .topMainNavigationSharePrice {
+  height: 40px;
 }
 .arabic header .main-menu ul li {
   font-family: var(--arabic-font);
@@ -7215,10 +7252,10 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   justify-content: flex-end;
   position: relative;
   top: 0px;
-  right: 65px;
+  right: 75px;
 }
 
-@media screen and (max-width: 620.99px) {
+@media screen and (max-width: 621px) {
   .our__solutions .industries__cardSLider button.slick-next {
     right: 50%;
     margin-right: -105px;
@@ -7233,7 +7270,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   .our__solutions .pagination {
     justify-content: center;
     position: relative;
-    top: 35px;
+    top: 5px;
     right: 0;
   }
   .industry__card {
@@ -7245,6 +7282,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   background-size: cover;
   position: relative;
   min-height: 850px;
+  display: block;
   padding-bottom: 30px;
 }
 .wwa__chairmen__section::before {
@@ -7372,6 +7410,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   text-decoration: none;
   border: none;
 }
+.wwa__chairmen__section .moretext {
+  display: none;
+}
 .wwa__chairmen__section #myTabContent {
   margin-top: 140px;
   z-index: 1;
@@ -7387,11 +7428,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .wwa__chairmen__section #myTabContent #home {
-  height: 680px;
   transition: all 0.3s linear;
 }
 .wwa__chairmen__section #myTabContent #home.height-auto {
-  height: 950px;
   transition: all 0.3s linear;
 }
 .wwa__chairmen__section #myTabContent .seo__img {
@@ -7449,12 +7488,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .wwa__chairmen__section #myTabContent .message-content {
   display: block;
-  height: 33%;
-  overflow: hidden;
   transition: all 0.3s linear;
-}
-.wwa__chairmen__section #myTabContent .message-content.is-active {
-  height: 55%;
 }
 .wwa__chairmen__section #myTabContent p {
   font-size: 20px;
