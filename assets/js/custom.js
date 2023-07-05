@@ -891,6 +891,28 @@ $(window).scroll(function() {
     }
 });
 
+// $(window).scroll(function() {
+//     var scrollTop = $(window).scrollTop();
+//     var fixedDiv = $(".index-content");
+     //var dynam = $(window).height();
+//     if(scrollTop < 2000){
+//         fixedDiv.removeClass("fixed");
+//     } else{
+//         fixedDiv.addClass("fixed");
+//     }
+// });
+
+$(".playbtn").click(function(){
+    $(".playbtn").hide();
+    $(".ceostories-img img").hide();
+    $(".video-section").show();
+});
+
+$('.index-content li a').on('click', function(){
+    $("a").removeClass('active');
+    $(this).addClass('active');
+});
+
 
 
 

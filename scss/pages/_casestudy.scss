@@ -150,11 +150,15 @@ body{
           @media (max-width: 1199px) {
             left: 37%;
           }
+          @media (max-width: 992px) {
+            left: 32%;
+          }
           &::before{
             font-family: "Font Awesome 5 Free";
-            content: '\f060';
+            //content: '\f060';
             font-weight: 900;
             color: $white;
+            
           }
         }
         .slick-next{
@@ -215,15 +219,15 @@ body{
       text-align: center;
       left: 16%;
       @media (max-width: 1399px) {
-        top: -260px;
-        left: 16%;
+        top: -250px;
+        left: 20%;
       }
       @media (max-width: 1199px) {
-        top: -160px;
-        left: 50%;
+        top: -150px;
+        left: 52%;
       }
       @media (max-width: 992px) {
-        top: -255px;
+        top: -240px;
         left: 52%;
       }
       @media (max-width: 768px) {
@@ -577,7 +581,7 @@ body{
         position: fixed;
         width: 22%;
         top: 20%;
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
           position: relative;
           width: 100%;
           top: unset;
@@ -588,7 +592,7 @@ body{
           display: block;
           a{
             color: $grey;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 60px;
             padding-left: 40px;
             font-size: 20px;
@@ -677,11 +681,11 @@ body{
       line-height: 36px;
     }
     img{
-      margin: 20px 0;
+      margin: 30px 0 100px;
       width: 100%;
     }
     .blog-point{
-      margin: 0 0 50px 0;
+      margin: 0 0 150px 0;
       li{
         margin-bottom: 20px;
         font-size: 20px;
