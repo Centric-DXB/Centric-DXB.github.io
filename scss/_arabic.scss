@@ -758,6 +758,15 @@
         padding-right: 0;
       }
     }
+    .service--explore-btn{
+      a{
+        svg{
+          margin-left: 0;
+          margin-right: 20px;
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
   .technologies-wrapper{
     .parallax-bg{
@@ -1017,6 +1026,13 @@
       label{
         font-family: var(--arabic-font);
       }
+      a{
+        svg{
+          margin-left: 0;
+          margin-right: 20px;
+          transform: rotate(180deg);
+        }
+      }
     }
     .content{
       p{
@@ -1049,7 +1065,82 @@
         }
       }
     }
-  } 
+  }
+  .contactus-wrapper{
+    .contact-form{
+      form{
+        button{
+          padding: 0 30px 0 60px;
+          svg{
+            right: unset;
+            left: 30px;
+            transform: rotate(180deg);
+          }
+        }
+        &:hover{
+          svg{
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .carrers-wrapper{
+    a.button{
+      padding: 0 30px 0 60px;
+      svg{
+        transform: rotate(180deg);
+        right: unset;
+        left: 30px;
+      }
+      &:hover{
+        svg{
+          left: 10px;
+          right: unset;
+        }
+      }
+    }
+  }
+  .applyform-conatiner{
+    button{
+      padding: 0 30px 0 80px;
+      svg{
+        right: unset;
+        left: 50px;
+        transform: rotate(180deg);
+      }
+      &:hover{
+        svg{
+          left: 20px;
+          right: unset;
+        }
+      }
+    }
+  }
+  .position-wrapper{
+    .position-location{
+      a{
+        padding: 0 30px 0 60px;
+      }
+    } 
+  }
+  .cvsupport{
+    a{
+      padding: 0 20px 0 80px;
+      svg{
+        right: unset;
+        left: 50px;
+      }
+      &:hover{
+        svg{
+          right: unset;
+          left: 20px;
+        }
+      }
+    }
+  }
+
+
   .foot{
     .footer-links{
       .links{

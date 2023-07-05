@@ -1817,6 +1817,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     padding-right: 0;
   }
 }
+.arabic .services-wrapper .service--explore-btn a svg {
+  margin-left: 0;
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
 .arabic .technologies-wrapper .parallax-bg {
   right: unset;
   left: 0;
@@ -2102,6 +2107,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .solution__form #form label {
   font-family: var(--arabic-font);
 }
+.arabic .solution__form #form a svg {
+  margin-left: 0;
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
 .arabic .solution__form .content p {
   font-family: var(--arabic-font);
   padding-left: 0;
@@ -2122,6 +2132,55 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contact__us__wrapper .pagination__list ul li::before {
   right: unset;
   left: -10px;
+}
+.arabic .contactus-wrapper .contact-form form button {
+  padding: 0 30px 0 60px;
+}
+.arabic .contactus-wrapper .contact-form form button svg {
+  right: unset;
+  left: 30px;
+  transform: rotate(180deg);
+}
+.arabic .contactus-wrapper .contact-form form:hover svg {
+  left: 10px;
+}
+.arabic .carrers-wrapper a.button {
+  padding: 0 30px 0 60px;
+}
+.arabic .carrers-wrapper a.button svg {
+  transform: rotate(180deg);
+  right: unset;
+  left: 30px;
+}
+.arabic .carrers-wrapper a.button:hover svg {
+  left: 10px;
+  right: unset;
+}
+.arabic .applyform-conatiner button {
+  padding: 0 30px 0 80px;
+}
+.arabic .applyform-conatiner button svg {
+  right: unset;
+  left: 50px;
+  transform: rotate(180deg);
+}
+.arabic .applyform-conatiner button:hover svg {
+  left: 20px;
+  right: unset;
+}
+.arabic .position-wrapper .position-location a {
+  padding: 0 30px 0 60px;
+}
+.arabic .cvsupport a {
+  padding: 0 20px 0 80px;
+}
+.arabic .cvsupport a svg {
+  right: unset;
+  left: 50px;
+}
+.arabic .cvsupport a:hover svg {
+  right: unset;
+  left: 20px;
 }
 .arabic .foot .footer-links .links {
   border-right: none;
@@ -8492,6 +8551,17 @@ body {
   margin-left: 100px;
   margin-top: 50px;
   text-decoration: none;
+  position: relative;
+}
+.carrers-wrapper a.button svg {
+  position: absolute;
+  top: 23px;
+  right: 30px;
+  transition: all 0.3s linear;
+}
+.carrers-wrapper a.button:hover svg {
+  right: 10px;
+  transition: all 0.3s linear;
 }
 
 .jobposition-wrapper {
