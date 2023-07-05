@@ -299,6 +299,7 @@ body{
                 position: relative;
                 box-shadow: 0 0 5px #ccc;
                 padding: 0 20px 0 3px;
+                cursor: pointer;
                 .plusicon{
                     display: inline-block;
                     background: $seminar-green-color;
@@ -315,6 +316,9 @@ body{
                     display: none;
                     box-shadow: 0 0 10px #ccc;
                     z-index: 99;
+                    &.open{
+                      display: block;
+                    }
                     ul{
                         li{
                             display: block;
@@ -567,6 +571,10 @@ body{
         top: 19px;
     }
   }
+  .table-content{
+    display: block;
+    height: 120px;
+  }
   .rightbar{
     h3{
       color: $dark-blue-color;
@@ -580,7 +588,7 @@ body{
       &.fixed{
         position: fixed;
         width: 22%;
-        top: 20%;
+        top: 15%;
         @media (max-width: 992px) {
           position: relative;
           width: 100%;
@@ -640,6 +648,21 @@ body{
         margin-bottom: 50px;
         margin-top: 50px;
       }
+      &.fixed{
+        position: fixed;
+        width: 22%;
+        top: 44%;
+        ul{
+          li{
+            margin-bottom: 5px;
+          }
+        }
+        @media (max-width: 992px) {
+          position: relative;
+          width: 100%;
+          top: unset;
+        }
+      }
       ul{
         li{
           margin-bottom: 15px;
@@ -681,7 +704,7 @@ body{
       line-height: 36px;
     }
     img{
-      margin: 30px 0 100px;
+      margin: 30px 0 0;
       width: 100%;
     }
     .blog-point{
