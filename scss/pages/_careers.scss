@@ -50,6 +50,19 @@ body{
     margin-left: 100px;
     margin-top: 50px;
     text-decoration: none;
+    position: relative;
+    svg{
+      position: absolute;
+      top: 23px;
+      right: 30px;
+      transition: all .3s linear;
+    }
+    &:hover{
+      svg{
+        right: 10px;
+        transition: all .3s linear;
+      }
+    }
   }
 }
 

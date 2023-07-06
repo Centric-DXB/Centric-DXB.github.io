@@ -812,14 +812,17 @@ $('.relatedstories-carousel').slick({
 });
 
 
-$('.plusicon').on('click', function(){
-    $('.datalist').slideToggle();
-})
+
+$('.addfilter-btn').on('click', function(){
+    $('.datalist').toggleClass("open");
+});
+
+
 
 $('.readmore-btn').on('click', function(){
     $('.message-content').toggleClass('is-active');
     $('#home').toggleClass('height-auto');
-})
+});
 
 $('#success-carousel').slick({
     slidesToShow: 5,
@@ -884,11 +887,36 @@ $('.accordion-list > li > .answer').hide();
 $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
     var fixedDiv = $(".index-content");
+    var clientInfo = $(".casestudydetail_list-wrapper");
     if(scrollTop > 500){
         fixedDiv.addClass("fixed");
+        clientInfo.addClass("fixed");
     } else{
         fixedDiv.removeClass("fixed");
+        clientInfo.removeClass("fixed");
     }
+});
+
+// $(window).scroll(function() {
+//     var scrollTop = $(window).scrollTop();
+//     var fixedDiv = $(".index-content");
+     //var dynam = $(window).height();
+//     if(scrollTop < 2000){
+//         fixedDiv.removeClass("fixed");
+//     } else{
+//         fixedDiv.addClass("fixed");
+//     }
+// });
+
+$(".playbtn").click(function(){
+    $(".playbtn").hide();
+    $(".ceostories-img img").hide();
+    $(".video-section").show();
+});
+
+$('.index-content li a').on('click', function(){
+    $("a").removeClass('active');
+    $(this).addClass('active');
 });
 
 
