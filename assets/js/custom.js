@@ -33,7 +33,12 @@ if(customBtn && realFileBtn && customTxt) {
     }
 });
 }
-
+function hidePreloader() {
+    $('.preloader').addClass('open');
+}
+$(window).on('load', function(){
+    hidePreloader();
+})
 
 $('.sliderHome').slick({
     slidesToShow: 1,
