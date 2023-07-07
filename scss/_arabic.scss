@@ -478,7 +478,8 @@
   .servingbusiness--wrapper,
   .solution__form .content,
   .carrers-wrapper,
-  .our__solutions .content{
+  .our__solutions .content,
+  .top__section .content{
     //display: none;
     &.arabic-text{
       display: inline-block;
@@ -1046,6 +1047,8 @@
     }
   }
   .applyform-conatiner{
+    padding-left: 0;
+    padding-right: 110px;
     #custom-text {
       padding: 15px 20px 15px 0;
     }
@@ -1100,6 +1103,10 @@
         }
       }
     }
+    p{
+      padding-left: 0;
+      padding-right: 110px;
+    }
   }
   .applyform-conatiner{
     button{
@@ -1121,6 +1128,20 @@
     .position-location{
       a{
         padding: 0 30px 0 60px;
+        position: relative;
+        svg{
+          transform: rotate(180deg);
+          position: absolute;
+          top: 20px;
+          left: 30px;
+          transition: all .3s linear;
+        }
+        &:hover{
+          svg{
+            left: 10px;
+            transition: all .3s linear;
+          }
+        }
       }
     } 
   }
@@ -1130,6 +1151,7 @@
       svg{
         right: unset;
         left: 50px;
+        transform: rotate(180deg);
       }
       &:hover{
         svg{
@@ -1139,7 +1161,35 @@
       }
     }
   }
-
+  .read-more{
+    span{
+      &.arrow{
+        img{
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .news{
+    img{
+      margin-left: 10px;
+    }
+  }
+  .news-section{
+    .loadmore-button{
+      padding: 0 20px 0 60px;
+      svg{
+        transform: rotate(180deg);
+        right: unset;
+        left: 30px;
+      }
+      &:hover{
+        svg{
+          left: 10px;
+        }
+      }
+    }
+  }
 
   .foot{
     .footer-links{
