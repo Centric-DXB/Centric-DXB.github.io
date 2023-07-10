@@ -887,10 +887,10 @@
         height: 47%;
       }
       @media (max-width: 450px) {
-        height: 47%;
+        height: 46%;
       }
-      @media (max-width: 388px) {
-        height: 42%;
+      @media (max-width: 389px) {
+        height: 35%;
       }
     }
     &::after{
@@ -1091,6 +1091,8 @@
   .carrers-wrapper{
     a.button{
       padding: 0 30px 0 60px;
+      margin-left: 0;
+      margin-right: 110px;
       svg{
         transform: rotate(180deg);
         right: unset;
@@ -1106,6 +1108,14 @@
     p{
       padding-left: 0;
       padding-right: 110px;
+    }
+    .our__solutions{
+      .pagination__list{
+        ul{
+          padding-left: 0;
+          padding-right: 130px;
+        }
+      }
     }
   }
   .applyform-conatiner{
@@ -1190,6 +1200,7 @@
       }
     }
   }
+  
 
   .foot{
     .footer-links{

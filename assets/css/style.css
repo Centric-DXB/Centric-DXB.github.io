@@ -2026,12 +2026,12 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (max-width: 450px) {
   .arabic .top__section::before {
-    height: 47%;
+    height: 46%;
   }
 }
-@media (max-width: 388px) {
+@media (max-width: 389px) {
   .arabic .top__section::before {
-    height: 42%;
+    height: 35%;
   }
 }
 .arabic .top__section::after {
@@ -2221,6 +2221,8 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .arabic .carrers-wrapper a.button {
   padding: 0 30px 0 60px;
+  margin-left: 0;
+  margin-right: 110px;
 }
 .arabic .carrers-wrapper a.button svg {
   transform: rotate(180deg);
@@ -2234,6 +2236,10 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .carrers-wrapper p {
   padding-left: 0;
   padding-right: 110px;
+}
+.arabic .carrers-wrapper .our__solutions .pagination__list ul {
+  padding-left: 0;
+  padding-right: 130px;
 }
 .arabic .applyform-conatiner button {
   padding: 0 30px 0 80px;
@@ -6321,7 +6327,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media screen and (max-width: 572px) {
   .top__section::before {
-    height: 49%;
+    height: 44%;
   }
 }
 @media screen and (max-width: 480.99px) {
