@@ -2526,6 +2526,58 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     right: 0;
   }
 }
+.preloader {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.preloader h1 {
+  font-size: 1.5rem;
+}
+.preloader .ring {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.preloader .ring::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0px 5px 5px #ff2121;
+  }
+  25% {
+    transform: rotate(90deg);
+    box-shadow: 0px 5px 5px #fffb21;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0px 5px 5px #21c0ff;
+  }
+  75% {
+    transform: rotate(270deg);
+    box-shadow: 0px 5px 5px #bc21ff;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0px 5px 5px #ff2121;
+  }
+}
 .home-slider--arabic {
   display: none;
 }
@@ -11629,4 +11681,6 @@ body {
 body.arabic {
   direction: rtl;
   font-family: var(--arabic-font);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
