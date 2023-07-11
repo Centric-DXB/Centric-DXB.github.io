@@ -1511,10 +1511,10 @@
                 }
             }
             .back {
-                animation-delay: -($speed/2) + s;
+                animation-delay: -(calc($speed/2)) + s;
             }
             .right {
-                animation-delay: -($speed/4) + s;
+                animation-delay: -(calc($speed/4)) + s;
             }
             .left {
                 animation-delay: -($speed * 0.75) + s;
