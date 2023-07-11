@@ -1,0 +1,993 @@
+body{
+  overflow-x: hidden;
+}
+.casestudy-wrapper {
+  background: var(--dark-purple);
+  .our__solutions {
+    padding: 40px 0px 30px;
+    .pagination__list ul {
+      padding-left: 70px;
+      @media (max-width: 768px) {
+        padding-left: 0;
+      }
+    }
+  }
+  h2 {
+    font-size: 33px;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 100px;
+    color: var(--white);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url('../images/logowhitecircle.svg') no-repeat 0 0;
+      left: 40px;
+      top: 6px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background: var(--light-green);
+      left: -20px;
+      top: 19px;
+    }
+  }
+  p {
+    color: var(--white);
+    padding-left: 100px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  a.button {
+    background: var(--light-green);
+    padding: 0 60px 0 30px;
+    line-height: 60px;
+    color: var(--white);
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-decoration: none;
+  }
+}
+
+
+.casestudy-whowe {
+  min-height: 660px;
+  overflow: hidden;
+  padding-bottom: 50px;
+  @media (max-width: 1399px) {
+    min-height: 750px;
+  }
+  @media (max-width: 768px) {
+    min-height: 1150px;
+  }
+  .casestudy-heading-content {
+    display: block;
+    padding-right: 50px;
+  }
+  .casestudy-listing-wrapper{
+    display: block;
+    margin-top: -70px;
+    @media (max-width: 992px) {
+      margin-top: 0;
+    }
+    .casestudy-listing-carousel{
+        .casestudy-content-wrapper{
+            display: flex;
+            @media (max-width: 768px) {
+              flex-direction: column;
+            }
+            .casestudy-content{
+                width: 53%;
+                padding-left: 100px;
+                padding-top: 50px;
+                @media (max-width: 992px) {
+                  padding-left: 0;
+                  padding-top: 0;
+                }
+                @media (max-width: 768px) {
+                  width: 100%;
+                  padding-bottom: 30px;
+                }
+                h3{
+                    font-size: 40px;
+                    color: $white;
+                }
+                img{
+                    width: 20%;
+                    display: inline-block;
+                }
+                p{
+                    padding: 0;
+                    font-size: 20px;
+                    @media (max-width: 1399px) {
+                      font-size: 18px;
+                      padding-right: 20px;
+                    }
+                }
+                a{
+                    color: $seminar-green-color;
+                    font-size: 20px;
+                    text-decoration: none;
+                    position: relative;
+                    padding: 0 60px 0 0;
+                    @media (max-width: 1399px) {
+                      font-size: 16px;
+                    }
+                    svg{
+                        position: absolute;
+                        top: 5px;
+                        right: 30px;
+                        transition: all 0.3s linear;
+                    }
+                    &:hover{
+                        svg{
+                            right: 10px;
+                            transition: all 0.3s linear;
+                        }
+                    }
+                }
+            }
+            .casestudy-img{
+                width: 45%;
+                @media (max-width: 768px) {
+                  width: 100%
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .slick-prev{
+          left: 110px;
+          z-index: 99;
+          @media (max-width: 1199px) {
+            left: 37%;
+          }
+          @media (max-width: 992px) {
+            left: 32%;
+          }
+          &::before{
+            font-family: "Font Awesome 5 Free";
+            //content: '\f060';
+            font-weight: 900;
+            color: $white;
+            
+          }
+        }
+        .slick-next{
+          right: unset;
+          left: 330px;
+          @media (max-width: 1199px) {
+            left: 65%;
+          }
+        }
+        .slick-prev, .slick-next{
+          &::before{
+            background: $seminar-green-color;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            border: 8px solid $white;
+            position: absolute;
+            top: 70px;
+            line-height: 65px;
+            @media (max-width: 1199px) {
+              top: 135px;
+            }
+            @media (max-width: 992px) {
+              top: 50px;
+            }
+          }
+        }
+        .slick-dots{
+          bottom: 290px;
+          li{
+            button{
+              &::before{
+                font-size: 20px;
+                color: $white;
+                opacity: 1;
+              }
+            }
+            &.slick-active{
+              button{
+                &::before{
+                  color: $seminar-green-color;
+                }
+              }
+            }
+          }
+        }
+    }
+    .pagination{
+      position: relative;
+      top: -280px;
+      color: $white;
+      font-size: 30px;
+      width: 10%;
+      display: block;
+      text-align: center;
+      left: 16%;
+      @media (max-width: 1399px) {
+        top: -250px;
+        left: 20%;
+      }
+      @media (max-width: 1199px) {
+        top: -150px;
+        left: 52%;
+      }
+      @media (max-width: 992px) {
+        top: -240px;
+        left: 52%;
+      }
+      @media (max-width: 768px) {
+        top: -280px;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+.casestudyfilter-wrapper{
+    background: $white;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .2);
+    h2{
+        font-size: 33px;
+        margin-bottom: 50px;
+        position: relative;
+        padding-left: 100px;
+        color: #122D6E;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../images/logocolorcircle.svg) no-repeat 0 0;
+            left: 60px;
+            top: 6px;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: var(--light-green);
+            left: 0;
+            top: 19px;
+        }
+    }
+    .casestudy-filter-wrapper{
+        display: block;
+        padding-left: 100px;
+        @media (max-width: 992px) {
+          padding-left: 0;
+        }
+        .casestudy-filter{
+            display: block;
+            margin-bottom: 50px;
+            .filter-select{
+                display: inline-block;
+                background: $slider-active-green;
+                border-radius: 30px;
+                color: $white;
+                line-height: 40px;
+                padding: 0 40px 0 20px;
+                position: relative;
+                text-decoration: none;
+                margin: 0 5px 10px 0;
+                svg{
+                    position: absolute;
+                    top: 13px;
+                    right: 15px;
+                }
+            }
+            .addfilter-btn{
+                display: inline-block;
+                color: $black-color;
+                line-height: 40px;
+                border-radius: 50px;
+                position: relative;
+                box-shadow: 0 0 5px #ccc;
+                padding: 0 20px 0 3px;
+                cursor: pointer;
+                .plusicon{
+                    display: inline-block;
+                    background: $seminar-green-color;
+                    color: $white;
+                    border-radius: 30px;
+                    padding: 8px;
+                    margin-right: 10px;
+                }
+                .datalist{
+                    position: absolute;
+                    background: $white;
+                    width: 350px;
+                    margin-top: 10px;
+                    display: none;
+                    box-shadow: 0 0 10px #ccc;
+                    z-index: 99;
+                    &.open{
+                      display: block;
+                    }
+                    ul{
+                        li{
+                            display: block;
+                            a{
+                                color: rgba($color: #000000, $alpha: .3);
+                                text-decoration: none;
+                                line-height: 40px;
+                                display: block;
+                                padding: 0 0 0 7px;
+                                &:hover{
+                                    background: rgba($color: $seminar-green-color, $alpha: .2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .listing-container{
+            display: inline-block;
+            width: 30%;
+            border: 1px solid #ccc;
+            margin: 0 20px 20px 0;
+            @media (max-width: 1199px) {
+              width: 47%;
+            }
+            @media (max-width: 992px) {
+              width: 46%;
+            }
+            @media (max-width: 768px) {
+              width: 100%;
+              margin: 0 0 20px 0;
+            }
+            .imag-part{
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                height: 200px;
+                @media (max-width: 768px) {
+                  height: 250px;
+                }
+                @media (max-width: 575px) {
+                  height: 200px;
+                }
+                @media (max-width: 400px) {
+                  height: 160px;
+                }
+                img{
+                  @media (max-width: 768px) {
+                    width: 100%;
+                  }
+                }
+                .company-name{
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    text-align: center;
+                    height: 100%;
+                    padding-top: 60px;
+                    background: rgba(0,0,0,.4);
+                    backdrop-filter: blur(5px);
+                    transform: scale(0);
+                    transition: all .2s linear;
+                    opacity: 0;
+                    img{
+                      @media (max-width: 768px) {
+                        width: auto;
+                      }
+                    }
+                }
+            }
+            .content {
+                display: block;
+                padding: 15px;
+                h3{
+                    font-size: 26px;
+                    margin-bottom: 15px;
+                }
+                p{
+                    color: $grey;
+                    margin-bottom: 10px;
+                }
+                a{
+                    color: $seminar-green-color;
+                    text-decoration: none;
+                }
+            }
+            &:hover{
+              .company-name{
+                transform: scale(1);
+                transition: all .2s linear;
+                opacity: 1;
+              }
+            }
+        }
+    }
+    .listing-pagination{
+      display: block;
+      padding-top: 50px;
+      ul{
+        display: flex;
+        justify-content: end;
+        @media (max-width: 768px) {
+          justify-content: center;
+        }
+        li{
+          margin: 0 10px;
+          font-size: 26px;
+          &.prev, &.next{
+            a{
+              color: rgba($color: #000000, $alpha: .2);
+              &:hover{
+                color: rgba($color: $seminar-green-color, $alpha: 1.0);
+              }
+            }
+          }
+          span{
+            color: rgba($color: #000000, $alpha: .4);
+            position: relative;
+            padding: 0 10px;
+            font-size: 26px;
+            &::before{
+              position: absolute;
+              content: "";
+              width: 3px;
+              height: 25px;
+              top: 5px;
+              left: -4px;
+              transform: rotate(10deg);
+              background: rgba($color: #000000, $alpha: .4);
+            }
+            &.active{
+              color: $seminar-green-color;
+              &::before{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+
+.subscribtion {
+  display: inline-block;
+  background: url(../images/abstractbackground.png) no-repeat center center;
+  background-size: cover;
+  color: $white;
+  text-align: center;
+  width: 100%;
+  h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: 900;
+  }
+  p {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .subscribe-container{
+    display: flex;
+    justify-content: center;
+    input{
+      padding: 5px 7px;
+      font-size: 20px;
+      line-height: 40px;
+      outline: none;
+    }
+    button{
+      background: $seminar-green-color;
+      line-height: 52px;
+      padding: 0 20px;
+      font-size: 20px;
+      color: $white;
+    }
+  }
+  
+}
+
+
+
+
+
+.casestudy-banner{
+  background: $dark-blue-color;
+  min-height: 500px;
+  padding-top: 200px;
+  @media (max-width: 992px) {
+    padding-top: 150px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 100px;
+    min-height: 400px;
+  }
+  h2{
+    color: $white;
+    font-size: 20px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      padding-left: 0;
+    }
+  }
+  h1{
+    color: $white;
+    border-left: 6px solid $seminar-green-color;
+    font-size: 60px;
+    padding-left: 100px;
+    @media (max-width: 1199px) {
+      font-size: 45px;
+    }
+    @media (max-width: 992px) {
+      font-size: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: 36px;
+      padding-left: 0;
+      border-left: 0;
+    }
+  }
+}
+.casestudycontent-wrapper{
+  display: block;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  h2{
+    color: $dark-blue-color;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 110px;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(../images/logocolorcircle.svg) no-repeat 0 0;
+      left: 60px;
+      top: 6px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background: var(--light-green);
+        left: 0;
+        top: 19px;
+    }
+  }
+  .table-content{
+    display: block;
+    height: 120px;
+  }
+  .rightbar{
+    h3{
+      color: $dark-blue-color;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .index-content{
+      box-shadow: 0 0 10px #ccc;
+      background: $white;
+      width: 100%;
+      &.fixed{
+        position: fixed;
+        width: 22%;
+        top: 15%;
+        @media (max-width: 992px) {
+          position: relative;
+          width: 100%;
+          top: unset;
+        }
+      }
+      ul{
+        li{
+          display: block;
+          a{
+            color: $grey;
+            font-weight: 500;
+            line-height: 60px;
+            padding-left: 40px;
+            font-size: 20px;
+            display: block;
+            text-decoration: none;
+            transition: all .2s ease-in-out;
+            &:hover, &.active{
+              background: rgba($color: #0736A8, $alpha: 0.1);
+              border-left: 5px solid $dark-blue-color;
+              transition: all .2s ease-in-out;
+            }
+          }
+        }
+      }
+      .indexarrow{
+        display: block;
+        margin: 0 20px;
+        text-align: center;
+        @media (max-width: 992px) {
+          display: none;
+        }
+        a{
+          display: block;
+          padding: 15px 0;
+          color: rgba($color: #000000, $alpha: .3);
+          &:hover{
+            color: rgba($color: #000000, $alpha: 1.0);
+          }
+        }
+        &.uparrow{
+          border-bottom: 1px solid rgba($color: #000000, $alpha: .2);
+        }
+        &.downarrow{
+          border-top: 1px solid rgba($color: #000000, $alpha: .2);
+        }
+      }
+      
+    }
+    .casestudydetail_list-wrapper{
+      display: block;
+      background: rgba($color: #0736A8, $alpha: .1);
+      margin-top: 20px;
+      padding: 20px;
+      @media (max-width: 992px) {
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+      &.fixed{
+        position: fixed;
+        width: 22%;
+        top: 44%;
+        ul{
+          li{
+            margin-bottom: 5px;
+          }
+        }
+        @media (max-width: 992px) {
+          position: relative;
+          width: 100%;
+          top: unset;
+        }
+      }
+      ul{
+        li{
+          margin-bottom: 15px;
+          &.heading{
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba($color: #747B85, $alpha: 1);
+          }
+          &.heading__content{
+            font-size: 16px;
+            color: rgba($color: #747B85, $alpha: 1);
+            a{
+              background: $white;
+              width: 30px;
+              height: 30px;
+              text-align: center;
+              display: inline-block;
+              padding-top: 5px;
+              border-radius: 5px;
+              svg{
+                color: rgba($color: #747B85, $alpha: 1.0);
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .content-container{
+    padding-left: 110px;
+    @media (max-width: 992px) {
+      padding-left: 0;
+    }
+    p{
+      color: $grey;
+      font-size: 20px;
+      line-height: 36px;
+    }
+    img{
+      margin: 30px 0 0;
+      width: 100%;
+    }
+    .blog-point{
+      margin: 0 0 150px 0;
+      li{
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: $grey;
+        background: url(../images/pointgreenline.png) no-repeat 0 12px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .date_print-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    p{
+      color: $grey;
+    }
+    a{
+      display: inline-block;
+      box-shadow: 0 0 10px #ccc;
+      border-radius: 50px;
+      text-align: center;
+      width: 55px;
+      height: 55px;
+      padding-top: 15px;
+      svg{
+        color: rgba($color: #122D6E, $alpha: 1.0);
+        font-size: 24px;
+      }
+      i{
+        color: rgba($color: #122D6E, $alpha: 1.0);
+        font-size: 24px;
+      }
+      &:hover{
+        background: rgba($color: #122D6E, $alpha: 1.0);
+        svg{
+          color: $white;
+        }
+        i{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+.casestudyfaq-wrapper{
+  background: $dark-blue-color;
+  padding: 100px 0;
+  h2{
+    color: $white;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 110px;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(../images/logocolorcircle.svg) no-repeat 0 0;
+      left: 60px;
+      top: 6px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background: var(--light-green);
+        left: 0;
+        top: 19px;
+    }
+  }
+  .faq-wrapper{
+    display: block;
+    padding-left: 110px;
+    @media (max-width: 992px) {
+      padding-left: 0;
+    }
+    .accordion-list {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      list-style: none;
+      
+      li {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        //background-color: #FFF;
+        padding: 40px 0;
+        margin: 0 auto;
+        border-top: 1px solid #eee;
+        //border-radius: 5px;
+        cursor: pointer;
+        
+        &.active {
+          h3 {
+            &:after {
+              //transform: rotate(45deg);
+              content: "-";
+            }
+          }
+        }
+        
+        h3 {
+          font-weight: 900;
+          position: relative;
+          display: block;
+          width: 100%;
+          height: auto;
+          padding: 0 0 0 0;
+          margin: 0;
+          font-size: 26px;
+          letter-spacing: 0.01em;
+          cursor: pointer;
+          color: $white;
+          @media (max-width: 992px) {
+            padding: 0 30px 0 0;
+          }
+          @media (max-width: 575px) {
+            font-size: 21px;
+          }
+          
+          &:after {
+            content: "+";
+            //font-family: "material-design-iconic-font";
+            //font-family: "Font Awesome 5 Free";
+            //font-weight: 900;
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: $seminar-green-color;
+            transition: all 0.3s ease-in-out;
+            font-size: 24px;
+          }
+        }
+        
+        div.answer {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: auto;
+          margin: 0;
+          padding: 0;
+          cursor: pointer;
+          
+          p {
+            position: relative;
+            display: block;
+            font-weight: 300;
+            padding: 10px 0 0 0;
+            cursor: pointer;
+            line-height: 150%;
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+.casestudy_related-listing-wrapper{
+  padding: 100px 0;
+  h2{
+    color: $dark-blue-color;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 110px;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(../images/logocolorcircle.svg) no-repeat 0 0;
+      left: 60px;
+      top: 6px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background: var(--light-green);
+        left: 0;
+        top: 19px;
+    }
+  }  
+  .casestudy_detail-listing{
+    padding-left: 110px;
+    @media (max-width: 992px) {
+      padding-left: 0;
+    }
+    .listing-container{
+      display: inline-block;
+      width: 30%;
+      border: 1px solid #ccc;
+      margin: 0 20px 20px 0;
+      @media (max-width: 1199px) {
+        width: 47%;
+      }
+      @media (max-width: 992px) {
+        width: 46%;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+      .imag-part{
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          height: 200px;
+          @media (max-width: 768px) {
+            height: 250px;
+          }
+          @media (max-width: 575px) {
+            height: 200px;
+          }
+          @media (max-width: 400px) {
+            height: 160px;
+          }
+          img{
+            @media (max-width: 768px) {
+              width: 100%;
+            }
+          }
+          .company-name{
+              position: absolute;
+              width: 100%;
+              top: 0;
+              text-align: center;
+              height: 100%;
+              padding-top: 60px;
+              background: rgba(0,0,0,.4);
+              backdrop-filter: blur(5px);
+              transform: scale(0);
+              transition: all .2s linear;
+              opacity: 0;
+              img{
+                @media (max-width: 768px) {
+                  width: auto;
+                }
+              }
+          }
+      }
+      .content {
+          display: block;
+          padding: 15px;
+          h3{
+              font-size: 26px;
+              margin-bottom: 15px;
+          }
+          p{
+              color: $grey;
+              margin-bottom: 10px;
+          }
+          a{
+              color: $seminar-green-color;
+              text-decoration: none;
+          }
+      }
+      &:hover{
+        .company-name{
+          transform: scale(1);
+          transition: all .2s linear;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+

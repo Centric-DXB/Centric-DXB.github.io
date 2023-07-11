@@ -33,7 +33,12 @@ if(customBtn && realFileBtn && customTxt) {
     }
 });
 }
-
+function hidePreloader() {
+    $('.preloader').addClass('open');
+}
+$(window).on('load', function(){
+    hidePreloader();
+})
 
 $('.sliderHome').slick({
     slidesToShow: 1,
@@ -706,10 +711,123 @@ $('.careers-carousel').slick({
     ]
 });
 
+
+var $pgin = $('.pagination');
+var $slikSLD = $('.casestudy-listing-carousel');
+
+$slikSLD.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $pgin.text(i + ' / ' + slick.slideCount);
+});
+
+// CASE STUDY CAROUSEL
+$slikSLD.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    //dots: true,
+    autoplay: true,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //infinite: true,
+                arrows: false,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
+            }
+        },
+    ]
+});
+
+
+$('.relatedstories-carousel').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    //dots: true,
+    autoplay: true,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                //dots:true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //infinite: true,
+                arrows: false,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
+            }
+        },
+    ]
+});
+
+
+
+$('.addfilter-btn').on('click', function(){
+    $('.datalist').toggleClass("open");
+});
+
+
+
 $('.readmore-btn').on('click', function(){
     $('.message-content').toggleClass('is-active');
     $('#home').toggleClass('height-auto');
-})
+});
 
 $('#success-carousel').slick({
     slidesToShow: 5,
@@ -757,6 +875,58 @@ $('#success-carousel').slick({
     prevArrow: $('.slick-prev-btn'),
     nextArrow: $('.slick-next-btn')
 })
+
+// BLOG FAQ ACCORDION
+$('.accordion-list > li > .answer').hide();
+    
+  $('.accordion-list > li').click(function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active").find(".answer").slideUp();
+    } else {
+      $(".accordion-list > li.active .answer").slideUp();
+      $(".accordion-list > li.active").removeClass("active");
+      $(this).addClass("active").find(".answer").slideDown();
+    }
+    return false;
+});
+$(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();
+    var fixedDiv = $(".index-content");
+    var clientInfo = $(".casestudydetail_list-wrapper");
+    if(scrollTop > 500){
+        fixedDiv.addClass("fixed");
+        clientInfo.addClass("fixed");
+    } else{
+        fixedDiv.removeClass("fixed");
+        clientInfo.removeClass("fixed");
+    }
+});
+
+// $(window).scroll(function() {
+//     var scrollTop = $(window).scrollTop();
+//     var fixedDiv = $(".index-content");
+     //var dynam = $(window).height();
+//     if(scrollTop < 2000){
+//         fixedDiv.removeClass("fixed");
+//     } else{
+//         fixedDiv.addClass("fixed");
+//     }
+// });
+
+$(".playbtn").click(function(){
+    $(".playbtn").hide();
+    $(".ceostories-img img").hide();
+    $(".video-section").show();
+});
+
+$('.index-content li a').on('click', function(){
+    $("a").removeClass('active');
+    $(this).addClass('active');
+});
+
+
+
+
 
 var slider = $('#success-carousel');
 var currentSlide = slider.slick('slickCurrentSlide');

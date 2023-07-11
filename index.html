@@ -6,23 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FAVICON -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
     <link rel="manifest" href="assets/images/site.webmanifest" />
 
     <!-- BOOTSTRAP CSS -->
@@ -55,6 +41,21 @@
     <title>MIS Home</title>
   </head>
   <body>
+
+    <!-- PRELOADER -->
+    <div class="preloader">
+      
+      <div>
+        <img src="assets/images/logo-white.svg" alt="">
+      </div>
+      <div class="whitebackground">
+        <div class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+      </div>  
+    </div>
+
     <header class="head">
       <div class="container-fluid">
         <div class="row">
@@ -2454,6 +2455,8 @@
         </div>
       </div>
     </footer>
+
+    
 
     <!-- JQUERY JS -->
     <script src="assets/js/jquery-3.6.3.min.js"></script>

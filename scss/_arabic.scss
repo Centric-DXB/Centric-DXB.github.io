@@ -478,7 +478,8 @@
   .servingbusiness--wrapper,
   .solution__form .content,
   .carrers-wrapper,
-  .our__solutions .content{
+  .our__solutions .content,
+  .top__section .content{
     //display: none;
     &.arabic-text{
       display: inline-block;
@@ -758,6 +759,15 @@
         padding-right: 0;
       }
     }
+    .service--explore-btn{
+      a{
+        svg{
+          margin-left: 0;
+          margin-right: 20px;
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
   .technologies-wrapper{
     .parallax-bg{
@@ -873,13 +883,13 @@
       @media (max-width: 575px) {
         height: 48%;
       }
-      @media (max-width: 563px) {
-        height: 42%;
-      }
-      @media (max-width: 450px) {
+      @media (max-width: 574px) {
         height: 47%;
       }
-      @media (max-width: 383px) {
+      @media (max-width: 450px) {
+        height: 46%;
+      }
+      @media (max-width: 389px) {
         height: 35%;
       }
     }
@@ -889,6 +899,7 @@
       right: 47%;
       @media (max-width: 992px) {
         transform: rotate(90deg);
+        top: 46%;
       }
       @media (max-width: 767px) {
         top: 53%;
@@ -1016,6 +1027,13 @@
       label{
         font-family: var(--arabic-font);
       }
+      a{
+        svg{
+          margin-left: 0;
+          margin-right: 20px;
+          transform: rotate(180deg);
+        }
+      }
     }
     .content{
       p{
@@ -1029,6 +1047,8 @@
     }
   }
   .applyform-conatiner{
+    padding-left: 0;
+    padding-right: 110px;
     #custom-text {
       padding: 15px 20px 15px 0;
     }
@@ -1048,7 +1068,140 @@
         }
       }
     }
-  } 
+  }
+  .contactus-wrapper{
+    .contact-form{
+      form{
+        button{
+          padding: 0 30px 0 60px;
+          svg{
+            right: unset;
+            left: 30px;
+            transform: rotate(180deg);
+          }
+        }
+        &:hover{
+          svg{
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .carrers-wrapper{
+    a.button{
+      padding: 0 30px 0 60px;
+      margin-left: 0;
+      margin-right: 110px;
+      svg{
+        transform: rotate(180deg);
+        right: unset;
+        left: 30px;
+      }
+      &:hover{
+        svg{
+          left: 10px;
+          right: unset;
+        }
+      }
+    }
+    p{
+      padding-left: 0;
+      padding-right: 110px;
+    }
+    .our__solutions{
+      .pagination__list{
+        ul{
+          padding-left: 0;
+          padding-right: 130px;
+        }
+      }
+    }
+  }
+  .applyform-conatiner{
+    button{
+      padding: 0 30px 0 80px;
+      svg{
+        right: unset;
+        left: 50px;
+        transform: rotate(180deg);
+      }
+      &:hover{
+        svg{
+          left: 20px;
+          right: unset;
+        }
+      }
+    }
+  }
+  .position-wrapper{
+    .position-location{
+      a{
+        padding: 0 30px 0 60px;
+        position: relative;
+        svg{
+          transform: rotate(180deg);
+          position: absolute;
+          top: 20px;
+          left: 30px;
+          transition: all .3s linear;
+        }
+        &:hover{
+          svg{
+            left: 10px;
+            transition: all .3s linear;
+          }
+        }
+      }
+    } 
+  }
+  .cvsupport{
+    a{
+      padding: 0 20px 0 80px;
+      svg{
+        right: unset;
+        left: 50px;
+        transform: rotate(180deg);
+      }
+      &:hover{
+        svg{
+          right: unset;
+          left: 20px;
+        }
+      }
+    }
+  }
+  .read-more{
+    span{
+      &.arrow{
+        img{
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .news{
+    img{
+      margin-left: 10px;
+    }
+  }
+  .news-section{
+    .loadmore-button{
+      padding: 0 20px 0 60px;
+      svg{
+        transform: rotate(180deg);
+        right: unset;
+        left: 30px;
+      }
+      &:hover{
+        svg{
+          left: 10px;
+        }
+      }
+    }
+  }
+  
+
   .foot{
     .footer-links{
       .links{
@@ -1254,6 +1407,10 @@
       .seo__img {
         left: auto;
         right: 60px;
+        @media (max-width: 1024px) {
+          right: 0;
+          max-width: 100%;
+        }
         @media (max-width: 992px) {
           right: 0;
           max-width: 100%;
