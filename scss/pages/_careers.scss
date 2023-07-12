@@ -120,6 +120,9 @@ body{
   .careersabout-content {
     display: block;
     padding-right: 50px;
+    @media (max-width: 991px) {
+      padding-right: 0;
+    }
   }
   .posRel {
     position: relative;

@@ -1512,12 +1512,27 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-left: 50px;
   text-align: right;
 }
+@media (max-width: 767px) {
+  .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner {
+    text-align: center;
+  }
+}
 .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner .careers-icon img {
   display: inline-block;
 }
 .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner h3::before {
   left: unset;
   right: 0;
+}
+@media (max-width: 767px) {
+  .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner h3::before {
+    right: 37%;
+  }
+}
+@media (max-width: 500px) {
+  .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner h3::before {
+    right: 36%;
+  }
 }
 .arabic .careerMainPage .initiatives {
   min-height: 770px;
@@ -1556,6 +1571,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .careerMainPage .success-story .slick-slider {
   margin-left: -400px;
   margin-right: 0;
+}
+@media (max-width: 992px) {
+  .arabic .careerMainPage .success-story .slick-slider {
+    margin-left: 0;
+  }
 }
 .arabic .jobposition-wrapper.arabic-text,
 .arabic .home-about-us .about-us.arabic-text,
@@ -2197,6 +2217,11 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-left: 0;
   padding-right: 110px;
 }
+@media screen and (max-width: 991px) {
+  .arabic .applyform-conatiner {
+    padding-right: 0px;
+  }
+}
 .arabic .applyform-conatiner #custom-text {
   padding: 15px 20px 15px 0;
 }
@@ -2219,27 +2244,43 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper .contact-form form:hover svg {
   left: 10px;
 }
-.arabic .carrers-wrapper a.button {
+.arabic .careerMainPage .carrers-wrapper a.button {
   padding: 0 30px 0 60px;
   margin-left: 0;
   margin-right: 110px;
 }
-.arabic .carrers-wrapper a.button svg {
+@media (max-width: 992px) {
+  .arabic .careerMainPage .carrers-wrapper a.button {
+    padding: 0 30px 0 60px;
+    margin-right: 0;
+  }
+}
+.arabic .careerMainPage .carrers-wrapper a.button svg {
   transform: rotate(180deg);
   right: unset;
   left: 30px;
 }
-.arabic .carrers-wrapper a.button:hover svg {
+.arabic .careerMainPage .carrers-wrapper a.button:hover svg {
   left: 10px;
   right: unset;
 }
-.arabic .carrers-wrapper p {
+.arabic .careerMainPage .carrers-wrapper p {
   padding-left: 0;
   padding-right: 110px;
 }
-.arabic .carrers-wrapper .our__solutions .pagination__list ul {
+@media screen and (max-width: 991px) {
+  .arabic .careerMainPage .carrers-wrapper p {
+    padding-right: 0px;
+  }
+}
+.arabic .careerMainPage .carrers-wrapper .our__solutions .pagination__list ul {
   padding-left: 0;
   padding-right: 130px;
+}
+@media (max-width: 992px) {
+  .arabic .careerMainPage .carrers-wrapper .our__solutions .pagination__list ul {
+    padding-right: 0;
+  }
 }
 .arabic .applyform-conatiner button {
   padding: 0 30px 0 80px;
@@ -2490,7 +2531,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (min-width: 993px) and (max-width: 1024.99px) {
   .arabic .wwa__chairmen__section #myTabContent .seo__img {
-    right: 20;
+    right: 0;
   }
 }
 .arabic .wwa__chairmen__section #myTabContent a {
@@ -2524,6 +2565,58 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 @media screen and (max-width: 768.99px) {
   .arabic .wwa__chairmen__section #myTabContent .seo__img {
     right: 0;
+  }
+}
+.preloader {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.preloader h1 {
+  font-size: 1.5rem;
+}
+.preloader .ring {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.preloader .ring::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0px 5px 5px #ff2121;
+  }
+  25% {
+    transform: rotate(90deg);
+    box-shadow: 0px 5px 5px #fffb21;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0px 5px 5px #21c0ff;
+  }
+  75% {
+    transform: rotate(270deg);
+    box-shadow: 0px 5px 5px #bc21ff;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0px 5px 5px #ff2121;
   }
 }
 .home-slider--arabic {
@@ -5988,7 +6081,9 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 .top__section .nav {
   width: 610px;
-  top: auto;
+  max-height: 500px;
+  top: 0;
+  background-position: top;
   left: auto;
   display: flex;
   flex-direction: row !important;
@@ -5999,6 +6094,26 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   margin: 0px 0px 0px;
   position: unset;
 }
+@media screen and (max-width: 1400px) {
+  .top__section .nav {
+    max-height: 800px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .top__section .nav {
+    max-height: 690px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top__section .nav {
+    max-height: 690px;
+  }
+}
+@media (max-width: 388px) {
+  .top__section .nav {
+    max-height: 1400px;
+  }
+}
 .top__section .nav .card {
   background: transparent;
   border: transparent;
@@ -6008,11 +6123,6 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   font-size: 16px;
   text-align: center;
   color: var(--white);
-  padding: 0;
-  white-space: nowrap;
-  width: 130px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .top__section .tab-content {
   position: relative;
@@ -6028,7 +6138,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .top__section .tab-content .countered {
-  font-size: 80px;
+  font-size: 107px;
   font-weight: bold;
   color: var(--dark-purple);
 }
@@ -6038,7 +6148,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   }
 }
 .top__section .tab-content h4 {
-  font-size: 40px;
+  font-size: 30px;
   color: var(--dark-purple);
 }
 @media (max-width: 575px) {
@@ -6315,7 +6425,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
     display: none;
   }
   .top__section .nav {
-    position: relative;
+    position: unset;
     margin: 40px auto;
   }
   .solution__form {
@@ -6933,34 +7043,39 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding: 100px 0;
   background: var(--dark-blue-color);
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .solution__topsolution-wrapper {
-    min-height: 1450px;
+    min-height: 1050px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .solution__topsolution-wrapper {
-    min-height: 1400px;
+    min-height: 1500px;
   }
 }
 @media (max-width: 767px) {
   .solution__topsolution-wrapper {
-    min-height: 1750px;
+    min-height: 1850px;
   }
 }
 @media (max-width: 575px) {
   .solution__topsolution-wrapper {
-    min-height: 1800px;
+    min-height: 1900px;
+  }
+}
+@media screen and (max-width: 620.99px) {
+  .solution__topsolution-wrapper {
+    min-height: 1940px;
   }
 }
 @media (max-width: 480px) {
   .solution__topsolution-wrapper {
-    min-height: 1800px;
+    min-height: 1900px;
   }
 }
 @media (max-width: 388px) {
   .solution__topsolution-wrapper {
-    min-height: 2700px;
+    min-height: 2850px;
   }
 }
 .solution__topsolution-wrapper h2 {
@@ -8761,6 +8876,11 @@ body {
   display: block;
   padding-right: 50px;
 }
+@media (max-width: 991px) {
+  .careers-whowe .careersabout-content {
+    padding-right: 0;
+  }
+}
 .careers-whowe .posRel {
   position: relative;
 }
@@ -9420,7 +9540,6 @@ body {
   box-sizing: border-box !important;
 }
 .success-story .slick-slider {
-  margin-right: -300px;
   margin-top: 50px;
 }
 @media (max-width: 992px) {
@@ -11366,6 +11485,9 @@ body {
     position: unset;
     margin-top: 50px;
   }
+  .careerMainPage .careers-whowe .posRel .careersabout-img img {
+    width: 100%;
+  }
   .careerMainPage .careers-whowe .posRel .careersabout-img .img-fluid {
     max-width: 100%;
   }
@@ -11379,9 +11501,12 @@ body {
     padding-left: 0px;
   }
   .careerMainPage .carrers-wrapper a.button {
-    padding: 0 20px;
+    padding: 0 60px 0 20px;
     margin-left: 0;
     margin-top: 0;
+  }
+  .careerMainPage .carrers-wrapper a.button svg {
+    right: 10px;
   }
   .careerMainPage .carrers-wrapper h2 {
     margin: 0 0px 30px;
@@ -11555,7 +11680,6 @@ body {
   box-sizing: border-box !important;
 }
 .success-story .slick-slider {
-  margin-right: -300px;
   margin-top: 50px;
 }
 @media (max-width: 992px) {
