@@ -457,7 +457,13 @@
   .careerMainPage .success-story .slick-slider{
     margin-left: -400px;
     margin-right: 0;
+    @media (max-width: 992px)
+  {
+    margin-left: 0;
+    // margin-top: 0;
+}
   }
+  
   .jobposition-wrapper,
   .home-about-us .about-us,
   .top-solutions-wrapper .top-solutions-heading,
@@ -1049,6 +1055,9 @@
   .applyform-conatiner{
     padding-left: 0;
     padding-right: 110px;
+    @media screen and (max-width: 991px){
+      padding-right: 0px;
+    }
     #custom-text {
       padding: 15px 20px 15px 0;
     }
@@ -1108,6 +1117,9 @@
     p{
       padding-left: 0;
       padding-right: 110px;
+      @media screen and (max-width: 991px){
+        padding-right: 0px;
+      }
     }
     .our__solutions{
       .pagination__list{
@@ -1397,6 +1409,7 @@
           max-width: 100%;
           padding-right: 0;
         }
+        
        }
     } 
   } 
@@ -1413,6 +1426,9 @@
         @media (max-width: 992px) {
           right: 0;
           max-width: 100%;
+        }
+        @media (min-width: 993px) and (max-width:1024.99px) {
+          right:20;
         }
       }
       a{
