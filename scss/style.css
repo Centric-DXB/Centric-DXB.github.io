@@ -11361,6 +11361,9 @@ body {
     position: unset;
     margin-top: 50px;
   }
+  .careerMainPage .careers-whowe .posRel .careersabout-img img {
+    width: 100%;
+  }
   .careerMainPage .careers-whowe .posRel .careersabout-img .img-fluid {
     max-width: 100%;
   }
@@ -11374,7 +11377,7 @@ body {
     padding-left: 0px;
   }
   .careerMainPage .carrers-wrapper a.button {
-    padding: 0 20px;
+    padding: 0 60px 0 20px;
     margin-left: 0;
     margin-top: 0;
   }
