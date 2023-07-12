@@ -1512,12 +1512,27 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
   padding-left: 50px;
   text-align: right;
 }
+@media (max-width: 767px) {
+  .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner {
+    text-align: center;
+  }
+}
 .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner .careers-icon img {
   display: inline-block;
 }
 .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner h3::before {
   left: unset;
   right: 0;
+}
+@media (max-width: 767px) {
+  .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner h3::before {
+    right: 37%;
+  }
+}
+@media (max-width: 500px) {
+  .arabic .careerMainPage .careercarousel-wrapper .careers-carousel .careers-conatiner h3::before {
+    right: 36%;
+  }
 }
 .arabic .careerMainPage .initiatives {
   min-height: 770px;
@@ -2229,32 +2244,43 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 .arabic .contactus-wrapper .contact-form form:hover svg {
   left: 10px;
 }
-.arabic .carrers-wrapper a.button {
+.arabic .careerMainPage .carrers-wrapper a.button {
   padding: 0 30px 0 60px;
   margin-left: 0;
   margin-right: 110px;
 }
-.arabic .carrers-wrapper a.button svg {
+@media (max-width: 992px) {
+  .arabic .careerMainPage .carrers-wrapper a.button {
+    padding: 0 30px 0 60px;
+    margin-right: 0;
+  }
+}
+.arabic .careerMainPage .carrers-wrapper a.button svg {
   transform: rotate(180deg);
   right: unset;
   left: 30px;
 }
-.arabic .carrers-wrapper a.button:hover svg {
+.arabic .careerMainPage .carrers-wrapper a.button:hover svg {
   left: 10px;
   right: unset;
 }
-.arabic .carrers-wrapper p {
+.arabic .careerMainPage .carrers-wrapper p {
   padding-left: 0;
   padding-right: 110px;
 }
 @media screen and (max-width: 991px) {
-  .arabic .carrers-wrapper p {
+  .arabic .careerMainPage .carrers-wrapper p {
     padding-right: 0px;
   }
 }
-.arabic .carrers-wrapper .our__solutions .pagination__list ul {
+.arabic .careerMainPage .carrers-wrapper .our__solutions .pagination__list ul {
   padding-left: 0;
   padding-right: 130px;
+}
+@media (max-width: 992px) {
+  .arabic .careerMainPage .carrers-wrapper .our__solutions .pagination__list ul {
+    padding-right: 0;
+  }
 }
 .arabic .applyform-conatiner button {
   padding: 0 30px 0 80px;
@@ -2505,7 +2531,7 @@ header .mobile--header .mobile-search-wrapper .mobilesearch svg {
 }
 @media (min-width: 993px) and (max-width: 1024.99px) {
   .arabic .wwa__chairmen__section #myTabContent .seo__img {
-    right: 20;
+    right: 0;
   }
 }
 .arabic .wwa__chairmen__section #myTabContent a {
@@ -8849,6 +8875,11 @@ body {
 .careers-whowe .careersabout-content {
   display: block;
   padding-right: 50px;
+}
+@media (max-width: 991px) {
+  .careers-whowe .careersabout-content {
+    padding-right: 0;
+  }
 }
 .careers-whowe .posRel {
   position: relative;

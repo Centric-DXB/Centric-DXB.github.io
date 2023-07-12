@@ -408,6 +408,9 @@
         padding-right: 0;
         padding-left: 50px;
         text-align: right;
+        @media (max-width: 767px) {
+          text-align: center;
+        }
         .careers-icon{
           img{
             display: inline-block;
@@ -417,6 +420,12 @@
           &::before{
             left: unset;
             right: 0;
+            @media (max-width: 767px) {
+              right: 37%;
+            }
+            @media (max-width: 500px) {
+              right: 36%;
+            }
           }
         }
       }
@@ -1097,39 +1106,49 @@
       }
     }
   }
-  .carrers-wrapper{
-    a.button{
-      padding: 0 30px 0 60px;
-      margin-left: 0;
-      margin-right: 110px;
-      svg{
-        transform: rotate(180deg);
-        right: unset;
-        left: 30px;
-      }
-      &:hover{
+  .careerMainPage{
+    .carrers-wrapper{
+      a.button{
+        padding: 0 30px 0 60px;
+        margin-left: 0;
+        margin-right: 110px;
+        @media (max-width: 992px) {
+          padding: 0 30px 0 60px;
+          margin-right: 0;
+        }
         svg{
-          left: 10px;
+          transform: rotate(180deg);
           right: unset;
+          left: 30px;
+        }
+        &:hover{
+          svg{
+            left: 10px;
+            right: unset;
+          }
         }
       }
-    }
-    p{
-      padding-left: 0;
-      padding-right: 110px;
-      @media screen and (max-width: 991px){
-        padding-right: 0px;
+      p{
+        padding-left: 0;
+        padding-right: 110px;
+        @media screen and (max-width: 991px){
+          padding-right: 0px;
+        }
       }
-    }
-    .our__solutions{
-      .pagination__list{
-        ul{
-          padding-left: 0;
-          padding-right: 130px;
+      .our__solutions{
+        .pagination__list{
+          ul{
+            padding-left: 0;
+            padding-right: 130px;
+            @media (max-width: 992px) {
+              padding-right: 0;
+            }
+          }
         }
       }
     }
   }
+  
   .applyform-conatiner{
     button{
       padding: 0 30px 0 80px;
@@ -1428,7 +1447,7 @@
           max-width: 100%;
         }
         @media (min-width: 993px) and (max-width:1024.99px) {
-          right:20;
+          right:0;
         }
       }
       a{
