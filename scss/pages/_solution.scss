@@ -225,7 +225,7 @@
         margin: 0px 0px 0px;
         position: unset;
         @media screen and (max-width: 1400px){
-            max-height: 800px;
+            max-height: 690px;
         }
         @media screen and (max-width: 1024px){
             max-height: 690px;
@@ -266,6 +266,9 @@
                     font-size: 16px;
                     text-align: center;
                     color: var(--white);
+                    @media (max-width: 388px) {
+                        font-size: 13px;
+                     }
                     // padding: 0;
                     // white-space: nowrap;
                     // width: 130px;
