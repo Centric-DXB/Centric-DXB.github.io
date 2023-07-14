@@ -251,7 +251,6 @@ body{
   }
 }
 
-
 .subscribtion {
   display: inline-block;
   background: url(../images/abstractbackground.png) no-repeat center center;
@@ -349,15 +348,15 @@ body{
       // max-height: 100px;
       // overflow: hidden;
     }
-    a {
-      background: var(--light-green);
-      padding: 0 60px 0 30px;
-      line-height: 60px;
-      color: $white;
-      display: inline-block;
-      margin-top: 50px;
-      text-decoration: none;
-    }
+    // a {
+    //   background: var(--light-green);
+    //   padding: 0 60px 0 30px;
+    //   line-height: 60px;
+    //   color: $white;
+    //   display: inline-block;
+    //   margin-top: 50px;
+    //   text-decoration: none;
+    // }
   }
   .accordionbtn {
     width: 30%;
