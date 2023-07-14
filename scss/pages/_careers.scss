@@ -40,6 +40,7 @@ body{
     padding-left: 100px;
     font-size: 20px;
     margin-bottom: 20px;
+    font-weight: 300;
   }
   a.button {
     background: var(--light-green);
@@ -98,21 +99,118 @@ body{
     color: var(--white);
     padding-left: 100px;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
-  a.button {
-    background: var(--light-green);
-    padding: 0 60px 0 30px;
-    line-height: 60px;
-    color: var(--white);
-    display: inline-block;
-    margin-left: 100px;
-    margin-top: 50px;
-    text-decoration: none;
-  }
+  // a.button {
+  //   background: var(--light-green);
+  //   padding: 0 60px 0 30px;
+  //   line-height: 60px;
+  //   color: var(--white);
+  //   display: inline-block;
+  //   margin-left: 100px;
+  //   margin-top: 50px;
+  //   text-decoration: none;
+  // }
 }
 .padding-tb {
   padding: 150px 0;
+}
+//button css new theme
+
+
+// Let's style the component! __ Start copying from here
+
+.btn__theme-all {
+  z-index: 10;
+  display: flex;
+  background-color:var(--light-green);
+  width: 200px;
+  height: 60px;
+  margin: 40px auto;
+  margin-left: 100px;
+  // border-radius: 8px;
+  // margin: 40px auto;
+  transition: background-color 300ms ease, box-shadow 300ms ease;
+  animation: btn__scale-down 600ms ease;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    animation: btn__scale-up 600ms ease;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.256);
+    background-color:#6fc837e3;
+    color: white ;
+    svg {
+      transform: translateX(24px);
+      opacity: 0;
+      animation: arrow__slide-ltr 600ms ease-out;
+      }
+    }
+  }
+  .btn__theme-all-an{
+    margin: 0 !important;
+    &:hover{
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.256) !important;
+    }
+  }
+  .btn__theme-all-contactus,.btn__theme-all-auto{
+    margin: 40px auto;
+  }
+  .btn__theme-all-whatwedo{
+    margin: 250px auto 0px;
+  }
+
+a.btn__content, .btn__theme-all button {
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  background: transparent;
+  /* align-self: center; */
+  transition: color 300ms ease;
+  span {
+    vertical-align: middle;
+    color: white !important;
+  }
+
+  svg {
+    transition: opacity 600ms ease;
+  }
+}
+
+
+@keyframes btn__scale-up {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes btn__scale-down {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes arrow__slide-ltr {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(24px);
+    opacity: 0;
+  }
 }
 .careers-whowe {
   min-height: 660px;
@@ -402,28 +500,28 @@ body{
   textarea {
     height: 200px;
   }
-  button {
-    background: $seminar-green-color;
-    padding: 0 80px 0 30px;
-    color: $white;
-    line-height: 60px;
-    text-transform: uppercase;
-    font-size: 20px;
-    position: relative;
-    margin-top: 50px;
-    svg {
-      position: absolute;
-      top: 20px;
-      right: 50px;
-      transition: all 0.5s linear;
-    }
-    &:hover {
-      svg {
-        right: 20px;
-        transition: all 0.5s linear;
-      }
-    }
-  }
+  // button {
+  //   background: $seminar-green-color;
+  //   padding: 0 80px 0 30px;
+  //   color: $white;
+  //   line-height: 60px;
+  //   text-transform: uppercase;
+  //   font-size: 20px;
+  //   position: relative;
+  //   margin-top: 50px;
+  //   svg {
+  //     position: absolute;
+  //     top: 20px;
+  //     right: 50px;
+  //     transition: all 0.5s linear;
+  //   }
+  //   &:hover {
+  //     svg {
+  //       right: 20px;
+  //       transition: all 0.5s linear;
+  //     }
+  //   }
+  // }
   .uploadfile-wrapper{
     position: relative;
     margin-bottom: 20px;
@@ -478,29 +576,29 @@ body{
     font-size: 30px;
     margin-bottom: 30px;
   }
-  a {
-    display: inline-block;
-    padding: 0 80px 0 20px;
-    line-height: 60px;
-    font-size: 18px;
-    background: $seminar-green-color;
-    color: $white;
-    text-decoration: none;
-    position: relative;
-    text-transform: uppercase;
-    svg {
-      position: absolute;
-      top: 20px;
-      right: 50px;
-      transition: all 0.4s linear;
-    }
-    &:hover {
-      svg {
-        right: 20px;
-        transition: all 0.4s linear;
-      }
-    }
-  }
+  // a {
+  //   display: inline-block;
+  //   padding: 0 80px 0 20px;
+  //   line-height: 60px;
+  //   font-size: 18px;
+  //   background: $seminar-green-color;
+  //   color: $white;
+  //   text-decoration: none;
+  //   position: relative;
+  //   text-transform: uppercase;
+  //   svg {
+  //     position: absolute;
+  //     top: 20px;
+  //     right: 50px;
+  //     transition: all 0.4s linear;
+  //   }
+  //   &:hover {
+  //     svg {
+  //       right: 20px;
+  //       transition: all 0.4s linear;
+  //     }
+  //   }
+  // }
 }
 .position-wrapper {
   display: flex;
@@ -533,15 +631,15 @@ body{
       // max-height: 100px;
       // overflow: hidden;
     }
-    a {
-      background: var(--light-green);
-      padding: 0 60px 0 30px;
-      line-height: 60px;
-      color: $white;
-      display: inline-block;
-      margin-top: 50px;
-      text-decoration: none;
-    }
+    // a {
+    //   background: var(--light-green);
+    //   padding: 0 60px 0 30px;
+    //   line-height: 60px;
+    //   color: $white;
+    //   display: inline-block;
+    //   margin-top: 50px;
+    //   text-decoration: none;
+    // }
   }
   .accordionbtn {
     width: 30%;
