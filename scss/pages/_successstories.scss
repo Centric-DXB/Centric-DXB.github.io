@@ -211,7 +211,6 @@ body{
 }
 .success-story {
   min-height: 950px;
-  overflow: hidden;
   .row{
     padding-top: 61px;
   }
@@ -401,6 +400,9 @@ body{
         float: right;
         margin-left: 5px;
         font-size: 50px;
+        @media screen and (max-width:992px) {
+          margin-top: -15px;
+          }
       }
       &.active,
       &:hover {
@@ -415,6 +417,9 @@ body{
   }
 }
 
+button.slick-disabled::before{
+  background-color: #D8DEE5 !important;
+}
 
 @media screen and (max-width: 991px) {
   .arabic {
@@ -480,18 +485,31 @@ body{
         padding-bottom: 50px;
         margin: 0 0px;
         font-size: 16px;
+        @media screen and (max-width:992px) {
+          padding:0px 30px 50px 50px;
+          font-size: 18px;
+        }
       }
     }
     .future-container {
       .bullets-wrapper {
         padding: 30px 0px 30px 0px;
+        @media screen and (max-width:992px) {
+          padding:20px 30px 30px 50px;
+        }
       }
       .bullets-points {
         .bullets-points-number {
           font-size: 27px;
+          @media screen and (max-width:992px) {
+            font-size: 24px;
+          }
         }
         .bullets-pointscontent {
           font-size: 20px;
+          @media screen and (max-width:992px) {
+            font-size: 24px;
+          }
         }
       }
       .future-img {
@@ -559,7 +577,7 @@ body{
         background-size: 90px;
         padding: 50px 0px 0 0;
         .story-title {
-          margin: 0px 0 0 0px;
+          margin: 0px 30px 0 50px;
         }
       }
       .posRel {
@@ -595,7 +613,7 @@ body{
           p {
             // max-height: 65px;
             font-size: 14px;
-            margin-top: 10px;
+            margin-top: 20px;
           }
         }
         .accordionbtn {
@@ -632,9 +650,9 @@ body{
     bottom: -70px;
     background-color: #122D6E;
 }
-.carousel-border-bottom{
-  border-bottom: 1px solid #CCCCCC;
-}
+// .carousel-border-bottom{
+//   border-bottom: 1px solid #CCCCCC;
+// }
 
 .success-story button{
   position: relative;
@@ -677,7 +695,7 @@ body{
   }
   .slick-slider {
     // margin-right: -300px;
-    margin-top: 50px;
+    margin-top: 150px;
     @media (max-width: 992px) {
       margin-right: 0;
       margin-top: 0;

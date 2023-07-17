@@ -269,7 +269,7 @@
         height: 70px;
         width: 70px;
         border-radius: 50%;
-        top: 300px;
+        top: 200px;
         left: 49%;
         margin-left: -12px;
         display: flex;
@@ -278,16 +278,16 @@
         color: #fff;
         font-size: 24px;
         @media (max-width:1368px) {
-            top: 200px;
+            top: 190px;
         }
         @media (max-width: 992px) {
             top: 565px;
             transform: rotate(90deg);
             left: 17%;
         }
-        @media screen and (max-width: 575px){
-            top: 515px;
-        }
+        // @media screen and (max-width: 575px){
+        //     top: 515px;
+        // }
     }
 
     .nav {
