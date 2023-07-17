@@ -13,6 +13,27 @@
 //     stopAutoOnClick: true,
 // });
 
+//who we are function is placed here.
+function handleExpandMore() {
+    $(".moreless-button").click(function () {
+      const expandMore = ".expand-more";
+      const expandLess = ".expand-less";
+      const parent = $(this).parent();
+      $(".moretext", parent).slideToggle();
+      const isExpanded = $(this).hasClass("expand-more");
+
+      if (isExpanded) {
+        $(expandMore, parent).addClass("d-none");
+        $(expandLess, parent).removeClass("d-none");
+      } else {
+        $(expandLess, parent).addClass("d-none");
+        $(expandMore, parent).removeClass("d-none");
+      }
+    });
+  }
+
+  //FUNCTION CALLING
+  handleExpandMore();
 
 // CAREERS PAGE JOB APPLICATION FILE
 const realFileBtn = document.getElementById("real-file");
@@ -414,6 +435,45 @@ $('.seminar-carousel').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: true
+            }
+        },
+    ]
+});
+
+//carousel for top solutions
+$('.solutions-carousel').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    // autoplaySpeed: 3000,
+    // speed: 2000,
+    infinite:false,
+    // autoplay: true,
+    dots: true,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                // dots: true   
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //infinite: true,
+                // dots: true
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // dots: true
             }
         },
     ]
@@ -1008,25 +1068,6 @@ function changeSuccessStoriesSection(index){
     });
     storryWrapper.classList.add('active');
 }
-//who we are function is placed here.
-function handleExpandMore() {
-    $(".moreless-button").click(function () {
-      const expandMore = ".expand-more";
-      const expandLess = ".expand-less";
-      const parent = $(this).parent();
-      $(".moretext", parent).slideToggle();
-      const isExpanded = $(this).hasClass("expand-more");
 
-      if (isExpanded) {
-        $(expandMore, parent).addClass("d-none");
-        $(expandLess, parent).removeClass("d-none");
-      } else {
-        $(expandLess, parent).addClass("d-none");
-        $(expandMore, parent).removeClass("d-none");
-      }
-    });
-  }
 
-  //FUNCTION CALLING
-  handleExpandMore();
 
