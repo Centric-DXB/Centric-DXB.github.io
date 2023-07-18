@@ -97,6 +97,35 @@
       }
     }
   }
+  .btn__theme-all{
+    margin: 40px 100px 40px 0px;
+  }
+  @media screen and (max-width:992px) {
+    .btn__theme-career-mobile{
+      margin:0px 50px 10px 10px;
+
+    }
+  }
+  .success-story .story-wrapper .story-title span{
+    padding-right: 110px;
+  }
+  .btn__theme-all-an{
+    margin-right: 0px !important;
+  }
+ @media screen and (max-width:992px) {
+   .success-button .pagination-btn {
+     flex-direction: row-reverse;
+     left: 0px !important;
+   }
+
+   .careerMainPage .success-button .slick-prev {
+      left: 0px !important;
+   }
+   .careerMainPage .success-button .slick-next {
+    right: 0px !important;
+ }
+ }
+
   .bx-wrapper {
     
   }
@@ -397,8 +426,9 @@
   .careerMainPage .careercarousel-wrapper {
     right: unset;
     left: 0;
-    padding: 200px 50px 120px 10px;
+    // padding: 200px 50px 120px 10px;
   }
+
   .careerMainPage .careercarousel-wrapper{
     h2{
       padding-right: 0;
@@ -451,16 +481,20 @@
       padding: 100px 0 0 0;  
     }
   }
-  .careerMainPage .success-story button{
+  .careerMainPage .success-button button{
     position: relative;
     width: auto;
     height: auto;
     top: 10px;
   }
-  .careerMainPage .success-story .slick-prev{
+  .pagination-btn, .success-button .pagination-btn
+  {
+    left: 100px;
+  }
+  .careerMainPage .success-button .slick-prev{
     left: -235px;
   }
-  .careerMainPage .success-story .slick-next{
+  .careerMainPage .success-button .slick-next{
     right: -235px;
   }
   .careerMainPage .success-story .slick-slider{
@@ -625,9 +659,14 @@
           padding-left: 50px;
           font-family: var(--arabic-font);
         }
-        p{
-          padding: 0 0 0 70px;
-        }
+                p {
+                  padding: 0 0 0 70px;
+        
+                  @media (max-width: 992px) {
+                    font-size: 16px;
+                    padding: 0 40px 0 20px;
+                  }
+                }
       }
     }
   }
@@ -881,44 +920,44 @@
   }
   .top__section{
     &::before{
-      right: unset;
-      left: 0;
-      @media (max-width: 992px) {
-        height: 44%;
-      }
-      @media (max-width: 768px) {
-        height: 45%;
-      }
-      @media (max-width: 767px) {
-        height: 45%;
-      }
-      @media (max-width: 620px) {
-        height: 42%;
-      }
-      @media (max-width: 575px) {
-        height: 48%;
-      }
-      @media (max-width: 574px) {
-        height: 47%;
-      }
-      @media (max-width: 450px) {
-        height: 46%;
-      }
-      @media (max-width: 389px) {
-        height: 35%;
-      }
+      right: 0;
+      left: unset;
+      // @media (max-width: 992px) {
+      //   height: 44%;
+      // }
+      // @media (max-width: 768px) {
+      //   height: 45%;
+      // }
+      // @media (max-width: 767px) {
+      //   height: 45%;
+      // }
+      // @media (max-width: 620px) {
+      //   height: 42%;
+      // }
+      // @media (max-width: 575px) {
+      //   height: 48%;
+      // }
+      // @media (max-width: 574px) {
+      //   height: 47%;
+      // }
+      // @media (max-width: 450px) {
+      //   height: 46%;
+      // }
+      // @media (max-width: 389px) {
+      //   height: 35%;
+      // }
     }
     &::after{
       transform: rotate(180deg);
       left: unset;
-      right: 47%;
-      @media (max-width: 992px) {
-        transform: rotate(90deg);
-        top: 46%;
-      }
-      @media (max-width: 767px) {
-        top: 53%;
-      }
+      right: 49%;
+      // @media (max-width: 992px) {
+      //   transform: rotate(90deg);
+      //   top: 46%;
+      // }
+      // @media (max-width: 767px) {
+      //   top: 53%;
+      // }
     }
   }
 
@@ -1132,7 +1171,7 @@
         padding-left: 0;
         padding-right: 110px;
         @media screen and (max-width: 991px){
-          padding-right: 0px;
+          padding:0 50px 0 30px;
         }
       }
       .our__solutions{
@@ -1148,6 +1187,7 @@
       }
     }
   }
+  
   
   .applyform-conatiner{
     button{
@@ -1426,7 +1466,7 @@
         padding-right: 110px;
         @media (max-width: 992px) {
           max-width: 100%;
-          padding-right: 0;
+          padding: 0 50px 0 30px;
         }
         
        }

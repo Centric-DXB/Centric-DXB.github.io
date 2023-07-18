@@ -154,7 +154,7 @@ body{
     }
   }
   .btn__theme-all-an{
-    margin:20px 0px  !important;
+    margin:40px 0px  !important;
     &:hover{
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.256) !important;
     }
@@ -168,7 +168,9 @@ body{
   @media screen and (max-width:992px) {
     .btn__theme-career-mobile{
       margin:0px 10px 10px 50px;
-
+    }
+    .btn__theme-all-an{
+      margin:40px 0px  !important;
     }
   }
   
@@ -731,6 +733,10 @@ a.btn__content, .btn__theme-all button {
 
 
 @media screen and (max-width: 992px) {
+  .locations--name-wrapper
+   {
+    display: none !important;
+   }
   .arabic {
     .careerMainPage {
       .careers-whowe {
@@ -948,9 +954,10 @@ a.btn__content, .btn__theme-all button {
    .hero-M{
      display: block;
    }
+   
    .herobanner .herobanner-content .herobanner-topheading 
-   {
-    margin-top: 350px;
+{
+  margin-top: 350px !important;
     h2{
       font-size: 20px;
       font-weight: 900;
@@ -963,7 +970,9 @@ a.btn__content, .btn__theme-all button {
       padding: 0px 30px 0 20px;
      }
    }
-
+  //  .herobanner .herobanner-content .herobanner-topheading-Career{
+   
+  //  }
 
   .careerMainPage{
     .success-story{

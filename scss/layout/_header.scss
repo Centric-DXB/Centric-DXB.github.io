@@ -428,6 +428,7 @@ header {
   .mobile--header {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     .menu-menu {
       .mobile-menu {
         display: inline-block;
