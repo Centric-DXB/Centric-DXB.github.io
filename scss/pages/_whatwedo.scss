@@ -500,35 +500,50 @@
         background-size: cover;
     }
 }
+.TS-Desktop {
+    display: block !important;
+
+    @media screen and (max-width:992px) {
+        display: none !important;
+    }
+}
+
+.TS-Mobile {
+    display: none !important;
+
+    @media screen and (max-width:992px) {
+        display: block !important;
+    }
+}
 .solution__topsolution-wrapper{
-    display: block;
+    // display: block;
     width: 100%;
-    padding: 100px 0;
-    background: var(--dark-blue-color);
+    padding:0 !important;
+    background:var(--white);
     @media screen and (max-width: 1024px){
         min-height: 1050px;
     }
     @media (max-width: 992px) {
-        min-height: 1500px;
-    }
-    @media (max-width: 767px) {
-        min-height: 1850px;
+        min-height: 800px;
     }
     // @media (max-width: 767px) {
     //     min-height: 1850px;
     // }
-    @media (max-width: 575px) {
-        min-height: 1900px;
-    }
-    @media screen and (max-width: 620.99px){
-        min-height: 1940px;
-    }
-    @media (max-width: 480px) {
-        min-height: 1900px;
-    }
-    @media (max-width: 388px) {
-        min-height: 2910px;
-    }
+    // // @media (max-width: 767px) {
+    // //     min-height: 1850px;
+    // // }
+    // @media (max-width: 575px) {
+    //     min-height: 1900px;
+    // }
+    // @media screen and (max-width: 620.99px){
+    //     min-height: 1940px;
+    // }
+    // @media (max-width: 480px) {
+    //     min-height: 1900px;
+    // }
+    // @media (max-width: 388px) {
+    //     min-height: 2910px;
+    // }
     h2{
         font-size: 33px;
         font-weight: 500;
@@ -754,12 +769,12 @@
         position: relative;
         margin-bottom: 50px;
         margin-top: 150px;
-        @media (max-width: 767px){
-            padding-left: 120px;
-            font-size: 20px;
-            letter-spacing: 0;
-            padding-top: 10px;
-        }
+        // @media (max-width: 767px){
+        //     padding-left: 120px;
+        //     font-size: 20px;
+        //     letter-spacing: 0;
+        //     padding-top: 10px;
+        // }
         &::after{
             content: '';
             position: absolute;
@@ -768,9 +783,9 @@
             background: var(--light-green);
             left: 0;
             top: 19px;
-            @media (max-width: 767px){
-                left: 20px;
-            }
+            // @media (max-width: 767px){
+            //     left: 20px;
+            // }
         }
         &::before{
             content: '';
@@ -781,9 +796,9 @@
             left: 60px;
             top: 6px;
             //transform: rotate(45deg);
-            @media (max-width: 767px){
-                left: 80px;
-            }
+            // @media (max-width: 767px){
+            //     left: 80px;
+            // }
         }
     }
     p{

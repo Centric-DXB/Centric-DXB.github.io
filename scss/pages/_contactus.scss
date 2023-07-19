@@ -8,7 +8,7 @@
 //             padding-left: 110px;
             padding-left: 100px;
             @media (max-width: 992px) {
-                padding-left: 0;
+                padding: 0 20px;
             }
             li{
                 position: relative;
@@ -57,9 +57,11 @@
         margin-top: 100px;
         @media (max-width: 767px){
             padding-left: 120px;
-            font-size: 20px;
+            font-size: 24px;
+            font-weight: 500;
             letter-spacing: 0;
             padding-top: 10px;
+            margin-top: 50px;
         }
         &::after{
             content: '';
@@ -91,7 +93,7 @@
         padding-left: 100px;
         display: block;
         @media (max-width: 992px) {
-            padding-left: 0;
+            padding: 0 20px;
         }
         h3{
             font-size: 60px;
@@ -183,7 +185,9 @@
                 font-size: 40px;
             }
             @media (max-width: 992px) {
-                font-size: 36px;
+                font-size: 30px;
+                font-weight: bold;
+                padding: 0 20px;
             }
         }
         p{
@@ -191,6 +195,10 @@
             padding-right: 510px;
             @media (max-width: 1400px) {
                 padding-right: 100px;
+            }
+            @media (max-width: 992px) {
+                font-size: 20px;
+                padding: 0 20px;
             }
         }
     }

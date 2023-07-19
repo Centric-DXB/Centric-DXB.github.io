@@ -1,10 +1,17 @@
 body{
   overflow-x: hidden;
 }
+.hero-M{
+  display:none ;
+}
 .carrers-wrapper {
   background: var(--dark-purple);
   .our__solutions {
     padding: 40px 0px 30px;
+    @media screen and (max-width:992px) {
+      padding:40px 30px 30px 50px;
+    }
+
     .pagination__list ul {
       padding-left: 70px;
     }
@@ -45,7 +52,7 @@ body{
   a.button {
     background: var(--light-green);
     padding: 0 60px 0 30px;
-    line-height: 60px;
+    line-height: 60px;   
     color: var(--white);
     display: inline-block;
     margin-left: 100px;
@@ -147,7 +154,7 @@ body{
     }
   }
   .btn__theme-all-an{
-    margin: 0 !important;
+    margin:40px 0px  !important;
     &:hover{
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.256) !important;
     }
@@ -158,6 +165,15 @@ body{
   .btn__theme-all-whatwedo{
     margin: 250px auto 0px;
   }
+  @media screen and (max-width:992px) {
+    .btn__theme-career-mobile{
+      margin:0px 10px 10px 50px;
+    }
+    .btn__theme-all-an{
+      margin:40px 0px  !important;
+    }
+  }
+  
 
 a.btn__content, .btn__theme-all button {
   width: 200px;
@@ -254,6 +270,9 @@ a.btn__content, .btn__theme-all button {
       padding: 6px 0 0 25px;
       transition: all 0.2s linear;
       font-weight: 700;
+      @media screen and (max-width:992px) {
+        padding-top: 0px !important;
+        }
     }
     &:hover {
       .bullets-points-number,
@@ -298,16 +317,27 @@ a.btn__content, .btn__theme-all button {
   }
   .future-content-wrapper {
     padding: 100px 0 0 100px;
+    @media screen and (max-width:992px) {
+      padding-bottom:0px !important;
+    }
     .future-content {
       display: none;
       h3 {
         color: rgba($color: $seminar-green-color, $alpha: 1);
         font-size: 30px;
         margin-bottom: 30px;
+        @media screen and (max-width:992px) {
+          padding:0 30px 0 50px;
+          font-size: 24px;
+        }
       }
       p {
         padding: 0;
         font-size: 20px;
+        @media screen and (max-width:992px) {
+          padding:0px 30px 50px 50px;
+          font-size: 18px;
+        }
       }
       &.active {
         display: block;
@@ -345,7 +375,7 @@ a.btn__content, .btn__theme-all button {
   }
   .story-wrapper {
     background: url(../images/careers-quote.png) no-repeat right 25px;
-    padding: 250px 50px 0 0;
+    padding: 150px 50px 0 0 !important;
     .story-title {
       display: block;
       margin: 100px 0 0 100px;
@@ -361,13 +391,16 @@ a.btn__content, .btn__theme-all button {
   }
   .posRel {
     position: relative;
+    // display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
     .story-img {
       position: absolute;
       left: 0;
       top: -61px;
       width: 840px;
       @media (max-width: 992px) {
-        top: 0;
+        // top: 0;
         position: relative;
         width: 100%;
       }
@@ -699,7 +732,11 @@ a.btn__content, .btn__theme-all button {
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
+  .locations--name-wrapper
+   {
+    display: none !important;
+   }
   .arabic {
     .careerMainPage {
       .careers-whowe {
@@ -716,7 +753,7 @@ a.btn__content, .btn__theme-all button {
   }
   .careerMainPage {
     .padding-tb {
-      padding: 70px 0;
+      padding-bottom: 0px !important;
     }
     .careers-whowe {
       .posRel {
@@ -729,7 +766,11 @@ a.btn__content, .btn__theme-all button {
         }
       }
     }
+    .carrers-wrapper .careercarousel-wrapper h2{
+      padding-left: 0px !important;
+    }
     .carrers-wrapper {
+      overflow: visible;
       .our__solutions {
         .container {
           padding: 0;
@@ -748,17 +789,26 @@ a.btn__content, .btn__theme-all button {
       }
       h2 {
         margin: 0 0px 30px;
-        font-size: 18px;
-        letter-spacing: 3px;
+        font-size: 24px !important;
+        letter-spacing: 1px !important;
         line-height: 40px;
+        padding-left: 70px;
+      }
+      h2::before {
+        left: 30px;
+      }
+      h2::after {
+        width: 40px;
       }
       p {
         padding-left: 0;
         padding-bottom: 50px;
         margin: 0 0px;
-        font-size: 16px;
+        font-size: 18px;
+
       }
     }
+    
     .future-container {
       .bullets-wrapper {
         padding: 30px 0px 30px 0px;
@@ -787,6 +837,8 @@ a.btn__content, .btn__theme-all button {
       padding: 100px 0 0 0px;
     }
     .initiatives {
+      border-top: none;
+      border-bottom:none;
       .initiative-leftcontent {
         padding: 30px 0 0 0;
       }
@@ -831,6 +883,7 @@ a.btn__content, .btn__theme-all button {
       }
     }
     .success-story {
+      
       .story-wrapper {
         background: url('../images/careers-quote.png') no-repeat right 0px;
         background-size: 90px;
@@ -895,6 +948,32 @@ a.btn__content, .btn__theme-all button {
   }
 }
 @media screen and (max-width: 450px) {
+  .hero-D{
+    display: none; 
+   }
+   .hero-M{
+     display: block;
+   }
+   
+   .herobanner .herobanner-content .herobanner-topheading 
+{
+  margin-top: 350px !important;
+    h2{
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 30px;
+      padding: 0px 30px 0 20px;
+     }
+     h1{
+      font-size: 30px;
+      font-weight: 500;
+      padding: 0px 30px 0 20px;
+     }
+   }
+  //  .herobanner .herobanner-content .herobanner-topheading-Career{
+   
+  //  }
+
   .careerMainPage{
     .success-story{
       .story-wrapper{
@@ -904,23 +983,31 @@ a.btn__content, .btn__theme-all button {
   }  
 }
 
-.pagination-btn {
+.pagination-btn,
+.success-button .pagination-btn {
     position: relative;
     bottom: -70px;
     background-color: #122D6E;
+    left: -100px ;
+    @media screen  and (max-width:992px) {
+      left: 0px;
+    }
 }
 .carousel-border-bottom{
   border-bottom: 1px solid #CCCCCC;
 }
 
-.success-story button{
+.success-story button,
+.success-button button
+{
   position: relative;
   width: auto ;
   height: auto ;
   top: 10px;
 }
-
-.success-story button::before{
+.success-story button::before,
+.success-button button::before
+{
   background-color: rgb(97, 210, 129);
   border-radius: 50%;
   border: 8px solid rgb(255, 255, 255);
@@ -939,6 +1026,9 @@ a.btn__content, .btn__theme-all button {
  
 }
 
+.success-button  button.slick-disabled::before{
+  background-color: #D8DEE5 !important;
+}
 .success-story  button.slick-disabled::before{
   background-color: #D8DEE5 !important;
 }
