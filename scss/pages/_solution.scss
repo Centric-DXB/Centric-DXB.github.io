@@ -53,6 +53,10 @@
 
     .pagination__list {
         margin-bottom: 80px;
+        @media (max-width: 992px) {
+            margin-bottom: 50px;
+            padding-left: 50px;
+        }
 
         ul {
             display: flex;
@@ -107,6 +111,9 @@
             position: relative;
             padding-left: 110px;
             letter-spacing: 5px;
+            @media (max-width: 992px) {
+                font-size: 24px;
+            }
 
             &::before {
                 content: "";
@@ -116,6 +123,10 @@
                 background: url(../images/logowhitecircle.svg) no-repeat 0 0;
                 left: 60px;
                 top: 6px;
+                @media screen and (max-width: 992px){
+                    top: 0px;
+                    
+                }
             }
 
             &::after {
@@ -126,6 +137,10 @@
                 background: var(--light-green);
                 left: 0;
                 top: 19px;
+                @media screen and (max-width: 992px){
+                    top: 10px;
+                    width: 40px;
+                }
             }
         }
 
@@ -140,6 +155,10 @@
             @media (max-width: 992px) {
                 //padding-left: 0;
                 max-width: 100%;
+                padding-left:50px;
+                padding-right: 30px;
+                font-weight: 300;
+                font-size: 18px !important;
             }
 
             &:last-child {
@@ -161,10 +180,10 @@
         padding: 10px 20px;
         .slick-slide{
             margin:10px 20px;
-            width: 220px !important;
-            @media screen and (max-width:325px) {
-                width: auto !important;
-            }
+            // width: 220px !important;
+            // @media screen and (max-width:325px) {
+            //     width: auto !important;
+            // }
         }
         .slick-dots{
             bottom: 30px;
@@ -195,16 +214,27 @@
             }
         }
          .nav-link1 {
+            // color: var(--white);
+            // position: relative;
+            // padding: 0px 8px;
+            // width: 100% !important;
+            // height: auto !important;
+            // margin-bottom: 20px;
+            // text-decoration: none;
             color: var(--white);
             position: relative;
             padding: 0px 8px;
-            width: 100% !important;
+            width: 70% !important;
             height: auto !important;
+            margin: 0 auto;
+            display: flex !important;
+            flex-direction: column;
             margin-bottom: 20px;
             text-decoration: none;
-            @media (max-width: 992px) {
-                display: inline-block;
-            }
+            justify-content: center;
+            // @media (max-width: 992px) {
+            //     display: inline-block;
+            // }
         }
          .nav-link1.active {
             background-color: transparent;  
@@ -253,10 +283,16 @@
         // right: 0;
         left: 0;
         @media (max-width: 992px) {
-            height: 600px;
+            height: 500px;
             width: 100%;
             // bottom: 0;
             top: 0;
+        }
+        @media (max-width: 575px) {
+            height: 580px !important;
+        }
+        @media (max-width: 450px) {
+            height: 540px !important;
         }
     }
 
@@ -284,6 +320,12 @@
             top: 565px;
             transform: rotate(90deg);
             left: 17%;
+        }
+        @media (max-width: 575px) {
+            top: 555px;
+        }
+        @media (max-width: 450px) {
+            top: 515px;
         }
         // @media screen and (max-width: 575px){
         //     top: 515px;
@@ -583,6 +625,7 @@
         width: 450px;
         // min-height: 710px ;
     }
+    
 
     
 
@@ -592,6 +635,11 @@
             left: 40px;
         }
     } 
+}
+@media screen and (max-width:450px) {
+    .soluton__banner {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 992px) {

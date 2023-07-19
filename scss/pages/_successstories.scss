@@ -1,12 +1,31 @@
 body{
   overflow-x: hidden;
 }
+
+.video-align
+{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .ceostories-wrapper {
+  min-height: auto !important;
+  // overflow: visible !important;
   background: var(--dark-purple);
   .our__solutions {
     padding: 40px 0px 30px;
-    .pagination__list ul {
-      padding-left: 70px;
+    .pagination__list{
+      @media (max-width: 992px){
+        margin-bottom: 0px;
+        padding-left: 0px !important;
+      }
+      ul {
+        padding-left: 70px;
+        @media (max-width: 992px){
+          padding-left: 30px;
+
+        }
+      }
     }
   }
   h2 {
@@ -15,6 +34,9 @@ body{
     position: relative;
     padding-left: 100px;
     color: var(--white);
+    @media (max-width: 992px){
+      font-size: 24px;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -41,7 +63,9 @@ body{
     font-size: 20px;
     margin-bottom: 20px;
     @media (max-width: 992px) {
-        padding-left: 0;
+      padding: 0px 30px 50px 50px;
+      font-size: 18px;
+      font-weight: 300;
     }
   }
   a.button {
@@ -54,8 +78,12 @@ body{
     margin-top: 50px;
     text-decoration: none;
   }
+
   .ceostories-img{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     img{
         @media (max-width: 1199px) {
             width: 100%;
@@ -83,9 +111,9 @@ body{
         }
     }
     .video-section{
-      position: absolute;
-      top: 0;
-      left: 0;
+      position: relative;
+      // top: 0;
+      // left: 0;
       width: 100%;
     }
   }
@@ -95,6 +123,7 @@ body{
 
 .relatedstories-wrapper{
     background: $dark-blue-color;
+    overflow: hidden;
     border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
     border-top: 1px solid rgba($color: #fff, $alpha: .2);
     h2{
