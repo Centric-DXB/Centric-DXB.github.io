@@ -96,6 +96,59 @@ $('nav.topsolution li').on('click', function () {
     }
 });
 
+
+// $('a#data-one').click(function() {
+//     $('#data-one').addClass('show');
+//     $('#data-one').removeClass('hide');
+//     $('#data-two').addClass('hide');
+//     $('#data-three').addClass('hide');
+//     $('#data-four').addClass('hide');
+// });
+// $('a#data-two').click(function() {
+//     $('#data-one').removeClass('show');
+//     $('#data-two').addClass('show');
+//     $('#data-three').hide();
+//     $('#data-four').hide();
+// });
+// $('#data-three').click(function() {
+//     $('#data-one').hide();
+//     $('#data-two').hide();
+//     $('#data-three').show();
+//     $('#data-four').hide();
+// });
+// $('#data-four').click(function() {
+//     $('#data-one').hide();
+//     $('#data-two').hide();
+//     $('#data-three').hide();
+//     $('#data-four').show();
+// });
+
+
+$('.topsolutions-mobile a').click(function () {
+    $('a').removeClass('active-tab');
+    $(this).addClass('active-tab');
+});
+
+// Show the first tab by default
+$(".topsolutions-content-wrapper[data-tab='tab1']").show();
+
+// Handle click event on the tab
+$(".tab").click(function() {
+  var tabToShow = $(this).data("tab");
+
+  // Hide all tab contents
+  $(".topsolutions-content-wrapper").hide();
+
+  // Show the selected tab content
+  $(".topsolutions-content-wrapper[data-tab='" + tabToShow + "']").show();
+});
+
+
+//$('#data-two, #data-three, #data-four').hide();
+
+
+
+
 // DESKTOP CAROUSEL
 $('.slick-carousel').slick({
     slidesToShow: 4,

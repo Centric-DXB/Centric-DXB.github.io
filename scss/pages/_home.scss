@@ -2728,7 +2728,10 @@
         }
     }
     .topsolutions-content-wrapper{
-        display: block;
+        display: none;
+        &.show{
+            display: block;
+        }
         .topsolutions-mobile-content{
             display: block;
             overflow: hidden;

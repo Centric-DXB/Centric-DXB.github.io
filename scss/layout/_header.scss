@@ -435,7 +435,7 @@ header {
   .mobile--header {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    margin-bottom: 20px;
     .menu-menu {
       .mobile-menu {
         display: inline-block;
@@ -443,7 +443,7 @@ header {
         //background: var(--mobile-navigation);
         border-radius: 50px;
         padding: 15px;
-        margin: 10px 0 0 0;
+        margin: 15px 0 0 0;
         cursor: pointer;
         svg {
           color: var(--white);
