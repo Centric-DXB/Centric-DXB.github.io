@@ -2,7 +2,7 @@ body{
   overflow-x: hidden;
 }
 .hero-M{
-  display:none ;
+  display:none !important;
 }
 .carrers-wrapper {
   background: var(--dark-purple);
@@ -949,15 +949,15 @@ a.btn__content, .btn__theme-all button {
 }
 @media screen and (max-width: 450px) {
   .hero-D{
-    display: none; 
+    display: none !important; 
    }
    .hero-M{
-     display: block;
+     display: block !important;
    }
    
    .herobanner .herobanner-content .herobanner-topheading 
 {
-  margin-top: 350px !important;
+  margin-top: 500px !important;
     h2{
       font-size: 20px;
       font-weight: 900;
@@ -966,7 +966,8 @@ a.btn__content, .btn__theme-all button {
      }
      h1{
       font-size: 30px;
-      font-weight: 500;
+      font-weight: 900;
+      line-height: 40px;
       padding: 0px 30px 0 20px;
      }
    }
