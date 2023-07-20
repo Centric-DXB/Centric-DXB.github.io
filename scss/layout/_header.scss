@@ -631,11 +631,6 @@ header {
   border-radius: 5px;
   padding: 10px 0;
   text-align: center;
-  font-size: 18px;
-  width: 100%;
-  margin: 30px 0px 0px 0;
-  padding: 10px 0;
-
   a{
     color: $white;
     text-decoration: none;
@@ -643,19 +638,22 @@ header {
   @media (max-width: 992px){
     // margin: 0 auto;
     display: block;
-    //z-index: 5;
-    //position: absolute;
-    
+    margin: 30px 0px 0px 20px;
+    padding: 10px 30px;
+    z-index: 5;
+    position: absolute;
+    width: 92%;    
   }
   @media (max-width: 600px){
     // margin-bottom: 20px;
-    font-size: 18px;
+    width: 90%;    
   }
   @media (max-width: 475px){
     // margin-bottom: 20px;
-    font-size: 14px;
+    width: 88%;    
   }
 }
+
 
 
 .preloader {
