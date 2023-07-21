@@ -198,8 +198,8 @@ $('.slick-carousel').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                dots: true,
-                arrows: false
+                //dots: true,
+                //arrows: true
             }
         },
 

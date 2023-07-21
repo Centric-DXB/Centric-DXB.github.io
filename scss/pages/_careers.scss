@@ -1,9 +1,6 @@
 body{
   overflow-x: hidden;
 }
-.hero-M{
-  display:none !important;
-}
 .carrers-wrapper {
   background: var(--dark-purple);
   .our__solutions {
@@ -946,14 +943,10 @@ a.btn__content, .btn__theme-all button {
       }
     }
   }
+  
 }
 @media screen and (max-width: 450px) {
-  .hero-D{
-    display: none !important; 
-   }
-   .hero-M{
-     display: block !important;
-   }
+  
    
    .herobanner .herobanner-content .herobanner-topheading 
 {
