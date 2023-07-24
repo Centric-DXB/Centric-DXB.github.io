@@ -55,14 +55,14 @@
         text-transform: unset;
         margin-bottom: 50px;
         margin-top: 100px;
-        @media (max-width: 767px){
-            padding-left: 120px;
-            font-size: 24px;
-            font-weight: 500;
-            letter-spacing: 0;
-            padding-top: 10px;
-            margin-top: 50px;
-        }
+        // @media (max-width: 992px){
+        //     padding-left: 120px;
+        //     font-size: 24px;
+        //     font-weight: 900;
+        //     letter-spacing: 0;
+        //     padding-top: 10px;
+        //     margin-top: 50px;
+        // }
         &::after{
             content: '';
             position: absolute;
@@ -71,9 +71,9 @@
             background: var(--light-green);
             left: 0;
             top: 19px;
-            @media (max-width: 767px){
-                left: 20px;
-            }
+            // @media (max-width: 767px){
+            //     left: 20px;
+            // }
         }
         &::before{
             content: '';
@@ -84,9 +84,9 @@
             left: 60px;
             top: 6px;
             //transform: rotate(45deg);
-            @media (max-width: 767px){
-                left: 80px;
-            }
+            // @media (max-width: 767px){
+            //     left: 80px;
+            // }
         }
     }
     .contact-form{
@@ -208,121 +208,81 @@
             width: 100%;
         }
     }
-    .locations--name-wrapper{
-        display: block;
-        margin-top: 150px;
-        li{
-            padding-bottom: 50px;
-            border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
-            margin-bottom: 30px;
-        }
-        .location-wrapper{
-            display: flex;
-            justify-content: space-evenly;
-            padding-bottom: 50px;
-            border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
-            margin-bottom: 30px;
-            .img{
-                width: 30%;
-                text-align: center;
+        .locations--name-wrapper {
+            display: block;
+            margin-top: 150px;
+    
+            li {
+                padding-bottom: 50px;
+                border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
+                margin-bottom: 30px;
             }
-            .location-address{
-                color: var(--white);
-                padding-left: 20px;
-                width: 70%;
-                @media (max-width: 992px) {
-                    width: 70%
+    
+            .location-wrapper {
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 50px;
+                border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
+                margin-bottom: 30px;
+    
+                .img {
+                    width: 30%;
+                    text-align: center;
                 }
-                h3{
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                }
-                p{
-                    font-size: 12px;
+    
+                .location-address {
+                    color: var(--white);
+                    padding-left: 20px;
+                    width: 70%;
+    
+                    @media (max-width: 992px) {
+                        width: 70%
+                    }
+    
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+    
+                    p {
+                        font-size: 12px;
+                    }
                 }
             }
         }
+        }
+@media (max-width: 992px){
+    .contactus-wrapper{
+        .pagination__list{
+            padding:40px 30px 30px 50px;
+    
+        }
+        h2 {
+            margin: 0 0px 30px;
+            font-size: 24px !important;
+            letter-spacing: 1px !important;
+            line-height: 40px;
+            padding-left: 70px;
+          }
+          h2::before {
+            left: 30px;
+          }
+          h2::after {
+            left: -15px;
+            width: 40px;
+            
+          }
+          p {
+            padding-left: 0;
+            padding-bottom: 50px;
+            margin: 0 0px;
+            font-size: 18px;
+    
+          }
+        //   .contact-form h3,
+        //   .contact-form p{
+        //     padding:0 30px 0 50px;
+        //   }
     }
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

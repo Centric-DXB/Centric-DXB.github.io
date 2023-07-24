@@ -22,7 +22,7 @@ body{
       ul {
         padding-left: 70px;
         @media (max-width: 992px){
-          padding-left: 30px;
+          padding-left: 50px;
 
         }
       }
@@ -36,6 +36,7 @@ body{
     color: var(--white);
     @media (max-width: 992px){
       font-size: 24px;
+      padding-left: 70px;
     }
     &::before {
       content: "";
@@ -45,6 +46,10 @@ body{
       background: url('../images/logowhitecircle.svg') no-repeat 0 0;
       left: 40px;
       top: 6px;
+      @media (max-width: 992px){
+        left: 30px;
+        top: 0px;
+      }
     }
 
     &::after {
@@ -55,6 +60,10 @@ body{
       background: var(--light-green);
       left: -20px;
       top: 19px;
+      @media (max-width: 992px){
+        width: 40px;
+        top: 10px;
+      }
     }
   }
   p {
@@ -63,7 +72,7 @@ body{
     font-size: 20px;
     margin-bottom: 20px;
     @media (max-width: 992px) {
-      padding: 0px 30px 50px 50px;
+      padding: 0px 30px 50px 70px;
       font-size: 18px;
       font-weight: 300;
     }
@@ -516,7 +525,7 @@ button.slick-disabled::before{
         margin: 0 0px;
         font-size: 16px;
         @media screen and (max-width:992px) {
-          padding:0px 30px 50px 50px;
+          padding:0px 30px 50px 70px;
           font-size: 18px;
         }
       }
@@ -563,8 +572,7 @@ button.slick-disabled::before{
       }
     }
     .applyform-conatiner {
-      padding-left: 0px;
-      padding-top: 0px;
+      padding: 0 20px !important;
     }
     .benefits-container {
       padding-left: 0px;
@@ -607,7 +615,7 @@ button.slick-disabled::before{
         background-size: 90px;
         padding: 50px 0px 0 0;
         .story-title {
-          margin: 0px 30px 0 50px;
+          margin: 0px 30px 0 70px;
         }
       }
       .posRel {

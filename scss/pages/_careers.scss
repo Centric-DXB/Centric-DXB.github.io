@@ -6,7 +6,7 @@ body{
   .our__solutions {
     padding: 40px 0px 30px;
     @media screen and (max-width:992px) {
-      padding:40px 30px 30px 50px;
+      padding:40px 30px 30px 20px;
     }
 
     .pagination__list ul {
@@ -164,7 +164,7 @@ body{
   }
   @media screen and (max-width:992px) {
     .btn__theme-career-mobile{
-      margin:0px 10px 10px 50px;
+      margin:0px 10px 10px 70px;
     }
     .btn__theme-all-an{
       margin:40px 0px  !important;
@@ -324,7 +324,7 @@ a.btn__content, .btn__theme-all button {
         font-size: 30px;
         margin-bottom: 30px;
         @media screen and (max-width:992px) {
-          padding:0 30px 0 50px;
+          padding:0 30px 0 70px;
           font-size: 24px;
         }
       }
@@ -332,7 +332,7 @@ a.btn__content, .btn__theme-all button {
         padding: 0;
         font-size: 20px;
         @media screen and (max-width:992px) {
-          padding:0px 30px 50px 50px;
+          padding:0px 30px 50px 70px;
           font-size: 18px;
         }
       }
@@ -945,8 +945,28 @@ a.btn__content, .btn__theme-all button {
   }
   
 }
-@media screen and (max-width: 450px) {
+
+
+.hero-D{
+  display: block;
   
+}
+.hero-M{
+  display: none;
+ 
+}
+
+@media screen and (max-width: 450px) {
+  .hero-D{
+    display: none !important;
+    
+    
+  }
+  .hero-M{
+    display: block !important;
+    height: 100% !important;
+  }
+
    
    .herobanner .herobanner-content .herobanner-topheading 
 {

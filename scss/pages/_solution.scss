@@ -55,7 +55,7 @@
         margin-bottom: 80px;
         @media (max-width: 992px) {
             margin-bottom: 50px;
-            padding-left: 50px;
+            padding-left: 70px;
         }
 
         ul {
@@ -125,7 +125,7 @@
                 top: 6px;
                 @media screen and (max-width: 992px){
                     top: 0px;
-                    
+                    left: 30px;
                 }
             }
 
@@ -139,6 +139,7 @@
                 top: 19px;
                 @media screen and (max-width: 992px){
                     top: 10px;
+                    left: -15px;
                     width: 40px;
                 }
             }
@@ -155,7 +156,7 @@
             @media (max-width: 992px) {
                 //padding-left: 0;
                 max-width: 100%;
-                padding-left:50px;
+                padding-left:70px;
                 padding-right: 30px;
                 font-weight: 300;
                 font-size: 18px !important;
@@ -224,7 +225,7 @@
             color: var(--white);
             position: relative;
             padding: 0px 8px;
-            width: 70% !important;
+            width: 80% !important;
             height: auto !important;
             margin: 0 auto;
             display: flex !important;
@@ -250,11 +251,12 @@
             // margin-top: 40px;
             .card-footer {
                 p {
-                    font-size: 16px;
+                    font-size: 18px;
                     text-align: center;
                     color: var(--white);
+                    padding: 10px 0px;
                     @media (max-width: 388px) {
-                        font-size: 13px;
+                        font-size: 14px;
                      }
                     // padding: 0;
                     // white-space: nowrap;
@@ -516,6 +518,10 @@
             position: relative;
             padding-left: 110px;
             letter-spacing: 5px;
+            @media (max-width: 992px){
+                font-size: 24px !important;
+                padding-left: 50px !important;
+              }
 
             &::before {
                 content: "";
@@ -525,6 +531,10 @@
                 background: url(../images/logowhitecircle.svg) no-repeat 0 0;
                 left: 60px;
                 top: 6px;
+                @media (max-width: 992px){
+                    left:10px;
+                    top: 0px;
+                  }
             }
 
             &::after {
@@ -535,6 +545,11 @@
                 background: var(--light-green);
                 left: 0;
                 top: 19px;
+                @media (max-width: 992px){
+                    width: 40px;
+                    top: 10px;
+                    left: -40px;
+                  }
             }
         }
 
@@ -640,6 +655,7 @@
     .soluton__banner {
         height: auto;
     }
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -647,6 +663,10 @@
         width: 100%;
         display: block;
         text-align: center;
+    }
+    .solution__form{
+        padding-left:20px;
+        padding-right:20px;
     }
 }
 
@@ -734,6 +754,7 @@
 
 
 @media screen and (max-width: 620.99px) {
+    
 
     .soluton__banner .content h1 .heading__tag  {
         font-size: 20px;
@@ -803,8 +824,8 @@
     }
 
     .content__img {
-        margin: 40px auto 40px;
-        max-width: 75%;
+        margin: 40px auto;
+        max-width: 100%;
     }
         }
 
