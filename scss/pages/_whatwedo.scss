@@ -29,14 +29,14 @@
             @media (max-width: 1200px) {
                 margin: 250px 0 0 0;
             }
-            @media (max-width: 992px) {
-                margin: 150px 0 0 0;
-            }
-            @media (max-width: 767px) {
-                margin: 70px 0 0 0;
-            }
-            @media (max-width: 550px) {
-                margin: 50px 0 0 0;
+            // @media (max-width: 992px) {
+            //     margin: 250px 0 0 0;
+            // }
+            // @media (max-width: 767px) {
+            //     margin: 70px 0 0 0;
+            // }
+            @media (max-width: 600px) {
+                margin: 150px 0 0 0 !important;
             }
             h2{
                 font-size: 20px;
@@ -581,6 +581,11 @@
             background: var(--light-green);
             left: 0;
             top: 20px;
+            @media (max-width: 992px){
+                width: 40px;
+                top: 10px;
+                left: -20px;
+              }
         }
         &::before{
             content: '';
@@ -590,6 +595,10 @@
             background: url(../images/logowhitecircle.svg) no-repeat 0 0;
             left: 60px;
             top: 6px;
+            @media (max-width: 992px){
+                left: 30px;
+                top: 0px;
+              }
             //transform: rotate(45deg);
         }
     }

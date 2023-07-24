@@ -428,7 +428,7 @@
             .newsletter-form{
                 display: block;
                 @media (max-width:991px) {
-                    width: 90%;
+                    width: 100%;
                 }
                 input[type=text], input.newsletter_field{
                     background: var(--white);
