@@ -983,10 +983,11 @@
       transform: rotate(180deg);
       left: unset;
       right: 49%;
-      // @media (max-width: 992px) {
-      //   transform: rotate(90deg);
-      //   top: 46%;
-      // }
+      @media (max-width: 992px) {
+        transform: rotate(90deg);
+        // top: 46%;
+        right: 10%;
+      }
       // @media (max-width: 767px) {
       //   top: 53%;
       // }
@@ -1412,6 +1413,18 @@
           display: block;
           h2{
             font-family: var(--arabic-font);
+            // &::before {
+            //   @media (max-width: 992px){
+            //     right: 30px;
+            //     // top: 0px;
+            //   }
+            // }
+            // &::after {
+            //   @media (max-width: 992px){
+            //     right: 30px;
+            //     // top: 0px;
+            //   }
+            // }
           }
         }
       }
