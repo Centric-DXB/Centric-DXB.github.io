@@ -773,7 +773,8 @@ a.btn__content, .btn__theme-all button {
           padding: 0;
         }
         .pagination__list {
-          margin-bottom: 0;
+            padding-left: 50px;
+            margin-bottom: 0;
           ul {
             padding-left: 0px;
           }
@@ -964,7 +965,7 @@ a.btn__content, .btn__theme-all button {
   }
   .hero-M{
     display: block !important;
-    height: 100% !important;
+    // height: 100% !important;
   }
 
    
