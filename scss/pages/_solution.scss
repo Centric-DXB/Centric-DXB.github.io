@@ -11,40 +11,49 @@
         object-fit: cover;
         width: 100%;
     }
-    .content {
-        padding-left: 110px;
-        position: absolute;
-        z-index: 1;
-        left: 110px;
-        top: 400px;
-        h1 {
-            span {
-                display: block;
+        .content {
+            padding-left: 110px;
+            position: absolute;
+            z-index: 1;
+            left: 110px;
+            top: 400px;
+    
+            @media (max-width: 450px) {
+                top: 500px;
+                // font-size: 40px;
             }
-
-            .heading__tag {
-                font-size: 20px;
-                font-weight: bold;
-                margin-bottom: 30px;
-            }
-
-            .primary-heading {
-                margin-bottom: 10px;
-                font-size: 50px;
-                font-weight: 400;
-                @media (max-width: 992px) {
-                    font-size: 40px;
+    
+            h1 {
+                span {
+                    display: block;
                 }
-            }
-            .secondary-heading {
-                font-size: 50px;
-                font-weight: 400;
-                @media (max-width: 992px) {
-                    font-size: 40px;
+    
+                .heading__tag {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 30px;
+                }
+    
+                .primary-heading {
+                    margin-bottom: 10px;
+                    font-size: 50px;
+                    font-weight: 400;
+    
+                    @media (max-width: 992px) {
+                        font-size: 40px;
+                    }
+                }
+    
+                .secondary-heading {
+                    font-size: 50px;
+                    font-weight: 400;
+    
+                    @media (max-width: 992px) {
+                        font-size: 40px;
+                    }
                 }
             }
         }
-    }
 }
 
 .our__solutions {
@@ -62,6 +71,11 @@
             display: flex;
             gap: 15px;
             padding-left: 110px;
+            @media (max-width: 992px) {
+                // margin-bottom: 50px;
+                padding-left: 0px;
+            }
+
             li {
                 position: relative;
                 a {
@@ -112,7 +126,8 @@
             padding-left: 110px;
             letter-spacing: 5px;
             @media (max-width: 992px) {
-                font-size: 24px;
+            padding-left: 70px;
+            font-size: 24px;
             }
 
             &::before {
@@ -786,7 +801,8 @@
    .our__solutions {
     .content {
         h2 {
-            font-size: 22px;
+            font-size: 24px;
+            padding-left: 70px !important;
 
             &::before {
                 top: -3px;
