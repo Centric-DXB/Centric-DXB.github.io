@@ -2,6 +2,27 @@
 .home-slider--arabic{
     display: none;
 }
+.hero-D{
+    display: block;
+    width: 100%;
+    
+  }
+  .hero-M{
+    display: none;
+   
+  }
+  
+  @media screen and (max-width: 450px) {
+    .hero-D{
+      display: none !important;
+      
+      
+    }
+    .hero-M{
+      display: block !important;
+      // height: 100% !important;
+    }
+}
 .home-slider{
     display:block;
     margin-top: -80px;
@@ -343,16 +364,17 @@
 
                 & .hero-D{
                             display: block !important;
+                            width: 100% !important;
                         }
                         & .hero-M{
                             display: none !important;
                         }
                         @media (max-width: 992px){
                             & .hero-D{
-                                display: none;
+                                display: none !important;
                             }
                             & .hero-M{
-                                display: block;
+                                display: block !important;
                             }
                 }
                 // img{
@@ -408,9 +430,9 @@
                     //     @media (max-width: 1100px) {
                     //         top: 25%;
                     //     }
-                        @media (max-width: 992px) {
-                            left: 25%;
-                        }
+                        // @media (max-width: 992px) {
+                        //     left: 25%;
+                        // }
                     //     @media (max-width: 767px) {
                     //         top: 30%;
                     //     }
@@ -1766,6 +1788,9 @@
         display: block;
         padding: 80px 0 0 0;
         text-align: center;
+        @media (max-width: 992px) {
+            padding: 80px 0px !important;
+        }
         img{
             display: none;
             transition: all 0.2s ease-in-out;
@@ -1792,6 +1817,7 @@
     padding: 50px 0 150px;
     position: relative;
     border-bottom: 1px solid rgba($color: #ffffff, $alpha: .2);
+    
     &::before{
         position: absolute;
         content: '';
