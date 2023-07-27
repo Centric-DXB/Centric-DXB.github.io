@@ -11,6 +11,7 @@
     display: none;
    
   }
+ 
   
   @media screen and (max-width: 450px) {
     .hero-D{
@@ -1668,8 +1669,11 @@
     display: block;
     width: 100%;
     background: var(--dark-purple) url(../images/businessglobe.png) no-repeat right top;
-    // padding: 100px 0;
+    padding: 100px 0;
     margin-top: -6px;
+    @media (max-width: 600px) {
+        padding: 30px 0;
+    }
     h2{
         font-size: 33px;
         font-weight: 500;
