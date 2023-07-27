@@ -1,5 +1,15 @@
 // SERVICES PAGES CSS
-
+.herobanner-S{
+    @media (max-width: 992px) {
+        height: 650px;
+    }
+    @media (max-width: 450px) {
+        height: auto;
+    }
+    img{
+        height: 100%;
+    }
+}
 .our--services-wrapper{
     display: block;
     width: 100%;
@@ -16,26 +26,27 @@
         padding-left: 110px;
         text-transform: unset;
         margin-top: 50px;
-        @media (min-width: 1300px) and (max-width: 1400px) {
-            font-size: 33px;
-        }
-        @media (min-width: 1200px) and (max-width: 1300px) {
-            font-size: 30px;
-        }
-        @media (min-width: 1100px) and (max-width: 1200px) {
-            font-size: 28px;
-        }
-        @media (min-width: 992px) and (max-width: 1100px) {
+        // @media (min-width: 1300px) and (max-width: 1400px) {
+        //     font-size: 33px;
+        // }
+        // @media (min-width: 1200px) and (max-width: 1300px) {
+        //     font-size: 30px;
+        // }
+        // @media (min-width: 1100px) and (max-width: 1200px) {
+        //     font-size: 28px;
+        // }
+        // @media (min-width: 992px) and (max-width: 1100px) {
+        //     font-size: 24px;
+        // }
+        @media (max-width: 992px) {
             font-size: 24px;
+            padding-left: 70px;
         }
-        @media (max-width: 991px) {
-            font-size: 22px;
-        }
-        @media (max-width: 600px) {
-            font-size: 18px;
-            letter-spacing: 3px;
-            line-height: 24px;
-        }
+        // @media (max-width: 600px) {
+        //     font-size: 18px;
+        //     letter-spacing: 3px;
+        //     line-height: 24px;
+        // }
         &::after{
             content: '';
             position: absolute;
@@ -44,6 +55,11 @@
             background: var(--light-green);
             left: 0;
             top: 20px;
+            @media (max-width: 992px) {
+                left: -20px;
+            top: 10px;
+            width: 40px;
+            }
         }
         &::before{
             content: '';
@@ -53,6 +69,10 @@
             background: url(../images/logowhitecircle.svg) no-repeat 0 0;
             left: 60px;
             top: 6px;
+            @media (max-width: 992px) {
+                left: 30px;
+            top: 0px;
+            }
             //transform: rotate(45deg);
         }
     }
@@ -62,7 +82,9 @@
         line-height: 30px;
         padding-left: 110px;
         @media (max-width: 992px) {
-            padding-left: 0;
+            padding: 0 30px 0 70px;
+            font-size: 18px;
+            font-weight: 400;
         }
     }
     img{
@@ -94,26 +116,30 @@
             letter-spacing: 5px;
             text-transform: unset;
             margin-top: 50px;
-            @media (min-width: 1300px) and (max-width: 1400px) {
-                font-size: 33px;
-            }
-            @media (min-width: 1200px) and (max-width: 1300px) {
-                font-size: 30px;
-            }
-            @media (min-width: 1100px) and (max-width: 1200px) {
-                font-size: 28px;
-            }
-            @media (min-width: 992px) and (max-width: 1100px) {
+            @media (max-width: 992px) {
                 font-size: 24px;
+                padding-left: 70px;
             }
-            @media (max-width: 991px) {
-                font-size: 22px;
-            }
-            @media (max-width: 600px) {
-                font-size: 18px;
-                letter-spacing: 3px;
-                line-height: 24px;
-            }
+            // @media (min-width: 1300px) and (max-width: 1400px) {
+            //     font-size: 33px;
+            // }
+            // @media (min-width: 1200px) and (max-width: 1300px) {
+            //     font-size: 30px;
+            // }
+            // @media (min-width: 1100px) and (max-width: 1200px) {
+            //     font-size: 28px;
+            // }
+            // @media (min-width: 992px) and (max-width: 1100px) {
+            //     font-size: 24px;
+            // }
+            // @media (max-width: 991px) {
+            //     font-size: 22px;
+            // }
+            // @media (max-width: 600px) {
+            //     font-size: 18px;
+            //     letter-spacing: 3px;
+            //     line-height: 24px;
+            // }
             &::after{
                 content: '';
                 position: absolute;
@@ -122,6 +148,11 @@
                 background: var(--light-green);
                 left: 0;
                 top: 20px;
+                @media (max-width: 992px) {
+                    left: -20px;
+                top: 10px;
+                width: 40px;
+                }
             }
             &::before{
                 content: '';
@@ -131,6 +162,10 @@
                 background: url(../images/logowhitecircle.svg) no-repeat 0 0;
                 left: 60px;
                 top: 6px;
+                @media (max-width: 992px) {
+                    left: 30px;
+                top: 0px;
+                }
                 //transform: rotate(45deg);
             }
         }
@@ -323,7 +358,6 @@
             @media (max-width: 1800px) {
                 right: 7%;
             }
-            
         }
         .slick-prev {
             right: unset;

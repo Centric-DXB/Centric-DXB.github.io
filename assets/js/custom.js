@@ -288,7 +288,7 @@ $('.client-logos').slick({
             }
         },
         {
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -299,7 +299,7 @@ $('.client-logos').slick({
         {
             breakpoint: 550,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },
@@ -330,7 +330,7 @@ $('.partners-logos').slick({
             }
         },
         {
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -341,7 +341,7 @@ $('.partners-logos').slick({
         {
             breakpoint: 550,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },
