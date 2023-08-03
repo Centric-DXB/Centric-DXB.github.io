@@ -266,9 +266,15 @@
             @media (max-width: 992px) {
                 bottom: 60px;
             }
+            @media (max-width: 767px) {
+                bottom: 55px;
+            }
             li{
                 transform: rotate(135deg);
                 margin-right: 15px;
+                @media (max-width: 767px) {
+                    margin-right: 7px;
+                }
                 button{
                     background: var(--white);
                     @media (max-width: 767px) {
