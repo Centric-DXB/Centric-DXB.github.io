@@ -716,6 +716,16 @@
       }
     }
   }
+  .topsolutions-mobile-wrapper .topsolutions-content-wrapper .topsolutions-mobile-content img{
+    @media screen and (max-width:575px) {
+      left: 350px;
+      right: unset;
+    }
+    @media screen and (max-width:768px) {
+      left: 300px;
+      right: unset;
+    }
+}
   .industry-wrapper, .services--list-wrapper{
     .carousel-wrapper{
       direction: rtl;
