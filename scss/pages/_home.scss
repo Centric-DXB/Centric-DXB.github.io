@@ -883,6 +883,8 @@
         background: rgba($color: #fff, $alpha: .2) url(../images/newstransparentlogo.png) no-repeat bottom right;
         backdrop-filter: blur(50px) opacity(0);
         margin: 0 10px;
+            height: 92.5%;
+
         @media (max-width: 992px) {
             flex-direction: column;
             width: 100%;
