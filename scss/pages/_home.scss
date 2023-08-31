@@ -372,7 +372,7 @@
                 & .hero-D{
                             display: block !important;
                             width: 100% !important;
-                            height: 900px;
+                            height: 1080px;
                         }
                         & .hero-M{
                             display: none !important;
@@ -1365,7 +1365,7 @@
             left: 0;
             color: #61D281;
             top: 60px;
-            z-index: 99;
+            z-index: 50;
             font-size: 21px;
             &.arabic-text{
                 display: none;
@@ -1432,7 +1432,7 @@
             left: -360px;
             color: #CED83C;
             top: 80px;
-            z-index: 99;
+            z-index: 50;
             font-size: 21px;
             &.arabic-text{
                 display: none;
@@ -1509,7 +1509,7 @@
             left: -250px;
             color: #33ADF0;
             top: 230px;
-            z-index: 99;
+            z-index: 50;
             font-size: 21px;
             &.arabic-text{
                 display: none;
