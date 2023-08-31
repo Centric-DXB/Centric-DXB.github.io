@@ -205,24 +205,24 @@
         }
 
         a{
-            display: inline-block;
+            // display: inline-block;
             text-align: center;
             padding: 0 20px;
-            background: var(--light-green);
+            // background: var(--light-green);
             color: var(--white);
             font-size: 18px;
             text-transform: uppercase;
-            margin-top: 20px;
+            // margin-top: 20px;
             transition: all .3s ease-in-out;
             font-family: var(--poppins);
-            line-height: 50px;
+            // line-height: 50px;
             text-decoration: none;
             svg{
-                margin-left: 20px;
+                // margin-left: 20px;
             }
             &:hover{
-                background: var(--white);
-                color: var(--light-green);
+                // background: var(--white);
+                // color: var(--light-green);
             }
         }
     }
