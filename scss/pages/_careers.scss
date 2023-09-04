@@ -70,6 +70,16 @@ body{
     }
   }
 }
+.acc-desc-li ol li{
+  list-style: circle;
+  font-size: 20px;
+  color: #000000;
+}
+.acc-desc-li ul li{
+  list-style: decimal;
+  font-size: 20px;
+  color: #000000;
+}
 
 .jobposition-wrapper {
   background: $white;
