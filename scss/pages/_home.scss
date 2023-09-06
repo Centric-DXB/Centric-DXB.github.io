@@ -372,7 +372,7 @@
                 & .hero-D{
                             display: block !important;
                             width: 100% !important;
-                            height: 1080px;
+                            height: auto;
                         }
                         & .hero-M{
                             display: none !important;
@@ -383,6 +383,7 @@
                             }
                             & .hero-M{
                                 display: block !important;
+                                
                             }
                 }
                 // img{

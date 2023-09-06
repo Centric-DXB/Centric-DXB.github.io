@@ -816,8 +816,9 @@
             .left{
                 &::after {
                     top: auto;
-                    left: 46%;
-                    bottom: -100px;
+    left: 40%;
+    bottom: -50px;
+    transform: none;
                 }
             }
 
