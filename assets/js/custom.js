@@ -1,4 +1,15 @@
 
+        $('#close_popup').on('click',function(){
+            $('.popup-content').removeClass('slideIn');
+            $('.popup-content').addClass('slideOut');
+            
+           setTimeout(()=>{
+            $('#popup').add('hidden');
+            $('#popup').css('display', 'none');
+           },300)
+        })
+
+    
     // $('.sliderHome').bxSlider({
     //     auto: true,
     //     stopAutoOnClick: true,
