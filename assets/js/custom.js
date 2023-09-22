@@ -13,6 +13,17 @@
 //     stopAutoOnClick: true,
 // });
 
+
+$('#close_popup').on('click',function(){
+    $('.popup-content').removeClass('slideIn');
+    $('.popup-content').addClass('slideOut');
+    
+   setTimeout(()=>{
+    $('#popup').add('hidden');
+    $('#popup').css('display', 'none');
+   },300)
+})
+
 //who we are function is placed here.
 function handleExpandMore() {
     $(".moreless-button").click(function () {
