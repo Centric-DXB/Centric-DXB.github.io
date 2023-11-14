@@ -108,6 +108,22 @@ $('nav.topsolution li').on('click', function () {
 });
 
 
+
+function switchLob(elementId){
+    const getLobs = document.querySelectorAll('.lob-mainlist-container');
+    const lob = document.getElementById(elementId);
+    getLobs.forEach((lob)=>{
+        if(lob.classList.contains('active')){
+            lob.classList.remove('active');
+        }
+    })
+
+    lob.classList.add('active');
+
+
+}
+
+
 // $('a#data-one').click(function() {
 //     $('#data-one').addClass('show');
 //     $('#data-one').removeClass('hide');
