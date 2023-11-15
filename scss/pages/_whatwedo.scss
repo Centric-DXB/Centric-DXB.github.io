@@ -788,6 +788,12 @@
     }
 }
 //line of business details chagnes
+.LOB-detail-Background{
+    background-color: white !important;
+    h2{
+        color: #122D6E !important;
+    }
+}
 .lob-sideList{
     li{
         list-style: none;
@@ -796,6 +802,7 @@
             text-decoration: none;
             color: white;
             font-size: 20px;
+            cursor: pointer;
         }
     }
     li::before{
@@ -841,9 +848,6 @@
     h2::after{
         content: none !important;
     }
-    
-
-  
     .lob-mainlist::before{
         content: '';
         width: 15px;
@@ -860,7 +864,10 @@
         font-size: 20px;
         font-weight: 400;
         padding-inline-start: 50px;
-       }
+        &:last-child{
+            padding-bottom: 25px;
+        }
+    } 
     }
     .lob-mainlist li::before{
         content: '';
