@@ -270,9 +270,10 @@
                     text-align: center;
                     color: var(--white);
                     padding: 10px 0px;
-                    @media (max-width: 388px) {
+                    @media (max-width: 575px) {
                         font-size: 14px;
                      }
+                     margin-bottom: 20px;
                     // padding: 0;
                     // white-space: nowrap;
                     // width: 130px;
@@ -409,6 +410,7 @@
                     @media (max-width: 388px) {
                         font-size: 13px;
                      }
+                     margin-bottom: 20px;
                     // padding: 0;
                     // white-space: nowrap;
                     // width: 130px;

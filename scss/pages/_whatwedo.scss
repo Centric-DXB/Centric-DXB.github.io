@@ -622,6 +622,7 @@
         }
     }
 }
+
 .services-wrapper{
     display: block;
     width: 100%;
@@ -786,6 +787,99 @@
         }
     }
 }
+//line of business details chagnes
+.LOB-detail-Background{
+    background-color: white !important;
+    h2{
+        color: #122D6E !important;
+    }
+}
+.lob-sideList{
+    li{
+        list-style: none;
+        margin: 15px 0;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    li::before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: #D6D6D3;
+        transform: rotate(135deg);
+        display: inline-block;
+        margin-inline-end:20px;
+    }
+    li.active::before{
+        background-color: #81C357;
+    }
+}
+
+
+.lob-mainlist-container:not(.active){
+    display: none;
+}
+.lob-mainlist-container.active{
+    display: block;
+}
+
+.lob-main-detail{
+    h2{
+        font-weight: 700 !important;
+        padding-left: 0px !important;
+    }
+    p{
+        padding-left: 50px !important;
+    }
+    h2::before{
+        // content: '';
+        width: 20px !important;
+        height: 20px !important;
+        background: #81C357 !important;
+        transform: rotate(135deg);
+        display: inline-block;
+        margin-inline-end:20px;
+        position: unset !important;
+    }
+    h2::after{
+        content: none !important;
+    }
+    .lob-mainlist::before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: #81C357;
+        transform: rotate(135deg);
+        display: inline-block;
+        margin-inline-end:30px;
+    }
+    .lob-mainlist{
+        font-size: 24px;
+        font-weight: bold;
+       li{
+        font-size: 20px;
+        font-weight: 400;
+        padding-inline-start: 50px;
+        &:last-child{
+            padding-bottom: 25px;
+        }
+    } 
+    }
+    .lob-mainlist li::before{
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #D6D6D3;
+        transform: rotate(135deg);
+        display: inline-block;
+        margin-inline-end:20px;
+    } 
+}
+
 .technologies-wrapper{
     display: block;
     width: 100%;

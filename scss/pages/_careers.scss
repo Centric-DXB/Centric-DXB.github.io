@@ -668,6 +668,9 @@ a.btn__content, .btn__theme-all button {
       max-height: 90px;
       overflow: hidden;
       transition: max-height 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      @media screen and (max-width:992px) {
+        max-height: 80px;
+      }
     }
     p {
       color: $black-color;
