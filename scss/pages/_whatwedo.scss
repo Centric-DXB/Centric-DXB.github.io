@@ -793,7 +793,11 @@
     h2{
         color: #122D6E !important;
     }
+    &.industry-wrapper .carousel-wrapper .carousel-content h2{
+        color:  white !important;
+    }
 }
+
 .lob-sideList{
     li{
         list-style: none;
