@@ -727,6 +727,13 @@ $(".business--name-wrapper").click(function (e) {
     $(".business--name-wrapper").removeClass("current");
     $(this).addClass("current");
 });
+$(".lob-sideList li").click(function (e) {
+    e.preventDefault();
+ 
+    $(".lob-sideList li").removeClass("active");
+
+    $(this).addClass("active");
+});
 
 // SERVICES SECTION FUNCTIONS
 $(".services--items a").click(function (e) {
