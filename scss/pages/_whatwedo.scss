@@ -859,7 +859,7 @@
     h2::after{
         content: none !important;
     }
-    ul::before{
+    h3::before{
         content: '';
         width: 15px;
         height: 15px;
@@ -868,9 +868,11 @@
         display: inline-block;
         margin-inline-end:30px;
     }
-    ul{
+    h3{
         font-size: 24px;
         font-weight: bold;
+    }
+    ul{
        li{
         font-size: 20px;
         font-weight: 400;
