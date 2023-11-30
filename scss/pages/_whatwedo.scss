@@ -832,9 +832,14 @@
         color: #81C357;
     }
 }
-
-
-
+.lob-bottom-line{
+    padding: 50px 0 !important;
+}
+.lob-bottom-line .slick-carousel::after,
+.lob-bottom-line .slick-carousel::before
+{
+    width: unset !important;
+}
 .lob-mainlist-container:not(.active){
     display: none; 
 }
